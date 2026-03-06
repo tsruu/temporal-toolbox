@@ -21,6 +21,30 @@ def _iso_to_language_name(iso_code: str) -> str:
     return "Unknown"
 
 
+def _normalize_language(lang: str) -> str:
+    """
+    Normalize language input to ISO 639-1 code.
+    Accepts full language names ('English') or ISO codes ('en').
+    """
+    if not lang:
+        return lang
+
+    lang = lang.strip()
+
+    # Already ISO 639-1
+    if len(lang) == 2:
+        return lang.lower()
+
+    try:
+        language = pycountry.languages.get(name=lang)
+        if language and hasattr(language, "alpha_2"):
+            return language.alpha_2
+    except Exception:
+        pass
+
+    return lang
+
+
 def detect_language(text: str) -> str:
     """
     Detect the language of the input text.
@@ -36,24 +60,21 @@ def detect_language(text: str) -> str:
         return "Unknown"
 
 
-def translate(text: str, target_language: str) -> str:
+def translate(text: str, source_language: str, target_language: str) -> str:
     """
-    Translate text to the target language.
-    target_language can be full name ('English') or ISO code ('en').
+    Translate text from source_language to target_language.
+    Languages may be full names ('English') or ISO codes ('en').
     """
     if not text or not text.strip():
         return text
 
     try:
-        # Normalize target language
-        if len(target_language) > 2:
-            lang = pycountry.languages.get(name=target_language)
-            if lang and hasattr(lang, "alpha_2"):
-                target_language = lang.alpha_2
+        source = _normalize_language(source_language)
+        target = _normalize_language(target_language)
 
         return GoogleTranslator(
-            source="auto",
-            target=target_language
+            source=source,
+            target=target
         ).translate(text)
 
     except Exception:

@@ -10,5 +10,5 @@ TOOL_REGISTRY = {
     "entity_time_event": temporal.entity_time_event,
     "language_detection": language.detect_language,
     "translation": language.translate,
-    "code_excecutor": code.execute_python_code
+    "code_executor": code.execute_python_code
 }

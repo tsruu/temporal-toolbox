@@ -3,6 +3,10 @@
 from fastapi import FastAPI, HTTPException
 from app.schemas import ToolRequest, ToolResponse
 from app.dispatcher import dispatch_tool
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("toolbox")
 
 app = FastAPI()
 
@@ -41,7 +45,13 @@ async def mcp_endpoint(req: dict):
     tool_name = req["name"]
     arguments = req.get("arguments", {})
 
+    # Log the tool being called
+    logger.info("Tool call: %s", tool_name)
+
     result = dispatch_tool(tool_name, arguments)
+
+    # Log the result status
+    logger.info("Tool result: %s -> %s", tool_name, result.status)
 
     # Error case
     if result.status != "ok":
@@ -64,13 +74,17 @@ async def mcp_endpoint(req: dict):
         ]
     }
 
+@app.get("/health")
+def health():
+    return {"status":"ok"}
+
 @app.get("/tools")
 async def list_tools():
     return [
 
         {
             "name": "before_absolute_reference",
-            "description": "",
+            "description": "Answers questions of the form “What was the entity associated with immediately before a given absolute time?”. Use this to retrieve the entity’s role, affiliation, or state just prior to a specific date or year. The result is looked up from structured data, not inferred.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -83,20 +97,20 @@ async def list_tools():
 
         {
             "name": "before_chronological_reference",
-            "description": "",
+            "description": "Answers questions asking what an entity was associated with immediately before another event. Use this when the reference point is a named event (e.g., a team, organization, or historical milestone), not a date. The answer is retrieved from structured records.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "entity": {"type": "string"},
                     "event": {"type": "string"}
                 },
-                "required": ["entity", "time"]
+                "required": ["entity", "event"]
             }
         },
 
         {
             "name": "after_absolute_reference",
-            "description": "",
+            "description": "Answers questions of the form “What was the entity associated with immediately after a given absolute time?”. Use this to retrieve the entity’s role, affiliation, or state just after a specific date or year. The result is looked up from structured data, not inferred.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -109,20 +123,20 @@ async def list_tools():
 
         {
             "name": "after_chronological_reference",
-            "description": "",
+            "description": "Answers questions asking what an entity was associated with immediately after another event. Use this when the reference point is a named event (e.g., a team, organization, or historical milestone), not a date. The answer is retrieved from structured records.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "entity": {"type": "string"},
                     "event": {"type": "string"}
                 },
-                "required": ["entity", "time"]
+                "required": ["entity", "event"]
             }
         },
 
         {
             "name": "event_time",
-            "description": "",
+            "description": "Retrieves the exact date or time when a specified event occurred. Use this when a question requires knowing when an event happened, especially to compare or reason about the order of multiple events. The result is obtained via structured data lookup, not inference.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -134,20 +148,20 @@ async def list_tools():
 
         {
             "name": "entity_time_event",
-            "description": "",
+            "description": "Answers questions asking what role, position, or event an entity had at a specific time. Use this when the question is “What was X doing / what was X’s status at time T?”. The answer is retrieved from structured data.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "entity": {"type": "string"},
                     "time": {"type": "string"}
                 },
-                "required": ["entity", "event"]
+                "required": ["entity", "time"]
             }
         },
 
         {
             "name": "language_detection",
-            "description": "",
+            "description": "Detects the language of the provided text. Use this when the input language is unknown or needs to be identified before further processing.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -159,20 +173,21 @@ async def list_tools():
 
         {
             "name": "translation",
-            "description": "",
+            "description": "Translates the provided text from a specified source language into the specified target language. Use this when a translation is required before further processing",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "text": {"type": "string"},
-                    "target_language": {"type": "string"}
+                    "text": { "type": "string" },
+                    "source_language": { "type": "string" },
+                    "target_language": { "type": "string" }
                 },
-                "required": ["text", "target_language"]
+                "required": ["text", "source_language", "target_language"]
             }
         },
 
         {
-            "name": "code_excecutor",
-            "description": "",
+            "name": "code_executor",
+            "description": "Executes provided code to perform precise computations or transformations. Use this when a question requires exact calculation, iteration, or programmatic handling of quantities such as dates, times, intervals, units, or arithmetic that should not be approximated by reasoning alone.",
             "parameters": {
                 "type": "object",
                 "properties": {

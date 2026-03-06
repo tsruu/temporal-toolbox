@@ -17,6 +17,7 @@ AFTER_ABSOLUTE_CSV = os.path.join(BASE_DIR, "after_absolute_reference.csv")
 AFTER_CHRONOLOGICAL_CSV = os.path.join(BASE_DIR, "after_chronological_reference.csv")
 
 ENTITY_TIME_EVENT_CSV = os.path.join(BASE_DIR, "entity_time_event.csv")
+EVENT_TIME_CSV = os.path.join(BASE_DIR, "event_time.csv")
 
 # =========================
 # Entity normalization
@@ -236,7 +237,7 @@ def after_chronological_reference(
 
 def event_time(
     event: str,
-    csv_path: str = "app/tools/event_time.csv"
+    csv_path: str = EVENT_TIME_CSV
 ) -> str:
     q_event = normalize_entity(event)
 
