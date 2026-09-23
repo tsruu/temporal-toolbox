@@ -5,3 +5,5 @@ pydantic
 langdetect
 deep-translator
 pycountry
+fastmcp
+starlette

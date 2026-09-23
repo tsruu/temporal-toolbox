@@ -17,3 +17,9 @@ __pycache__/
 
 # Test
 .pytest_cache/
+
+#random files
+test.py
+rollouts.jsonl
+resource.json
+rollout.yaml

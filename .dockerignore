@@ -20,3 +20,10 @@ __pycache__/
 
 # Test artifacts
 .pytest_cache/
+
+#random files
+test.py
+rollouts.jsonl
+resource.json
+rollout.yaml
+toolbox.md
