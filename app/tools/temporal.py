@@ -4,6 +4,7 @@ from datetime import datetime
 import csv
 import re
 import string
+import unicodedata
 from datetime import datetime
 from typing import Tuple, Optional
 import os
@@ -42,6 +43,37 @@ def normalize_entity(text: str) -> str:
 # Time normalization
 # =========================
 
+# Month names in the dataset's languages (en, fr, de, ro, es, it, pt),
+# lowercased and accent-folded.
+MONTH_NAMES = {}
+for _month, _names in enumerate([
+    "january jan janvier janv januar janner ianuarie ian enero ene gennaio janeiro",
+    "february feb fevrier fevr fev februar februarie febrero febbraio fevereiro",
+    "march mar mars marz maerz martie marzo marco",
+    "april apr avril avr aprilie abril aprile",
+    "may mai mayo maggio maio",
+    "june jun juin juni iunie iun junio giugno junho",
+    "july jul juillet juil juli iulie iul julio luglio julho",
+    "august aug aout agosto ago",
+    "september sep sept septembre septembrie septiembre setiembre settembre setembro",
+    "october oct octobre oktober okt octombrie octubre ottobre outubro",
+    "november nov novembre noiembrie noi noviembre novembro",
+    "december dec decembre dezember dez decembrie diciembre dic dicembre dezembro",
+], start=1):
+    for _name in _names.split():
+        MONTH_NAMES[_name] = _month
+
+# "Jun, 2015", "June 10, 2015", "10. März 2010" (after accent folding)
+MONTH_YEAR_RE = re.compile(
+    r"\b([a-z]+)\.?,?\s+(?:\d{1,2}(?:st|nd|rd|th)?\.?,?\s+)?(\d{4})\b"
+)
+
+
+def _fold(text: str) -> str:
+    text = unicodedata.normalize("NFKD", text)
+    return "".join(c for c in text if not unicodedata.combining(c)).lower()
+
+
 def normalize_time(t: str) -> Tuple[int, Optional[int]]:
     """
     Returns (year, month or None)
@@ -49,7 +81,8 @@ def normalize_time(t: str) -> Tuple[int, Optional[int]]:
       YYYY
       YYYY-MM
       YYYY-MM-DD
-      Jul 2005 / July 2005
+      Jul 2005 / July 2005 / Jul, 2005 / July 10, 2005
+      month names in fr, de, ro, es, it, pt (e.g. iunie 2020, février 1929)
     """
     t = t.strip()
 
@@ -62,10 +95,21 @@ def normalize_time(t: str) -> Tuple[int, Optional[int]]:
 
     m = re.search(r"([A-Za-z]+)\s+(\d{4})", t)
     if m:
-        month = datetime.strptime(m.group(1)[:3], "%b").month
-        return int(m.group(2)), month
+        try:
+            month = datetime.strptime(m.group(1)[:3], "%b").month
+            return int(m.group(2)), month
+        except ValueError:
+            pass
 
-    raise ValueError(f"Unrecognized time format: {t}")
+    for m in MONTH_YEAR_RE.finditer(_fold(t)):
+        month = MONTH_NAMES.get(m.group(1))
+        if month is not None:
+            return int(m.group(2)), month
+
+    raise ValueError(
+        f"could not parse time '{t}'. Use YYYY, YYYY-MM, YYYY-MM-DD or "
+        f"'Month YYYY' (e.g. 2015-06 or June 2015)."
+    )
 
 
 # =========================
