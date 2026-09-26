@@ -3,7 +3,6 @@ import re
 from datetime import datetime
 import csv
 import re
-import string
 import unicodedata
 from datetime import datetime
 from typing import Tuple, Optional
@@ -27,14 +26,14 @@ EVENT_TIME_CSV = os.path.join(BASE_DIR, "event_time.csv")
 def normalize_entity(text: str) -> str:
     """
     Safe normalization:
-    - lowercase
+    - lowercase, strip accents (Bouaïcha -> bouaicha)
     - remove possessive 's
-    - remove punctuation
+    - remove punctuation, including Unicode (’ –)
     - collapse whitespace
     """
-    text = text.lower()
-    text = text.replace("'s", "")
-    text = text.translate(str.maketrans("", "", string.punctuation))
+    text = _fold(text)
+    text = text.replace("'s", "").replace("’s", "")
+    text = re.sub(r"[^\w\s]|_", "", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
