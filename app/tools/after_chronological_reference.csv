@@ -72,6 +72,7 @@ Which album was launched by Euphoria preceded by Item?,Euphoria,Item,Sharnaagat
 What did Euphoria disclose straight after the release of the album ReDhoom?,Euphoria,the release of the album ReDhoom,Item
 Which album was launched by Euphoria preceded by ReDhoom?,Euphoria,ReDhoom,Item
 Which country joined the WTO Partnership just after Saudi Arabia?,country,Saudi Arabia,Vietnam
+Which country got affiliated to WTO Partnership immediately after Saudi Arabia?,WTO Partnership,Saudi Arabia,Vietnam
 Who signed the accession to the World Trade Organization immediately after Laos?,the accession to the World Trade Organization,Laos,Tajikistan
 Which country was the WTO Partnership signed by soon after Laos?,WTO Partnership,Laos,Tajikistan
 Which country joined the WTO Partnership just after Saudi Arabia?,country,Saudi Arabia,Vietnam
@@ -79,7 +80,9 @@ Which country was the WTO Partnership signed by soon after Saudi Arabia?,WTO Par
 Which country became a member of WTO just subsequent to Cambodia?,country,Cambodia,Saudi Arabia
 Which country took WTO membership preceded by Cambodia?,WTO membership,Cambodia,Saudi Arabia
 Which country was the WTO Partnership signed by soon after Ukraine?,WTO Partnership,Ukraine,Cape Verde
+Which country got affiliated to WTO Partnership immediately after Ukraine?,affiliated to WTO Partnership,Ukraine,Cape Verde
 Which country was inducted in WTO shortly after country Saudi Arabia?,country,country Saudi Arabia,Vietnam
+Which country got affiliated to WTO Partnership immediately after Saudi Arabia?,affiliated to WTO Partnership,Saudi Arabia,Vietnam
 Which country was inducted in WTO shortly after country Cape Verde?,country,country Cape Verde,Montenegro
 Which country took WTO membership preceded by Cape Verde?,country,Cape Verde,Montenegro
 Who signed the accession to the World Trade Organization immediately after Saudi Arabia?,the accession to the World Trade Organization,Saudi Arabia,Vietnam
@@ -89,12 +92,15 @@ Which country was the WTO Partnership signed by soon after Saudi Arabia?,WTO Par
 Who signed the accession to the World Trade Organization immediately after Samoa?,the accession to the World Trade Organization,Samoa,Russia
 Which country became a member of WTO just subsequent to Samoa?,country,Samoa,Russia
 Which country was the WTO Partnership signed by soon after Seychelles?,WTO Partnership,Seychelles,Kazakhstan
+Which country got affiliated to WTO Partnership immediately after Seychelles?,WTO Partnership,Seychelles,Kazakhstan
 Which country joined the WTO Partnership shortly after Tonga?,country,Tonga,Ukraine
 Which country was inducted in WTO shortly after country Tonga?,country,country Tonga,Ukraine
 Which country joined the WTO Partnership just after Russia?,country,Russia,Vanuatu
 Which country joined the WTO Partnership shortly after Russia?,country,Russia,Vanuatu
 Which country joined the WTO Partnership shortly after Cambodia?,country,Cambodia,Saudi Arabia
+Which country got affiliated to WTO Partnership immediately after Cambodia?,WTO Partnership,Cambodia,Saudi Arabia
 Which country became a member of WTO just subsequent to Saudi Arabia?,country,Saudi Arabia,Vietnam
+Which country got affiliated to WTO Partnership immediately after Saudi Arabia?,WTO Partnership,Saudi Arabia,Vietnam
 Who signed the accession to the World Trade Organization immediately after Laos?,the accession to the World Trade Organization,Laos,Tajikistan
 Which country was inducted in WTO shortly after country Laos?,country,country Laos,Tajikistan
 Who signed the accession to the World Trade Organization immediately after Russia?,World Trade Organization,Russia,Vanuatu
@@ -116,6 +122,7 @@ Who signed NPT preceded by Montenegro?,signed NPT,Montenegro,Timor-Leste
 Who signed NPT just after Brazil?,NPT,Brazil,Oman
 Who authorized NPT immediately subsequent to country Brazil?,NPT,country Brazil,Oman
 Who signed NPT just after Montenegro?,signed NPT,Montenegro,Timor-Leste
+Which country was the NPT agreed to by immediately after country Montenegro?,the NPT agreed to by,country Montenegro,Timor-Leste
 Who signed the Nuclear Non-Proliferation Treaty immediately after Palestine?,Nuclear Non-Proliferation Treaty,Palestine,Montenegro
 Who authorized NPT immediately subsequent to country Palestine?,NPT,country Palestine,Montenegro
 Who signed NPT shortly after Brazil?,NPT,Brazil,Oman
@@ -127,17 +134,21 @@ Who authorized NPT immediately subsequent to country Cuba?,NPT,country Cuba,Braz
 Who signed NPT shortly after Timor-Leste?,signed NPT,Timor-Leste,Cuba
 Who authorized NPT immediately subsequent to country Timor-Leste?,NPT,country Timor-Leste,Cuba
 Who signed NPT shortly after Brazil?,NPT,Brazil,Oman
+Which country was the NPT agreed to by immediately after country Brazil?,country,country Brazil,Oman
 Who signed the Nuclear Non-Proliferation Treaty immediately after Cuba?,Nuclear Non-Proliferation Treaty,Cuba,Brazil
 Who signed NPT preceded by Cuba?,signed NPT,Cuba,Brazil
 Who authorized NPT immediately subsequent to country Montenegro?,NPT,country Montenegro,Timor-Leste
 Who signed NPT preceded by Montenegro?,signed NPT,Montenegro,Timor-Leste
 Who signed NPT preceded by Montenegro?,signed NPT,Montenegro,Timor-Leste
+Which country was the NPT agreed to by immediately after country Montenegro?,the NPT agreed to by,country Montenegro,Timor-Leste
 Who authorized NPT immediately subsequent to country Palestine?,NPT,country Palestine,Montenegro
+Which country was the NPT agreed to by immediately after country Palestine?,country,country Palestine,Montenegro
 Which country signed NPT soon after Montenegro?,country,Montenegro,Timor-Leste
 Which country signed the Nuclear Non-Proliferation Treaty immediately after country Montenegro?,country,country Montenegro,Timor-Leste
 Who signed NPT just after Montenegro?,signed NPT,Montenegro,Timor-Leste
 Which country signed NPT soon after Montenegro?,country,Montenegro,Timor-Leste
 Who authorized NPT immediately subsequent to country Montenegro?,NPT,country Montenegro,Timor-Leste
+Which country was the NPT agreed to by immediately after country Montenegro?,the NPT agreed to by,country Montenegro,Timor-Leste
 Who signed the Nuclear Non-Proliferation Treaty immediately after Brazil?,signed the Nuclear Non-Proliferation Treaty,Brazil,Oman
 Which country signed the Nuclear Non-Proliferation Treaty immediately after country Brazil?,country,country Brazil,Oman
 Who signed the Nuclear Non-Proliferation Treaty immediately after Cuba?,Nuclear Non-Proliferation Treaty,Cuba,Brazil
@@ -145,6 +156,7 @@ Which country signed NPT soon after Cuba?,country,Cuba,Brazil
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare right after Angola?",country,Angola,Nicaragua
 Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating just after country Angola?,country,country Angola,Nicaragua
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare immediately after St.Vincent & the Grenadines?",country,"St.Vincent & the Grenadines signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare",Slovakia
+"Which country agreed to the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods immediately after the country St.Vincent & the Grenadines?",country,the country St.Vincent & the Grenadines,Slovakia
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare shortly after St.Vincent & the Grenadines?",country,"St.Vincent & the Grenadines signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare",Slovakia
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare preceded by St.Vincent & the Grenadines?",country,St.Vincent & the Grenadines,Slovakia
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare immediately after Slovakia?",country,Slovakia,Algeria
@@ -156,6 +168,7 @@ Which country authorized the Geneva Protocol for the Prohibition of the Use in W
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare shortly after Cape Verde?",country,Cape Verde,Liechtenstein
 Which country authorized the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating immediately subsequent to country Cape Verde?,country,country Cape Verde,Liechtenstein
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare preceded by Nicaragua?",country,Nicaragua,Albania
+"Which country agreed to the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods immediately after the country Nicaragua?","agreed to the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods",the country Nicaragua,Albania
 Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating just after country St.Vincent & the Grenadines?,country,country St.Vincent & the Grenadines,Slovakia
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare preceded by St.Vincent & the Grenadines?",country,St.Vincent & the Grenadines,Slovakia
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare soon after Swaziland?",country,Swaziland,Angola
@@ -167,6 +180,7 @@ Which country signed the Geneva Protocol for the Prohibition of the Use in War o
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare soon after Nicaragua?",country,Nicaragua,Albania
 Which country authorized the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating immediately subsequent to country Nicaragua?,country,country Nicaragua,Albania
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare soon after Swaziland?",country,Swaziland,Angola
+"Which country agreed to the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods immediately after the country Swaziland?","agreed to the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods",the country Swaziland,Angola
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare soon after Slovakia?",country,Slovakia,Algeria
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare shortly after Slovakia?",country,Slovakia,Algeria
 "Which country signed the Geneva Protocol for the Prohibition of the Use in War of Asphyxiating, Poisonous or Other Gases, and of Bacteriological Methods of Warfare right after Slovakia?",country,Slovakia,Algeria
@@ -174,11 +188,13 @@ Which country authorized the Geneva Protocol for the Prohibition of the Use in W
 Which film was released by Rajshree Production just after Film Jeevan Mrityu?,Rajshree Production,Film Jeevan Mrityu,Uphaar
 Which movie was produced by Rajshree production house immediately after movie Jeevan Mrityu?,Rajshree production house,movie Jeevan Mrityu,Uphaar
 Which movie was produced by Rajshree production house immediately after movie Aarti?,Rajshree production house,movie Aarti,Dosti
+Which movie was released to the public by Rajshee Production immediately after Aarti?,Rajshee Production,Aarti,Dosti
 Which film was released by Rajshree Production just after Film Taqdeer?,Rajshree Production,Film Taqdeer,Jeevan Mrityu
 Which movie did Rajshree Production launch preceded by movie Taqdeer?,Rajshree Production,movie Taqdeer,Jeevan Mrityu
 Which movie did rajshree production bring into the market just after Suraj?,rajshree production,Suraj,Taqdeer
 Which movie was produced by Rajshree production house immediately after movie Suraj?,Rajshree production house,movie Suraj,Taqdeer
 Which film was released by Rajshree Production right after movie Jeevan Mrityu?,Rajshree Production,movie Jeevan Mrityu,Uphaar
+Which movie was released to the public by Rajshee Production immediately after Jeevan Mrityu?,Rajshee Production,Jeevan Mrityu,Uphaar
 Which movie's promotion by Rajshree production was straight after Aarti?,Rajshree production,Aarti,Dosti
 Which movie did Rajshee Production premiere just subsequent to Aarti?,Rajshee Production,Aarti,Dosti
 Which film was released by Rajshree Production just after Film Suraj?,Rajshree Production,Film Suraj,Taqdeer
@@ -188,6 +204,7 @@ Which movie did rajshree production bring into the market just after Taqdeer?,ra
 Which film was released by Rajshree Production right after movie Aarti?,Rajshree Production,movie Aarti,Dosti
 Which movie did Rajshree Production launch preceded by movie Aarti?,Rajshree Production,movie Aarti,Dosti
 Which movie did rajshree production bring into the market just after Suraj?,rajshree production,Suraj,Taqdeer
+Which movie was released to the public by Rajshee Production immediately after Suraj?,Rajshee Production,Suraj,Taqdeer
 Which movie did rajshree production bring into the market just after Taqdeer?,rajshree production,Taqdeer,Jeevan Mrityu
 Which movie did Rajshee Production premiere just subsequent to Taqdeer?,Rajshee Production,Taqdeer,Jeevan Mrityu
 Which film was released by Rajshree Production just after Film Dosti?,Rajshree Production,Film Dosti,Suraj
@@ -217,6 +234,7 @@ Which movie did Paramount Pictures launch preceded by movie Downsizing?,Paramoun
 Which film was released by Paramount Pictures just after Film The Cloverfield Paradox?,Paramount Pictures,Film The Cloverfield Paradox,Annihilation
 Which movie did Paramount Pictures launch preceded by movie The Cloverfield Paradox?,Paramount Pictures,movie The Cloverfield Paradox,Annihilation
 Which movie did Paramount Pictures bring into the market just after Sherlock Gnomes?,Paramount Pictures,Sherlock Gnomes,A Quiet Place
+Which movie was released to the public by Paramount Pictures immediately after Sherlock Gnomes?,released to the public by Paramount Pictures,Sherlock Gnomes,A Quiet Place
 Which film was released by Paramount Pictures right after movie Annihilation?,Paramount Pictures,movie Annihilation,Sherlock Gnomes
 Which movie's promotion by Paramount Pictures was straight after Annihilation?,Paramount Pictures,Annihilation,Sherlock Gnomes
 Which movie did Paramount Pictures premiere just subsequent to Sherlock Gnomes?,Paramount Pictures,Sherlock Gnomes,A Quiet Place
@@ -224,6 +242,7 @@ Which movie did Paramount Pictures launch preceded by movie Sherlock Gnomes?,Par
 Which movie did Paramount Pictures bring into the market just after Downsizing?,Paramount Pictures,Downsizing,Padmaavat
 Which movie was produced by Paramount Pictures production house immediately after movie Downsizing?,produced by Paramount Pictures production house,movie Downsizing,Padmaavat
 Which movie did Paramount Pictures premiere just subsequent to Padmaavat?,Paramount Pictures,Padmaavat,The Cloverfield Paradox
+Which movie was released to the public by Paramount Pictures immediately after Padmaavat?,released to the public by Paramount Pictures,Padmaavat,The Cloverfield Paradox
 Which film was released by Paramount Pictures right after movie Book Club?,Paramount Pictures,movie Book Club,Action Point
 Which movie did Paramount Pictures bring into the market just after Book Club?,Paramount Pictures,Book Club,Action Point
 Which movie did Paramount Pictures bring into the market just after A Quiet Place?,Paramount Pictures,A Quiet Place,Book Club
@@ -239,10 +258,13 @@ Which film was released by Paramount Pictures right after movie Downsizing?,Para
 Which movie's promotion by Paramount Pictures was straight after Annihilation?,Paramount Pictures,Annihilation,Sherlock Gnomes
 Which movie did Paramount Pictures premiere just subsequent to Annihilation?,Paramount Pictures,Annihilation,Sherlock Gnomes
 Which movie did the Warner Bros. launch preceded by movie Western Stars?,Warner Bros.,movie Western Stars,Motherless Brooklyn
+Which movie was released to the public by WB immediately after Western Stars?,released to the public by WB,Western Stars,Motherless Brooklyn
 Which movie did WB production house bring to the market just after Motherless Brooklyn?,WB production house,Motherless Brooklyn,Doctor Sleep
 Which movie did Warner Bros. premiere just subsequent to Motherless Brooklyn?,Warner Bros.,Motherless Brooklyn,Doctor Sleep
 Which film was released by Warner Bros. just after Film Richard Jewell?,released by Warner Bros.,Film Richard Jewell,Just Mercy
+Which movie was released to the public by WB immediately after Richard Jewell?,released to the public by WB,Richard Jewell,Just Mercy
 Which movie's promotion by WB production house was straight after Western Stars?,movie,Western Stars,Motherless Brooklyn
+Which movie was released to the public by WB immediately after Western Stars?,released to the public by WB,Western Stars,Motherless Brooklyn
 Which movie did WB production house bring to the market just after The Good Liar?,WB production house,The Good Liar,Richard Jewell
 Which movie did Warner Bros. premiere just subsequent to The Good Liar?,Warner Bros.,The Good Liar,Richard Jewell
 Which movie did Warner Bros. premiere just subsequent to The Good Liar?,Warner Bros.,The Good Liar,Richard Jewell
@@ -252,16 +274,21 @@ Which movie did WB production house bring to the market just after Richard Jewel
 Which film was released by Warner Bros. right after movie Western Stars?,released by Warner Bros.,movie Western Stars,Motherless Brooklyn
 Which movie was produced by Warner Bros. production house immediately after movie Western Stars?,movie,movie Western Stars,Motherless Brooklyn
 Which movie did WB production house bring to the market just after Richard Jewell?,WB production house,Richard Jewell,Just Mercy
+Which movie was released to the public by WB immediately after Richard Jewell?,released to the public by WB,Richard Jewell,Just Mercy
 Which movie was produced by Warner Bros. production house immediately after movie Joker?,produced by Warner Bros. production house,movie Joker,Western Stars
+Which movie was released to the public by WB immediately after Joker?,movie,Joker,Western Stars
 Which film was released by Warner Bros. right after movie Doctor Sleep?,Warner Bros.,movie Doctor Sleep,The Good Liar
 Which movie did Warner Bros. premiere just subsequent to Doctor Sleep?,Warner Bros.,Doctor Sleep,The Good Liar
 Which film was released by Warner Bros. just after Film Western Stars?,Warner Bros.,Film Western Stars,Motherless Brooklyn
+Which movie was released to the public by WB immediately after Western Stars?,released to the public by WB,Western Stars,Motherless Brooklyn
 Which movie did the Warner Bros. launch preceded by movie Doctor Sleep?,Warner Bros.,movie Doctor Sleep,The Good Liar
+Which movie was released to the public by WB immediately after Doctor Sleep?,released to the public by WB,Doctor Sleep,The Good Liar
 Which movie's promotion by WB production house was straight after Doctor Sleep?,WB production house,Doctor Sleep,The Good Liar
 Which movie did the Warner Bros. launch preceded by movie Doctor Sleep?,Warner Bros.,movie Doctor Sleep,The Good Liar
 Which movie's promotion by WB production house was straight after Western Stars?,movie,Western Stars,Motherless Brooklyn
 Which movie did Warner Bros. premiere just subsequent to Western Stars?,Warner Bros.,Western Stars,Motherless Brooklyn
 Which movie did WB production house bring to the market just after Joker?,WB production house,Joker,Western Stars
+Which movie was released to the public by WB immediately after Joker?,movie,Joker,Western Stars
 Which movie was produced by Warner Bros. production house immediately after movie The Goldfinch?,Warner Bros. production house,movie The Goldfinch,Joker
 Which movie did Warner Bros. premiere just subsequent to The Goldfinch?,Warner Bros.,The Goldfinch,Joker
 Which film was released by Warner Bros. right after movie The Good Liar?,Warner Bros.,movie The Good Liar,Richard Jewell
@@ -271,11 +298,13 @@ Which movie was produced by Warner Bros. production house immediately after movi
 Which movie was produced by Warner Bros. production house immediately after movie Western Stars?,movie,movie Western Stars,Motherless Brooklyn
 Which movie did Warner Bros. premiere just subsequent to Western Stars?,Warner Bros.,Western Stars,Motherless Brooklyn
 Which movie did Warner Bros. premiere just subsequent to The Good Liar?,Warner Bros.,The Good Liar,Richard Jewell
+Which movie was released to the public by WB immediately after The Good Liar?,movie,The Good Liar,Richard Jewell
 Which movie's promotion by WB production house was straight after Motherless Brooklyn?,WB production house,Motherless Brooklyn,Doctor Sleep
 Which movie did WB production house bring to the market just after Motherless Brooklyn?,WB production house,Motherless Brooklyn,Doctor Sleep
 Which country joined the Arab League just after Mauritania?,country,Mauritania,Somalia
 Which country signed the Arab league immediately after Mauritania?,country,Mauritania,Somalia
 Who joined the Arab League shortly after Oman?,the Arab League,Oman,United Arab Emirates
+Which country got affiliated with the Arab League immediately after Oman?,affiliated with the Arab League,Oman,United Arab Emirates
 Which country signed the Arab league immediately after Djibouti?,country,Djibouti,Comoros
 Which country was the Arab League signed by soon after Djibouti?,the Arab League,Djibouti,Comoros
 Which country joined the Arab League just after Djibouti?,country,Djibouti,Comoros
@@ -283,6 +312,7 @@ Which country was the Arab League signed by soon after Djibouti?,the Arab League
 Which country signed the Arab league immediately after Mauritania?,country,Mauritania,Somalia
 Which country was inducted into the Arab League immediately after country Mauritania?,inducted into the Arab League,country Mauritania,Somalia
 Which country is arab league membership taken by preceded by United Arab Emirates?,Arab League membership,United Arab Emirates,Mauritania
+Which country got affiliated with the Arab League immediately after United Arab Emirates?,affiliated with the Arab League,United Arab Emirates,Mauritania
 Which country signed the Arab league immediately after United Arab Emirates?,country,United Arab Emirates,Mauritania
 Which country became a part of the Arab League just subsequent to United Arab Emirates?,country,United Arab Emirates,Mauritania
 Which country signed the Arab league immediately after Oman?,country,Oman,United Arab Emirates
@@ -292,11 +322,13 @@ Which country was inducted into the Arab League immediately after country Oman?,
 Which country was the Arab League signed by soon after United Arab Emirates?,Arab League,United Arab Emirates,Mauritania
 Which country was inducted into the Arab League immediately after country United Arab Emirates?,inducted into the Arab League,country United Arab Emirates,Mauritania
 Which country became a part of the Arab League just subsequent to Somalia?,country,Somalia,Djibouti
+Which country got affiliated with the Arab League immediately after Somalia?,affiliated with the Arab League,Somalia,Djibouti
 Who joined the Arab League shortly after Djibouti?,the Arab League,Djibouti,Comoros
 Which country signed the Arab league immediately after Djibouti?,country,Djibouti,Comoros
 Which country signed the Arab league immediately after Oman?,country,Oman,United Arab Emirates
 Which country was the Arab League signed by soon after Oman?,the Arab League,Oman,United Arab Emirates
 Which country signed the Arab league immediately after Somalia?,country,Somalia,Djibouti
+Which country got affiliated with the Arab League immediately after Somalia?,affiliated with the Arab League,Somalia,Djibouti
 Which country joined the Arab League just after Djibouti?,country,Djibouti,Comoros
 Who joined the Arab League shortly after Djibouti?,Who,Djibouti,Comoros
 Which country joined the Arab League just after Oman?,country,Oman,United Arab Emirates
@@ -306,7 +338,9 @@ Which country became a part of the Arab League just subsequent to Mauritania?,co
 Which country became a part of the Arab League just subsequent to Mauritania?,country,Mauritania,Somalia
 Which country is arab league membership taken by preceded by Mauritania?,arab league membership,Mauritania,Somalia
 Which country was inducted into the Arab League immediately after country Somalia?,country,country Somalia,Djibouti
+Which country got affiliated with the Arab League immediately after Somalia?,affiliated with the Arab League,Somalia,Djibouti
 Which country was the Arab League signed by soon after United Arab Emirates?,Arab League,United Arab Emirates,Mauritania
+Which country got affiliated with the Arab League immediately after United Arab Emirates?,affiliated with the Arab League,United Arab Emirates,Mauritania
 Which country became a part of the Arab League just subsequent to Djibouti?,country,Djibouti,Comoros
 Which country is arab league membership taken by preceded by Djibouti?,arab league membership,Djibouti,Comoros
 Which country was inducted into the Arab League immediately after country Oman?,country,country Oman,United Arab Emirates
@@ -314,9 +348,11 @@ Which country is arab league membership taken by preceded by Oman?,arab league m
 Who joined the Arab League shortly after Mauritania?,the Arab League,Mauritania,Somalia
 Which country signed the Arab league immediately after Mauritania?,country,Mauritania,Somalia
 Who joined the Arab League shortly after United Arab Emirates?,Arab League,United Arab Emirates,Mauritania
+Which country got affiliated with the Arab League immediately after United Arab Emirates?,affiliated with the Arab League,United Arab Emirates,Mauritania
 Which country hosted the G20 summit right after Germany?,country,Germany,Argentina
 Which country was the G20 summit hosted by shortly after Germany?,the G20 summit,Germany,Argentina
 Which country organized the G20 summit just subsequent to Argentina?,country,Argentina,Japan
+Where did the G20 summit take place immediately after Argentina?,G20 summit,Argentina,Japan
 Which country was the G-20 summit hosted by right after China?,the G-20 summit,China,Turkey
 Which country hosted the G20 summit right after South Korea?,country,South Korea,France
 Which country hosted the G20 summit preceded by South Korea?,country,South Korea,France
@@ -327,11 +363,13 @@ Which country was the G-20 summit hosted by right after China?,the G-20 summit,C
 Which country was the G-20 summit hosted by immediately after Russia?,the G-20 summit,Russia,Australia
 Which country hosted the G20 summit just after country Russia?,country,country Russia,Australia
 Which country organized the G20 summit just subsequent to Canada?,country,Canada,South Korea
+Where did the G20 summit take place immediately after Canada?,G20 summit,Canada,South Korea
 Which country was the G-20 summit hosted by right after Saudi Arabia?,the G-20 summit,Saudi Arabia,Japan
 Which country hosted the G20 summit right after Mexico?,country,Mexico,Russia
 Which country hosted the G20 summit preceded by Mexico?,G20 summit,Mexico,Russia
 Which country was the G-20 summit hosted by right after Australia?,the G-20 summit,Australia,Russia
 Which country was the G20 annual summit held in right after country Russia?,the G20 annual summit,country Russia,Australia
+Where did the G20 summit take place immediately after Russia?,G20 summit,Russia,Australia
 Which country was the G-20 summit hosted by immediately after Turkey?,the G-20 summit,Turkey,China
 Which country hosted the G20 summit just after country Turkey?,country,country Turkey,China
 Which country hosted the G20 summit just after country South Korea?,country,country South Korea,France
@@ -343,7 +381,9 @@ Which country organized the G20 summit just subsequent to China?,country,China,G
 Which country hosted the G20 summit right after Japan?,country,Japan,Saudi Arabia
 Which country was the G20 annual summit held in right after country Japan?,the G20 annual summit,country Japan,Saudi Arabia
 Which country hosted the G20 summit right after Argentina?,country,Argentina,Japan
+Where did the G20 summit take place immediately after Argentina?,G20 summit,Argentina,Japan
 Which country organized the G20 summit just subsequent to France?,country,France,Mexico
+Where did the G20 summit take place immediately after France?,G20 summit,France,Mexico
 Which country was the G-20 summit hosted by immediately after Canada?,the G-20 summit,Canada,South Korea
 Which country was the G20 annual summit held in right after country Canada?,G20 annual summit,country Canada,South Korea
 Which country was the G-20 summit hosted by right after Argentina?,the G-20 summit,Argentina,Germany
@@ -362,11 +402,13 @@ Which satellite was put into orbit by ISRO immediately subsequent to Rohini RS-D
 What did the Indian space research organization launch immediately after Rohini Technology Payload?,Indian space research organization,Rohini Technology Payload,Rohini RS-1
 "Which satellite was launched by ISRO, India shortly after Rohini Technology Payload?",satellite,Rohini Technology Payload,Rohini RS-1
 Which satellite was launched by the Indian space research organization preceded by Bhaskara Sega-I?,satellite,Bhaskara Sega-I,Rohini Technology Payload
+What did the Indian Space Research Organization launch immediately after Bhaskara Sega-I?,Indian Space Research Organization,Bhaskara Sega-I,Rohini Technology Payload
 Which satellite was put into orbit by ISRO immediately subsequent to Aryabhata?,satellite,Aryabhata,Bhaskara Sega-I
 Which satellite was launched by the Indian space research organization preceded by Aryabhata?,satellite,Aryabhata,Bhaskara Sega-I
 "Which satellite was launched by ISRO, India shortly after APPLE?",satellite,APPLE,Bhaskara-II
 Which satellite was launched by the Indian space research organization preceded by APPLE?,satellite,APPLE,Bhaskara-II
 What did the Indian space research organization launch immediately after Aryabhata?,the Indian space research organization,Aryabhata,Bhaskara Sega-I
+What did the Indian Space Research Organization launch immediately after Aryabhata?,Indian Space Research Organization,Aryabhata,Bhaskara Sega-I
 "Which satellite was launched by ISRO, India shortly after Bhaskara-II?",satellite,Bhaskara-II,INSAT-1A
 Which satellite was launched by the Indian space research organization preceded by Bhaskara-II?,satellite,Bhaskara-II,INSAT-1A
 What did ISRO launch shortly after Rohini Technology Payload?,ISRO,Rohini Technology Payload,Rohini RS-1
@@ -376,6 +418,7 @@ Which satellite was launched by the Indian space research organization preceded 
 What did ISRO launch shortly after APPLE?,ISRO,APPLE,Bhaskara-II
 Which satellite was put into orbit by ISRO immediately subsequent to APPLE?,satellite,APPLE,Bhaskara-II
 Which satellite was put into orbit by ISRO immediately subsequent to APPLE?,satellite,APPLE,Bhaskara-II
+What did the Indian Space Research Organization launch immediately after APPLE?,Indian Space Research Organization,APPLE,Bhaskara-II
 What did the Indian space research organization launch immediately after INSAT-1A?,the Indian space research organization,INSAT-1A,Rohini RS-D2
 Which satellite was put into orbit by ISRO immediately subsequent to INSAT-1A?,satellite,INSAT-1A,Rohini RS-D2
 Which satellite was launched by ISRO just after Rohini RS-1?,satellite,Rohini RS-1,Rohini RS-D1
@@ -385,13 +428,17 @@ Which satellite was launched by the Indian space research organization preceded 
 Which satellite did ISRO launch immediately after Bhaskara-II?,ISRO,Bhaskara-II,INSAT-1A
 Which satellite was launched by the Indian space research organization preceded by Bhaskara-II?,satellite,Bhaskara-II,INSAT-1A
 Which satellite was put into orbit by ISRO immediately subsequent to Rohini RS-D1?,satellite,Rohini RS-D1,APPLE
+What did the Indian Space Research Organization launch immediately after Rohini RS-D1?,Indian Space Research Organization,Rohini RS-D1,APPLE
 Which satellite was launched by ISRO just after Rohini RS-1?,satellite,Rohini RS-1,Rohini RS-D1
 What did ISRO launch shortly after Rohini RS-1?,ISRO,Rohini RS-1,Rohini RS-D1
 Which spacecraft did NASA launch shortly after Explorer 2?,NASA,Explorer 2,Vanguard 1C
+What did National Aeronautics and Space Administration launch immediately after Explorer 2?,National Aeronautics and Space Administration,Explorer 2,Vanguard 1C
 Which spacecraft was launched by NASA just after Explorer 4?,NASA,Explorer 4,Pioneer 0
+What did National Aeronautics and Space Administration launch immediately after Explorer 4?,National Aeronautics and Space Administration,Explorer 4,Pioneer 0
 What did the National Aeronautics and Space Administration launch immediately after Explorer 3?,National Aeronautics and Space Administration,Explorer 3,Vanguard 2A
 Which spacecraft was launched by the National Aeronautics and Space Administration preceded by Explorer 3?,spacecraft,Explorer 3,Vanguard 2A
 Which satellite was put into orbit by NASA immediately subsequent to Vanguard 1B?,satellite,Vanguard 1B,Explorer 2
+What did National Aeronautics and Space Administration launch immediately after Vanguard 1B?,National Aeronautics and Space Administration,Vanguard 1B,Explorer 2
 Which spacecraft was launched by NASA just after Explorer 3?,NASA,Explorer 3,Vanguard 2A
 Which satellite did NASA launch immediately after Explorer 3?,NASA,Explorer 3,Vanguard 2A
 Which satellite was put into orbit by NASA immediately subsequent to Vanguard 1C?,satellite,Vanguard 1C,Explorer 3
@@ -483,23 +530,30 @@ Which satellite was launched by the European Space Agency preceded by HEOS-A1?,s
 Which satellite was launched by ESA just after HEOS-A1?,satellite,HEOS-A1,ESRO-1B
 Which satellite was launched by the European Space Agency preceded by HEOS-A1?,satellite,HEOS-A1,ESRO-1B
 Which satellite was put into orbit by ESA immediately subsequent to ESRO-1B?,satellite,ESRO-1B,HEOS-A2
+What did the European Space Agency launch immediately after ESRO-1B?,the European Space Agency,ESRO-1B,HEOS-A2
 Which satellite was launched by the European Space Agency preceded by HEOS-A2?,satellite,HEOS-A2,TD-1A
 Which satellite was launched by ESA just after ESRO-1B?,satellite,ESRO-1B,HEOS-A2
 What did the European Space Agency launch immediately after ESRO-1B?,European Space Agency,ESRO-1B,HEOS-A2
 Which satellite was put into orbit by ESA immediately subsequent to HEOS-A1?,satellite,HEOS-A1,ESRO-1B
+What did the European Space Agency launch immediately after HEOS-A1?,the European Space Agency,HEOS-A1,ESRO-1B
 Which satellite was launched by the European Space Agency preceded by TD-1A?,satellite,TD-1A,ESRO-4
 Which satellite was put into orbit by ESA immediately subsequent to ESRO-1A?,satellite,ESRO-1A,HEOS-A1
+What did the European Space Agency launch immediately after ESRO-1A?,the European Space Agency,ESRO-1A,HEOS-A1
 What did the European Space Agency launch immediately after ESRO-2B?,the European Space Agency,ESRO-2B,ESRO-1A
 Which satellite was launched by the European Space Agency preceded by ESRO-2B?,satellite,ESRO-2B,ESRO-1A
 What did the European Space Agency launch immediately after ESRO-1B?,European Space Agency,ESRO-1B,HEOS-A2
+What did the European Space Agency launch immediately after ESRO-1B?,the European Space Agency,ESRO-1B,HEOS-A2
 What did ESA launch shortly after ESRO-1A?,ESA,ESRO-1A,HEOS-A1
 What did ESA launch shortly after HEOS-A2?,ESA,HEOS-A2,TD-1A
+What did the European Space Agency launch immediately after HEOS-A2?,European Space Agency,HEOS-A2,TD-1A
 "Which satellite was launched by ESA, Europe shortly after ESRO-1A?","ESA, Europe",ESRO-1A,HEOS-A1
+What did the European Space Agency launch immediately after ESRO-1A?,the European Space Agency,ESRO-1A,HEOS-A1
 What did the European Space Agency launch immediately after TD-1A?,the European Space Agency,TD-1A,ESRO-4
 "Which satellite was launched by ESA, Europe shortly after TD-1A?",satellite,TD-1A,ESRO-4
 Which satellite was launched by ESA just after HEOS-A1?,satellite,HEOS-A1,ESRO-1B
 Which satellite was put into orbit by ESA immediately subsequent to HEOS-A1?,satellite,HEOS-A1,ESRO-1B
 Which satellite was launched by the European Space Agency preceded by ESRO-2B?,satellite,ESRO-2B,ESRO-1A
+What did the European Space Agency launch immediately after ESRO-2B?,the European Space Agency,ESRO-2B,ESRO-1A
 Which film's direction was carried out by Christopher Nolan immediately after the direction of Memento?,Christopher Nolan,the direction of Memento,Insomnia
 Which film's direction was taken up by Christopher Nolan shortly after Memento?,Christopher Nolan,Memento,Insomnia
 Which film did Christopher Nolan direct immediately subsequent to The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
@@ -511,6 +565,7 @@ Which film was directed by Christopher Nolan preceded by film The Dark Knight?,f
 Which movie has been directed by Christopher Nolan right after The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
 Which film was directed by Christopher Nolan preceded by film The Dark Knight?,film,film The Dark Knight,Inception
 Which film did Christopher Nolan direct immediately subsequent to The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
+Which movie was filmed by Christopher Nolan immediately after The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
 Which film's direction was carried out by Christopher Nolan immediately after the direction of The Dark Knight?,Christopher Nolan,the direction of The Dark Knight,Inception
 Which film did Christopher Nolan direct immediately subsequent to The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
 Which film's direction was carried out by Christopher Nolan immediately after the direction of Insomnia?,Christopher Nolan,the direction of Insomnia,Batman Begins
@@ -526,9 +581,11 @@ Which film's direction was carried out by Christopher Nolan immediately after th
 Which film's direction was taken up by Christopher Nolan shortly after The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
 Which film did director Christopher Nolan direct just after The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
 Which movie was directed by Christopher Nolan immediately after The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
+Which movie was filmed by Christopher Nolan immediately after The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
 Which movie has been directed by Christopher Nolan right after Batman Begins?,Christopher Nolan,Batman Begins,The Prestige
 Which film did Christopher Nolan direct immediately subsequent to Batman Begins?,Christopher Nolan,Batman Begins,The Prestige
 Which movie has been directed by Christopher Nolan right after The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
+Which movie was filmed by Christopher Nolan immediately after The Dark Knight?,Christopher Nolan,The Dark Knight,Inception
 Which film did director Christopher Nolan direct just after Batman Begins?,Christopher Nolan,Batman Begins,The Prestige
 Which film did Christopher Nolan direct immediately subsequent to Batman Begins?,Christopher Nolan,Batman Begins,The Prestige
 Which movie was directed by Christopher Nolan immediately after Batman Begins?,Christopher Nolan,Batman Begins,The Prestige
@@ -540,23 +597,29 @@ Which element was discovered as a new element preceded by element Rhenium?,eleme
 Which element was discovered as a new element shortly after Rhenium?,discovered as a new element,Rhenium,Technetium
 Which element was discovered as a new element preceded by element Rhenium?,element,element Rhenium,Technetium
 Which element was discovered as a new element preceded by element Technetium?,element,element Technetium,Francium
+Which element was detected as a new element immediately after Technetium?,detected as a new element,Technetium,Francium
 Which element was discovered as a new element just after Rhenium?,element,Rhenium,Technetium
 Which element's discovery happened immediately after Rhenium?,element,Rhenium,Technetium
 Which element was discovered as a new element shortly after Rhenium?,element,Rhenium,Technetium
+Which element was detected as a new element immediately after Rhenium?,detected as a new element,Rhenium,Technetium
 Which element did scientists discover as a new element immediately after Protactinium?,scientists,Protactinium,Hafnium
+Which element was detected as a new element immediately after Protactinium?,detected as a new element,Protactinium,Hafnium
 Which element's discovery happened immediately after Hafnium?,element,Hafnium,Rhenium
 Which element did scientists detect as a new element just subsequent to Hafnium?,scientists,Hafnium,Rhenium
 Which element's discovery happened immediately after Protactinium?,element,Protactinium,Hafnium
 Which element did scientists detect as a new element just subsequent to Protactinium?,scientists,Protactinium,Hafnium
 Which element was discovered as a new element just after Protactinium?,element,Protactinium,Hafnium
+Which element was detected as a new element immediately after Protactinium?,detected as a new element,Protactinium,Hafnium
 Which element was discovered as a new element just after Europium?,discovered as a new element,Europium,Lutetium
 Which element did scientists detect as a new element just subsequent to Europium?,scientists detect as a new element,Europium,Lutetium
 Which element's discovery happened immediately after Lutetium?,element,Lutetium,Protactinium
 Which element was discovered as a new element in the periodic table right after Lutetium?,element,Lutetium,Protactinium
 Which element was discovered as a new element preceded by element Hafnium?,element,element Hafnium,Rhenium
+Which element was detected as a new element immediately after Hafnium?,detected as a new element,Hafnium,Rhenium
 Which element was discovered as a new element shortly after Lutetium?,discovered as a new element,Lutetium,Protactinium
 Which element did scientists discover as a new element immediately after Lutetium?,scientists,Lutetium,Protactinium
 Which element did scientists discover as a new element immediately after Lutetium?,scientists,Lutetium,Protactinium
+Which element was detected as a new element immediately after Lutetium?,detected as a new element,Lutetium,Protactinium
 Which element was discovered as a new element just after Hafnium?,element,Hafnium,Rhenium
 Which element's discovery happened immediately after Hafnium?,element,Hafnium,Rhenium
 Which element was discovered as a new element just after Hafnium?,element,Hafnium,Rhenium
@@ -578,16 +641,19 @@ Which book did John Grisham write preceded by book The Client?,John Grisham,book
 Which book did John Grisham write shortly after The Firm?,John Grisham,The Firm,The Pelican Brief
 Which book was authored by John Grisham just after The Firm?,John Grisham,The Firm,The Pelican Brief
 Which book was authored by John Grisham just after The Runaway Jury?,John Grisham,The Runaway Jury,The Partner
+Which book was written by John Grisham immediately after The Runaway Jury?,John Grisham,The Runaway Jury,The Partner
 Which book did John Grisham write shortly after The Rainmaker?,John Grisham,The Rainmaker,The Runaway Jury
 Which book was authored by John Grisham just after The Rainmaker?,John Grisham,The Rainmaker,The Runaway Jury
 Which book was written by John Grisham right after book The Pelican Brief?,John Grisham,book The Pelican Brief,The Client
 Which book did John Grisham write shortly after The Pelican Brief?,John Grisham,The Pelican Brief,The Client
 Which book did John Grisham write preceded by book The Client?,John Grisham,book The Client,The Chamber
 Which book was written by John Grisham immediately after The Client?,John Grisham,The Client,The Chamber
+Which book was written by John Grisham immediately after The Client?,John Grisham,The Client,The Chamber
 Which book did John Grisham write preceded by book The Client?,John Grisham,book The Client,The Chamber
 Which book was written by John Grisham right after book The Runaway Jury?,John Grisham,book The Runaway Jury,The Partner
 Which book did John Grisham write preceded by book The Runaway Jury?,John Grisham,book The Runaway Jury,The Partner
 Which book was written by John Grisham right after book The Firm?,John Grisham,book The Firm,The Pelican Brief
+Which book was written by John Grisham immediately after The Firm?,John Grisham,The Firm,The Pelican Brief
 Which book was written by John Grisham immediately after The Testament?,John Grisham,The Testament,The Brethren
 Which book did John Grisham write shortly after The Testament?,John Grisham,The Testament,The Brethren
 Which book was authored by John Grisham just after The Rainmaker?,John Grisham,The Rainmaker,The Runaway Jury
@@ -599,9 +665,11 @@ Which book did John Grisham author just subsequent to Book The Pelican Brief?,Jo
 Who was coronated as king in the Mughal Empire immediately after Jahangir?,king in the Mughal Empire,Jahangir,Shah Jahan
 Who was declared as the ruler of Mughal Empire immediately subsequent to Jahangir?,ruler of Mughal Empire,Jahangir,Shah Jahan
 Who became Mughal emperor immediately after Aurangzeb?,Mughal emperor,Aurangzeb,Azam Shah
+Which king ruled the Mughal Empire immediately after King Aurangzeb?,ruled the Mughal Empire,King Aurangzeb,Azam Shah
 Who did the Mughal Empire have as their king just after Jahangir?,the Mughal Empire,Jahangir,Shah Jahan
 Which king throned as Mughal emperor preceded by King Jahangir?,king throned as Mughal emperor,King Jahangir,Shah Jahan
 Who became Mughal emperor immediately after Akbar?,Mughal emperor,Akbar,Jahangir
+Which king ruled the Mughal Empire immediately after King Akbar?,ruled the Mughal Empire,King Akbar,Jahangir
 Who led the Mughal Empire shortly after Akbar?,Mughal Empire,Akbar,Jahangir
 Which king throned as Mughal emperor preceded by King Akbar?,king throned as Mughal emperor,King Akbar,Jahangir
 Who was throned as Mughal emperor right after Humayun?,Mughal emperor,Humayun,Akbar
@@ -621,9 +689,11 @@ Which king throned as Mughal emperor preceded by King Aurangzeb?,king throned as
 Who led the Mughal Empire shortly after Aurangzeb?,Mughal Empire,Aurangzeb,Azam Shah
 Which king throned as Mughal emperor preceded by King Aurangzeb?,king throned as Mughal emperor,King Aurangzeb,Azam Shah
 Who did the Mughal Empire have as their king just after Akbar?,Mughal Empire,Akbar,Jahangir
+Which king ruled the Mughal Empire immediately after King Akbar?,the Mughal Empire,King Akbar,Jahangir
 Who became Mughal emperor immediately after Jahangir?,Mughal emperor,Jahangir,Shah Jahan
 Who was declared as the ruler of Mughal Empire immediately subsequent to Jahangir?,ruler of Mughal Empire,Jahangir,Shah Jahan
 Who led the Mughal Empire shortly after Azam Shah?,Mughal Empire,Azam Shah,Bahadur Shah
+Which king ruled the Mughal Empire immediately after King Azam Shah?,the Mughal Empire,King Azam Shah,Bahadur Shah
 Who became Mughal emperor immediately after Shah Jahan?,Mughal emperor,Shah Jahan,Aurangzeb
 Which king throned as Mughal emperor preceded by King Shah Jahan?,king throned as Mughal emperor,King Shah Jahan,Aurangzeb
 Who led the Mughal Empire shortly after Akbar?,Mughal Empire,Akbar,Jahangir
@@ -649,8 +719,11 @@ Who assumed the CEO position of Microsoft preceded by Steve Ballmer?,Microsoft,S
 Who took over the chief executive officer position at Microsoft right after Steve Ballmer?,Microsoft,Steve Ballmer,Satya Nadella
 Who assumed the CEO position of Microsoft just after Steve Ballmer?,Microsoft,Steve Ballmer,Satya Nadella
 Who did Microsoft appoint as CEO straight after Bill Gates?,Microsoft,Bill Gates,Steve Ballmer
+Who took the role of CEO of Microsoft immediately after Bill Gates?,CEO of Microsoft,Bill Gates,Steve Ballmer
 Who was CEO of Microsoft immediately after Steve Ballmer?,Microsoft,Steve Ballmer,Satya Nadella
+Who took the role of CEO of Microsoft immediately after Steve Ballmer?,CEO of Microsoft,Steve Ballmer,Satya Nadella
 Who assumed the CEO position of Microsoft preceded by Bill Gates?,Microsoft,Bill Gates,Steve Ballmer
+Who took the role of CEO of Microsoft immediately after Bill Gates?,CEO of Microsoft,Bill Gates,Steve Ballmer
 Who did Microsoft appoint as CEO straight after Bill Gates?,Microsoft,Bill Gates,Steve Ballmer
 Who assumed the CEO position of Microsoft preceded by Bill Gates?,Microsoft,Bill Gates,Steve Ballmer
 Who assumed the CEO position of Microsoft just after Bill Gates?,Microsoft,Bill Gates,Steve Ballmer
@@ -664,16 +737,19 @@ Who assumed the CEO position of Microsoft preceded by Bill Gates?,Microsoft,Bill
 Who was the CEO of Microsoft just subsequent to Steve Ballmer?,Microsoft,Steve Ballmer,Satya Nadella
 Who assumed the CEO position of Microsoft preceded by Steve Ballmer?,Microsoft,Steve Ballmer,Satya Nadella
 Who held the Chief Executive position at Microsoft company shortly after Steve Ballmer?,Microsoft company,Steve Ballmer,Satya Nadella
+Who took the role of CEO of Microsoft immediately after Steve Ballmer?,Microsoft,Steve Ballmer,Satya Nadella
 Who did Apple appoint as CEO straight after Michael Scott?,Apple,Michael Scott,Mike Markkula
 Who held the Chief Executive position at Apple company shortly after Michael Scott?,Apple company,Michael Scott,Mike Markkula
 Who was CEO of Apple immediately after Mike Markkula?,Apple,Mike Markkula,John Sculley
 Who assumed the CEO position of Apple preceded by Mike Markkula?,Apple,Mike Markkula,John Sculley
 Who was the CEO of Apple just subsequent to Mike Markkula?,Apple,Mike Markkula,John Sculley
+Who took the role of CEO of Apple immediately after Mike Markkula?,CEO of Apple,Mike Markkula,John Sculley
 Who took over the chief executive officer position at Apple right after Mike Markkula?,Apple,Mike Markkula,John Sculley
 Who assumed the CEO position of Apple preceded by Mike Markkula?,Apple,Mike Markkula,John Sculley
 Who did Apple appoint as CEO straight after Mike Markkula?,Apple,Mike Markkula,John Sculley
 Who assumed the CEO position of Apple just after Mike Markkula?,Apple,Mike Markkula,John Sculley
 Who assumed the CEO position of Apple preceded by Steve Jobs?,Apple,Steve Jobs,Tim Cook
+Who took the role of CEO of Apple immediately after Steve Jobs?,CEO of Apple,Steve Jobs,Tim Cook
 Who assumed the CEO position of Apple just after John Sculley?,Apple,John Sculley,Michael Spindler
 Who held the Chief Executive position at Apple company shortly after John Sculley?,Chief Executive position at Apple company,John Sculley,Michael Spindler
 Who was CEO of Apple immediately after Mike Markkula?,Apple,Mike Markkula,John Sculley
@@ -683,6 +759,7 @@ Who assumed the CEO position of Apple just after John Sculley?,Apple,John Sculle
 Who was CEO of Apple immediately after Steve Jobs?,Apple,Steve Jobs,Tim Cook
 Who took over the chief executive officer position at Apple right after Steve Jobs?,Apple,Steve Jobs,Tim Cook
 Who held the Chief Executive position at Apple company shortly after Steve Jobs?,Apple company,Steve Jobs,Tim Cook
+Who took the role of CEO of Apple immediately after Steve Jobs?,CEO of Apple,Steve Jobs,Tim Cook
 Who took over the chief executive officer position at Apple right after Steve Jobs?,Apple,Steve Jobs,Tim Cook
 Who held the Chief Executive position at Apple company shortly after Steve Jobs?,Apple company,Steve Jobs,Tim Cook
 Who held the Chief Executive position at Apple company shortly after Mike Markkula?,Apple company,Mike Markkula,John Sculley
@@ -690,6 +767,7 @@ Who assumed the CEO position of Apple preceded by Mike Markkula?,Apple,Mike Mark
 Who was CEO of Apple immediately after John Sculley?,Apple,John Sculley,Michael Spindler
 Who assumed the CEO position of Apple just after John Sculley?,Apple,John Sculley,Michael Spindler
 Who held the Chief Executive position at Apple company shortly after Michael Spindler?,Apple company,Michael Spindler,Gil Amelio
+Who took the role of CEO of Apple immediately after Michael Spindler?,CEO of Apple,Michael Spindler,Gil Amelio
 Who was CEO of Apple immediately after Gil Amelio?,Apple,Gil Amelio,Steve Jobs
 Who held the Chief Executive position at Apple company shortly after Gil Amelio?,Apple company,Gil Amelio,Steve Jobs
 Which country hosted the F1 Grand Prix for the 1970 season right after France?,country,France,England
@@ -921,18 +999,25 @@ Which OS did Google launch shortly after OS Gingerbread?,Google,OS Gingerbread,H
 Which version of Android was released by Google immediately after Android Nougat?,Android,Android Nougat,Oreo
 Which OS did Google launch shortly after OS Nougat?,Google,OS Nougat,Oreo
 Which OS did Google launch shortly after OS Ice Cream Sandwich?,Google,OS Ice Cream Sandwich,Jelly Bean
+What did Google pioneer immediately after Ice Cream Sandwich?,Google,Ice Cream Sandwich,Jelly Bean
 Which version of Android did Google sell just after Android KitKat?,Google,Android KitKat,Lollipop
 What did Google company release preceded by KitKat?,Google company,KitKat,Lollipop
 Which version of Android did Google sell just after Android Marshmallow?,Google,Android Marshmallow,Nougat
+What did Google pioneer immediately after Marshmallow?,Google,Marshmallow,Nougat
 Which version of Android did Google launch straight after Android Froyo?,Google,Android Froyo,Gingerbread
+What did Google pioneer immediately after Froyo?,Google,Froyo,Gingerbread
 Which version of Android was introduced by Google right after Android Jelly Bean?,Android,Android Jelly Bean,KitKat
 Which version of Android did Google launch straight after Android Jelly Bean?,Google,Android Jelly Bean,KitKat
 Which OS did Google launch shortly after OS Lollipop?,Google,OS Lollipop,Marshmallow
+What did Google pioneer immediately after Lollipop?,Google,Lollipop,Marshmallow
 Which OS was created by Google just subsequent to Ice Cream Sandwich?,Google,Ice Cream Sandwich,Jelly Bean
+What did Google pioneer immediately after Ice Cream Sandwich?,Google,Ice Cream Sandwich,Jelly Bean
 What did Google company release preceded by Marshmallow?,Google company,Marshmallow,Nougat
+What did Google pioneer immediately after Marshmallow?,Google,Marshmallow,Nougat
 Which version of Android was released by Google immediately after Android Lollipop?,Android,Android Lollipop,Marshmallow
 Which version of Android was introduced by Google right after Android Lollipop?,Android,Android Lollipop,Marshmallow
 What did Google company release preceded by Oreo?,Google company,Oreo,Pie
+What did Google pioneer immediately after Oreo?,Google,Oreo,Pie
 Which version of Android was released by Google immediately after Android Froyo?,Android,Android Froyo,Gingerbread
 Which version of Android did Google launch straight after Android Froyo?,Google,Android Froyo,Gingerbread
 Which version of Android was introduced by Google right after Android Lollipop?,Android,Android Lollipop,Marshmallow
@@ -946,14 +1031,19 @@ Who completed 10K runs in ODI cricket immediately subsequent to Tillakaratne Dil
 Who achieved 10000 runs in ODI cricket just after Brian Lara?,Who,Brian Lara,Rahul Dravid
 Who completed 10K runs in ODI cricket immediately subsequent to Brian Lara?,Who,Brian Lara,Rahul Dravid
 Which cricket player completed 10K ODI runs soon after Sachin Tendulkar?,cricket player,Sachin Tendulkar,Inzamam-ul-Haq
+Who accomplished 10000 runs in ODI cricket immediately after Sachin Tendulkar?,10000 runs in ODI cricket,Sachin Tendulkar,Inzamam-ul-Haq
 Which cricket player completed 10K ODI runs right after MS Dhoni?,cricket player,MS Dhoni,Chris Gayle
+Who accomplished 10000 runs in ODI cricket immediately after MS Dhoni?,10000 runs in ODI cricket,MS Dhoni,Chris Gayle
 Who achieved 10000 runs in ODI cricket shortly after Ricky Ponting?,Who,Ricky Ponting,Jacques Kallis
 Who achieved 10K runs in ODI cricket immediately after Ricky Ponting?,achieved 10K runs in ODI cricket,Ricky Ponting,Jacques Kallis
 Who achieved 10000 runs in ODI cricket just after Sanath Jayasuriya?,Who,Sanath Jayasuriya,Brian Lara
+Who accomplished 10000 runs in ODI cricket immediately after Sanath Jayasuriya?,10000 runs in ODI cricket,Sanath Jayasuriya,Brian Lara
 Which cricket player completed 10K ODI runs right after Sanath Jayasuriya?,cricket player,Sanath Jayasuriya completed 10K ODI runs,Brian Lara
+Who accomplished 10000 runs in ODI cricket immediately after Sanath Jayasuriya?,10000 runs in ODI cricket,Sanath Jayasuriya,Brian Lara
 Who achieved 10000 runs in ODI cricket soon after Mahela Jayawardene?,Who,Mahela Jayawardene,Kumar Sangakkara
 Who completed 10K runs in ODI cricket immediately subsequent to Mahela Jayawardene?,completed 10K runs in ODI cricket,Mahela Jayawardene,Kumar Sangakkara
 Which cricket player completed 10K ODI runs right after Sourav Ganguly?,cricket player,Sourav Ganguly,Sanath Jayasuriya
+Who accomplished 10000 runs in ODI cricket immediately after Sourav Ganguly?,10000 runs in ODI cricket,Sourav Ganguly,Sanath Jayasuriya
 Who achieved 10000 runs in ODI cricket shortly after MS Dhoni?,Who,MS Dhoni,Chris Gayle
 Which cricket player completed 10K ODI runs right after MS Dhoni?,cricket player,MS Dhoni,Chris Gayle
 Who achieved 10000 runs in ODI cricket just after Mahela Jayawardene?,Who,Mahela Jayawardene,Kumar Sangakkara
@@ -969,12 +1059,15 @@ Which cricket player completed 10K ODI runs soon after Jacques Kallis?,cricket p
 Who achieved 10000 runs in ODI cricket shortly after Rahul Dravid?,Who,Rahul Dravid,Ricky Ponting
 Who completed 10K runs in ODI cricket immediately subsequent to Rahul Dravid?,completed 10K runs in ODI cricket,Rahul Dravid,Ricky Ponting
 Who achieved 10K runs in ODI cricket immediately after Mahela Jayawardene?,Who,Mahela Jayawardene,Kumar Sangakkara
+Who accomplished 10000 runs in ODI cricket immediately after Mahela Jayawardene?,10000 runs in ODI cricket,Mahela Jayawardene,Kumar Sangakkara
 Which cricket player completed 10K ODI runs soon after Sanath Jayasuriya?,cricket player,Sanath Jayasuriya,Brian Lara
+Who accomplished 10000 runs in ODI cricket immediately after Sanath Jayasuriya?,10000 runs in ODI cricket,Sanath Jayasuriya,Brian Lara
 Who achieved 10000 runs in ODI cricket shortly after Rahul Dravid?,Who,Rahul Dravid,Ricky Ponting
 Which cricket player completed 10K ODI runs right after Rahul Dravid?,cricket player,Rahul Dravid completed 10K ODI runs,Ricky Ponting
 Who achieved 10000 runs in ODI cricket shortly after Kumar Sangakkara?,achieved 10000 runs in ODI cricket,Kumar Sangakkara,Tillakaratne Dilshan
 Who achieved 10000 runs in ODI cricket soon after Kumar Sangakkara?,achieved 10000 runs in ODI cricket,Kumar Sangakkara,Tillakaratne Dilshan
 Who achieved 10000 runs in ODI cricket just after Jacques Kallis?,achieved 10000 runs in ODI cricket,Jacques Kallis,Mahela Jayawardene
+Who accomplished 10000 runs in ODI cricket immediately after Jacques Kallis?,10000 runs in ODI cricket,Jacques Kallis,Mahela Jayawardene
 Who achieved 10000 runs in ODI cricket shortly after Ricky Ponting?,Who,Ricky Ponting,Jacques Kallis
 Which cricket player completed 10K ODI runs right after Ricky Ponting?,cricket player,Ricky Ponting,Jacques Kallis
 Which country was NATO signed by right after Montenegro?,NATO,Montenegro,North Macedonia
@@ -990,9 +1083,11 @@ Which country became a member of NATO immediately subsequent to Montenegro?,coun
 Which country was North Atlantic Treaty Organization signed by right after Montenegro?,North Atlantic Treaty Organization,Montenegro,North Macedonia
 Which country signed the NATO preceded by Montenegro?,country,Montenegro,North Macedonia
 Which country signed the NATO soon after Montenegro?,country,Montenegro,North Macedonia
+Which country signed the NATO Alliance immediately after Country Montenegro?,signed the NATO Alliance,Country Montenegro,North Macedonia
 Which country joined the North Atlantic Treaty Organization immediately after Montenegro?,country,Montenegro,North Macedonia
 Which country signed the NATO soon after Montenegro?,country,Montenegro,North Macedonia
 Which country was North Atlantic Treaty Organization signed by right after Montenegro?,North Atlantic Treaty Organization,Montenegro,North Macedonia
+Which country signed the NATO Alliance immediately after Country Montenegro?,country,Country Montenegro,North Macedonia
 Which country became a member of NATO immediately subsequent to Montenegro?,country,Montenegro,North Macedonia
 Which country signed the NATO preceded by Montenegro?,country,Montenegro,North Macedonia
 Which country joined the North Atlantic Treaty Organization immediately after Montenegro?,country,Montenegro,North Macedonia
@@ -1008,7 +1103,9 @@ Which country was NATO signed by right after Montenegro?,NATO,Montenegro,North M
 Which country signed the NATO soon after Montenegro?,country,Montenegro,North Macedonia
 Which country signed the NATO preceded by Montenegro?,country,Montenegro,North Macedonia
 Which country joined the NATO just after Montenegro?,country,Montenegro,North Macedonia
+Which country signed the NATO Alliance immediately after Country Montenegro?,signed the NATO Alliance,Country Montenegro,North Macedonia
 Which country was NATO signed by right after Montenegro?,NATO,Montenegro,North Macedonia
+Which country signed the NATO Alliance immediately after Country Montenegro?,country,Country Montenegro,North Macedonia
 Which country was North Atlantic Treaty Organization signed by right after Montenegro?,North Atlantic Treaty Organization,Montenegro,North Macedonia
 Which country became a member of NATO immediately subsequent to Montenegro?,country,Montenegro,North Macedonia
 Which film won the Best Picture Academy Award just after Argo?,film,Argo,12 Years a Slave
@@ -1092,6 +1189,7 @@ Which state observed the admission to the Union of the United States of America 
 Which U.S. state took admission to the Union immediately after Connecticut?,admission to the Union,Connecticut,Massachusetts
 Which U.S. state took admission to the Union immediately subsequent to Connecticut?,admission to the Union,Connecticut,Massachusetts
 Which state observed the admission to the Union of the United States of America soon after New Jersey?,the admission to the Union of the United States of America,New Jersey,Georgia
+Which state shared its sovereignty with the federal government of the United States immediately after New Jersey?,state,New Jersey,Georgia
 Which U.S. state took admission to the Union immediately after Massachusetts?,admission to the Union,Massachusetts,Maryland
 Which state observed the admission to the Union of the United States of America preceded by Massachusetts?,the admission to the Union of the United States of America,Massachusetts,Maryland
 Which state in the United States of America joined the Union immediately after New Hampshire?,state in the United States of America,New Hampshire,Virginia
@@ -1103,6 +1201,7 @@ Which state observed the admission to the Union of the United States of America 
 Which state in the United States of America joined the Union immediately after Georgia?,state in the United States of America,Georgia,Connecticut
 Which state observed the admission to the Union of the United States of America soon after Georgia?,the admission to the Union of the United States of America,Georgia,Connecticut
 Which state in the United States of America joined the Union immediately after Kentucky?,state in the United States of America,Kentucky,Tennessee
+Which state shared its sovereignty with the federal government of the United States immediately after Kentucky?,state,Kentucky,Tennessee
 Which state shared its sovereignty with the federal government of the United States just after Delaware?,state,Delaware,Pennysylvania
 Which state in the United States of America joined the Union right after Delaware?,state in the United States of America,Delaware,Pennysylvania
 Which state observed the admission to the Union of the United States of America soon after Virginia?,the admission to the Union of the United States of America,Virginia,New York
@@ -1114,9 +1213,11 @@ Which state observed the admission to the Union of the United States of America 
 Which state shared its sovereignty with the federal government of the United States just after Virginia?,state,Virginia,New York
 Which U.S. state took admission to the Union immediately subsequent to Virginia?,U.S. state,Virginia,New York
 Which state observed the admission to the Union of the United States of America preceded by Vermont?,the admission to the Union of the United States of America,Vermont,Kentucky
+Which state shared its sovereignty with the federal government of the United States immediately after Vermont?,state,Vermont,Kentucky
 Which state shared its sovereignty with the federal government of the United States just after Vermont?,state,Vermont,Kentucky
 Which U.S. state took admission to the Union immediately subsequent to Vermont?,admission to the Union,Vermont,Kentucky
 Which state observed the admission to the Union of the United States of America preceded by Georgia?,the admission to the Union of the United States of America,Georgia,Connecticut
+Which state shared its sovereignty with the federal government of the United States immediately after Georgia?,state,Georgia,Connecticut
 Which state shared its sovereignty with the federal government of the United States just after New Hampshire?,state,New Hampshire,Virginia
 Which state observed the admission to the Union of the United States of America preceded by New Hampshire?,the admission to the Union of the United States of America,New Hampshire,Virginia
 Which U.S. state took admission to the Union immediately subsequent to Delaware?,admission to the Union,Delaware,Pennysylvania
@@ -1208,9 +1309,11 @@ Which game was awarded the Game Award for Best Independent Game immediately afte
 Which game won the Best Independent Game Award just after Rocket League?,game,Rocket League,Inside
 Which game won the Game Award for Best Independent Game right after Rocket League?,game,Rocket League,Inside
 Which movie was directed by Quentin Tarantino right after Inglourious Basterds?,Quentin Tarantino,Inglourious Basterds,Django Unchained
+Which movie was filmed by Quentin Tarantino immediately after Inglourious Basterds?,Quentin Tarantino,Inglourious Basterds,Django Unchained
 Which movie was directed by Quentin Tarantino right after Jackie Brown?,Quentin Tarantino,Jackie Brown,Kill Bill: Volume 1
 Which movie did director Quentin Tarantino direct just after Jackie Brown?,Quentin Tarantino,Jackie Brown,Kill Bill: Volume 1
 Which film did Quentin Tarantino direct immediately subsequent to Jackie Brown?,Quentin Tarantino,Jackie Brown,Kill Bill: Volume 1
+Which movie was filmed by Quentin Tarantino immediately after Jackie Brown?,Quentin Tarantino,Jackie Brown,Kill Bill: Volume 1
 Which film's direction was carried out by Quentin Tarantino immediately after the direction of Kill Bill: Volume 1?,Quentin Tarantino,the direction of Kill Bill: Volume 1,Kill Bill: Volume 2
 Which film was directed by Quentin Tarantino preceded by film Kill Bill: Volume 1?,Quentin Tarantino,film Kill Bill: Volume 1,Kill Bill: Volume 2
 Which film was directed by Quentin Tarantino immediately after Kill Bill: Volume 1?,Quentin Tarantino,Kill Bill: Volume 1,Kill Bill: Volume 2
@@ -1329,6 +1432,7 @@ Which book did Robin Cook write preceded by book Mutation?,Robin Cook,book Mutat
 Which book was written by Robin Cook right after book Fever?,Robin Cook,book Fever,Godplayer
 Which book was authored by Robin Cook just after Fever?,Robin Cook,Fever,Godplayer
 Who was the CEO of Infosys just subsequent to UB Pravin Rao?,Infosys,UB Pravin Rao,Salil S. Parekh
+Who took the role of CEO of Infosys immediately after UB Pravin Rao?,CEO of Infosys,UB Pravin Rao,Salil S. Parekh
 Who was CEO of Infosys immediately after Vishal Sikka?,Infosys,Vishal Sikka,UB Pravin Rao
 Who did Infosys appoint as CEO straight after Vishal Sikka?,Infosys,Vishal Sikka,UB Pravin Rao
 Who was CEO of Infosys immediately after Nandan Nilekani?,Infosys,Nandan Nilekani,Kris Gopalakrishnan
@@ -1346,6 +1450,7 @@ Who held the Chief Executive position at Infosys company shortly after Narayan M
 Who did Infosys appoint as CEO straight after UB Pravin Rao?,Infosys,UB Pravin Rao,Salil S. Parekh
 Who held the Chief Executive position at Infosys company shortly after UB Pravin Rao?,Infosys company,UB Pravin Rao,Salil S. Parekh
 Who assumed the CEO position of Infosys just after Nandan Nilekani?,Infosys,Nandan Nilekani,Kris Gopalakrishnan
+Who took the role of CEO of Infosys immediately after Nandan Nilekani?,CEO of Infosys,Nandan Nilekani,Kris Gopalakrishnan
 Who took over the chief executive officer position at Infosys right after Vishal Sikka?,Infosys,Vishal Sikka,UB Pravin Rao
 Who assumed the CEO position of Infosys just after Vishal Sikka?,Infosys,Vishal Sikka,UB Pravin Rao
 Who did Infosys appoint as CEO straight after Kris Gopalakrishnan?,Infosys,Kris Gopalakrishnan,S.D. Shibulal
@@ -1359,12 +1464,15 @@ Who assumed the CEO position of Infosys preceded by UB Pravin Rao?,Infosys,UB Pr
 Who did Infosys appoint as CEO straight after Narayan Murthy?,Infosys,Narayan Murthy,Nandan Nilekani
 Who was the CEO of Infosys just subsequent to Narayan Murthy?,Infosys,Narayan Murthy,Nandan Nilekani
 Who was the CEO of Infosys just subsequent to S.D. Shibulal?,Infosys,S.D. Shibulal,Vishal Sikka
+Who took the role of CEO of Infosys immediately after S.D. Shibulal?,CEO of Infosys,S.D. Shibulal,Vishal Sikka
 Who assumed the CEO position of Volkswagen preceded by Ferdinand K. Piech?,Volkswagen,Ferdinand K. Piech,Bernd Pischetsrieder
+Who took the role of CEO of Volkswagen immediately after Ferdinand K. Piech?,CEO of Volkswagen,Ferdinand K. Piech,Bernd Pischetsrieder
 Who did Volkswagen appoint as CEO straight after Kurt Lotz?,Volkswagen,Kurt Lotz,Rudolf Leiding
 Who assumed the CEO position of Volkswagen preceded by Kurt Lotz?,Volkswagen,Kurt Lotz,Rudolf Leiding
 Who took over the chief executive officer position at Volkswagen right after Carl Hahn?,Volkswagen,Carl Hahn,Ferdinand K. Piech
 Who assumed the CEO position of Volkswagen just after Carl Hahn?,Volkswagen,Carl Hahn,Ferdinand K. Piech
 Who was the CEO of Volkswagen just subsequent to Ferdinand K. Piech?,Volkswagen,Ferdinand K. Piech,Bernd Pischetsrieder
+Who took the role of CEO of Volkswagen immediately after Ferdinand K. Piech?,CEO of Volkswagen,Ferdinand K. Piech,Bernd Pischetsrieder
 Who assumed the CEO position of Volkswagen just after Bernd Pischetsrieder?,Volkswagen,Bernd Pischetsrieder,Martin Winterkom
 Who assumed the CEO position of Volkswagen preceded by Bernd Pischetsrieder?,Volkswagen,Bernd Pischetsrieder,Martin Winterkom
 Who was CEO of Volkswagen immediately after Martin Winterkom?,Volkswagen,Martin Winterkom,Matthias Muller
@@ -1374,6 +1482,7 @@ Who was the CEO of Volkswagen just subsequent to Martin Winterkom?,Volkswagen,Ma
 Who was CEO of Volkswagen immediately after Kurt Lotz?,Volkswagen,Kurt Lotz,Rudolf Leiding
 Who assumed the CEO position of Volkswagen preceded by Kurt Lotz?,Volkswagen,Kurt Lotz,Rudolf Leiding
 Who did Volkswagen appoint as CEO straight after Toni Schmucker?,Volkswagen,Toni Schmucker,Carl Hahn
+Who took the role of CEO of Volkswagen immediately after Toni Schmucker?,CEO of Volkswagen,Toni Schmucker,Carl Hahn
 Who took over the chief executive officer position at Volkswagen right after Matthias Muller?,Volkswagen,Matthias Muller,Herbert Diess
 Who assumed the CEO position of Volkswagen preceded by Matthias Muller?,Volkswagen,Matthias Muller,Herbert Diess
 Who took over the chief executive officer position at Volkswagen right after Rudolf Leiding?,Volkswagen,Rudolf Leiding,Toni Schmucker
@@ -1385,15 +1494,21 @@ Who held the Chief Executive position at Volkswagen company shortly after Kurt L
 Who assumed the CEO position of Volkswagen just after Rudolf Leiding?,Volkswagen,Rudolf Leiding,Toni Schmucker
 Who assumed the CEO position of Volkswagen preceded by Rudolf Leiding?,Volkswagen,Rudolf Leiding,Toni Schmucker
 Who held the Chief Executive position at Volkswagen company shortly after Carl Hahn?,Volkswagen company,Carl Hahn,Ferdinand K. Piech
+Who took the role of CEO of Volkswagen immediately after Carl Hahn?,CEO of Volkswagen,Carl Hahn,Ferdinand K. Piech
 Who assumed the CEO position of Volkswagen preceded by Martin Winterkom?,Volkswagen,Martin Winterkom,Matthias Muller
+Who took the role of CEO of Volkswagen immediately after Martin Winterkom?,CEO of Volkswagen,Martin Winterkom,Matthias Muller
 Who assumed the CEO position of Volkswagen just after Matthias Muller?,Volkswagen,Matthias Muller,Herbert Diess
 Who assumed the CEO position of Volkswagen preceded by Matthias Muller?,Volkswagen,Matthias Muller,Herbert Diess
 Who was CEO of Volkswagen immediately after Martin Winterkom?,Volkswagen,Martin Winterkom,Matthias Muller
+Who took the role of CEO of Volkswagen immediately after Martin Winterkom?,CEO of Volkswagen,Martin Winterkom,Matthias Muller
 Who assumed the CEO position of Volkswagen preceded by Toni Schmucker?,Volkswagen,Toni Schmucker,Carl Hahn
+Who took the role of CEO of Volkswagen immediately after Toni Schmucker?,CEO of Volkswagen,Toni Schmucker,Carl Hahn
 Who assumed the CEO position of Volkswagen just after Martin Winterkom?,Volkswagen,Martin Winterkom,Matthias Muller
+Who took the role of CEO of Volkswagen immediately after Martin Winterkom?,CEO of Volkswagen,Martin Winterkom,Matthias Muller
 Who assumed the CEO position of Volkswagen just after Bernd Pischetsrieder?,Volkswagen,Bernd Pischetsrieder,Martin Winterkom
 Who held the Chief Executive position at Volkswagen company shortly after Bernd Pischetsrieder?,Volkswagen company,Bernd Pischetsrieder,Martin Winterkom
 Who held the Chief Executive position at Volkswagen company shortly after Bernd Pischetsrieder?,Volkswagen company,Bernd Pischetsrieder,Martin Winterkom
+Who took the role of CEO of Volkswagen immediately after Bernd Pischetsrieder?,CEO of Volkswagen,Bernd Pischetsrieder,Martin Winterkom
 Who did Volkswagen appoint as CEO straight after Rudolf Leiding?,Volkswagen,Rudolf Leiding,Toni Schmucker
 Who held the Chief Executive position at Volkswagen company shortly after Rudolf Leiding?,Volkswagen company,Rudolf Leiding,Toni Schmucker
 Which song won the Oscar for Best Original Song right after I Need To Wake Up?,song,I Need To Wake Up,Falling Slowly
@@ -1433,7 +1548,9 @@ Which country hosted the International Conference on Machine Learning immediatel
 In which country was the International Conference on Machine Learning held right after country USA?,International Conference on Machine Learning,country USA,China
 Which country was the International Conference on Machine Learning hosted by right after China?,the International Conference on Machine Learning,China,USA
 Which country was the ICML Conference hosted by shortly after China?,ICML Conference,China,France
+Where did the ICML Conference take place immediately after China?,ICML Conference,China,France
 Which country hosted the International Conference on Machine Learning immediately after Scotland?,the International Conference on Machine Learning,Scotland,USA
+Where did the ICML Conference take place immediately after Scotland?,ICML Conference,Scotland,USA
 Which country hosted the International Conference on Machine Learning immediately after Scotland?,country,Scotland,USA
 Which country organized the ICML Conference just subsequent to Scotland?,ICML Conference,Scotland,USA
 Which country hosted the International Conference on Machine Learning immediately after USA?,International Conference on Machine Learning,USA,China
@@ -1441,9 +1558,12 @@ Which country hosted the ICML Conference just after country USA?,ICML Conference
 Which country hosted the International Conference on Machine Learning immediately after China?,International Conference on Machine Learning,China,France
 In which country was the International Conference on Machine Learning held right after country China?,International Conference on Machine Learning,country China,France
 In which country was the International Conference on Machine Learning held right after country China?,International Conference on Machine Learning,country China,France
+Where did the ICML Conference take place immediately after China?,ICML Conference,China,France
 In which country was the International Conference on Machine Learning held right after country Scotland?,International Conference on Machine Learning,country Scotland,USA
+Where did the ICML Conference take place immediately after Scotland?,ICML Conference,Scotland,USA
 Which country was the International Conference on Machine Learning hosted by right after France?,the International Conference on Machine Learning,France,China
 Which country organized the ICML Conference just subsequent to China?,ICML Conference,China,France
+Where did the ICML Conference take place immediately after China?,ICML Conference,China,France
 Which country was the International Conference on Machine Learning hosted by right after France?,the International Conference on Machine Learning,France,China
 Which country hosted the ICML Conference just after country China?,ICML Conference,country China,France
 In which country was the International Conference on Machine Learning held right after country China?,International Conference on Machine Learning,country China,France
@@ -1461,6 +1581,7 @@ In which country was the International Conference on Machine Learning held right
 Which country was the International Conference on Machine Learning hosted by right after USA?,International Conference on Machine Learning,USA,Scotland
 Which country was the International Conference on Machine Learning hosted by right after China?,the International Conference on Machine Learning,China,USA
 Which country was the ICML Conference hosted by shortly after USA?,ICML Conference,USA,China
+Where did the ICML Conference take place immediately after USA?,ICML Conference,USA,China
 Which country was the ICML Conference hosted by shortly after Scotland?,ICML Conference,Scotland,USA
 Which country hosted the ICML Conference preceded by Scotland?,ICML Conference,Scotland,USA
 Which country was the ICML Conference hosted by shortly after USA?,ICML Conference,USA,China
@@ -1472,14 +1593,18 @@ Which movie was filmed by Yash Chopra preceded by Ittefaq?,Yash Chopra,Ittefaq,A
 Which film's direction was carried out by Yash Chopra immediately after the direction of Dharmputra?,Yash Chopra,the direction of Dharmputra,Waqt
 Which film did director Yash Chopra direct just after Dharmputra?,Yash Chopra,Dharmputra,Waqt
 Which film was directed by Yash Chopra immediately after Aadmi Aur Insaan?,Yash Chopra,Aadmi Aur Insaan,Ittefaq
+Which movie was filmed by Yash Chopra immediately after Aadmi Aur Insaan?,Yash Chopra,Aadmi Aur Insaan,Ittefaq
 Which movie was filmed by Yash Chopra preceded by Daag?,Yash Chopra,Daag,Ittefaq
 Which movie was filmed by Yash Chopra preceded by Ittefaq?,Yash Chopra,Ittefaq,Aadmi Aur Insaan
 Which movie was filmed by Yash Chopra preceded by Ittefaq?,Yash Chopra,Ittefaq,Aadmi Aur Insaan
 Which film did director Yash Chopra direct just after Daag?,Yash Chopra,Daag,Joshila
 Which film did Yash Chopra direct immediately subsequent to Daag?,Yash Chopra,Daag,Joshila
 Which film was directed by Yash Chopra preceded by film Daag?,Yash Chopra,film Daag,Joshila
+Which movie was filmed by Yash Chopra immediately after Daag?,Yash Chopra,Daag,Joshila
 Which film was directed by Yash Chopra preceded by film Waqt?,Yash Chopra,film Waqt,Aadmi Aur Insaan
+Which movie was filmed by Yash Chopra immediately after Waqt?,Yash Chopra,Waqt,Aadmi Aur Insaan
 Which film was directed by Yash Chopra immediately after Dharmputra?,Yash Chopra,Dharmputra,Waqt
+Which movie was filmed by Yash Chopra immediately after Dharmputra?,Yash Chopra,Dharmputra,Waqt
 Which film's direction was taken up by Yash Chopra shortly after Daag?,Yash Chopra,Daag,Joshila
 Which film did director Yash Chopra direct just after Daag?,Yash Chopra,Daag,Joshila
 Which film was directed by Yash Chopra immediately after Daag?,Yash Chopra,Daag,Joshila
@@ -1487,6 +1612,7 @@ Which film's direction was carried out by Yash Chopra immediately after the dire
 Which film was directed by Yash Chopra immediately after Dharmputra?,Yash Chopra,Dharmputra,Waqt
 Which film's direction was carried out by Yash Chopra immediately after the direction of Dharmputra?,Yash Chopra,the direction of Dharmputra,Waqt
 Which film's direction was carried out by Yash Chopra immediately after the direction of Joshila?,Yash Chopra,the direction of Joshila,Deewaar
+Which movie was filmed by Yash Chopra immediately after Joshila?,Yash Chopra,Joshila,Deewaar
 Which film's direction was carried out by Yash Chopra immediately after the direction of Dharmputra?,Yash Chopra,the direction of Dharmputra,Waqt
 Which movie has been directed by Yash Chopra right after Dharmputra?,Yash Chopra,Dharmputra,Waqt
 Which movie has been directed by Yash Chopra right after Daag?,Yash Chopra,Daag,Joshila
@@ -1497,11 +1623,13 @@ Which film was directed by S. S. Rajamouli preceded by film Vikramarkudu?,S. S. 
 Which film's direction was taken up by S. S. Rajamouli shortly after Simhadri?,S. S. Rajamouli,Simhadri,Sye
 Which movie has been directed by S. S. Rajamouli right after Simhadri?,S. S. Rajamouli,Simhadri,Sye
 Which movie's direction was carried out by S. S. Rajamouli immediately after the direction of Simhadri?,S. S. Rajamouli,the direction of Simhadri,Sye
+Which movie was filmed by S. S. Rajamouli immediately after Simhadri?,S. S. Rajamouli,Simhadri,Sye
 Which movie did Director S. S. Rajamouli direct just after Maryada Ramanna?,Director S. S. Rajamouli,Maryada Ramanna,Eega
 Which film was directed by S. S. Rajamouli preceded by film Maryada Ramanna?,film,film Maryada Ramanna,Eega
 Which movie was directed by S. S. Rajamouli immediately after Baahubali: The Beginning?,S. S. Rajamouli,Baahubali: The Beginning,Baahubali 2: The Conclusion
 Which movie has been directed by S. S. Rajamouli right after Baahubali: The Beginning?,S. S. Rajamouli,Baahubali: The Beginning,Baahubali 2: The Conclusion
 Which film was directed by S. S. Rajamouli preceded by film Chatrapathi?,S. S. Rajamouli,film Chatrapathi,Vikramarkudu
+Which movie was filmed by S. S. Rajamouli immediately after Chatrapathi?,S. S. Rajamouli,Chatrapathi,Vikramarkudu
 Which movie was filmed by S. S. Rajamouli preceded by Sye?,S. S. Rajamouli,Sye,Simhadri
 Which movie was filmed by S. S. Rajamouli preceded by Vikramarkudu?,S. S. Rajamouli,Vikramarkudu,Chatrapathi
 Which movie has been directed by S. S. Rajamouli right after Yamadonga?,S. S. Rajamouli,Yamadonga,Magadheera
@@ -1509,6 +1637,7 @@ Which film was directed by S. S. Rajamouli preceded by film Yamadonga?,film,film
 Which movie has been directed by S. S. Rajamouli right after Eega?,S. S. Rajamouli,Eega,Baahubali: The Beginning
 Which film was directed by S. S. Rajamouli preceded by film Eega?,film,film Eega,Baahubali: The Beginning
 Which movie did Director S. S. Rajamouli direct just after Yamadonga?,Director S. S. Rajamouli,Yamadonga,Magadheera
+Which movie was filmed by S. S. Rajamouli immediately after Yamadonga?,S. S. Rajamouli,Yamadonga,Magadheera
 Which film's direction was taken up by S. S. Rajamouli shortly after Magadheera?,S. S. Rajamouli,Magadheera,Maryada Ramanna
 Which film was directed by S. S. Rajamouli preceded by film Magadheera?,film,film Magadheera,Maryada Ramanna
 Which movie did Director S. S. Rajamouli direct just after Student No: 1?,Director S. S. Rajamouli,Student No: 1,Simhadri
@@ -1518,9 +1647,11 @@ Which movie did Director S. S. Rajamouli direct just after Magadheera?,Director 
 Which movie was directed by S. S. Rajamouli immediately after Baahubali: The Beginning?,S. S. Rajamouli,Baahubali: The Beginning,Baahubali 2: The Conclusion
 Which film was directed by S. S. Rajamouli preceded by film Baahubali: The Beginning?,S. S. Rajamouli,film Baahubali: The Beginning,Baahubali 2: The Conclusion
 Which film was directed by S. S. Rajamouli preceded by film Baahubali: The Beginning?,S. S. Rajamouli,film Baahubali: The Beginning,Baahubali 2: The Conclusion
+Which movie was filmed by S. S. Rajamouli immediately after Baahubali: The Beginning?,S. S. Rajamouli,Baahubali: The Beginning,Baahubali 2: The Conclusion
 Which movie has been directed by S. S. Rajamouli right after Yamadonga?,S. S. Rajamouli,Yamadonga,Magadheera
 Which movie did S. S. Rajamouli direct immediately subsequent to Yamadonga?,S. S. Rajamouli,Yamadonga,Magadheera
 Which movie did Director S. S. Rajamouli direct just after Chatrapathi?,Director S. S. Rajamouli,Chatrapathi,Vikramarkudu
+Which movie was filmed by S. S. Rajamouli immediately after Chatrapathi?,S. S. Rajamouli,Chatrapathi,Vikramarkudu
 Which movie was filmed by S. S. Rajamouli preceded by Chatrapathi?,S. S. Rajamouli,Chatrapathi,Sye
 Which movie's direction was carried out by S. S. Rajamouli immediately after the direction of Simhadri?,S. S. Rajamouli,the direction of Simhadri,Sye
 Which movie did S. S. Rajamouli direct immediately subsequent to Simhadri?,S. S. Rajamouli,Simhadri,Sye
@@ -1533,6 +1664,7 @@ Which movie has been directed by S. S. Rajamouli right after Eega?,S. S. Rajamou
 Which movie was directed by S. S. Rajamouli immediately after Eega?,S. S. Rajamouli,Eega,Baahubali: The Beginning
 Which movie did Director S. S. Rajamouli direct just after Eega?,Director S. S. Rajamouli,Eega,Baahubali: The Beginning
 Which movie has been directed by S. S. Rajamouli right after Student No: 1?,S. S. Rajamouli,Student No: 1,Simhadri
+Which movie was filmed by S. S. Rajamouli immediately after Student No: 1?,S. S. Rajamouli,Student No: 1,Simhadri
 Which movie was directed by S. S. Rajamouli immediately after Maryada Ramanna?,S. S. Rajamouli,Maryada Ramanna,Eega
 Which film's direction was taken up by S. S. Rajamouli shortly after Maryada Ramanna?,S. S. Rajamouli,Maryada Ramanna,Eega
 Which movie was directed by S. S. Rajamouli immediately after Baahubali 2: The Conclusion?,S. S. Rajamouli,Baahubali 2: The Conclusion,RRR
@@ -1546,6 +1678,7 @@ Which spacecraft was put into orbit by Roscosmos immediately subsequent to Vener
 Which spacecraft was launched by Roscosmos just after Luna 9?,Roscosmos,Luna 9,Venera 7
 "Which satellite was launched by Roscosmos, India shortly after Luna 9?","Roscosmos, India",Luna 9,Venera 7
 Which spacecraft was launched by the Roscosmos preceded by Sputnik 3?,spacecraft,Sputnik 3,Luna 1
+Which spacecraft did Roscosmos launch immediately after Sputnik 3?,Roscosmos,Sputnik 3,Luna 1
 What did the Roscosmos launch immediately after Luna 1?,Roscosmos,Luna 1,Luna 2
 Which spacecraft was put into orbit by Roscosmos immediately subsequent to Luna 1?,spacecraft,Luna 1,Luna 2
 "Which satellite was launched by Roscosmos, India shortly after Sputnik 2?","Roscosmos, India",Sputnik 2,Sputnik 3
@@ -1569,19 +1702,25 @@ Which spacecraft was launched by the Roscosmos preceded by Sputnik 1?,spacecraft
 Which satellite did Roscosmos launch immediately after Luna 9?,Roscosmos,Luna 9,Venera 7
 Which spacecraft was launched by the Roscosmos preceded by Luna 9?,spacecraft,Luna 9,Venera 7
 What did Roscosmos launch shortly after Venera 7?,Roscosmos,Venera 7,Luna 16
+Which spacecraft did Roscosmos launch immediately after Venera 7?,Roscosmos,Venera 7,Luna 16
 "Which satellite was launched by Roscosmos, India shortly after Luna 3?","Roscosmos, India",Luna 3,Korabl-Sputnik 1
 Which spacecraft was launched by the Roscosmos preceded by Luna 3?,spacecraft,Luna 3,Korabl-Sputnik 1
 Which satellite did Roscosmos launch immediately after Korabl-Sputnik 1?,Roscosmos,Korabl-Sputnik 1,Korabl-Sputnik 2
+Which spacecraft did Roscosmos launch immediately after Korabl-Sputnik 1?,Roscosmos,Korabl-Sputnik 1,Korabl-Sputnik 2
 "Which satellite was launched by Roscosmos, India shortly after Venera 7?","Roscosmos, India",Venera 7,Luna 16
 Which spacecraft was put into orbit by Roscosmos immediately subsequent to Venera 7?,Roscosmos,Venera 7,Luna 16
 Which satellite did Roscosmos launch immediately after Korabl-Sputnik 2?,Roscosmos,Korabl-Sputnik 2,Venera 1
+Which spacecraft did Roscosmos launch immediately after Korabl-Sputnik 2?,Roscosmos,Korabl-Sputnik 2,Venera 1
 Which spacecraft was launched by Roscosmos just after Sputnik 3?,Roscosmos,Sputnik 3,Luna 1
 "Which satellite was launched by Roscosmos, India shortly after Sputnik 3?","Roscosmos, India",Sputnik 3,Luna 1
 Which book was written by Chetan Bhagat immediately after What Young India Wants?,Chetan Bhagat,What Young India Wants,Half Girlfriend
 Which book was written by Chetan Bhagat right after book What Young India Wants?,Chetan Bhagat,book What Young India Wants,Half Girlfriend
 Which book did Chetan Bhagat author just subsequent to Book 2 States?,Chetan Bhagat,Book 2 States,Revolution 2020
+Which book was written by Chetan Bhagat immediately after 2 States?,Chetan Bhagat,2 States,Revolution 2020
 Which book did Chetan Bhagat write preceded by book One Indian Girl?,Chetan Bhagat,book One Indian Girl,The Girl in Room 105
+Which book was written by Chetan Bhagat immediately after One Indian Girl?,Chetan Bhagat,One Indian Girl,The Girl in Room 105
 Which book was authored by Chetan Bhagat just after One Indian Girl?,Chetan Bhagat,One Indian Girl,The Girl in Room 105
+Which book was written by Chetan Bhagat immediately after One Indian Girl?,Chetan Bhagat,One Indian Girl,The Girl in Room 105
 Which book was authored by Chetan Bhagat just after One Night at the Call Center?,Chetan Bhagat,One Night at the Call Center,The 3 Mistakes of My Life
 Which book did Chetan Bhagat author just subsequent to Book One Night at the Call Center?,Chetan Bhagat,Book One Night at the Call Center,The 3 Mistakes of My Life
 Which book was written by Chetan Bhagat right after book One Indian Girl?,Chetan Bhagat,book One Indian Girl,The Girl in Room 105
@@ -1595,6 +1734,7 @@ Which book did Chetan Bhagat write preceded by book 2 States?,Chetan Bhagat,book
 Which book was written by Chetan Bhagat immediately after Five Point Someone?,Chetan Bhagat,Five Point Someone,One Night at the Call Center
 Which book did Chetan Bhagat author just subsequent to Book Five Point Someone?,Chetan Bhagat,Book Five Point Someone,One Night at the Call Center
 Which book did Chetan Bhagat write preceded by book What Young India Wants?,Chetan Bhagat,book What Young India Wants,Half Girlfriend
+Which book was written by Chetan Bhagat immediately after What Young India Wants?,Chetan Bhagat,What Young India Wants,Half Girlfriend
 Which book was written by Chetan Bhagat right after book Making India Awesome?,Chetan Bhagat,book Making India Awesome,One Indian Girl
 Which book did Chetan Bhagat write preceded by book Making India Awesome?,Chetan Bhagat,book Making India Awesome,One Indian Girl
 Which book did Chetan Bhagat write shortly after India Positive?,Chetan Bhagat,India Positive,One Arranged Murder
@@ -1602,6 +1742,7 @@ Which book was authored by Chetan Bhagat just after India Positive?,Chetan Bhaga
 Which book did Chetan Bhagat author just subsequent to Book One Arranged Murder?,Chetan Bhagat,Book One Arranged Murder,400 Days
 Which book did Chetan Bhagat write preceded by book One Arranged Murder?,Chetan Bhagat,book One Arranged Murder,400 Days
 Which book was written by Chetan Bhagat right after book India Positive?,Chetan Bhagat,book India Positive,One Arranged Murder
+Which book was written by Chetan Bhagat immediately after India Positive?,Chetan Bhagat,India Positive,One Arranged Murder
 Which book was written by Chetan Bhagat immediately after The 3 Mistakes of My Life?,Chetan Bhagat,The 3 Mistakes of My Life,2 States
 Which book did Chetan Bhagat publish immediately after The 3 Mistakes of My Life?,Chetan Bhagat,The 3 Mistakes of My Life,2 States
 Which book was written by Chetan Bhagat right after book 2 States?,Chetan Bhagat,book 2 States,Revolution 2020
@@ -1613,6 +1754,7 @@ Which book did Chetan Bhagat publish immediately after One Night at the Call Cen
 Which book was written by Chetan Bhagat right after book Half Girlfriend?,Chetan Bhagat,book Half Girlfriend,Making India Awesome
 Which book did Chetan Bhagat author just subsequent to Book Half Girlfriend?,Chetan Bhagat,Book Half Girlfriend,Making India Awesome
 Which book was written by Chetan Bhagat right after book Half Girlfriend?,Chetan Bhagat,book Half Girlfriend,Making India Awesome
+Which book was written by Chetan Bhagat immediately after Half Girlfriend?,Chetan Bhagat,Half Girlfriend,Making India Awesome
 Which book was written by Chetan Bhagat right after book One Night at the Call Center?,Chetan Bhagat,book One Night at the Call Center,The 3 Mistakes of My Life
 Which book was authored by Chetan Bhagat just after One Night at the Call Center?,Chetan Bhagat,One Night at the Call Center,The 3 Mistakes of My Life
 Which film won the Oscar for Best Cinematography immediately subsequent to American Beauty?,film,American Beauty,"Crouching Tiger, Hidden Dragon"
@@ -1702,11 +1844,13 @@ Which movie was directed by Ridley Scott immediately after Someone to Watch Over
 Which film was directed by Ridley Scott preceded by film Someone to Watch Over Me?,Ridley Scott,film Someone to Watch Over Me,Black Rain
 Which movie was filmed by Ridley Scott preceded by Blade Runner?,Ridley Scott,Blade Runner,Alien
 Which film was directed by Ridley Scott preceded by film White Squall?,Ridley Scott,film White Squall,G.I. Jane
+Which movie was filmed by Ridley Scott immediately after White Squall?,Ridley Scott,White Squall,G.I. Jane
 Which movie was directed by Ridley Scott immediately after Blade Runner?,Ridley Scott,Blade Runner,Legend
 Which movie has been directed by Ridley Scott right after Blade Runner?,Ridley Scott,Blade Runner,Legend
 Which movie has been directed by Ridley Scott right after White Squall?,Ridley Scott,White Squall,G.I. Jane
 Which movie did Director Ridley Scott direct just after White Squall?,Director Ridley Scott,White Squall,G.I. Jane
 Which movie has been directed by Ridley Scott right after Blade Runner?,Ridley Scott,Blade Runner,Legend
+Which movie was filmed by Ridley Scott immediately after Blade Runner?,Ridley Scott,Blade Runner,Legend
 Which movie was directed by Ridley Scott immediately after Legend?,Ridley Scott,Legend,Someone to Watch Over Me
 Which movie has been directed by Ridley Scott right after Legend?,Ridley Scott,Legend,Someone to Watch Over Me
 Which movie was filmed by Ridley Scott preceded by White Squall?,Ridley Scott,White Squall,1492: Conquest of Paradise
@@ -1729,9 +1873,11 @@ Which film did Ridley Scott direct immediately subsequent to Someone to Watch Ov
 Which movie was directed by Ridley Scott immediately after G.I. Jane?,Ridley Scott,G.I. Jane,Gladiator
 Which film's direction was taken up by Ridley Scott shortly after G.I. Jane?,Ridley Scott,G.I. Jane,Gladiator
 Which movie was directed by Ridley Scott immediately after White Squall?,Ridley Scott,White Squall,G.I. Jane
+Which movie was filmed by Ridley Scott immediately after White Squall?,Ridley Scott,White Squall,G.I. Jane
 Which film's direction was carried out by Ridley Scott immediately after the direction of Blade Runner?,Ridley Scott,the direction of Blade Runner,Legend
 Which movie has been directed by Ridley Scott right after Blade Runner?,Ridley Scott,Blade Runner,Legend
 Which film was directed by Ridley Scott preceded by film The Duellists?,Ridley Scott,film The Duellists,Alien
+Which movie was filmed by Ridley Scott immediately after The Duellists?,Ridley Scott,The Duellists,Alien
 Which film's direction was carried out by Ridley Scott immediately after the direction of White Squall?,Ridley Scott,the direction of White Squall,G.I. Jane
 Which film did Ridley Scott direct immediately subsequent to White Squall?,Ridley Scott,White Squall,G.I. Jane
 Which movie was directed by Ridley Scott immediately after White Squall?,Ridley Scott,White Squall,G.I. Jane
@@ -1752,9 +1898,11 @@ Which film's direction was taken up by Francis Ford Coppola shortly after The Ra
 Which film's direction was taken up by Francis Ford Coppola shortly after Bram Stoker's Dracula?,Francis Ford Coppola,Bram Stoker's Dracula,Jack
 Which film was directed by Francis Ford Coppola preceded by film Bram Stoker's Dracula?,Francis Ford Coppola,film Bram Stoker's Dracula,Jack
 Which film was directed by Francis Ford Coppola immediately after The Godfather III?,Francis Ford Coppola,The Godfather III,Bram Stoker's Dracula
+Which film was filmed by Francis Ford Coppola immediately after The Godfather III?,Francis Ford Coppola,The Godfather III,Bram Stoker's Dracula
 Which movie has been directed by Francis Ford Coppola right after New York Stories?,Francis Ford Coppola,New York Stories,The Godfather III
 Which film was directed by Francis Ford Coppola preceded by film New York Stories?,film,film New York Stories,The Godfather III
 Which movie has been directed by Francis Ford Coppola right after Bram Stoker's Dracula?,Francis Ford Coppola,Bram Stoker's Dracula,Jack
+Which film was filmed by Francis Ford Coppola immediately after Bram Stoker's Dracula?,Francis Ford Coppola,Bram Stoker's Dracula,Jack
 Which film's direction was carried out by Francis Ford Coppola immediately after the direction of Tucker: The Man and His Dream?,Francis Ford Coppola,the direction of Tucker: The Man and His Dream,New York Stories
 Which movie did Director Francis Ford Coppola direct just after Tucker: The Man and His Dream?,Director Francis Ford Coppola,Tucker: The Man and His Dream,New York Stories
 Which movie did Director Francis Ford Coppola direct just after Tucker: The Man and His Dream?,Director Francis Ford Coppola,Tucker: The Man and His Dream,New York Stories
@@ -1762,21 +1910,25 @@ Which film did Francis Ford Coppola direct immediately subsequent to Tucker: The
 Which film was directed by Francis Ford Coppola immediately after Youth Without Youth?,Francis Ford Coppola,Youth Without Youth,Tetro
 Which film was directed by Francis Ford Coppola preceded by film Youth Without Youth?,Francis Ford Coppola,film Youth Without Youth,Tetro
 Which film's direction was carried out by Francis Ford Coppola immediately after the direction of Jack?,Francis Ford Coppola,the direction of Jack,The Rainmaker
+Which film was filmed by Francis Ford Coppola immediately after Jack?,Francis Ford Coppola,Jack,The Rainmaker
 Which film's direction was carried out by Francis Ford Coppola immediately after the direction of The Godfather III?,Francis Ford Coppola,the direction of The Godfather III,Bram Stoker's Dracula
 Which film was directed by Francis Ford Coppola preceded by film The Godfather III?,Francis Ford Coppola,film The Godfather III,Bram Stoker's Dracula
 Which film was directed by Francis Ford Coppola preceded by film Bram Stoker's Dracula?,Francis Ford Coppola,film Bram Stoker's Dracula,Jack
+Which film was filmed by Francis Ford Coppola immediately after Bram Stoker's Dracula?,Francis Ford Coppola,Bram Stoker's Dracula,Jack
 Which film's direction was carried out by Francis Ford Coppola immediately after the direction of New York Stories?,Francis Ford Coppola,the direction of New York Stories,The Godfather III
 Which film's direction was taken up by Francis Ford Coppola shortly after New York Stories?,Francis Ford Coppola,New York Stories,The Godfather III
 Which film was filmed by Francis Ford Coppola preceded by Youth Without Youth?,Francis Ford Coppola,Youth Without Youth,The Rainmaker
 Which movie has been directed by Francis Ford Coppola right after Bram Stoker's Dracula?,Francis Ford Coppola,Bram Stoker's Dracula,Jack
 Which movie did Director Francis Ford Coppola direct just after Bram Stoker's Dracula?,Director Francis Ford Coppola,Bram Stoker's Dracula,Jack
 Which movie did Director Francis Ford Coppola direct just after Bram Stoker's Dracula?,Director Francis Ford Coppola,Bram Stoker's Dracula,Jack
+Which film was filmed by Francis Ford Coppola immediately after Bram Stoker's Dracula?,Francis Ford Coppola,Bram Stoker's Dracula,Jack
 Which film was filmed by Francis Ford Coppola preceded by Tetro?,Francis Ford Coppola,Tetro,Youth Without Youth
 Which film's direction was carried out by Francis Ford Coppola immediately after the direction of Jack?,Francis Ford Coppola,the direction of Jack,The Rainmaker
 Which film's direction was taken up by Francis Ford Coppola shortly after Jack?,Francis Ford Coppola,Jack,The Rainmaker
 Which film was directed by Francis Ford Coppola immediately after Youth Without Youth?,Francis Ford Coppola,Youth Without Youth,Tetro
 Which film's direction was carried out by Francis Ford Coppola immediately after the direction of Youth Without Youth?,Francis Ford Coppola,the direction of Youth Without Youth,Tetro
 Which country was the FIFA U-17 World Cup held in right after country China?,FIFA U-17 World Cup,country China,Canada
+Where did the FIFA U-17 World Cup take place immediately after China?,FIFA U-17 World Cup,China,Canada
 Which country hosted the FIFA U-17 World Cup right after Mexico?,FIFA U-17 World Cup,Mexico,United Arab Emirates
 Which country organized the FIFA U-17 World Cup just subsequent to Mexico?,country,Mexico,United Arab Emirates
 Which country was the FIFA U-17 World Cup hosted by immediately after Mexico?,FIFA U-17 World Cup,Mexico,United Arab Emirates
@@ -1794,6 +1946,7 @@ Which country was the FIFA U-17 World Cup held in right after country United Ara
 Which country hosted the FIFA U-17 World Cup preceded by United Arab Emirates?,country,United Arab Emirates,Chile
 Which country was the FIFA U-17 World Cup hosted by right after Nigeria?,FIFA U-17 World Cup,Nigeria,South Korea
 Which country organized the FIFA U-17 World Cup just subsequent to United Arab Emirates?,country,United Arab Emirates,Chile
+Where did the FIFA U-17 World Cup take place immediately after United Arab Emirates?,FIFA U-17 World Cup,United Arab Emirates,Chile
 Which country was the FIFA U-17 World Cup hosted by immediately after Scotland?,FIFA U-17 World Cup,Scotland,Italy
 Which country was the FIFA U-17 World Cup held in right after country Scotland?,FIFA U-17 World Cup,country Scotland,Italy
 Which country organized the FIFA U-17 World Cup just subsequent to Japan?,country,Japan,Ecuador
@@ -1810,19 +1963,23 @@ Which country was the FIFA U-17 World Cup hosted by immediately after Egypt?,FIF
 Which country hosted the FIFA U-17 World Cup just after country Egypt?,country,country Egypt,New Zealand
 Which country was the FIFA U-17 World Cup hosted by right after United Arab Emirates?,FIFA U-17 World Cup,United Arab Emirates,Mexico
 Which country hosted the FIFA Futsal World Cup preceded by Netherlands?,FIFA Futsal World Cup,Netherlands,Hong Kong
+Where did the FIFA Futsal World Cup take place immediately after Netherlands?,FIFA Futsal World Cup,Netherlands,Hong Kong
 Which country was the FIFA Futsal World Cup hosted by shortly after Spain?,the FIFA Futsal World Cup,Spain,Guatemala
 Which country was the FIFA Futsal World Cup hosted by immediately after Spain?,FIFA Futsal World Cup,Spain,Guatemala
 Who hosted the FIFA Futsal World Cup right after Hong Kong?,FIFA Futsal World Cup,Hong Kong,Spain
+Where did the FIFA Futsal World Cup take place immediately after Hong Kong?,FIFA Futsal World Cup,Hong Kong,Spain
 Which country was the FIFA Futsal World Cup hosted by shortly after Taiwan?,FIFA Futsal World Cup,Taiwan,Brazil
 Which country was the FIFA Futsal World Cup hosted by immediately after Taiwan?,FIFA Futsal World Cup,Taiwan,Brazil
 Which country was the FIFA Futsal World Cup hosted by immediately after Thailand?,FIFA Futsal World Cup,Thailand,Colombia
 Which country was the FIFA Futsal World Cup held in right after country Thailand?,FIFA Futsal World Cup,country Thailand,Colombia
 Which country hosted the FIFA Futsal World Cup preceded by Thailand?,FIFA Futsal World Cup,Thailand,Colombia
+Where did the FIFA Futsal World Cup take place immediately after Thailand?,FIFA Futsal World Cup,Thailand,Colombia
 Which country organized the FIFA Futsal World Cup just subsequent to Netherlands?,FIFA Futsal World Cup,Netherlands,Hong Kong
 Which country hosted the FIFA Futsal World Cup preceded by Netherlands?,FIFA Futsal World Cup,Netherlands,Hong Kong
 Which country hosted the FIFA Futsal World Cup just after country Spain?,country,country Spain,Guatemala
 Which country was the FIFA Futsal World Cup held in right after country Spain?,FIFA Futsal World Cup,country Spain,Guatemala
 Which country was the FIFA Futsal World Cup hosted by immediately after Thailand?,FIFA Futsal World Cup,Thailand,Colombia
+Where did the FIFA Futsal World Cup take place immediately after Thailand?,FIFA Futsal World Cup,Thailand,Colombia
 Which country hosted the FIFA Futsal World Cup just after country Thailand?,FIFA Futsal World Cup,country Thailand,Colombia
 Which country was the FIFA Futsal World Cup held in right after country Thailand?,FIFA Futsal World Cup,country Thailand,Colombia
 Which country was the FIFA Futsal World Cup hosted by shortly after Hong Kong?,FIFA Futsal World Cup,Hong Kong,Spain
@@ -1850,6 +2007,7 @@ Which country was the FIFA Futsal World Cup held in right after country Spain?,F
 Which country hosted the FIFA Futsal World Cup just after country Taiwan?,country,country Taiwan,Brazil
 Which country was the FIFA Futsal World Cup held in right after country Taiwan?,FIFA Futsal World Cup,country Taiwan,Brazil
 Which country was the FIFA Futsal World Cup hosted by immediately after Taiwan?,FIFA Futsal World Cup,Taiwan,Brazil
+Where did the FIFA Futsal World Cup take place immediately after Taiwan?,FIFA Futsal World Cup,Taiwan,Brazil
 Where did the F1 race of the 2019 season happen immediately after Hungary?,F1 race of the 2019 season,Hungary,Belgium
 Which country hosted the F1 Grand Prix for the 2019 season right after Hungary?,country,Hungary,Belgium
 Which country hosted the F1 Grand Prix for the 2019 season right after Spain?,country,Spain,Monaco
@@ -2127,29 +2285,39 @@ Which country secured their independence shortly after country Uzbekistan?,count
 Which country secured their independence shortly after country Croatia?,country,country Croatia,Azerbaijan
 Which country did the people accomplish freedom in preceded by people of Croatia?,people,people of Croatia,Azerbaijan
 Who assumed the president position of the American Sociological Association preceded by James P. Lichtenberger?,the American Sociological Association,James P. Lichtenberger,Ulysses G. Weatherly
+Who took the role of president of the American Sociological Association immediately after James P. Lichtenberger?,president of the American Sociological Association,James P. Lichtenberger,Ulysses G. Weatherly
 Who assumed president position of the American Sociological Association just after George E. Howard?,the American Sociological Association,George E. Howard,Charles Cooley
 Who assumed the president position of the American Sociological Association preceded by George E. Howard?,the American Sociological Association,George E. Howard,Charles Cooley
 Who assumed president position of the American Sociological Association just after Charles Cooley?,American Sociological Association,Charles Cooley,Frank W. Blackmar
+Who took the role of president of the American Sociological Association immediately after Charles Cooley?,president of the American Sociological Association,Charles Cooley,Frank W. Blackmar
 Who was the president of the American Sociological Association just subsequent to Ulysses G. Weatherly?,the president of the American Sociological Association,Ulysses G. Weatherly,Charles A. Ellwood
+Who took the role of president of the American Sociological Association immediately after Ulysses G. Weatherly?,president of the American Sociological Association,Ulysses G. Weatherly,Charles A. Ellwood
 Who took over the president position of the American Sociological Association right after James Q. Dealey?,the president position of the American Sociological Association,James Q. Dealey,Edward C. Hayes
+Who took the role of president of the American Sociological Association immediately after James Q. Dealey?,president of the American Sociological Association,James Q. Dealey,Edward C. Hayes
 Who took over the president position of the American Sociological Association right after Ulysses G. Weatherly?,the president position of the American Sociological Association,Ulysses G. Weatherly,Charles A. Ellwood
+Who took the role of president of the American Sociological Association immediately after Ulysses G. Weatherly?,president of the American Sociological Association,Ulysses G. Weatherly,Charles A. Ellwood
 Who was president of the American Sociological Association immediately after Edward C. Hayes?,president of the American Sociological Association,Edward C. Hayes,James P. Lichtenberger
+Who took the role of president of the American Sociological Association immediately after Edward C. Hayes?,president of the American Sociological Association,Edward C. Hayes,James P. Lichtenberger
 Who was president of the American Sociological Association immediately after Edward C. Hayes?,president of the American Sociological Association,Edward C. Hayes,James P. Lichtenberger
 Who assumed president position of the American Sociological Association just after Edward C. Hayes?,the American Sociological Association,Edward C. Hayes,James P. Lichtenberger
 Who took over the president position of the American Sociological Association right after Lester F. Ward?,the president position of the American Sociological Association,Lester F. Ward,William G. Sumner
 Who held the presidential position in the American Sociological Association shortly after Lester F. Ward?,the presidential position in the American Sociological Association,Lester F. Ward,William G. Sumner
 Who was the president of the American Sociological Association just subsequent to George E. Howard?,the president of the American Sociological Association,George E. Howard,Charles Cooley
+Who took the role of president of the American Sociological Association immediately after George E. Howard?,president of the American Sociological Association,George E. Howard,Charles Cooley
 Who was president of the American Sociological Association immediately after Albion Woodbury Small?,president of the American Sociological Association,Albion Woodbury Small,Edward A. Ross
 Who assumed the president position of the American Sociological Association preceded by Albion Woodbury Small?,the American Sociological Association,Albion Woodbury Small,Edward A. Ross
 Who was the president of the American Sociological Association just subsequent to Frank W. Blackmar?,the president of the American Sociological Association,Frank W. Blackmar,James Q. Dealey
 Who assumed the president position of the American Sociological Association preceded by Frank W. Blackmar?,the American Sociological Association,Frank W. Blackmar,James Q. Dealey
 Who assumed the president position of the American Sociological Association preceded by Robert E. Park?,the American Sociological Association,Robert E. Park,John L. Gillin
+Who took the role of president of the American Sociological Association immediately after Robert E. Park?,president of the American Sociological Association,Robert E. Park,John L. Gillin
 Who held the presidential position in the American Sociological Association shortly after Frank W. Blackmar?,held the presidential position in the American Sociological Association,Frank W. Blackmar,James Q. Dealey
 Who assumed the president position of the American Sociological Association preceded by Frank W. Blackmar?,the American Sociological Association,Frank W. Blackmar,James Q. Dealey
 Who did the American Sociological Association appoint as president straight after Lester F. Ward?,the American Sociological Association,Lester F. Ward,William G. Sumner
+Who took the role of president of the American Sociological Association immediately after Lester F. Ward?,president of the American Sociological Association,Lester F. Ward,William G. Sumner
 Who took over the president position of the American Sociological Association right after Albion Woodbury Small?,the president position of the American Sociological Association,Albion Woodbury Small,Edward A. Ross
 Who was the president of the American Sociological Association just subsequent to Albion Woodbury Small?,the president of the American Sociological Association,Albion Woodbury Small,Edward A. Ross
 Who assumed president position of the American Sociological Association just after Edward C. Hayes?,American Sociological Association,Edward C. Hayes,James P. Lichtenberger
+Who took the role of president of the American Sociological Association immediately after Edward C. Hayes?,president of the American Sociological Association,Edward C. Hayes,James P. Lichtenberger
 Who was president of the American Sociological Association immediately after Frank W. Blackmar?,president of the American Sociological Association,Frank W. Blackmar,James Q. Dealey
 Who assumed president position of the American Sociological Association just after Frank W. Blackmar?,the American Sociological Association,Frank W. Blackmar,James Q. Dealey
 Who held the presidential position in the American Sociological Association shortly after Robert E. Park?,the American Sociological Association,Robert E. Park,John L. Gillin
@@ -2159,11 +2327,13 @@ Who was the president of the American Sociological Association just subsequent t
 Who was president of the American Sociological Association immediately after James P. Lichtenberger?,president of the American Sociological Association,James P. Lichtenberger,Ulysses G. Weatherly
 Who was the president of the American Sociological Association just subsequent to James P. Lichtenberger?,the president of the American Sociological Association,James P. Lichtenberger,Ulysses G. Weatherly
 Who did the American Psychological Association appoint as president straight after Edward C. Tolman?,the American Psychological Association,Edward C. Tolman,John Dashiell
+Who took the role of president of the American Psychological Association immediately after Edward C. Tolman?,president of the American Psychological Association,Edward C. Tolman,John Dashiell
 Who was president of the American Psychological Association immediately after Edward C. Tolman?,president of the American Psychological Association,Edward C. Tolman,John Dashiell
 Who held the presidential position in the American Psychological Association shortly after Edward C. Tolman?,American Psychological Association,Edward C. Tolman,John Dashiell
 Who held the presidential position in the American Psychological Association shortly after John Dashiell?,the American Psychological Association,John Dashiell,Gordon Allport
 Who assumed the president position of the American Psychological Association preceded by John Dashiell?,the American Psychological Association,John Dashiell,Gordon Allport
 Who assumed president position of the American Psychological Association just after Clark L. Hull?,American Psychological Association,Clark L. Hull,Edward C. Tolman
+Who took the role of president of the American Psychological Association immediately after Clark L. Hull?,president of the American Psychological Association,Clark L. Hull,Edward C. Tolman
 Who held the presidential position in the American Psychological Association shortly after Walter Samuel Hunter?,held the presidential position in the American Psychological Association,Walter Samuel Hunter,Walter Richard Miles
 Who was the president of the American Psychological Association just subsequent to Walter Samuel Hunter?,the president of the American Psychological Association,Walter Samuel Hunter,Walter Richard Miles
 Who assumed president position of the American Psychological Association just after Louis Leon Thurstone?,the American Psychological Association,Louis Leon Thurstone,Joseph Peterson
@@ -2175,7 +2345,9 @@ Who held the presidential position in the American Psychological Association sho
 Who did the American Psychological Association appoint as president straight after Harvey A. Carr?,the American Psychological Association,Harvey A. Carr,Harry Levi Hollingworth
 Who was the president of the American Psychological Association just subsequent to Harvey A. Carr?,the president of the American Psychological Association,Harvey A. Carr,Harry Levi Hollingworth
 Who did the American Psychological Association appoint as president straight after Clark L. Hull?,the American Psychological Association,Clark L. Hull,Edward C. Tolman
+Who took the role of president of the American Psychological Association immediately after Clark L. Hull?,president of the American Psychological Association,Clark L. Hull,Edward C. Tolman
 Who held the presidential position in the American Psychological Association shortly after John Dashiell?,the American Psychological Association,John Dashiell,Gordon Allport
+Who took the role of president of the American Psychological Association immediately after John Dashiell?,president of the American Psychological Association,John Dashiell,Gordon Allport
 Who was president of the American Psychological Association immediately after Gordon Allport?,American Psychological Association,Gordon Allport,Leonard Carmichael
 Who assumed the president position of the American Psychological Association preceded by Gordon Allport?,the American Psychological Association,Gordon Allport,Leonard Carmichael
 Who did the American Psychological Association appoint as president straight after Herbert Langfeld?,the American Psychological Association,Herbert Langfeld,Walter Samuel Hunter
@@ -2183,16 +2355,19 @@ Who held the presidential position in the American Psychological Association sho
 Who took over the president position of the American Psychological Association right after Harvey A. Carr?,the president position of the American Psychological Association,Harvey A. Carr,Harry Levi Hollingworth
 Who assumed the president position of the American Psychological Association preceded by Harvey A. Carr?,the American Psychological Association,Harvey A. Carr,Harry Levi Hollingworth
 Who did the American Psychological Association appoint as president straight after Karl Lashley?,the American Psychological Association,Karl Lashley,Herbert Langfeld
+Who took the role of president of the American Psychological Association immediately after Karl Lashley?,president of the American Psychological Association,Karl Lashley,Herbert Langfeld
 Who was president of the American Psychological Association immediately after Edward C. Tolman?,president of the American Psychological Association,Edward C. Tolman,John Dashiell
 Who assumed the president position of the American Psychological Association preceded by Edward C. Tolman?,the American Psychological Association,Edward C. Tolman,John Dashiell
 Who assumed president position of the American Psychological Association just after Edwin G. Boring?,the American Psychological Association,Edwin G. Boring,Karl Lashley
 Who assumed the president position of the American Psychological Association preceded by Edwin G. Boring?,the American Psychological Association,Edwin G. Boring,Karl Lashley
 Who held the presidential position in the American Physiological Society shortly after Henry P. Bowditch?,held the presidential position in the American Physiological Society,Henry P. Bowditch,S. Weir Mitchell
+Who took the role of president of the American Physiological Society immediately after Henry P. Bowditch?,president of the American Physiological Society,Henry P. Bowditch,S. Weir Mitchell
 Who took over the president position of the American Physiological Society right after William H. Howell?,the president position of the American Physiological Society,William H. Howell,Samuel James Meltzer
 Who assumed the president position of the American Physiological Society preceded by William H. Howell?,the American Physiological Society,William H. Howell,Samuel James Meltzer
 Who took over the president position of the American Physiological Society right after John James Rickard Macleod?,the president position of the American Physiological Society,John James Rickard Macleod,Anton Julius Carlson
 Who held the presidential position in the American Physiological Society shortly after John James Rickard Macleod?,the presidential position in the American Physiological Society,John James Rickard Macleod,Anton Julius Carlson
 Who assumed president position of the American Physiological Society just after Henry P. Bowditch?,the American Physiological Society,Henry P. Bowditch,S. Weir Mitchell
+Who took the role of president of the American Physiological Society immediately after Henry P. Bowditch?,president of the American Physiological Society,Henry P. Bowditch,S. Weir Mitchell
 Who was the president of the American Physiological Society just subsequent to Anton Julius Carlson?,the president of the American Physiological Society,Anton Julius Carlson,Joseph Erlanger
 Who assumed the president position of the American Physiological Society preceded by Anton Julius Carlson?,the American Physiological Society,Anton Julius Carlson,Joseph Erlanger
 Who did the American Physiological Society appoint as president straight after S. Weir Mitchell?,the American Physiological Society,S. Weir Mitchell,Russell Henry Chittenden
@@ -2202,9 +2377,11 @@ Who was the president of the American Physiological Society just subsequent to F
 Who was president of the American Physiological Society immediately after Joseph Erlanger?,president of the American Physiological Society,Joseph Erlanger,Walter Joseph Meek
 Who held the presidential position in the American Physiological Society shortly after Joseph Erlanger?,the presidential position in the American Physiological Society,Joseph Erlanger,Walter Joseph Meek
 Who did the American Physiological Society appoint as president straight after Fredric Schiller Lee?,the American Physiological Society,Fredric Schiller Lee,Warren Plimpton Lombard
+Who took the role of president of the American Physiological Society immediately after Fredric Schiller Lee?,president of the American Physiological Society,Fredric Schiller Lee,Warren Plimpton Lombard
 Who assumed president position of the American Physiological Society just after Arno B. Luckhardt?,the American Physiological Society,Arno B. Luckhardt,Charles Wilson Greene
 Who was the president of the American Physiological Society just subsequent to Arno B. Luckhardt?,the president of the American Physiological Society,Arno B. Luckhardt,Charles Wilson Greene
 Who held the presidential position in the American Physiological Society shortly after Frank Charles Mann?,held the presidential position in the American Physiological Society,Frank Charles Mann,Walter Eugene Garrey
+Who took the role of president of the American Physiological Society immediately after Frank Charles Mann?,president of the American Physiological Society,Frank Charles Mann,Walter Eugene Garrey
 Who was president of the American Physiological Society immediately after Arno B. Luckhardt?,president of the American Physiological Society,Arno B. Luckhardt,Charles Wilson Greene
 Who was the president of the American Physiological Society just subsequent to Arno B. Luckhardt?,the president of the American Physiological Society,Arno B. Luckhardt,Charles Wilson Greene
 Who assumed president position of the American Physiological Society just after Walter Joseph Meek?,the American Physiological Society,Walter Joseph Meek,Arno B. Luckhardt
@@ -2212,6 +2389,7 @@ Who was the president of the American Physiological Society just subsequent to W
 Who was the president of the American Physiological Society just subsequent to William H. Howell?,the president of the American Physiological Society,William H. Howell,Samuel James Meltzer
 Who assumed the president position of the American Physiological Society preceded by William H. Howell?,the American Physiological Society,William H. Howell,Samuel James Meltzer
 Who assumed the president position of the American Physiological Society preceded by Walter Bradford Cannon?,the American Physiological Society,Walter Bradford Cannon,Fredric Schiller Lee
+Who took the role of president of the American Physiological Society immediately after Walter Bradford Cannon?,president of the American Physiological Society,Walter Bradford Cannon,Fredric Schiller Lee
 Who was president of the American Physiological Society immediately after Arno B. Luckhardt?,president of the American Physiological Society,Arno B. Luckhardt,Charles Wilson Greene
 Who did the American Physiological Society appoint as president straight after Arno B. Luckhardt?,the American Physiological Society,Arno B. Luckhardt,Charles Wilson Greene
 Who did the American Physiological Society appoint as president straight after Joseph Erlanger?,the American Physiological Society,Joseph Erlanger,Walter Joseph Meek
@@ -2221,6 +2399,7 @@ Who assumed the president position of the American Physiological Society precede
 Who did the American Political Science Association appoint as president straight after Woodrow Wilson?,the American Political Science Association,Woodrow Wilson,Simeon E. Baldwin
 Who assumed the president position of the American Political Science Association preceded by Woodrow Wilson?,the American Political Science Association,Woodrow Wilson,Simeon E. Baldwin
 Who took over the president position of the American Political Science Association right after Westel W. Willoughby?,the president position of the American Political Science Association,Westel W. Willoughby,John Bassett Moore
+Who took the role of president of the American Political Science Association immediately after Westel W. Willoughby?,president of the American Political Science Association,Westel W. Willoughby,John Bassett Moore
 Who was president of the American Political Science Association immediately after Paul Samuel Reinsch?,president of the American Political Science Association,Paul Samuel Reinsch,Leo S. Rowe
 Who took over the president position of the American Political Science Association right after Paul Samuel Reinsch?,the president position of the American Political Science Association,Paul Samuel Reinsch,Leo S. Rowe
 Who did the American Political Science Association appoint as president straight after Woodrow Wilson?,the American Political Science Association,Woodrow Wilson,Simeon E. Baldwin
@@ -2238,12 +2417,15 @@ Who did the American Political Science Association appoint as president straight
 Who did the American Political Science Association appoint as president straight after Albert Bushnell Hart?,the American Political Science Association,Albert Bushnell Hart,Westel W. Willoughby
 Who held the presidential position in the American Political Science Association shortly after Albert Bushnell Hart?,the presidential position in the American Political Science Association,Albert Bushnell Hart,Westel W. Willoughby
 Who was president of the American Political Science Association immediately after Paul Samuel Reinsch?,president of the American Political Science Association,Paul Samuel Reinsch,Leo S. Rowe
+Who took the role of president of the American Political Science Association immediately after Paul Samuel Reinsch?,president of the American Political Science Association,Paul Samuel Reinsch,Leo S. Rowe
 Who assumed president position of the American Political Science Association just after Frank J. Goodnow?,the American Political Science Association,Frank J. Goodnow,Albert Shaw
 Who was the president of the American Political Science Association just subsequent to Frank J. Goodnow?,the president of the American Political Science Association,Frank J. Goodnow,Albert Shaw
 Who held the presidential position in the American Political Science Association shortly after Henry Jones Ford?,the American Political Science Association,Henry Jones Ford,Paul Samuel Reinsch
 Who was the president of the American Political Science Association just subsequent to Henry Jones Ford?,the president of the American Political Science Association,Henry Jones Ford,Paul Samuel Reinsch
 Who was president of the American Political Science Association immediately after Frank J. Goodnow?,American Political Science Association,Frank J. Goodnow,Albert Shaw
+Who took the role of president of the American Political Science Association immediately after Frank J. Goodnow?,president of the American Political Science Association,Frank J. Goodnow,Albert Shaw
 Who assumed the president position of the American Political Science Association preceded by Munroe Smith?,the American Political Science Association,Munroe Smith,Henry Jones Ford
+Who took the role of president of the American Political Science Association immediately after Munroe Smith?,president of the American Political Science Association,Munroe Smith,Henry Jones Ford
 Who held the presidential position in the American Political Science Association shortly after Ernst Freund?,held the presidential position in the American Political Science Association,Ernst Freund,Jesse Macy
 Who was the president of the American Political Science Association just subsequent to Ernst Freund?,the American Political Science Association,Ernst Freund,Jesse Macy
 Who took over the president position of the American Political Science Association right after Paul Samuel Reinsch?,the president position of the American Political Science Association,Paul Samuel Reinsch,Leo S. Rowe
@@ -2259,6 +2441,7 @@ Who assumed the president position of the American Philosophical Association pre
 Who assumed president position of the American Philosophical Association just after Rogers Albritton?,the American Philosophical Association,Rogers Albritton,Donald Davidson
 Who assumed the president position of the American Philosophical Association preceded by Rogers Albritton?,the American Philosophical Association,Rogers Albritton,Donald Davidson
 Who assumed the president position of the American Philosophical Association preceded by Marjorie Grene?,the American Philosophical Association,Marjorie Grene,Patrick Suppes
+Who took the role of president of the American Philosophical Association immediately after Marjorie Grene?,president of the American Philosophical Association,Marjorie Grene,Patrick Suppes
 Who was president of the American Philosophical Association immediately after Wesley Salmon?,president of the American Philosophical Association,Wesley Salmon,William Craig
 Who assumed the president position of the American Philosophical Association preceded by Wesley Salmon?,the American Philosophical Association,Wesley Salmon,William Craig
 Who took over the president position of the American Philosophical Association right after Benson Mates?,the president position of the American Philosophical Association,Benson Mates,Rogers Albritton
@@ -2270,6 +2453,7 @@ Who held the presidential position in the American Philosophical Association sho
 Who was president of the American Philosophical Association immediately after Rogers Albritton?,president of the American Philosophical Association,Rogers Albritton,Donald Davidson
 Who assumed the president position of the American Philosophical Association preceded by Rogers Albritton?,the American Philosophical Association,Rogers Albritton,Donald Davidson
 Who was president of the American Philosophical Association immediately after David Kaplan?,president of the American Philosophical Association,David Kaplan,Joel Feinberg
+Who took the role of president of the American Philosophical Association immediately after David Kaplan?,president of the American Philosophical Association,David Kaplan,Joel Feinberg
 Who took over the president position of the American Philosophical Association right after Paul Grice?,the president position of the American Philosophical Association,Paul Grice,Jaako Hintikka
 Who assumed the president position of the American Philosophical Association preceded by Paul Grice?,the American Philosophical Association,Paul Grice,Jaako Hintikka
 Who assumed president position of the American Philosophical Association just after Paul Grice?,the American Philosophical Association,Paul Grice,Jaako Hintikka
@@ -2297,6 +2481,7 @@ Who took over the president position of the American Philosophical Association r
 Who assumed president position of Virginia Tech just after Paul Brandon Barringer?,Virginia Tech,Paul Brandon Barringer,Joseph Dupuy Eggleston
 Who assumed the president position of Virginia Tech preceded by Paul Brandon Barringer?,Virginia Tech,Paul Brandon Barringer,Joseph Dupuy Eggleston
 Who held the presidential position at The Virginia Polytechnic Institute and State University shortly after Lunsford Lindsay Lomax?,The Virginia Polytechnic Institute and State University,Lunsford Lindsay Lomax,John McLaren McBryde
+Who took the role of president of Virginia Tech immediately after Lunsford Lindsay Lomax?,president of Virginia Tech,Lunsford Lindsay Lomax,John McLaren McBryde
 Who took over the president position of The Virginia Polytechnic Institute and State University right after John Lee Buchanan?,The Virginia Polytechnic Institute and State University,John Lee Buchanan,Thomas Nelson Conrad
 Who assumed president position of Virginia Tech just after John Lee Buchanan?,Virginia Tech,John Lee Buchanan,Thomas Nelson Conrad
 Who took over the president position of The Virginia Polytechnic Institute and State University right after Charles Robert Scott Ship?,The Virginia Polytechnic Institute and State University,Charles Robert Scott Ship,John Lee Buchanan
@@ -2320,7 +2505,9 @@ Who held the presidential position at The Virginia Polytechnic Institute and Sta
 Who took over the president position of The Virginia Polytechnic Institute and State University right after John Redd Hutcheson?,The Virginia Polytechnic Institute and State University,John Redd Hutcheson,Walter Stephenson Newman
 Who did Virginia Tech appoint as president straight after John Redd Hutcheson?,Virginia Tech,John Redd Hutcheson,Walter Stephenson Newman
 Who was the president of Virginia Tech just subsequent to Paul Brandon Barringer?,Virginia Tech,Paul Brandon Barringer,Joseph Dupuy Eggleston
+Who took the role of president of Virginia Tech immediately after Paul Brandon Barringer?,president of Virginia Tech,Paul Brandon Barringer,Joseph Dupuy Eggleston
 Who took over the president position of The Virginia Polytechnic Institute and State University right after Walter Stephenson Newman?,The Virginia Polytechnic Institute and State University,Walter Stephenson Newman,"Thomas Marshall Hahn, Jr."
+Who took the role of president of Virginia Tech immediately after Walter Stephenson Newman?,president of Virginia Tech,Walter Stephenson Newman,"Thomas Marshall Hahn, Jr."
 Who was president of Virginia Tech immediately after James Douglas McComas?,Virginia Tech,James Douglas McComas,Paul Ernest Torgersen
 Who did Virginia Tech appoint as president straight after James Douglas McComas?,Virginia Tech,James Douglas McComas,Paul Ernest Torgersen
 Who assumed president position of Virginia Tech just after Charles Robert Scott Ship?,Virginia Tech,Charles Robert Scott Ship,John Lee Buchanan
@@ -2328,10 +2515,13 @@ Who was the president of Virginia Tech just subsequent to Charles Robert Scott S
 Who was president of Virginia Tech immediately after William Edward Lavery?,Virginia Tech,William Edward Lavery,James Douglas McComas
 Who assumed the president position of Virginia Tech preceded by William Edward Lavery?,Virginia Tech,William Edward Lavery,James Douglas McComas
 Who was the president of Virginia Tech just subsequent to John Redd Hutcheson?,Virginia Tech,John Redd Hutcheson,Walter Stephenson Newman
+Who took the role of president of Virginia Tech immediately after John Redd Hutcheson?,president of Virginia Tech,John Redd Hutcheson,Walter Stephenson Newman
 Who did Virginia Tech appoint as president straight after Lunsford Lindsay Lomax?,Virginia Tech,Lunsford Lindsay Lomax,John McLaren McBryde
 Who held the presidential position at The Virginia Polytechnic Institute and State University shortly after Lunsford Lindsay Lomax?,The Virginia Polytechnic Institute and State University,Lunsford Lindsay Lomax,John McLaren McBryde
 Who took over the president position of The Virginia Polytechnic Institute and State University right after James Douglas McComas?,The Virginia Polytechnic Institute and State University,James Douglas McComas,Paul Ernest Torgersen
+Who took the role of president of Virginia Tech immediately after James Douglas McComas?,president of Virginia Tech,James Douglas McComas,Paul Ernest Torgersen
 Who did Virginia Tech appoint as president straight after Paul Ernest Torgersen?,Virginia Tech,Paul Ernest Torgersen,Charles William Steger
+Who took the role of president of Virginia Tech immediately after Paul Ernest Torgersen?,president of Virginia Tech,Paul Ernest Torgersen,Charles William Steger
 Who was president of Virginia Tech immediately after Paul Ernest Torgersen?,Virginia Tech,Paul Ernest Torgersen,Charles William Steger
 Who assumed the president position of Virginia Tech preceded by Paul Ernest Torgersen?,Virginia Tech,Paul Ernest Torgersen,Charles William Steger
 Who assumed the Presidency of the United States shortly after James Monroe?,the Presidency of the United States,James Monroe,John Quincy Adams
@@ -2421,9 +2611,11 @@ Who was the CEO of IBM just subsequent to John R Opel?,IBM,John R Opel,John Fell
 Who did IBM appoint as CEO straight after John R Opel?,IBM,John R Opel,John Fellows Akers
 Who held the Chief Executive position in IBM company shortly after John R Opel?,IBM company,John R Opel,John Fellows Akers
 Who was the CEO of IBM just subsequent to Samuel J Palmisano?,IBM,Samuel J Palmisano,Ginni Rometty
+Who took the role of CEO of IBM immediately after Samuel J Palmisano?,CEO of IBM,Samuel J Palmisano,Ginni Rometty
 Who was the CEO of IBM just subsequent to Samuel J Palmisano?,IBM,Samuel J Palmisano,Ginni Rometty
 Who assumed the CEO position of IBM preceded by Samuel J Palmisano?,IBM,Samuel J Palmisano,Ginni Rometty
 Who was the CEO of IBM just subsequent to John R Opel?,IBM,John R Opel,John Fellows Akers
+Who took the role of CEO of IBM immediately after John R Opel?,IBM,John R Opel,John Fellows Akers
 Who did IBM appoint as CEO straight after Samuel J Palmisano?,IBM,Samuel J Palmisano,Ginni Rometty
 Who assumed the CEO position of IBM just after Samuel J Palmisano?,IBM,Samuel J Palmisano,Ginni Rometty
 Who was CEO of IBM immediately after Ginni Rometty?,IBM,Ginni Rometty,Arvind Krishna
@@ -2437,6 +2629,7 @@ Who did IBM appoint as CEO straight after Ginni Rometty?,IBM,Ginni Rometty,Arvin
 Who was CEO of IBM immediately after John R Opel?,IBM,John R Opel,John Fellows Akers
 Who took over the chief executive officer position at IBM right after John R Opel?,IBM,John R Opel,John Fellows Akers
 Who did IBM appoint as CEO straight after Samuel J Palmisano?,IBM,Samuel J Palmisano,Ginni Rometty
+Who took the role of CEO of IBM immediately after Samuel J Palmisano?,CEO of IBM,Samuel J Palmisano,Ginni Rometty
 Who did IBM appoint as CEO straight after T Vincent Learson?,IBM,T Vincent Learson,Frank T Cary
 Who assumed the CEO position of IBM just after T Vincent Learson?,IBM,T Vincent Learson,Frank T Cary
 Who was the CEO of IBM just subsequent to Louis V Gerstner?,IBM,Louis V Gerstner,Samuel J Palmisano
