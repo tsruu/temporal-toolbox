@@ -18,7 +18,7 @@ import pycountry
 
 DetectorFactory.seed = 0
 PACKAGE_DIR = Path(__file__).resolve().parent
-TRANSLATION_TIMEOUT_SECONDS = 1.8
+TRANSLATION_TIMEOUT_SECONDS = 3.0
 _CALL_SLOTS = BoundedSemaphore(16)
 _LANGUAGES = json.loads((PACKAGE_DIR / "translation_languages.json").read_text(encoding="utf-8"))
 _LANGUAGE_CODES = frozenset(_LANGUAGES.values())
@@ -154,14 +154,18 @@ def detect_language(text: str) -> str:
 
 
 def translate(text: str, source_language: str, target_language: str) -> str:
-    """Translate via the frozen cache first, then Azure; failures always raise."""
+    """Return same-language text directly, otherwise use cache then Azure."""
     try:
         if not isinstance(text, str) or not text.strip():
             raise TranslationError("text is empty")
-        key = cache_key(text, source_language, target_language)
+        source = _normalize_language(source_language)
+        target = _normalize_language(target_language)
+        if source == target:
+            return text.strip()
+        normalized = _normalize_text(text)
+        key = json.dumps([normalized, source, target], ensure_ascii=False)
         if key in _CACHE:
             return _CACHE[key]
-        normalized, source, target = json.loads(key)
         return _azure_translate(normalized, source, target)
     except TranslationError as error:
         raise TranslationError(f"translation failed: {error}") from None

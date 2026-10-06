@@ -2,10 +2,15 @@
 """Check uncached errors on a local server started with an unroutable proxy."""
 import asyncio
 import argparse
+from pathlib import Path
+import sys
 import time
 
 import httpx
 from fastmcp import Client
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from app.tools import language
 
 URL='http://127.0.0.1:18011'
 ARGS={'text':'Cette chaîne est volontairement absente du cache: batch1-network-check',
@@ -22,13 +27,13 @@ async def main():
         elapsed=time.perf_counter()-start
         assert response['status']=='error'
         assert response['result_text'].startswith('ERROR: translation failed:')
-        assert response['result_text']!=ARGS['text'] and elapsed<1.8
+        assert response['result_text']!=ARGS['text'] and elapsed<language.TRANSLATION_TIMEOUT_SECONDS+.5
         print('Network blocked REST:',response['result_text'],f'({elapsed:.6f} s)')
     async with Client(url+'/sse') as client:
         start=time.perf_counter();response=await client.call_tool('translation',ARGS)
         elapsed=time.perf_counter()-start
         assert response.content[0].text.startswith('ERROR: translation failed:')
-        assert response.content[0].text!=ARGS['text'] and elapsed<1.8
+        assert response.content[0].text!=ARGS['text'] and elapsed<language.TRANSLATION_TIMEOUT_SECONDS+.5
         print('Network blocked SSE:',response.content[0].text,f'({elapsed:.6f} s)')
     print('RESULT: PASS')
 

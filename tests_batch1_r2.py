@@ -80,6 +80,8 @@ class BoundedAzureTests(unittest.TestCase):
                         self.assertEqual(response["status"], "error")
                         self.assertTrue(response["result_text"].startswith("ERROR: translation failed:"))
                         self.assertNotIn("too many pending", response["result_text"])
+                        self.assertGreaterEqual(
+                            elapsed[-1], language.TRANSLATION_TIMEOUT_SECONDS - .25)
                         self.assertLess(elapsed[-1], language.TRANSLATION_TIMEOUT_SECONDS + .5)
 
                 # The queue backstop can return just before the final HTTP timeout fires.

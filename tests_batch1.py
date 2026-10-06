@@ -30,6 +30,28 @@ class TranslationTests(unittest.TestCase):
             with patch.object(language, '_azure_translate', side_effect=AssertionError('network used')):
                 self.assertEqual(language.translate(text, source, target), value)
 
+    def test_same_language_shortcut_skips_cache_and_network(self):
+        class CacheLookupForbidden:
+            def __contains__(self, key):
+                raise AssertionError('cache lookup used')
+
+        with patch.object(language, '_CACHE', CacheLookupForbidden()), \
+             patch.dict('os.environ', {
+                 'AZURE_TRANSLATOR_KEY': 'test-only',
+                 'AZURE_TRANSLATOR_REGION': 'test-only',
+             }), \
+             patch.object(language.requests, 'post', side_effect=requests.ConnectionError('offline')) as post:
+            for source, target in [('English', 'English'), ('en', 'English')]:
+                with self.subTest(source=source, target=target):
+                    start = time.perf_counter()
+                    result = language.translate('  keep  internal spacing  ', source, target)
+                    elapsed = time.perf_counter() - start
+                    self.assertEqual(result, 'keep  internal spacing')
+                    self.assertLess(elapsed, .01)
+            with self.assertRaisesRegex(language.TranslationError, 'unsupported language'):
+                language.translate('hello', 'klingon', 'klingon')
+            post.assert_not_called()
+
     def test_uncached_success_does_not_write_cache(self):
         before=dict(language._CACHE)
         with patch.object(language._FrozenMicrosoftTranslator,'translate',return_value='translated'):
