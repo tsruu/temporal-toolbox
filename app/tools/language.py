@@ -1,81 +1,135 @@
-# app/tools/language.py
+"""Azure translation with a frozen, package-local cache and bounded calls."""
 
+import json
+import os
+from pathlib import Path
+from queue import Empty, Queue
+from threading import BoundedSemaphore, Thread
+from types import MappingProxyType
+import unicodedata
+
+from deep_translator import MicrosoftTranslator
 from langdetect import detect, DetectorFactory
-from deep_translator import GoogleTranslator
 import pycountry
 
 DetectorFactory.seed = 0
+PACKAGE_DIR = Path(__file__).resolve().parent
+TRANSLATION_TIMEOUT_SECONDS = 1.8
+_CALL_SLOTS = BoundedSemaphore(16)
+_LANGUAGES = json.loads((PACKAGE_DIR / "translation_languages.json").read_text(encoding="utf-8"))
+_LANGUAGE_CODES = frozenset(_LANGUAGES.values())
+_CODE_ALIASES = {
+    "zh": "zh-hans", "zh-cn": "zh-hans", "zh-tw": "zh-hant",
+    "sr": "sr-cyrl", "tl": "fil", "no": "nb", "iw": "he",
+}
 
 
-def _iso_to_language_name(iso_code: str) -> str:
-    """
-    Convert ISO 639-1 code to full language name.
-    Falls back to 'Unknown' if not found.
-    """
-    try:
-        language = pycountry.languages.get(alpha_2=iso_code)
-        if language and hasattr(language, "name"):
-            return language.name
-    except Exception:
-        pass
-    return "Unknown"
+class TranslationError(ValueError):
+    """Safe error text: never include credentials or raw HTTP exceptions."""
+
+
+def _normalize_text(text: str) -> str:
+    return " ".join(unicodedata.normalize("NFC", text).split())
 
 
 def _normalize_language(lang: str) -> str:
-    """
-    Normalize language input to ISO 639-1 code.
-    Accepts full language names ('English') or ISO codes ('en').
-    """
-    if not lang:
-        return lang
+    """Accept Azure-supported language names or ISO codes, case-insensitively."""
+    value = lang.strip().casefold() if isinstance(lang, str) else ""
+    value = _CODE_ALIASES.get(value, value)
+    if value in _LANGUAGE_CODES:
+        return value
+    if value in _LANGUAGES:
+        return _LANGUAGES[value]
+    # ISO names sometimes differ from Azure's names.
+    for language in pycountry.languages:
+        names = (getattr(language, k, "") for k in ("name", "common_name"))
+        if value and value in (name.casefold() for name in names):
+            code = getattr(language, "alpha_2", "")
+            code = _CODE_ALIASES.get(code, code)
+            if code in _LANGUAGE_CODES:
+                return code
+    raise TranslationError("unsupported language")
 
-    lang = lang.strip()
 
-    # Already ISO 639-1
-    if len(lang) == 2:
-        return lang.lower()
+def cache_key(text: str, source_language: str, target_language: str) -> str:
+    return json.dumps([_normalize_text(text), _normalize_language(source_language),
+                       _normalize_language(target_language)], ensure_ascii=False)
 
+
+def _load_cache():
+    data = json.loads((PACKAGE_DIR / "translation_cache.json").read_text(encoding="utf-8"))
+    entries = data["entries"]
+    for key, value in entries.items():
+        text, source, target = json.loads(key)
+        if key != cache_key(text, source, target) or not isinstance(value, str) or not value.strip():
+            raise ValueError("invalid frozen translation cache")
+    return MappingProxyType(entries)
+
+
+_CACHE = _load_cache()
+
+
+class _FrozenMicrosoftTranslator(MicrosoftTranslator):
+    def _get_supported_languages(self):
+        # deep-translator otherwise performs an unbounded GET on every constructor.
+        return dict(_LANGUAGES)
+
+
+def _azure_translate(text: str, source: str, target: str) -> str:
+    key = os.environ.get("AZURE_TRANSLATOR_KEY")
+    region = os.environ.get("AZURE_TRANSLATOR_REGION")
+    if not key or not region:
+        raise TranslationError("AZURE_TRANSLATOR_KEY and AZURE_TRANSLATOR_REGION are required")
+    if not _CALL_SLOTS.acquire(blocking=False):
+        raise TranslationError("too many pending Azure calls")
+    result = Queue(maxsize=1)
+
+    def call():
+        try:
+            value = _FrozenMicrosoftTranslator(api_key=key, region=region,
+                                              source=source, target=target).translate(text)
+            if not isinstance(value, str) or not value.strip():
+                raise TranslationError("empty Azure response")
+            result.put((True, value))
+        except Exception:
+            # Azure/client exceptions can contain request details. Do not expose them.
+            result.put((False, "Azure API request failed"))
+        finally:
+            _CALL_SLOTS.release()
+
+    Thread(target=call, daemon=True, name="azure-translation").start()
     try:
-        language = pycountry.languages.get(name=lang)
-        if language and hasattr(language, "alpha_2"):
-            return language.alpha_2
-    except Exception:
-        pass
-
-    return lang
+        ok, value = result.get(timeout=TRANSLATION_TIMEOUT_SECONDS)
+    except Empty:
+        raise TranslationError(f"timeout after {TRANSLATION_TIMEOUT_SECONDS:g} seconds") from None
+    if not ok:
+        raise TranslationError(value)
+    return value
 
 
 def detect_language(text: str) -> str:
-    """
-    Detect the language of the input text.
-    Returns full language name (e.g., 'English', 'French').
-    """
-    if not text or not text.strip():
-        return "Unknown"
-
+    """Detect the language, returning its full name or raising on failure."""
     try:
-        iso_code = detect(text)
-        return _iso_to_language_name(iso_code)
+        if not isinstance(text, str) or not text.strip():
+            raise ValueError("empty text")
+        code = _normalize_language(detect(text))
+        language = pycountry.languages.get(alpha_2=code)
+        if language and hasattr(language, "name"):
+            return language.name
+        return next(name.title() for name, value in _LANGUAGES.items() if value == code)
     except Exception:
-        return "Unknown"
+        raise ValueError("language detection failed") from None
 
 
 def translate(text: str, source_language: str, target_language: str) -> str:
-    """
-    Translate text from source_language to target_language.
-    Languages may be full names ('English') or ISO codes ('en').
-    """
-    if not text or not text.strip():
-        return text
-
+    """Translate via the frozen cache first, then Azure; failures always raise."""
     try:
-        source = _normalize_language(source_language)
-        target = _normalize_language(target_language)
-
-        return GoogleTranslator(
-            source=source,
-            target=target
-        ).translate(text)
-
-    except Exception:
-        return text
+        if not isinstance(text, str) or not text.strip():
+            raise TranslationError("text is empty")
+        key = cache_key(text, source_language, target_language)
+        if key in _CACHE:
+            return _CACHE[key]
+        normalized, source, target = json.loads(key)
+        return _azure_translate(normalized, source, target)
+    except TranslationError as error:
+        raise TranslationError(f"translation failed: {error}") from None

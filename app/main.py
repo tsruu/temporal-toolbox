@@ -4,6 +4,9 @@ import logging
 import os
 import time
 
+from typing import Annotated
+
+from pydantic import Field
 from fastapi import FastAPI
 from fastmcp import FastMCP
 from starlette.requests import Request
@@ -42,11 +45,13 @@ logger.info(
 
 
 @mcp.tool()
-def before_absolute_reference(entity: str, time: str) -> str:
+def before_absolute_reference(
+    entity: Annotated[str, Field(description='The subject asked about.')],
+    time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
+) -> str:
     """
-    Answers questions of the form “What was the entity associated with immediately before a given absolute time?”.
-    Use this to retrieve the entity’s role, affiliation, or state just prior to a specific date or year.
-    The result is looked up from structured data, not inferred.
+    Answers questions asking what an entity was associated with immediately before a given date.
+    Arguments must be in English. The result is looked up from structured data, not inferred.
     """
     result = dispatch_tool(
         "before_absolute_reference",
@@ -58,11 +63,14 @@ def before_absolute_reference(entity: str, time: str) -> str:
 
 
 @mcp.tool()
-def before_chronological_reference(entity: str, event: str) -> str:
+def before_chronological_reference(
+    entity: Annotated[str, Field(description='The series or subject whose history is asked about.')],
+    event: Annotated[str, Field(description='The named item the question is anchored on.')],
+) -> str:
     """
-    Answers questions asking what an entity was associated with immediately before another event.
-    Use this when the reference point is a named event (e.g., a team, organization, or historical milestone), not a date.
-    The answer is retrieved from structured records.
+    Answers questions asking what came immediately before a named reference item in an entity's history.
+    Use this when the reference point is a named item, not a date.
+    Arguments must be in English. The answer is retrieved from structured records.
     """
     result = dispatch_tool(
         "before_chronological_reference",
@@ -74,11 +82,13 @@ def before_chronological_reference(entity: str, event: str) -> str:
 
 
 @mcp.tool()
-def after_absolute_reference(entity: str, time: str) -> str:
+def after_absolute_reference(
+    entity: Annotated[str, Field(description='The subject asked about.')],
+    time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
+) -> str:
     """
-    Answers questions of the form “What was the entity associated with immediately after a given absolute time?”.
-    Use this to retrieve the entity’s role, affiliation, or state just after a specific date or year.
-    The result is looked up from structured data, not inferred.
+    Answers questions asking what an entity was associated with immediately after a given date.
+    Arguments must be in English. The result is looked up from structured data, not inferred.
     """
     result = dispatch_tool(
         "after_absolute_reference",
@@ -90,11 +100,14 @@ def after_absolute_reference(entity: str, time: str) -> str:
 
 
 @mcp.tool()
-def after_chronological_reference(entity: str, event: str) -> str:
+def after_chronological_reference(
+    entity: Annotated[str, Field(description='The series or subject whose history is asked about.')],
+    event: Annotated[str, Field(description='The named item the question is anchored on.')],
+) -> str:
     """
-    Answers questions asking what an entity was associated with immediately after another event.
-    Use this when the reference point is a named event (e.g., a team, organization, or historical milestone), not a date.
-    The answer is retrieved from structured records.
+    Answers questions asking what came immediately after a named reference item in an entity's history.
+    Use this when the reference point is a named item, not a date.
+    Arguments must be in English. The answer is retrieved from structured records.
     """
     result = dispatch_tool(
         "after_chronological_reference",
@@ -106,11 +119,11 @@ def after_chronological_reference(entity: str, event: str) -> str:
 
 
 @mcp.tool()
-def event_time(event: str) -> str:
+def event_time(event: Annotated[str, Field(description="The event's name or a short description.")]) -> str:
     """
     Retrieves the exact date or time when a specified event occurred.
-    Use this when a question requires knowing when an event happened, especially to compare or reason about the order of multiple events.
-    The result is obtained via structured data lookup, not inference.
+    Use this when a question requires knowing when an event happened, e.g. to order several events.
+    The result is looked up from structured data, not inference. The argument must be in English.
     """
     result = dispatch_tool(
         "event_time",
@@ -122,11 +135,13 @@ def event_time(event: str) -> str:
 
 
 @mcp.tool()
-def entity_time_event(entity: str, time: str) -> str:
+def entity_time_event(
+    entity: Annotated[str, Field(description='The subject asked about.')],
+    time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
+) -> str:
     """
-    Answers questions asking what role, position, or event an entity had at a specific time.
-    Use this when the question is “What was X doing / what was X’s status at time T?”.
-    The answer is retrieved from structured data.
+    Answers questions asking what role, position, or affiliation an entity had at a specific time.
+    Arguments must be in English. The answer is retrieved from structured data.
     """
     result = dispatch_tool(
         "entity_time_event",
@@ -153,10 +168,14 @@ def language_detection(text: str) -> str:
 
 
 @mcp.tool()
-def translation(text: str, source_language: str, target_language: str) -> str:
+def translation(
+    text: str,
+    source_language: Annotated[str, Field(description='A language name or ISO code.')],
+    target_language: Annotated[str, Field(description='A language name or ISO code.')],
+) -> str:
     """
-    Translates the provided text from a specified source language into the specified target language.
-    Use this when a translation is required before further processing
+    Translates the provided text from a source language into a target language.
+    Use this to translate non-English names before using the lookup tools.
     """
     result = dispatch_tool(
         "translation",
@@ -226,7 +245,10 @@ async def logging_middleware(request: Request, call_next):
 
 @api_app.post("/tool", response_model=ToolResponse)
 async def tool_endpoint(req: ToolRequest):
-    return dispatch_tool(req.tool_name, req.arguments)
+    result = dispatch_tool(req.tool_name, req.arguments)
+    if result.status != "ok":
+        result.result_text = f"ERROR: {result.result_text}"
+    return result
 
 
 @api_app.get("/health")
@@ -256,12 +278,12 @@ async def list_tools():
 
         {
             "name": "before_absolute_reference",
-            "description": "Answers questions of the form “What was the entity associated with immediately before a given absolute time?”. Use this to retrieve the entity’s role, affiliation, or state just prior to a specific date or year. The result is looked up from structured data, not inferred.",
+            "description": "Answers questions asking what an entity was associated with immediately before a given date.\nArguments must be in English. The result is looked up from structured data, not inferred.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string"},
-                    "time": {"type": "string"}
+                    "entity": {"type": "string", "description": "The subject asked about."},
+                    "time": {"type": "string", "description": "The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY."}
                 },
                 "required": ["entity", "time"]
             }
@@ -269,12 +291,12 @@ async def list_tools():
 
         {
             "name": "before_chronological_reference",
-            "description": "Answers questions asking what an entity was associated with immediately before another event. Use this when the reference point is a named event (e.g., a team, organization, or historical milestone), not a date. The answer is retrieved from structured records.",
+            "description": "Answers questions asking what came immediately before a named reference item in an entity's history.\nUse this when the reference point is a named item, not a date.\nArguments must be in English. The answer is retrieved from structured records.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string"},
-                    "event": {"type": "string"}
+                    "entity": {"type": "string", "description": "The series or subject whose history is asked about."},
+                    "event": {"type": "string", "description": "The named item the question is anchored on."}
                 },
                 "required": ["entity", "event"]
             }
@@ -282,12 +304,12 @@ async def list_tools():
 
         {
             "name": "after_absolute_reference",
-            "description": "Answers questions of the form “What was the entity associated with immediately after a given absolute time?”. Use this to retrieve the entity’s role, affiliation, or state just after a specific date or year. The result is looked up from structured data, not inferred.",
+            "description": "Answers questions asking what an entity was associated with immediately after a given date.\nArguments must be in English. The result is looked up from structured data, not inferred.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string"},
-                    "time": {"type": "string"}
+                    "entity": {"type": "string", "description": "The subject asked about."},
+                    "time": {"type": "string", "description": "The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY."}
                 },
                 "required": ["entity", "time"]
             }
@@ -295,12 +317,12 @@ async def list_tools():
 
         {
             "name": "after_chronological_reference",
-            "description": "Answers questions asking what an entity was associated with immediately after another event. Use this when the reference point is a named event (e.g., a team, organization, or historical milestone), not a date. The answer is retrieved from structured records.",
+            "description": "Answers questions asking what came immediately after a named reference item in an entity's history.\nUse this when the reference point is a named item, not a date.\nArguments must be in English. The answer is retrieved from structured records.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string"},
-                    "event": {"type": "string"}
+                    "entity": {"type": "string", "description": "The series or subject whose history is asked about."},
+                    "event": {"type": "string", "description": "The named item the question is anchored on."}
                 },
                 "required": ["entity", "event"]
             }
@@ -308,11 +330,11 @@ async def list_tools():
 
         {
             "name": "event_time",
-            "description": "Retrieves the exact date or time when a specified event occurred. Use this when a question requires knowing when an event happened, especially to compare or reason about the order of multiple events. The result is obtained via structured data lookup, not inference.",
+            "description": "Retrieves the exact date or time when a specified event occurred.\nUse this when a question requires knowing when an event happened, e.g. to order several events.\nThe result is looked up from structured data, not inference. The argument must be in English.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "event": {"type": "string"}
+                    "event": {"type": "string", "description": "The event's name or a short description."}
                 },
                 "required": ["event"]
             }
@@ -320,12 +342,12 @@ async def list_tools():
 
         {
             "name": "entity_time_event",
-            "description": "Answers questions asking what role, position, or event an entity had at a specific time. Use this when the question is “What was X doing / what was X’s status at time T?”. The answer is retrieved from structured data.",
+            "description": "Answers questions asking what role, position, or affiliation an entity had at a specific time.\nArguments must be in English. The answer is retrieved from structured data.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string"},
-                    "time": {"type": "string"}
+                    "entity": {"type": "string", "description": "The subject asked about."},
+                    "time": {"type": "string", "description": "The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY."}
                 },
                 "required": ["entity", "time"]
             }
@@ -345,13 +367,13 @@ async def list_tools():
 
         {
             "name": "translation",
-            "description": "Translates the provided text from a specified source language into the specified target language. Use this when a translation is required before further processing",
+            "description": "Translates the provided text from a source language into a target language.\nUse this to translate non-English names before using the lookup tools.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "text": { "type": "string" },
-                    "source_language": { "type": "string" },
-                    "target_language": { "type": "string" }
+                    "source_language": {"type": "string", "description": "A language name or ISO code."},
+                    "target_language": {"type": "string", "description": "A language name or ISO code."}
                 },
                 "required": ["text", "source_language", "target_language"]
             }
@@ -382,5 +404,4 @@ async def list_tools():
 
 app = mcp.http_app(transport=MCP_TRANSPORT)
 app.mount("/", api_app)  # Starlette's mount method
-
 
