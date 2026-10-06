@@ -1,6 +1,7 @@
 """Azure translation with a frozen, package-local cache and bounded calls."""
 
 import json
+import logging
 import os
 from pathlib import Path
 from queue import Empty, Queue
@@ -8,7 +9,10 @@ from threading import BoundedSemaphore, Thread
 from types import MappingProxyType
 import unicodedata
 
+import requests
 from deep_translator import MicrosoftTranslator
+from deep_translator.exceptions import MicrosoftAPIerror
+from deep_translator.validate import is_input_valid
 from langdetect import detect, DetectorFactory
 import pycountry
 
@@ -73,6 +77,34 @@ class _FrozenMicrosoftTranslator(MicrosoftTranslator):
     def _get_supported_languages(self):
         # deep-translator otherwise performs an unbounded GET on every constructor.
         return dict(_LANGUAGES)
+
+    def translate(self, text: str, **kwargs) -> str:
+        # Mirror deep-translator 1.11.4, adding a timeout to its HTTP request.
+        response = None
+        if is_input_valid(text):
+            self._url_params["from"] = self._source
+            self._url_params["to"] = self._target
+            valid_microsoft_json = [{"text": text}]
+            try:
+                response = requests.post(
+                    self._base_url,
+                    params=self._url_params,
+                    headers=self.headers,
+                    json=valid_microsoft_json,
+                    proxies=self.proxies,
+                    timeout=TRANSLATION_TIMEOUT_SECONDS,
+                )
+            except requests.exceptions.RequestException as error:
+                logging.warning("Returned error: %s", type(error).__name__)
+
+            if type(response.json()) is dict:
+                error_message = response.json()["error"]
+                raise MicrosoftAPIerror(error_message)
+            elif type(response.json()) is list:
+                all_translations = [
+                    i["text"] for i in response.json()[0]["translations"]
+                ]
+                return "\n".join(all_translations)
 
 
 def _azure_translate(text: str, source: str, target: str) -> str:
