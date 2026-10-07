@@ -150,6 +150,13 @@ def entity_similarity(query_norm: str, key_norm: str) -> float:
     c2 = char_ngram_similarity(query_norm, key_norm)
     return 0.7 * c1 + 0.3 * c2
 
+def row_entity_similarity(query_norm: str, entity_cell: str) -> float:
+    """Score the best alternative, splitting before punctuation normalization."""
+    return max(
+        entity_similarity(query_norm, normalize_entity(alternative))
+        for alternative in entity_cell.split("|")
+    )
+
 def before_absolute_reference(
     entity: str,
     time: str,
@@ -172,10 +179,7 @@ def before_absolute_reference(
             if q_month is not None and r_month is not None and q_month != r_month:
                 continue
 
-            score = entity_similarity(
-                q_entity,
-                normalize_entity(row["entity"])
-            )
+            score = row_entity_similarity(q_entity, row["entity"])
 
             if score > best_score:
                 best_score = score
@@ -201,7 +205,7 @@ def before_chronological_reference(
         reader = csv.DictReader(f)
         for row in reader:
             score = (
-                0.6 * entity_similarity(q_entity, normalize_entity(row["entity"])) +
+                0.6 * row_entity_similarity(q_entity, row["entity"]) +
                 0.4 * entity_similarity(q_event, normalize_entity(row["event"]))
             )
 
@@ -236,10 +240,7 @@ def after_absolute_reference(
             if q_month is not None and r_month is not None and q_month != r_month:
                 continue
 
-            score = entity_similarity(
-                q_entity,
-                normalize_entity(row["entity"])
-            )
+            score = row_entity_similarity(q_entity, row["entity"])
 
             if score > best_score:
                 best_score = score
@@ -265,7 +266,7 @@ def after_chronological_reference(
         reader = csv.DictReader(f)
         for row in reader:
             score = (
-                0.6 * entity_similarity(q_entity, normalize_entity(row["entity"])) +
+                0.6 * row_entity_similarity(q_entity, row["entity"]) +
                 0.4 * entity_similarity(q_event, normalize_entity(row["event"]))
             )
 
@@ -328,8 +329,7 @@ def entity_time_event(entity: str, time: str, csv_path: str = ENTITY_TIME_EVENT_
                 if q_month != r_month:
                     continue
 
-            key_norm = normalize_entity(row["entity"])
-            score = entity_similarity(q_entity, key_norm)
+            score = row_entity_similarity(q_entity, row["entity"])
 
             if score > best_score:
                 best_score = score
