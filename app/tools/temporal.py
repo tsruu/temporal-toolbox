@@ -159,13 +159,36 @@ def row_entity_similarity(query_norm: str, entity_cell: str) -> float:
         for alternative in entity_cell.split("|")
     )
 
+def normalize_time_key(t: str) -> Tuple[int, Optional[int], Optional[int]]:
+    """Preserve an explicit day while retaining normalize_time's public API."""
+    year, month = normalize_time(t)
+    text = _fold(t.strip())
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
+        return year, month, datetime.strptime(text, "%Y-%m-%d").day
+    # Month-first English dates and day-first localized dates.
+    match = re.search(r"\b[a-z]+\.?\s+(\d{1,2})(?:st|nd|rd|th)?[,]?\s+\d{4}\b", text)
+    if match is None:
+        match = re.search(r"\b(\d{1,2})[.]?\s+[a-z]+\.?[,]?\s+\d{4}\b", text)
+    day = int(match.group(1)) if match else None
+    if day is not None:
+        datetime(year, month, day)  # Reject impossible explicit dates.
+    return year, month, day
+
+
+def time_keys_match(query, row) -> bool:
+    """Match every date component supplied by both query and table row."""
+    return query[0] == row[0] and all(
+        q is None or r is None or q == r for q, r in zip(query[1:], row[1:])
+    )
+
+
 def before_absolute_reference(
     entity: str,
     time: str,
     csv_path: str = BEFORE_ABSOLUTE_CSV
 ) -> str:
     q_entity = normalize_entity(entity)
-    q_year, q_month = normalize_time(time)
+    q_time = normalize_time_key(time)
 
     best_answer = None
     best_score = 0.0
@@ -173,12 +196,10 @@ def before_absolute_reference(
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            r_year, r_month = normalize_time(row["time"])
+            r_time = normalize_time_key(row["time"])
 
             # Time must match the reference time
-            if r_year != q_year:
-                continue
-            if q_month is not None and r_month is not None and q_month != r_month:
+            if not time_keys_match(q_time, r_time):
                 continue
 
             score = row_entity_similarity(q_entity, row["entity"])
@@ -226,7 +247,7 @@ def after_absolute_reference(
     csv_path: str = AFTER_ABSOLUTE_CSV
 ) -> str:
     q_entity = normalize_entity(entity)
-    q_year, q_month = normalize_time(time)
+    q_time = normalize_time_key(time)
 
     best_answer = None
     best_score = 0.0
@@ -234,12 +255,10 @@ def after_absolute_reference(
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            r_year, r_month = normalize_time(row["time"])
+            r_time = normalize_time_key(row["time"])
 
             # Time must match the reference time
-            if r_year != q_year:
-                continue
-            if q_month is not None and r_month is not None and q_month != r_month:
+            if not time_keys_match(q_time, r_time):
                 continue
 
             score = row_entity_similarity(q_entity, row["entity"])

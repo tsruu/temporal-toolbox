@@ -77,6 +77,24 @@ class EntityAlternativeTests(unittest.TestCase):
             temporal.event_time('one', path)
         self.assertEqual(temporal.event_time('one two', path), 'year')
 
+    def test_absolute_dates_distinguish_same_month_transitions(self):
+        path = self.table([
+            dict(entity='Germany', time='1974-05-07', answer='Willy Brandt'),
+            dict(entity='Germany', time='1974-05-16', answer='Walter Scheel'),
+        ])
+        for name in ('before_absolute_reference', 'after_absolute_reference'):
+            with self.subTest(tool=name):
+                lookup = getattr(temporal, name)
+                self.assertEqual(lookup('Germany', 'May 7, 1974', path), 'Willy Brandt')
+                self.assertEqual(lookup('Germany', '1974-05-16', path), 'Walter Scheel')
+                self.assertEqual(lookup('Germany', '16. Mai 1974', path), 'Walter Scheel')
+                self.assertEqual(lookup('Germany', '1974-05', path), 'Willy Brandt')
+                with self.assertRaises(LookupError):
+                    lookup('Germany', '1974-05-08', path)
+        self.assertEqual(temporal.normalize_time('1974-05-16'), (1974, 5))
+        with self.assertRaises(ValueError):
+            temporal.normalize_time_key('May 32, 1974')
+
     def test_threshold_and_no_match_are_unchanged(self):
         path = self.table([dict(entity='Independence | achieved freedom',
                               event='Kazakhstan', answer='first')])
