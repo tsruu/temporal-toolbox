@@ -212,9 +212,21 @@ def main():
     _execute_script(script)
 
 
+def _print_user_traceback(exc):
+    # Hide the launcher's own frames so stderr looks like `python script.py`
+    # (and does not expose sandbox internals to the model).
+    tb = exc.__traceback__
+    while tb is not None and os.path.abspath(tb.tb_frame.f_code.co_filename) == os.path.abspath(__file__):
+        tb = tb.tb_next
+    if tb is None:  # e.g. SyntaxError raised by compile(): no user frame
+        sys.stderr.write(''.join(traceback.format_exception_only(type(exc), exc)))
+    else:
+        sys.stderr.write(''.join(traceback.format_exception(type(exc), exc, tb)))
+
+
 if __name__ == '__main__':
     try:
         main()
     except Exception as exc:
-        traceback.print_exc()
+        _print_user_traceback(exc)
         sys.exit(1)
