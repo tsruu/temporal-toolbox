@@ -49,7 +49,7 @@ for path in sorted(args.rollouts.rglob('*.jsonl')):
                 actual = execute_python_code(source)
                 samples.append({'file': str(path), 'line': line_number,
                                 'group_id': row.get('group_id'), 'code': source,
-                                'recorded': recorded, 'local': actual, 'match': recorded == actual})
+                                'recorded': recorded, 'local': actual, 'match': all(recorded.get(k) == actual.get(k) for k in ('stdout', 'stderr', 'status'))})
                 if len(samples) == args.limit:
                     break
             if len(samples) == args.limit:

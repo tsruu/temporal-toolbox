@@ -17,16 +17,19 @@ def dispatch_tool(tool_name: str, arguments: dict) -> ToolResponse:
 
     try:
         result = tool_fn(**arguments)
+        metadata = {"latency_ms": int((time.time() - start) * 1000)}
+        if tool_name == "code_executor":
+            metadata.update(result.get("metadata", {}))
         if tool_name == "code_executor" and result["status"] != "success":
             return ToolResponse(
                 status="error",
                 result_text=str(result),
-                metadata={"latency_ms": int((time.time() - start) * 1000)},
+                metadata=metadata,
             )
         return ToolResponse(
             status="ok",
             result_text=str(result),
-            metadata={"latency_ms": int((time.time() - start) * 1000)},
+            metadata=metadata,
         )
     except Exception as e:
         return ToolResponse(

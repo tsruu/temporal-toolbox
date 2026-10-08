@@ -28,13 +28,15 @@ class SandboxTests(unittest.TestCase):
         start = time.monotonic()
         result = code.execute_python_code(source, timeout)
         self.assertLess(time.monotonic() - start, timeout + 1)
-        self.assertEqual(set(result), {'stdout', 'stderr', 'status'})
-        self.assertTrue(all(isinstance(value, str) for value in result.values()))
+        self.assertEqual(set(result), {'stdout', 'stderr', 'status', 'metadata'})
+        self.assertTrue(all(isinstance(result[k], str) for k in ('stdout', 'stderr', 'status')))
+        self.assertIn('protections', result['metadata'])
         return result
 
     def test_normal_indented_code_and_unicode(self):
         result = self.run_code('    from datetime import date\n    print(date(2026, 10, 8).strftime("%A"))\n    print("école")')
-        self.assertEqual(result, {'stdout': 'Thursday\nécole\n', 'stderr': '', 'status': 'success'})
+        self.assertEqual({k: result[k] for k in ('stdout', 'stderr', 'status')},
+                         {'stdout': 'Thursday\nécole\n', 'stderr': '', 'status': 'success'})
 
     def test_exception_and_empty_input(self):
         result = self.run_code('print("partial", flush=True); raise ValueError("failure")')
@@ -98,42 +100,33 @@ print(json.dumps({'env': dict(os.environ), 'cwd': os.getcwd(),
             self.assertEqual(payload['uid'], code._identity()[0])
             self.assertEqual(payload['groups'], [])
 
-    def test_parallel_work_is_capped_and_slots_recover(self):
-        entered = threading.Event()
-        release = threading.Event()
-        active = 0
-        peak = 0
+    def test_parallel_work_queues_and_slots_recover(self):
+        entered, release = threading.Event(), threading.Event()
+        active = peak = 0
         lock = threading.Lock()
         original = code._capture
-
         def hold(process, deadline):
             nonlocal active, peak
             with lock:
                 active += 1
                 peak = max(peak, active)
-                if active == code.MAX_CONCURRENT_EXECUTIONS:
-                    entered.set()
+                if active == 2: entered.set()
             try:
                 self.assertTrue(release.wait(2))
                 return original(process, deadline)
             finally:
-                with lock:
-                    active -= 1
-
-        with patch.object(code, '_capture', hold), ThreadPoolExecutor(max_workers=8) as pool:
-            first = [pool.submit(code.execute_python_code, 'import time; time.sleep(.1); print(1)')
-                     for _ in range(code.MAX_CONCURRENT_EXECUTIONS)]
+                with lock: active -= 1
+        with patch.object(code, '_CALL_SLOTS', threading.BoundedSemaphore(2)), patch.object(code, '_capture', hold), ThreadPoolExecutor(max_workers=20) as pool:
+            first = [pool.submit(code.execute_python_code, 'import time; time.sleep(.1); print(1)') for _ in range(2)]
             try:
                 self.assertTrue(entered.wait(2))
-                rest = [pool.submit(code.execute_python_code, 'print(1)') for _ in range(6)]
-                for future in rest:
-                    result = future.result(timeout=1)
-                    self.assertEqual(result['status'], 'error')
-                    self.assertIn('Too many concurrent', result['stderr'])
+                rest = [pool.submit(code.execute_python_code, 'print(1)') for _ in range(18)]
+                time.sleep(.1)
+                self.assertFalse(any(f.done() for f in rest))
             finally:
                 release.set()
-            self.assertTrue(all(f.result()['status'] == 'success' for f in first))
-        self.assertEqual(peak, code.MAX_CONCURRENT_EXECUTIONS)
+            self.assertTrue(all(f.result(timeout=10)['status'] == 'success' for f in first + rest))
+        self.assertEqual(peak, 2)
         self.assertEqual(self.run_code('print("after saturation")')['status'], 'success')
 
     def test_setup_failure_releases_slot(self):
@@ -220,10 +213,34 @@ time.sleep(30)
         self.assertEqual(self.run_code('print("after forks")')['status'], 'success')
 
     @unittest.skipUnless(LINUX, 'Linux seccomp required')
-    def test_thread_creation_denied(self):
-        result = self.run_code('import threading\nthreading.Thread(target=lambda: None).start()')
-        self.assertEqual(result['status'], 'error')
-        self.assertIn("can't start new thread", result['stderr'])
+    def test_threads_and_optional_libraries(self):
+        result = self.run_code('''
+import threading
+values = []
+t = threading.Thread(target=lambda: values.append('ok'))
+t.start()
+t.join()
+assert values == ['ok']
+import datetime, math, re, json, itertools, importlib.util
+assert datetime.datetime.strptime('2026-10-08', '%Y-%m-%d').year == 2026
+for name in ('numpy', 'pandas'):
+    if importlib.util.find_spec(name) is not None:
+        __import__(name)
+print('ok')
+''')
+        self.assertEqual(result['status'], 'success', result)
+        self.assertEqual(result['stdout'], 'ok\n')
+
+    def test_exec_is_denied_after_startup(self):
+        result = self.run_code('''
+import os, sys
+try:
+    os.execv(sys.executable, [sys.executable, '-I', '-c', "print('escaped')"])
+except PermissionError:
+    print('blocked')
+''')
+        self.assertEqual(result['status'], 'success', result)
+        self.assertEqual(result['stdout'], 'blocked\n')
 
     @unittest.skipUnless(LINUX, 'Linux resource limits required')
     def test_file_size_and_open_file_limits(self):

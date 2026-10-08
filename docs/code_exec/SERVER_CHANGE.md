@@ -85,13 +85,21 @@ actually drop to uid 20001, launch the container process as its ordinary host
 user (consult its installed udocker user-mapping support); do not emulate a
 successful uid change. Identity setup failures return `ERROR:`.
 
-Both hosts must support **Landlock ABI >= 3** (normally Linux >= 6.2),
-`PR_SET_NO_NEW_PRIVS`, and unprivileged seccomp filters on x86_64 or aarch64.
-Landlock syscall numbers 444–446 must be allowed by the outer Docker/udocker
-runtime. The launcher fails closed if any required policy cannot be installed;
-there is no silently unsandboxed Linux mode. These host prerequisites have NOT
-been verified remotely. Old kernels need a different isolation runtime or a
-kernel update before this branch can serve code_executor.
+Round 2 supports **Landlock ABI 1, 2 and 3+**. The supplied server facts are
+optimus Linux 5.19 with Landlock ABI 2 at most, and sentinel Linux 6.8 with
+ABI >= 3. No remote runtime validation was performed for this change. The
+launcher queries the running kernel, handles filesystem rights available up to
+ABI 3, and records both the available ABI and applied policy ABI. Landlock
+syscalls 444–446 and unprivileged seccomp on x86_64/aarch64 may be restricted by
+the outer runtime, so validate inside the actual container.
+
+`PR_SET_NO_NEW_PRIVS` and the non-root identity remain required. If only one of
+Landlock/seccomp installs, that policy stays active and the missing policy and
+error are recorded in `metadata.protections` and the toolbox log. Execution
+fails closed if neither policy installs. This fallback follows PLAN_code_exec_r2:
+seccomp alone does not confine filesystem access; Landlock alone does not block
+network/process/exec syscalls. On ABI 1/2 without seccomp, path truncation is not
+fully mediated. The self-test reports containment failures in these modes.
 
 ## Child restrictions and practical limits
 
@@ -101,14 +109,21 @@ kernel update before this branch can serve code_executor.
   shorten the timeout but cannot increase it.
 * One GiB address space, eight MiB per written file, 32 processes/threads per
   execution uid via RLIMIT_NPROC, 64 open descriptors, and no core dumps.
-  Seccomp additionally denies all child process/thread creation: even the first
-  `fork`, `clone` or `clone3` fails. This avoids orphan/zombie accumulation and
-  bounds aggregate child memory/CPU. Threaded/multiprocess libraries therefore
-  may not work; the recorded standard-library date/math workloads are the
-  compatibility target.
-* Two active executions **per server process**; excess requests receive an
-  immediate error, rather than accumulating a queue. Multiple uvicorn workers
-  multiply this budget. Retain one worker or provision a host-level budget.
+  Seccomp denies `fork`/`vfork` and `clone` without
+  CLONE_THREAD, but allows threads. `clone3` returns ENOSYS so glibc can fall back
+  to the inspectable `clone` syscall. BLAS/OMP/MKL/NumExpr thread defaults are
+  pinned to one in the scrubbed child environment. NPROC remains a second guard,
+  shared across the uid; an already heavily populated same-uid udocker host may
+  still prevent thread creation. NumPy/pandas imports must be checked in the
+  installed image. Submitted code runs in the already-started isolated Python
+  interpreter, allowing seccomp to deny all later execve/execveat calls.
+* Bounded slots **per server process**, configured by a positive integer
+  `CODE_EXEC_SLOTS`, otherwise `min(16, max(2, (os.cpu_count() or 1) // 4))`.
+  With the supplied CPU counts this means 10 on optimus and 16 on sentinel,
+  unless the container reports a different count. Saturated calls wait up to
+  ten seconds before returning `ERROR: ... executor busy`; their five-second
+  execution timeout starts after admission. Queue wait milliseconds are in the
+  response metadata. Multiple uvicorn workers multiply this budget.
 * 256 KiB code input; 64 KiB per returned stdout/stderr stream (UTF-8 bytes),
   overflow terminates the execution and is an error. Stdin is `/dev/null`,
   descriptors close on exec, Python runs with `-I`, umask is 077, and each
@@ -120,7 +135,9 @@ kernel update before this branch can serve code_executor.
   the policy. Python standard/system-installed libraries remain readable.
 * Seccomp denies socket creation/connect/bind/listen/accept, Unix sockets,
   process-group/session escape, ptrace/process_vm operations, and signalling
-  other processes. Policies inherit across exec. This does not depend on root
+  other processes. Seccomp denies later exec calls and io_uring setup/operations. On older
+  Landlock ABIs it also denies path-based truncate, read-only O_TRUNC, and
+  openat2 (ENOSYS); ordinary writable opens/ftruncate in temp still work. This does not depend on root
   network namespaces or `unshare`; parent lookup/translation networking stays
   enabled. Proxy variables and AZURE_* credentials are absent from the child.
 
@@ -140,10 +157,44 @@ subprocess; there is no unsandboxed development execution mode.
 Build this branch's image locally on the approved target runtime; retain
 `requirements.txt` and `constraints.txt` unchanged. Verify the dedicated uid,
 normal datetime output, `ERROR:` on exceptions, timeout/output/resource limits,
-outside-write/read denial, socket denial, and parallel slot rejection using
+outside-write/read denial, socket/exec denial, and parallel queueing using
 `tests_code_exec.py`. Test uncached translation separately to establish that
 server credentials/proxy networking still work. Run REST `/tool` and MCP `/sse`
 smokes at each host's port, then restart new training jobs with the edited
 configuration. Keep the old image and tools.yaml for rollback. No Azure update,
 Docker Hub push, SSH, container swap or training restart is authorized by this
 implementation task.
+
+
+## Round-2 operator commands (inside each Linux container)
+
+The image copies `app/`, so the self-test is available without mounting the
+unit-test files. It checks normal print, stdlib/script semantics, exception,
+timeout, finite fork-bomb probe, memory/output limits, synthetic outside writes
+and truncate bypasses, socket/exec denial, scrubbed /proc environment, threads,
+NumPy/pandas if installed, and twenty parallel calls through two temporary
+self-test slots. A missing optional package prints “not installed”; an installed
+package that cannot import fails. It prints a PASS/FAIL table, active protections,
+and exits nonzero on failure. Run it as a standalone operator command, separate
+from the serving process.
+
+```sh
+python -m app.tools.code_selftest
+python -m app.tools.code_replay /path/to/replay_cases.jsonl --report /tmp/code_replay_report.json
+```
+
+`docs/code_exec/replay_cases.jsonl` is the committed copy of
+`analysis/code_exec/replay_cases.jsonl`. Copy/mount it readably into the test
+container. The replay compares stdout, stderr and status exactly, excluding the
+new metadata, prints one parity row per case and exits nonzero on differences.
+Error tracebacks and blocked network calls can differ from recorded Azure
+outputs; the report retains both values for review. It makes no live Azure
+comparison calls. To regenerate the set locally without executing code:
+
+```sh
+python -m app.tools.code_replay ../analysis/code_exec/replay_cases.jsonl --extract ../rollouts/current --limit 200
+```
+
+No routing files, remote containers, tables, dependency pins, or training jobs
+were changed by round 2. The earlier REPORT.md is historical; REPORT_r2.md
+records the new implementation and validation limits.

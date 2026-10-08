@@ -247,7 +247,7 @@ async def logging_middleware(request: Request, call_next):
 @api_app.post("/tool", response_model=ToolResponse)
 async def tool_endpoint(req: ToolRequest):
     # Execution and translation can block. Keep health/lookup requests and the
-    # executor's concurrency rejection responsive while those calls run.
+    # executor's queue responsive while those calls run.
     result = await run_in_threadpool(dispatch_tool, req.tool_name, req.arguments)
     if result.status != "ok":
         result.result_text = f"ERROR: {result.result_text}"
