@@ -189,8 +189,19 @@ class PolicyTests(unittest.TestCase):
             runner.main()
             self.assertEqual(runner.sys.argv, ['/tmp/test/script.py'])
         self.assertEqual(events[:3], [('groups', []), ('gid', 20001), ('uid', 20001)])
-        self.assertEqual(sum(e[0] == 'limit' for e in events), 6)
+        # Seccomp is active, so RLIMIT_NPROC is skipped (it counts the real uid's threads).
+        self.assertEqual(sum(e[0] == 'limit' for e in events), 5)
+        self.assertNotIn(runner.resource.RLIMIT_NPROC, [e[1] for e in events if e[0] == 'limit'])
         self.assertEqual(events[-3:], [('policy', '/tmp/test'), ('metadata', 9, protections), ('execute', '/tmp/test/script.py')])
+
+    def test_nproc_applied_without_seccomp(self):
+        events = []
+        protections = {'landlock_abi': 2, 'seccomp': False}
+        args = ['runner', '/tmp/test/script.py', '20001', '20001',
+                json.dumps({'cpu':5,'memory':1024,'file':8,'processes':32,'open_files':64}), '9']
+        with patch.object(runner.sys, 'argv', args), patch.object(runner.sys, 'platform', 'linux'), patch.object(runner.os, 'umask'), patch.object(runner.os, 'geteuid', side_effect=[20001, 20001]), patch.object(runner, '_limit', side_effect=lambda k,v: events.append(('limit', k, v))), patch.object(runner.os, 'getcwd', return_value='/tmp/test'), patch.object(runner, '_linux_sandbox', return_value=protections), patch.object(runner, '_write_metadata'), patch.object(runner, '_execute_script'):
+            runner.main()
+        self.assertIn(('limit', runner.resource.RLIMIT_NPROC, 32), events)
 
     def test_policy_failure_prevents_execution_and_reports(self):
         protections = {'landlock_abi': 0, 'seccomp': False}

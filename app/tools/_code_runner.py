@@ -193,7 +193,6 @@ def main():
     _limit(resource.RLIMIT_CPU, limits['cpu'])
     _limit(resource.RLIMIT_AS, limits['memory'])
     _limit(resource.RLIMIT_FSIZE, limits['file'])
-    _limit(resource.RLIMIT_NPROC, limits['processes'])
     _limit(resource.RLIMIT_NOFILE, limits['open_files'])
     _limit(resource.RLIMIT_CORE, 0)
     try:
@@ -201,6 +200,12 @@ def main():
     except SandboxUnavailable as exc:
         _write_metadata(int(metadata_fd), exc.protections)
         raise
+    # RLIMIT_NPROC counts every thread of the real uid. Rootless runtimes (udocker)
+    # cannot switch uid, so the server user's existing threads would exhaust it and
+    # block all threading. Seccomp already blocks new processes; use NPROC only as
+    # the fallback when seccomp is not active.
+    if not protections.get('seccomp'):
+        _limit(resource.RLIMIT_NPROC, limits['processes'])
     _write_metadata(int(metadata_fd), protections)
     sys.argv = [script]
     # No launcher argv or metadata descriptor is exposed to the script.
