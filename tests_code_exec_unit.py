@@ -170,7 +170,9 @@ class PolicyTests(unittest.TestCase):
             registry.TOOL_REGISTRY['code_executor'] = Mock(return_value=result)
             response = dispatch.dispatch_tool('code_executor', {'code': 'mock only'})
             self.assertEqual(response.status, outer_status)
-            self.assertEqual(response.result_text, str(result))
+            visible = {k: v for k, v in result.items() if k != 'metadata'}
+            self.assertEqual(response.result_text, str(visible))
+            self.assertNotIn('protections', response.result_text)
             self.assertEqual(response.metadata['protections'], metadata['protections'])
             self.assertEqual(response.metadata['queue_wait_ms'], 120)
             self.assertIn('latency_ms', response.metadata)
