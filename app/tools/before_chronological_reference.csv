@@ -525,24 +525,18 @@ Which model was released by Tata Motors immediately before Sumo?,Tata Motors | T
 Which car model was launched by Tata Motors just before car model Sumo?,Tata Motors | Tata,car model Sumo,Estate
 Which satellite did ESA launch immediately before ESRO-4?,"ESA | European Space Agency | ESA, Europe",ESRO-4,TD-1A
 Which satellite was put into orbit by ESA immediately previous to ESRO-4?,"ESA | European Space Agency | ESA, Europe",ESRO-4,TD-1A
-Which satellite did ESA launch immediately before ESRO-2B?,"ESA | European Space Agency | ESA, Europe",ESRO-2B,ESRO-1A
-Which satellite did ESA launch immediately before ESRO-2B?,"ESA | European Space Agency | ESA, Europe",ESRO-2B,ESRO-1A
 What did ESA launch right before ESRO-4?,"ESA | European Space Agency | ESA, Europe",ESRO-4,TD-1A
 Which satellite did ESA launch immediately before ESRO-4?,"ESA | European Space Agency | ESA, Europe",ESRO-4,TD-1A
-Which satellite did ESA launch immediately before HEOS-A1?,"ESA | European Space Agency | ESA, Europe",HEOS-A1,ESRO-1B
-Which satellite did ESA launch immediately before HEOS-A2?,"ESA | European Space Agency | ESA, Europe",HEOS-A2,TD-1A
 "Which satellite was launched by ESA, Europe just before ESRO-1B?","ESA | European Space Agency | ESA, Europe",ESRO-1B,HEOS-A1
 Which satellite was launched by the European Space Agency followed by ESRO-1B?,"ESA | European Space Agency | ESA, Europe",ESRO-1B,HEOS-A1
 What did ESA launch right before TD-1A?,"ESA | European Space Agency | ESA, Europe",TD-1A,HEOS-A2
 Which satellite was launched by the European Space Agency followed by TD-1A?,"ESA | European Space Agency | ESA, Europe",TD-1A,HEOS-A2
 What did the European Space Agency launch immediately before ESRO-1B?,"ESA | European Space Agency | ESA, Europe",ESRO-1B,HEOS-A1
 "Which satellite was launched by ESA, Europe just before ESRO-1B?","ESA | European Space Agency | ESA, Europe",ESRO-1B,HEOS-A1
-Which satellite did ESA launch immediately before HEOS-A2?,"ESA | European Space Agency | ESA, Europe",HEOS-A2,TD-1A
 Which satellite was put into orbit by ESA immediately previous to ESRO-1A?,"ESA | European Space Agency | ESA, Europe",ESRO-1A,ESRO-2B
 Which satellite was launched by the European Space Agency followed by ESRO-1A?,"ESA | European Space Agency | ESA, Europe",ESRO-1A,ESRO-2B
 Which spacecraft was launched by ESA just before ESRO-4?,"ESA | European Space Agency | ESA, Europe",ESRO-4,TD-1A
 Which satellite was launched by the European Space Agency followed by ESRO-4?,"ESA | European Space Agency | ESA, Europe",ESRO-4,TD-1A
-Which satellite did ESA launch immediately before TD-1A?,"ESA | European Space Agency | ESA, Europe",TD-1A,ESRO-4
 What did the European Space Agency launch immediately before TD-1A?,"ESA | European Space Agency | ESA, Europe",TD-1A,HEOS-A2
 Which satellite was put into orbit by ESA immediately previous to TD-1A?,"ESA | European Space Agency | ESA, Europe",TD-1A,HEOS-A2
 What did the European Space Agency launch immediately before TD-1A?,"ESA | European Space Agency | ESA, Europe",TD-1A,HEOS-A2
@@ -551,7 +545,6 @@ What did the European Space Agency launch immediately before TD-1A?,"ESA | Europ
 What did the European Space Agency launch followed by ESRO-1A?,"ESA | European Space Agency | ESA, Europe",ESRO-1A,ESRO-2B
 What did ESA launch right before HEOS-A1?,"ESA | European Space Agency | ESA, Europe",HEOS-A1,ESRO-1A
 What did the European Space Agency launch immediately before HEOS-A1?,"ESA | European Space Agency | ESA, Europe",HEOS-A1,ESRO-1A
-Which satellite did ESA launch immediately before ESRO-1A?,"ESA | European Space Agency | ESA, Europe",ESRO-1A,HEOS-A1
 "Which satellite was launched by ESA, Europe just before TD-1A?","ESA | European Space Agency | ESA, Europe",TD-1A,HEOS-A2
 Which satellite was put into orbit by ESA immediately previous to TD-1A?,"ESA | European Space Agency | ESA, Europe",TD-1A,HEOS-A2
 What did the European Space Agency launch immediately before ESRO-4?,"ESA | European Space Agency | ESA, Europe",ESRO-4,TD-1A
@@ -2560,40 +2553,40 @@ Who assumed the presidency of the United States immediately prior to John Adams?
 Who became the President of the USA just previous to John Adams?,Presidency of the United States | president of America | presidency of America | US President | President of the USA | position of president of the USA | presidency of the USA | President of United States | represented the United States,John Adams,George Washington
 Who assumed the Presidency of the United States immediately before James Monroe?,Presidency of the United States | president of America | presidency of America | US President | President of the USA | position of president of the USA | presidency of the USA | President of United States | represented the United States,James Monroe,James Madison
 Who became the President of the USA just previous to James Monroe?,Presidency of the United States | president of America | presidency of America | US President | President of the USA | position of president of the USA | presidency of the USA | President of United States | represented the United States,James Monroe,James Madison
-Who took over the presidency of India followed by Sarvepalli Radhakrishnan?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Sarvepalli Radhakrishnan,Rajendra Prasad
-Who was declared Indian President followed by Sarvepalli Radhakrishnan?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Sarvepalli Radhakrishnan,Rajendra Prasad
-Who became the President of India just previous to Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,Zakir Husain
-Who took over the presidency of India followed by Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,Zakir Husain
-Who served as President of Indian state immediately before Sarvepalli Radhakrishnan?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Sarvepalli Radhakrishnan,Rajendra Prasad
-Who took over the presidency of India followed by Sarvepalli Radhakrishnan?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Sarvepalli Radhakrishnan,Rajendra Prasad
-Who served as President of Indian state immediately before B D Jatti?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,B D Jatti,Fakhruddin Ali Ahmed
-Who took over the presidency of India followed by B D Jatti?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,B D Jatti,Fakhruddin Ali Ahmed
-Who held the position of president of India right before Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,M Hidayatullah
-Who was declared Indian President followed by Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,M Hidayatullah
-Who served as President of Indian state immediately before Zakir Husain?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Zakir Husain,Sarvepalli Radhakrishnan
-Who was declared Indian President followed by Zakir Husain?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Zakir Husain,Sarvepalli Radhakrishnan
-Who assumed the presidency of India immediately prior to Fakhruddin Ali Ahmed?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Fakhruddin Ali Ahmed,Varahagiri Venkata Giri
-Who became the President of India just previous to Fakhruddin Ali Ahmed?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Fakhruddin Ali Ahmed,Varahagiri Venkata Giri
-Who held the position of president of India right before B D Jatti?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,B D Jatti,Fakhruddin Ali Ahmed
-Who was declared Indian President followed by B D Jatti?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,B D Jatti,Fakhruddin Ali Ahmed
-Who assumed the Presidency of India immediately before Fakhruddin Ali Ahmed?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Fakhruddin Ali Ahmed,Varahagiri Venkata Giri
-Who became the President of India just previous to Fakhruddin Ali Ahmed?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Fakhruddin Ali Ahmed,Varahagiri Venkata Giri
-Who served as President of Indian state immediately before Zakir Husain?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Zakir Husain,Sarvepalli Radhakrishnan
-Who became the President of India just previous to Zakir Husain?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Zakir Husain,Sarvepalli Radhakrishnan
-Who became the President of India just previous to Zakir Husain?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Zakir Husain,Sarvepalli Radhakrishnan
-Who took over the presidency of India followed by Zakir Husain?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Zakir Husain,Sarvepalli Radhakrishnan
-Who was president of India just before Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,M Hidayatullah
-Who served as President of Indian state immediately before Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,M Hidayatullah
-Who was president of India just before M Hidayatullah?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,M Hidayatullah,Varahagiri Venkata Giri
-Who took over the presidency of India followed by M Hidayatullah?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,M Hidayatullah,Varahagiri Venkata Giri
-Who was president of India just before B D Jatti?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,B D Jatti,Fakhruddin Ali Ahmed
-Who assumed the presidency of India immediately prior to B D Jatti?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,B D Jatti,Fakhruddin Ali Ahmed
-Who held the position of president of India right before Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,M Hidayatullah
-Who took over the presidency of India followed by Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,M Hidayatullah
-Who assumed the presidency of India immediately prior to Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,Zakir Husain
-Who held the position of president of India right before Varahagiri Venkata Giri?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Varahagiri Venkata Giri,Zakir Husain
-Who assumed the presidency of India immediately prior to Sarvepalli Radhakrishnan?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Sarvepalli Radhakrishnan,Rajendra Prasad
-Who became the President of India just previous to Sarvepalli Radhakrishnan?,presidency of India | President of India | Indian President | President of Indian state | position of president of India,Sarvepalli Radhakrishnan,Rajendra Prasad
+Who took over the presidency of India followed by Sarvepalli Radhakrishnan?,the presidency of India,Sarvepalli Radhakrishnan,Rajendra Prasad
+Who was declared Indian President followed by Sarvepalli Radhakrishnan?,Indian President,Sarvepalli Radhakrishnan,Rajendra Prasad
+Who became the President of India just previous to Varahagiri Venkata Giri?,President of India,Varahagiri Venkata Giri,Zakir Husain
+Who took over the presidency of India followed by Varahagiri Venkata Giri?,the presidency of India,Varahagiri Venkata Giri,Zakir Husain
+Who served as President of Indian state immediately before Sarvepalli Radhakrishnan?,President of Indian state,Sarvepalli Radhakrishnan,Rajendra Prasad
+Who took over the presidency of India followed by Sarvepalli Radhakrishnan?,the presidency of India,Sarvepalli Radhakrishnan,Rajendra Prasad
+Who served as President of Indian state immediately before B D Jatti?,President of Indian state,B D Jatti,Fakhruddin Ali Ahmed
+Who took over the presidency of India followed by B D Jatti?,the presidency of India,B D Jatti,Fakhruddin Ali Ahmed
+Who held the position of president of India right before Varahagiri Venkata Giri?,president of India,Varahagiri Venkata Giri,M Hidayatullah
+Who was declared Indian President followed by Varahagiri Venkata Giri?,Indian President,Varahagiri Venkata Giri,M Hidayatullah
+Who served as President of Indian state immediately before Zakir Husain?,President of Indian state,Zakir Husain,Sarvepalli Radhakrishnan
+Who was declared Indian President followed by Zakir Husain?,Indian President,Zakir Husain,Sarvepalli Radhakrishnan
+Who assumed the presidency of India immediately prior to Fakhruddin Ali Ahmed?,the presidency of India,Fakhruddin Ali Ahmed,Varahagiri Venkata Giri
+Who became the President of India just previous to Fakhruddin Ali Ahmed?,the President of India,Fakhruddin Ali Ahmed,Varahagiri Venkata Giri
+Who held the position of president of India right before B D Jatti?,president of India,B D Jatti,Fakhruddin Ali Ahmed
+Who was declared Indian President followed by B D Jatti?,Indian President,B D Jatti,Fakhruddin Ali Ahmed
+Who assumed the Presidency of India immediately before Fakhruddin Ali Ahmed?,the Presidency of India,Fakhruddin Ali Ahmed,Varahagiri Venkata Giri
+Who became the President of India just previous to Fakhruddin Ali Ahmed?,President of India,Fakhruddin Ali Ahmed,Varahagiri Venkata Giri
+Who served as President of Indian state immediately before Zakir Husain?,President of Indian state,Zakir Husain,Sarvepalli Radhakrishnan
+Who became the President of India just previous to Zakir Husain?,President of India,Zakir Husain,Sarvepalli Radhakrishnan
+Who became the President of India just previous to Zakir Husain?,President of India,Zakir Husain,Sarvepalli Radhakrishnan
+Who took over the presidency of India followed by Zakir Husain?,the presidency of India,Zakir Husain,Sarvepalli Radhakrishnan
+Who was president of India just before Varahagiri Venkata Giri?,president of India,Varahagiri Venkata Giri,M Hidayatullah
+Who served as President of Indian state immediately before Varahagiri Venkata Giri?,President of Indian state,Varahagiri Venkata Giri,M Hidayatullah
+Who was president of India just before M Hidayatullah?,president of India,M Hidayatullah,Varahagiri Venkata Giri
+Who took over the presidency of India followed by M Hidayatullah?,the presidency of India,M Hidayatullah,Varahagiri Venkata Giri
+Who was president of India just before B D Jatti?,president of India,B D Jatti,Fakhruddin Ali Ahmed
+Who assumed the presidency of India immediately prior to B D Jatti?,the presidency of India,B D Jatti,Fakhruddin Ali Ahmed
+Who held the position of president of India right before Varahagiri Venkata Giri?,president of India,Varahagiri Venkata Giri,M Hidayatullah
+Who took over the presidency of India followed by Varahagiri Venkata Giri?,the presidency of India,Varahagiri Venkata Giri,M Hidayatullah
+Who assumed the presidency of India immediately prior to Varahagiri Venkata Giri?,the presidency of India,Varahagiri Venkata Giri,Zakir Husain
+Who held the position of president of India right before Varahagiri Venkata Giri?,president of India,Varahagiri Venkata Giri,Zakir Husain
+Who assumed the presidency of India immediately prior to Sarvepalli Radhakrishnan?,the presidency of India,Sarvepalli Radhakrishnan,Rajendra Prasad
+Who became the President of India just previous to Sarvepalli Radhakrishnan?,President of India,Sarvepalli Radhakrishnan,Rajendra Prasad
 Who did IBM appoint as CEO right before John R Opel?,CEO of IBM | chief executive officer position at IBM | CEO position of IBM | Chief Executive position in IBM company | role of CEO of IBM,John R Opel,Frank T Cary
 Who served IBM as chief executive officer immediately prior to John R Opel?,CEO of IBM | chief executive officer position at IBM | CEO position of IBM | Chief Executive position in IBM company | role of CEO of IBM,John R Opel,Frank T Cary
 Who took over the chief executive officer position at IBM immediately before John Fellows Akers?,CEO of IBM | chief executive officer position at IBM | CEO position of IBM | Chief Executive position in IBM company | role of CEO of IBM,John Fellows Akers,John R Opel
