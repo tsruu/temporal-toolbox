@@ -187,32 +187,42 @@ class PolicyTests(unittest.TestCase):
         protections = {'landlock_abi': 2, 'seccomp': True}
         args = ['runner', '/tmp/test/script.py', '20001', '20001',
                 json.dumps({'cpu':5,'memory':1024,'file':8,'processes':32,'open_files':64}), '9']
-        with patch.object(runner.sys, 'argv', args), patch.object(runner.sys, 'platform', 'linux'), patch.object(runner.os, 'umask'), patch.object(runner.os, 'geteuid', side_effect=[0, 20001]), patch.object(runner.os, 'setgroups', side_effect=lambda x: events.append(('groups', x))), patch.object(runner.os, 'setgid', side_effect=lambda x: events.append(('gid', x))), patch.object(runner.os, 'setuid', side_effect=lambda x: events.append(('uid', x))), patch.object(runner, '_limit', side_effect=lambda k,v: events.append(('limit', k, v))), patch.object(runner.os, 'getcwd', return_value='/tmp/test'), patch.object(runner, '_linux_sandbox', side_effect=lambda x: events.append(('policy', x)) or protections), patch.object(runner, '_write_metadata', side_effect=lambda fd,p: events.append(('metadata', fd, p))), patch.object(runner, '_execute_script', side_effect=lambda x: events.append(('execute', x))):
+        with patch.object(runner.sys, 'argv', args), patch.object(runner.sys, 'platform', 'linux'), patch.object(runner.os, 'umask'), patch.object(runner.os, 'geteuid', side_effect=[0, 20001]), patch.object(runner.os, 'setgroups', side_effect=lambda x: events.append(('groups', x))), patch.object(runner.os, 'setgid', side_effect=lambda x: events.append(('gid', x))), patch.object(runner.os, 'setuid', side_effect=lambda x: events.append(('uid', x))), patch.object(runner, '_limit', side_effect=lambda k,v: events.append(('limit', k, v))), patch.object(runner.os, 'getcwd', return_value='/tmp/test'), patch.object(runner, '_linux_sandbox', side_effect=lambda x: events.append(('policy', x)) or protections), patch.object(runner, '_write_metadata', side_effect=lambda fd,p: events.append(('metadata', fd, p))), patch.object(runner, '_install_audit_policy', side_effect=lambda: events.append(('audit',))), patch.object(runner, '_execute_script', side_effect=lambda x: events.append(('execute', x))):
             runner.main()
             self.assertEqual(runner.sys.argv, ['/tmp/test/script.py'])
         self.assertEqual(events[:3], [('groups', []), ('gid', 20001), ('uid', 20001)])
         # Seccomp is active, so RLIMIT_NPROC is skipped (it counts the real uid's threads).
         self.assertEqual(sum(e[0] == 'limit' for e in events), 5)
         self.assertNotIn(runner.resource.RLIMIT_NPROC, [e[1] for e in events if e[0] == 'limit'])
-        self.assertEqual(events[-3:], [('policy', '/tmp/test'), ('metadata', 9, protections), ('execute', '/tmp/test/script.py')])
-
-    def test_nproc_applied_without_seccomp(self):
-        events = []
-        protections = {'landlock_abi': 2, 'seccomp': False}
-        args = ['runner', '/tmp/test/script.py', '20001', '20001',
-                json.dumps({'cpu':5,'memory':1024,'file':8,'processes':32,'open_files':64}), '9']
-        with patch.object(runner.sys, 'argv', args), patch.object(runner.sys, 'platform', 'linux'), patch.object(runner.os, 'umask'), patch.object(runner.os, 'geteuid', side_effect=[20001, 20001]), patch.object(runner, '_limit', side_effect=lambda k,v: events.append(('limit', k, v))), patch.object(runner.os, 'getcwd', return_value='/tmp/test'), patch.object(runner, '_linux_sandbox', return_value=protections), patch.object(runner, '_write_metadata'), patch.object(runner, '_execute_script'):
-            runner.main()
-        self.assertIn(('limit', runner.resource.RLIMIT_NPROC, 32), events)
+        self.assertEqual(events[-4:], [('policy', '/tmp/test'), ('audit',), ('metadata', 9, protections), ('execute', '/tmp/test/script.py')])
 
     def test_policy_failure_prevents_execution_and_reports(self):
-        protections = {'landlock_abi': 0, 'seccomp': False}
-        args = ['runner', '/tmp/test/script.py', '1000', '1000',
-                json.dumps({'cpu':5,'memory':1024,'file':8,'processes':32,'open_files':64}), '9']
-        with patch.object(runner.sys, 'argv', args), patch.object(runner.sys, 'platform', 'linux'), patch.object(runner.os, 'umask'), patch.object(runner.os, 'geteuid', return_value=1000), patch.object(runner, '_limit'), patch.object(runner, '_linux_sandbox', side_effect=runner.SandboxUnavailable(protections)), patch.object(runner, '_write_metadata') as metadata, patch.object(runner, '_execute_script') as execute:
-            with self.assertRaisesRegex(RuntimeError, 'No kernel protections'): runner.main()
-            execute.assert_not_called()
-            metadata.assert_called_once_with(9, protections)
+        for abi in (0, 2):
+            protections = {'landlock_abi': abi, 'seccomp': False,
+                           'seccomp_error': 'filter denied by host'}
+            args = ['runner', '/tmp/test/script.py', '1000', '1000',
+                    json.dumps({'cpu':5,'memory':1024,'file':8,'processes':32,'open_files':64}), '9']
+            with patch.object(runner.sys, 'argv', args), patch.object(runner.sys, 'platform', 'linux'), patch.object(runner.os, 'umask'), patch.object(runner.os, 'geteuid', return_value=1000), patch.object(runner, '_limit'), patch.object(runner, '_linux_sandbox', side_effect=runner.SandboxUnavailable(protections)), patch.object(runner, '_write_metadata') as metadata, patch.object(runner, '_install_audit_policy') as audit, patch.object(runner, '_execute_script') as execute:
+                with self.assertRaisesRegex(RuntimeError, 'mandatory seccomp network ban unavailable: filter denied by host'):
+                    runner.main()
+                execute.assert_not_called()
+                audit.assert_not_called()
+                metadata.assert_called_once_with(9, protections)
+
+    def test_audit_policy_event_families(self):
+        blocked = ('socket.__new__', 'socket.connect', 'socket.bind', 'socket.getaddrinfo',
+                   'socket.gethostbyname', 'socket.gethostbyaddr', 'urllib.Request',
+                   'http.client.connect', 'ftplib.connect', 'smtplib.connect', 'smtplib.send',
+                   'subprocess.Popen', 'os.system', 'os.exec', 'os.execve', 'os.spawn',
+                   'os.posix_spawn', 'os.fork', 'os.forkpty', 'ctypes.dlopen')
+        for event in blocked:
+            with self.subTest(event=event), self.assertRaisesRegex(PermissionError, 'policy blocked:'):
+                runner._audit_policy(event, ())
+        for event in ('import', 'open', 'compile', 'exec', 'os.listdir', 'ctypes.dlsym'):
+            runner._audit_policy(event, ())
+        with patch.object(runner.sys, 'addaudithook') as install:
+            runner._install_audit_policy()
+        install.assert_called_once_with(runner._audit_policy)
 
     def test_landlock_abi_masks(self):
         for abi in (1, 2, 3, 6):
@@ -242,7 +252,7 @@ class PolicyTests(unittest.TestCase):
             landlock = {'return_value': abi} if abi else {'side_effect': OSError(errno.ENOSYS, 'unavailable')}
             seccomp = {} if seccomp_ok else {'side_effect': OSError(errno.EPERM, 'unavailable')}
             with patch.object(runner.ctypes, 'CDLL', return_value=libc), patch.object(runner, '_landlock', **landlock), patch.object(runner, '_seccomp', **seccomp):
-                if not abi and not seccomp_ok:
+                if not seccomp_ok:
                     with self.assertRaises(runner.SandboxUnavailable) as caught:
                         runner._linux_sandbox('/tmp/test')
                     result = caught.exception.protections

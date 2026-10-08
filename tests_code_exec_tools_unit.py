@@ -83,8 +83,8 @@ class SelftestTests(unittest.TestCase):
         context.__exit__ = Mock(return_value=False)
         with patch.object(code_selftest.tempfile, 'TemporaryDirectory', return_value=context), patch.object(Path, 'write_text'), patch.object(code_selftest.os, 'chmod'):
             rows, protections = code_selftest.run_matrix(execute)
-        self.assertEqual(len(rows), 15)
-        self.assertEqual(execute.call_count, 34)  # 14 probes + 20 queued calls
+        self.assertEqual(len(rows), 21)
+        self.assertEqual(execute.call_count, 40)  # 20 probes + 20 queued calls
         self.assertEqual(rows[-1][0], '20 parallel calls queued')
         self.assertTrue(all(row[1] == 'FAIL' for row in rows))
         self.assertEqual(protections, [{'landlock_abi': 2, 'seccomp': True}])

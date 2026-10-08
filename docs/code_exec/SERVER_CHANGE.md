@@ -93,13 +93,20 @@ ABI 3, and records both the available ABI and applied policy ABI. Landlock
 syscalls 444–446 and unprivileged seccomp on x86_64/aarch64 may be restricted by
 the outer runtime, so validate inside the actual container.
 
-`PR_SET_NO_NEW_PRIVS` and the non-root identity remain required. If only one of
-Landlock/seccomp installs, that policy stays active and the missing policy and
-error are recorded in `metadata.protections` and the toolbox log. Execution
-fails closed if neither policy installs. This fallback follows PLAN_code_exec_r2:
-seccomp alone does not confine filesystem access; Landlock alone does not block
-network/process/exec syscalls. On ABI 1/2 without seccomp, path truncation is not
-fully mediated. The self-test reports containment failures in these modes.
+`PR_SET_NO_NEW_PRIVS`, the non-root identity, and the seccomp socket filter
+are mandatory. If seccomp cannot install, execution returns status `error` with
+“mandatory seccomp network ban unavailable” before submitted code is evaluated,
+even when Landlock succeeds. Landlock remains optional; a missing policy and its
+error are recorded in `metadata.protections` and the toolbox log. Seccomp alone
+does not confine filesystem access.
+
+Before submitted code runs, a Python audit hook also rejects socket/DNS events,
+URL/HTTP/FTP/SMTP connection events, subprocess/system/exec/spawn/fork events,
+and all later `ctypes.dlopen` calls (including loading the current process).
+This hook supplies clear errors and defense in depth; it is not a security
+boundary against arbitrary native code. The mandatory seccomp filter enforces
+the network ban at the kernel layer. Normal math/date stdlib imports remain
+supported; packages requiring dynamic ctypes loads may be rejected.
 
 ## Child restrictions and practical limits
 
@@ -107,14 +114,14 @@ fully mediated. The self-test reports containment failures in these modes.
   limit five seconds; the parent sends SIGKILL to the entire process group on
   timeout, output overflow and on normal completion. Internal callers can
   shorten the timeout but cannot increase it.
-* One GiB address space, eight MiB per written file, 32 processes/threads per
-  execution uid via RLIMIT_NPROC, 64 open descriptors, and no core dumps.
+* One GiB address space, eight MiB per written file, 64 open descriptors,
+  and no core dumps.
   Seccomp denies `fork`/`vfork` and `clone` without
   CLONE_THREAD, but allows threads. `clone3` returns ENOSYS so glibc can fall back
   to the inspectable `clone` syscall. BLAS/OMP/MKL/NumExpr thread defaults are
-  pinned to one in the scrubbed child environment. NPROC remains a second guard,
-  shared across the uid; an already heavily populated same-uid udocker host may
-  still prevent thread creation. NumPy/pandas imports must be checked in the
+  pinned to one in the scrubbed child environment. RLIMIT_NPROC is not applied
+  because mandatory seccomp already blocks new processes and NPROC counts the
+  rootless host uid's existing threads. NumPy/pandas imports must be checked in the
   installed image. Submitted code runs in the already-started isolated Python
   interpreter, allowing seccomp to deny all later execve/execveat calls.
 * Bounded slots **per server process**, configured by a positive integer

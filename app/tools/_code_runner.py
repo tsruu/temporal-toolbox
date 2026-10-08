@@ -1,7 +1,7 @@
 """Trusted isolated interpreter: apply limits/policies, then evaluate the script.
 
 Keeping the already-started interpreter lets seccomp deny *all* later execs.
-No submitted code runs before identity, limits and at least one kernel policy.
+No submitted code runs before identity, limits, mandatory seccomp and audit policy.
 """
 import ctypes
 import errno
@@ -29,7 +29,8 @@ def _check(result, name):
 class SandboxUnavailable(RuntimeError):
     def __init__(self, protections):
         self.protections = protections
-        super().__init__(f'No kernel protections available: {protections}')
+        super().__init__('Code execution refused: mandatory seccomp network ban unavailable: '
+                         + protections.get('seccomp_error', 'socket filter not installed'))
 
 
 def _landlock(libc, tmpdir):
@@ -154,9 +155,25 @@ def _linux_sandbox(tmpdir):
         protections['seccomp'] = True
     except (OSError, RuntimeError) as exc:
         protections['seccomp_error'] = str(exc)
-    if not protections['landlock_abi'] and not protections['seccomp']:
+    if not protections['seccomp']:
         raise SandboxUnavailable(protections)
     return protections
+
+
+def _audit_policy(event, args):
+    # Audit hooks are defense in depth, not a replacement for kernel enforcement.
+    # Deny whole event families so new stdlib network APIs inherit the policy.
+    if (event.startswith(('socket.', 'smtplib.', 'os.exec', 'os.spawn',
+                          'os.posix_spawn', 'os.fork')) or
+            event in ('urllib.Request', 'http.client.connect', 'ftplib.connect',
+                      'subprocess.Popen', 'os.system', 'ctypes.dlopen')):
+        raise PermissionError(f'Code execution policy blocked: {event}')
+
+
+def _install_audit_policy():
+    # libc was loaded by trusted sandbox setup. No later dynamic ctypes loads
+    # (including CDLL(None)) are needed by the supported math/date stdlib.
+    sys.addaudithook(_audit_policy)
 
 
 def _write_metadata(metadata_fd, protections):
@@ -200,12 +217,8 @@ def main():
     except SandboxUnavailable as exc:
         _write_metadata(int(metadata_fd), exc.protections)
         raise
-    # RLIMIT_NPROC counts every thread of the real uid. Rootless runtimes (udocker)
-    # cannot switch uid, so the server user's existing threads would exhaust it and
-    # block all threading. Seccomp already blocks new processes; use NPROC only as
-    # the fallback when seccomp is not active.
-    if not protections.get('seccomp'):
-        _limit(resource.RLIMIT_NPROC, limits['processes'])
+    # Seccomp blocks process creation without exhausting the rootless uid's threads.
+    _install_audit_policy()
     _write_metadata(int(metadata_fd), protections)
     sys.argv = [script]
     # No launcher argv or metadata descriptor is exposed to the script.
