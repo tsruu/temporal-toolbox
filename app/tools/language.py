@@ -96,6 +96,7 @@ class _FrozenMicrosoftTranslator(MicrosoftTranslator):
                 )
             except requests.exceptions.RequestException as error:
                 logging.warning("Returned error: %s", type(error).__name__)
+                raise TranslationError("Azure API request failed") from None
 
             if type(response.json()) is dict:
                 error_message = response.json()["error"]

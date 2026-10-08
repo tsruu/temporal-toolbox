@@ -17,6 +17,12 @@ def dispatch_tool(tool_name: str, arguments: dict) -> ToolResponse:
 
     try:
         result = tool_fn(**arguments)
+        if tool_name == "code_executor" and result["status"] != "success":
+            return ToolResponse(
+                status="error",
+                result_text=str(result),
+                metadata={"latency_ms": int((time.time() - start) * 1000)},
+            )
         return ToolResponse(
             status="ok",
             result_text=str(result),

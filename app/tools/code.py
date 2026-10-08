@@ -1,6 +1,7 @@
 # app/tools/code.py
 
 import subprocess
+import sys
 import tempfile
 import os
 import textwrap
@@ -44,7 +45,7 @@ def execute_python_code(
 
         try:
             result = subprocess.run(
-                ["python", script_path],
+                [sys.executable, script_path],
                 capture_output=True,
                 text=True,
                 timeout=timeout_seconds,
@@ -61,7 +62,7 @@ def execute_python_code(
 
         except subprocess.TimeoutExpired as e:
             return {
-                "stdout": e.stdout or "",
+                "stdout": e.stdout.decode("utf-8", errors="replace") if isinstance(e.stdout, bytes) else e.stdout or "",
                 "stderr": "Execution timed out",
                 "status": "timeout"
             }
