@@ -146,8 +146,6 @@ def entity_similarity(query_norm: str, key_norm: str) -> float:
     """
     Combined lexical similarity score
     """
-    if query_norm and query_norm == key_norm:
-        return 1.0
     c1 = containment_score(query_norm, key_norm)
     c2 = char_ngram_similarity(query_norm, key_norm)
     return 0.7 * c1 + 0.3 * c2

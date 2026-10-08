@@ -28,10 +28,3 @@ This project uses an MCP (Model Context Protocol) server called **toolbox**. It 
 ## Using it (e.g. with Smolagent)
 
 Connect to the server via its SSE URL (e.g. with `ToolCollection.from_mcp()` or MCPAdapt’s SSE config), then run your agent (e.g. Smolagent HF + Qwen3) with these tools to do inference on your dataset.
-## Reviewed temporal table sources
-
-The tables reviewed by apply-X are maintained in `data/temporal/`. Run
-`python scripts/build_temporal_tables.py` from the toolbox directory to copy
-those sources into `app/tools/`. This rebuild writes only inside toolbox;
-dataset source files, builders, parquet files, and dataset table mirrors have
-separate ownership. Series alternatives must be consistent in both directions.
