@@ -7,6 +7,12 @@ WORKDIR /app
 COPY requirements.txt constraints.txt ./
 RUN pip install --no-cache-dir -r requirements.txt -c constraints.txt
 
+# Only the submitted Python child switches to this uid. The server retains its
+# existing identity/network and can still translate using its own credentials.
+RUN groupadd --gid 20001 code-exec \
+    && useradd --uid 20001 --gid code-exec --no-create-home \
+       --home-dir /nonexistent --shell /usr/sbin/nologin code-exec
+
 COPY app ./app
 
 EXPOSE 8000

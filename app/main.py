@@ -10,6 +10,7 @@ from pydantic import Field
 from fastapi import FastAPI
 from fastmcp import FastMCP
 from starlette.requests import Request
+from starlette.concurrency import run_in_threadpool
 
 from app.schemas import ToolRequest, ToolResponse
 from app.dispatcher import dispatch_tool
@@ -245,7 +246,9 @@ async def logging_middleware(request: Request, call_next):
 
 @api_app.post("/tool", response_model=ToolResponse)
 async def tool_endpoint(req: ToolRequest):
-    result = dispatch_tool(req.tool_name, req.arguments)
+    # Execution and translation can block. Keep health/lookup requests and the
+    # executor's concurrency rejection responsive while those calls run.
+    result = await run_in_threadpool(dispatch_tool, req.tool_name, req.arguments)
     if result.status != "ok":
         result.result_text = f"ERROR: {result.result_text}"
     return result
@@ -404,4 +407,3 @@ async def list_tools():
 
 app = mcp.http_app(transport=MCP_TRANSPORT)
 app.mount("/", api_app)  # Starlette's mount method
-
