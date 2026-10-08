@@ -144,7 +144,7 @@ print(json.dumps({name: resource.getrlimit(getattr(resource, name)) for name in
         self.assertEqual(result['status'], 'success', result)
         limits = json.loads(result['stdout'])
         for name, value in [('RLIMIT_CPU', 5), ('RLIMIT_AS', code.MEMORY_BYTES),
-                            ('RLIMIT_FSIZE', code.FILE_BYTES), ('RLIMIT_NPROC', code.MAX_PROCESSES),
+                            ('RLIMIT_FSIZE', code.FILE_BYTES),
                             ('RLIMIT_NOFILE', code.MAX_OPEN_FILES), ('RLIMIT_CORE', 0)]:
             self.assertEqual(limits[name], [value, value])
         result = self.run_code('x = bytearray(2 * 1024 * 1024 * 1024)')

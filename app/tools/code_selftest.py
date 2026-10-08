@@ -36,6 +36,18 @@ def run_matrix(execute=None):
     check('normal print', 'print("hello")', printed('hello\n'))
     check('stdlib + script semantics', '''
 import datetime, math, re, json, itertools, sys, __main__
+import decimal, fractions, statistics, collections, calendar
+assert decimal.Decimal("0.1") + decimal.Decimal("0.2") == decimal.Decimal("0.3")
+assert fractions.Fraction(1, 3) * 3 == 1
+assert statistics.mean([1, 2, 3]) == 2
+assert collections.Counter("aba")["a"] == 2
+assert calendar.isleap(2024)
+try:
+    import zoneinfo
+except ImportError:
+    pass
+else:
+    assert zoneinfo.ZoneInfo("UTC").utcoffset(None) == datetime.timedelta(0)
 assert sys.argv == [__file__] and __main__.__file__ == __file__
 assert datetime.datetime.strptime('2026-10-08', '%Y-%m-%d').year == 2026
 assert math.sqrt(9) == 3 and re.match('a+', 'aaa')
@@ -48,7 +60,7 @@ print('ok')
           lambda r: r['stdout'] == 'started\n' and (r['status'] == 'timeout' or
                    r['status'] == 'error' and 'signal' in r['stderr']), timeout=1)
     # A finite fork loop instead of an unbounded bomb; the parent always kills
-    # the process group. A fallback without seccomp is reported as a failure.
+    # the process group. Missing seccomp refuses execution before this probe.
     check('fork bomb (bounded)', '''
 import os, time
 children = []
@@ -90,14 +102,26 @@ for operation in (lambda: Path({str(fixture)!r}).write_text('escaped'),
 Path('local.txt').write_text('ok')
 assert Path('local.txt').read_text() == 'ok'
 ''', lambda r: printed('blocked\nblocked\nblocked\n')(r) and fixture.read_text() == 'synthetic fixture')
-    check('socket attempt', '''
-import socket
-try:
-    socket.socket()
-    print('escaped')
-except PermissionError:
-    print('blocked')
-''', printed('blocked\n'))
+    # Let denial escape so the executor must return status error and a clear
+    # audit-policy message, rather than accepting any incidental network failure.
+    for name, source in (
+            ('socket attempt', 'import socket; socket.socket()'),
+            ('urllib attempt', 'import urllib.request; urllib.request.urlopen("http://127.0.0.1:9")'),
+            ('DNS lookup', 'import socket; socket.getaddrinfo("localhost", 80)'),
+            ('subprocess attempt', 'import subprocess; subprocess.run(["/bin/true"])'),
+            ('os.system attempt', 'import os; os.system("true")'),
+            ('ctypes library load', 'import ctypes; ctypes.CDLL(None)')):
+        check(name, source, lambda r: r['status'] == 'error' and
+              'Code execution policy blocked:' in r['stderr'])
+    check('requests attempt if installed', '''
+import importlib.util
+if importlib.util.find_spec('requests') is None:
+    print('not installed')
+else:
+    import requests
+    requests.get('http://127.0.0.1:9', timeout=1)
+''', lambda r: printed('not installed\n')(r) or
+          r['status'] == 'error' and 'Code execution policy blocked:' in r['stderr'])
     marker_name = 'CODE_EXEC_SELFTEST_SECRET'
     previous = os.environ.get(marker_name)
     os.environ[marker_name] = 'synthetic-selftest-marker'
