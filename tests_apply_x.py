@@ -14,6 +14,7 @@ from app.main import app, mcp
 from app.tools import code, language, temporal
 
 
+@unittest.skipUnless(sys.platform == 'linux', 'code_executor runs only under the Linux kernel sandbox')
 class ExecutionTests(unittest.TestCase):
     def test_current_interpreter_and_success(self):
         result = code.execute_python_code('import sys; print(sys.executable)')
