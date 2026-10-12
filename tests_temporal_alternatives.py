@@ -1,4 +1,4 @@
-"""Alternative entity matching without changing event, time, or tie behavior."""
+"""Alternative matching with unchanged thresholds and date filtering."""
 import csv
 import random
 import io
@@ -43,6 +43,8 @@ class EntityAlternativeTests(unittest.TestCase):
             for key in cells:
                 self.assertEqual(temporal.row_entity_similarity(normalized, key),
                     temporal.entity_similarity(normalized, temporal.normalize_entity(key)))
+                self.assertEqual(temporal.lexical_match_rank(normalized, key)[1],
+                    temporal.entity_similarity(normalized, temporal.normalize_entity(key)))
 
     def test_chronological_alternatives_and_event_ties(self):
         path = self.table([
@@ -70,12 +72,10 @@ class EntityAlternativeTests(unittest.TestCase):
                     with self.assertRaises(LookupError):
                         getattr(temporal, name)(query, '2001', path)
 
-    def test_event_cells_keep_original_scoring(self):
+    def test_event_cells_support_alternatives(self):
         path = self.table([dict(event='one | two', answer='year')])
-        # Event matching still normalizes punctuation as one ordinary event key.
-        with self.assertRaises(LookupError):
-            temporal.event_time('one', path)
-        self.assertEqual(temporal.event_time('one two', path), 'year')
+        for event in ('one', 'two', 'one two'):
+            self.assertEqual(temporal.event_time(event, path), 'year')
 
     def test_absolute_dates_distinguish_same_month_transitions(self):
         path = self.table([
