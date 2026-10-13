@@ -1,0 +1,435 @@
+[
+  {
+    "id": "wrong company",
+    "kind": "wrong company",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "CEO of Apple",
+      "Virginia M. (Ginni) Rometty"
+    ],
+    "gold": "Samuel J Palmisano",
+    "main": {
+      "answer": "Samuel J Palmisano",
+      "row": 2616,
+      "score": 0.7925,
+      "entity_score": 0.6541666666666666,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2618,
+      "question": "Who held the Chief Executive position in IBM company right before Ginni Rometty?",
+      "entity": "CEO of IBM | chief executive officer position at IBM | CEO position of IBM | Chief Executive position in IBM company | role of CEO of IBM",
+      "event": "Ginni Rometty",
+      "answer": "Samuel J Palmisano"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.6541666666666666,
+        "event_score": 1.0,
+        "combined_score": 0.7925
+      },
+      "bar_075": {
+        "entity_score": 0.6541666666666666,
+        "event_score": 1.0,
+        "combined_score": 0.7925
+      },
+      "bar_070": {
+        "entity_score": 0.6541666666666666,
+        "event_score": 1.0,
+        "combined_score": 0.7925
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "ibm"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70"
+    },
+    "details_by_mode": {
+      "bar_075": "missing role words",
+      "bar_070": "missing role words"
+    },
+    "cause": "entity below 0.75",
+    "detail": "missing role words"
+  },
+  {
+    "id": "wrong role",
+    "kind": "wrong role",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "assistant coach of the team HNK Rijeka",
+      "Simon Rožman"
+    ],
+    "gold": "Goran Tomić",
+    "main": {
+      "answer": "Goran Tomić",
+      "row": 2633,
+      "score": 0.9167741935483871,
+      "entity_score": 0.8612903225806452,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Goran Tomić",
+      "row": 2633,
+      "score": 0.9033333333333333,
+      "entity_score": 0.8388888888888889,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Goran Tomić",
+      "row": 2633,
+      "score": 0.9033333333333333,
+      "entity_score": 0.8388888888888889,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "main_winner": {
+      "csv_line": 2635,
+      "question": "Who was the head coach of the team HNK Rijeka right after Simon Rožman?",
+      "entity": "head coach of the team HNK Rijeka",
+      "event": "Simon Rožman",
+      "answer": "Goran Tomić"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8612903225806452,
+        "event_score": 1.0,
+        "combined_score": 0.9167741935483871
+      },
+      "bar_075": {
+        "entity_score": 0.8388888888888889,
+        "event_score": 1.0,
+        "combined_score": 0.9033333333333333
+      },
+      "bar_070": {
+        "entity_score": 0.8388888888888889,
+        "event_score": 1.0,
+        "combined_score": 0.9033333333333333
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "head"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "missing role words",
+      "bar_070": "missing role words"
+    },
+    "cause": "different ranking winner",
+    "detail": "missing role words"
+  },
+  {
+    "id": "role-less HNK",
+    "kind": "role-less HNK",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "HNK Rijeka",
+      "Simon Rožman"
+    ],
+    "gold": "Goran Tomić",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "untranslated event French",
+    "kind": "untranslated event French",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "John Grisham",
+      "L’Affaire Pélican"
+    ],
+    "gold": "The Firm",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "untranslated event German",
+    "kind": "untranslated event German",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "John Grisham",
+      "Die Akte"
+    ],
+    "gold": "The Firm",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "negated event",
+    "kind": "negated event",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "John Grisham",
+      "not The Pelican Brief"
+    ],
+    "gold": "The Firm",
+    "main": {
+      "answer": "The Firm",
+      "row": 655,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "The Firm",
+      "row": 655,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "The Firm",
+      "row": 655,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "main_winner": {
+      "csv_line": 657,
+      "question": "Which book was written by John Grisham followed by The Pelican Brief?",
+      "entity": "John Grisham | book writer John Grisham",
+      "event": "The Pelican Brief",
+      "answer": "The Firm"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "competing owners",
+    "kind": "competing owners",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Google | Apple",
+      "Mac OS 10.6 Snow Leopard"
+    ],
+    "gold": "10.7 Lion",
+    "main": {
+      "answer": "10.7 Lion",
+      "row": 1376,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "10.7 Lion",
+      "row": 1376,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "10.7 Lion",
+      "row": 1376,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "main_winner": {
+      "csv_line": 1378,
+      "question": "Which OS was announced by Apple succeeding OS 10.6 Snow Leopard?",
+      "entity": "Apple | Apple corporation | Apple company",
+      "event": "OS 10.6 Snow Leopard",
+      "answer": "10.7 Lion"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "assistant full role",
+    "kind": "assistant full role",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "assistant head coach of the team HNK Rijeka",
+      "Simon Rožman"
+    ],
+    "gold": "Goran Tomić",
+    "main": {
+      "answer": "Goran Tomić",
+      "row": 2633,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Goran Tomić",
+      "row": 2633,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Goran Tomić",
+      "row": 2633,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "main_winner": {
+      "csv_line": 2635,
+      "question": "Who was the head coach of the team HNK Rijeka right after Simon Rožman?",
+      "entity": "head coach of the team HNK Rijeka",
+      "event": "Simon Rožman",
+      "answer": "Goran Tomić"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  }
+]

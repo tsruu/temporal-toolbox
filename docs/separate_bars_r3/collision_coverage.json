@@ -1,0 +1,66 @@
+[
+  {
+    "table": "before_chronological_reference",
+    "field": "entity",
+    "distinct_cells": 1183,
+    "qualifying_pairs": 992,
+    "reported_pairs": 206,
+    "practical_risks": 101
+  },
+  {
+    "table": "before_chronological_reference",
+    "field": "event",
+    "distinct_cells": 2593,
+    "qualifying_pairs": 2939,
+    "reported_pairs": 2087,
+    "practical_risks": 304
+  },
+  {
+    "table": "after_chronological_reference",
+    "field": "entity",
+    "distinct_cells": 1177,
+    "qualifying_pairs": 1050,
+    "reported_pairs": 185,
+    "practical_risks": 86
+  },
+  {
+    "table": "after_chronological_reference",
+    "field": "event",
+    "distinct_cells": 2584,
+    "qualifying_pairs": 2795,
+    "reported_pairs": 2060,
+    "practical_risks": 290
+  },
+  {
+    "table": "before_absolute_reference",
+    "field": "entity",
+    "distinct_cells": 902,
+    "qualifying_pairs": 382,
+    "reported_pairs": 174,
+    "practical_risks": 153
+  },
+  {
+    "table": "after_absolute_reference",
+    "field": "entity",
+    "distinct_cells": 900,
+    "qualifying_pairs": 435,
+    "reported_pairs": 189,
+    "practical_risks": 172
+  },
+  {
+    "table": "entity_time_event",
+    "field": "entity",
+    "distinct_cells": 678,
+    "qualifying_pairs": 265,
+    "reported_pairs": 70,
+    "practical_risks": 54
+  },
+  {
+    "table": "event_time",
+    "field": "event",
+    "distinct_cells": 100,
+    "qualifying_pairs": 4,
+    "reported_pairs": 4,
+    "practical_risks": 4
+  }
+]

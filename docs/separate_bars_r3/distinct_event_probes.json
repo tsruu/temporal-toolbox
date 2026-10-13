@@ -1,0 +1,5540 @@
+[
+  {
+    "id": "after_chronological_reference:28",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "the release of the album ReDhoom"
+    ],
+    "gold": "Phir Dhoom",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0009",
+    "original_event": "the release of the album dhoom",
+    "main": {
+      "answer": "Item",
+      "row": 37,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Item",
+      "row": 37,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Item",
+      "row": 37,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 39,
+      "question": "What did Euphoria disclose straight after the release of the album ReDhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "the release of the album ReDhoom",
+      "answer": "Item"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:39",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "the release of the album dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0009",
+    "original_event": "the release of the album ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 26,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 26,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 26,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 28,
+      "question": "What did Euphoria disclose straight after the release of the album dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "the release of the album dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:72",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "the release of the album dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0009",
+    "original_event": "the release of the album ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 26,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 26,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 26,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 28,
+      "question": "What did Euphoria disclose straight after the release of the album dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "the release of the album dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:65",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Mehfuz",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:79",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Mehfuz",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:80",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Mehfuz",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:81",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Mehfuz",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:82",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Mehfuz",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:83",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Mehfuz",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:29",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "ReDhoom"
+    ],
+    "gold": "Phir Dhoom",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "dhoom",
+    "main": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 30,
+      "question": "Which album was released by Euphoria immediately after ReDhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "ReDhoom",
+      "answer": "Item"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:30",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:31",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:40",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:41",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:46",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:47",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:50",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:51",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:64",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:65",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:68",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "ReDhoom"
+    ],
+    "gold": "Phir Dhoom",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "dhoom",
+    "main": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 30,
+      "question": "Which album was released by Euphoria immediately after ReDhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "ReDhoom",
+      "answer": "Item"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:69",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "ReDhoom"
+    ],
+    "gold": "Phir Dhoom",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "dhoom",
+    "main": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Item",
+      "row": 28,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 30,
+      "question": "Which album was released by Euphoria immediately after ReDhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "ReDhoom",
+      "answer": "Item"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:73",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Euphoria",
+      "dhoom"
+    ],
+    "gold": "Item",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0010",
+    "original_event": "ReDhoom",
+    "main": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Phir Dhoom",
+      "row": 27,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 29,
+      "question": "Which album was launched by Euphoria preceded by dhoom?",
+      "entity": "Euphoria | Indian band Euphoria | Euphoria band",
+      "event": "dhoom",
+      "answer": "Phir Dhoom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:373",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Austria"
+    ],
+    "gold": "Russia",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:401",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Austria"
+    ],
+    "gold": "Russia",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:402",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Austria"
+    ],
+    "gold": "Russia",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:826",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:827",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:834",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:835",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:852",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:853",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1992",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1993",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2012",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2013",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2036",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2037",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2044",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2045",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2054",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2055",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2060",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2061",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2078",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:2079",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "Czech Republic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:5463",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Austria"
+    ],
+    "gold": "Russia",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:370",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Austria"
+    ],
+    "gold": "Russia",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:795",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Italy",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9308333333333333,
+      "entity_score": 0.8847222222222222,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9229545454545455,
+      "entity_score": 0.8715909090909091,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9229545454545455,
+      "entity_score": 0.8715909090909091,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8847222222222222,
+        "event_score": 1.0,
+        "combined_score": 0.9308333333333333
+      },
+      "bar_075": {
+        "entity_score": 0.8715909090909091,
+        "event_score": 1.0,
+        "combined_score": 0.9229545454545455
+      },
+      "bar_070": {
+        "entity_score": 0.8715909090909091,
+        "event_score": 1.0,
+        "combined_score": 0.9229545454545455
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "2019"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "after_chronological_reference:796",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Italy",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9308333333333333,
+      "entity_score": 0.8847222222222222,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9229545454545455,
+      "entity_score": 0.8715909090909091,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9229545454545455,
+      "entity_score": 0.8715909090909091,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8847222222222222,
+        "event_score": 1.0,
+        "combined_score": 0.9308333333333333
+      },
+      "bar_075": {
+        "entity_score": 0.8715909090909091,
+        "event_score": 1.0,
+        "combined_score": 0.9229545454545455
+      },
+      "bar_070": {
+        "entity_score": 0.8715909090909091,
+        "event_score": 1.0,
+        "combined_score": 0.9229545454545455
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "2019"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "after_chronological_reference:813",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Italy",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9308333333333333,
+      "entity_score": 0.8847222222222222,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9229545454545455,
+      "entity_score": 0.8715909090909091,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9229545454545455,
+      "entity_score": 0.8715909090909091,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8847222222222222,
+        "event_score": 1.0,
+        "combined_score": 0.9308333333333333
+      },
+      "bar_075": {
+        "entity_score": 0.8715909090909091,
+        "event_score": 1.0,
+        "combined_score": 0.9229545454545455
+      },
+      "bar_070": {
+        "entity_score": 0.8715909090909091,
+        "event_score": 1.0,
+        "combined_score": 0.9229545454545455
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "2019"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "after_chronological_reference:814",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 1970 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "Italy",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9308333333333333,
+      "entity_score": 0.8847222222222222,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9229545454545455,
+      "entity_score": 0.8715909090909091,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9229545454545455,
+      "entity_score": 0.8715909090909091,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8847222222222222,
+        "event_score": 1.0,
+        "combined_score": 0.9308333333333333
+      },
+      "bar_075": {
+        "entity_score": 0.8715909090909091,
+        "event_score": 1.0,
+        "combined_score": 0.9229545454545455
+      },
+      "bar_070": {
+        "entity_score": 0.8715909090909091,
+        "event_score": 1.0,
+        "combined_score": 0.9229545454545455
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "2019"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "after_chronological_reference:2010",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2011",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2016",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Austria"
+    ],
+    "gold": "Bahrain",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2010,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 Formula One World Championship right after Austria?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Austria",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2017",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Austria"
+    ],
+    "gold": "Bahrain",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2010,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 Formula One World Championship right after Austria?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Austria",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2018",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2019",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2024",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Austria"
+    ],
+    "gold": "Bahrain",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2010,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 Formula One World Championship right after Austria?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Austria",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2025",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Austria"
+    ],
+    "gold": "Bahrain",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Australia",
+    "main": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "England",
+      "row": 2008,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2010,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 Formula One World Championship right after Austria?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Austria",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2028",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2029",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:2040",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.916923076923077,
+      "entity_score": 0.8615384615384616,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9042857142857142,
+      "entity_score": 0.8404761904761905,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9042857142857142,
+      "entity_score": 0.8404761904761905,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8615384615384616,
+        "event_score": 1.0,
+        "combined_score": 0.916923076923077
+      },
+      "bar_075": {
+        "entity_score": 0.8404761904761905,
+        "event_score": 1.0,
+        "combined_score": 0.9042857142857142
+      },
+      "bar_070": {
+        "entity_score": 0.8404761904761905,
+        "event_score": 1.0,
+        "combined_score": 0.9042857142857142
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "after_chronological_reference:2041",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.916923076923077,
+      "entity_score": 0.8615384615384616,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9042857142857142,
+      "entity_score": 0.8404761904761905,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9042857142857142,
+      "entity_score": 0.8404761904761905,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8615384615384616,
+        "event_score": 1.0,
+        "combined_score": 0.916923076923077
+      },
+      "bar_075": {
+        "entity_score": 0.8404761904761905,
+        "event_score": 1.0,
+        "combined_score": 0.9042857142857142
+      },
+      "bar_070": {
+        "entity_score": 0.8404761904761905,
+        "event_score": 1.0,
+        "combined_score": 0.9042857142857142
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "after_chronological_reference:2060",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.916923076923077,
+      "entity_score": 0.8615384615384616,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9042857142857142,
+      "entity_score": 0.8404761904761905,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9042857142857142,
+      "entity_score": 0.8404761904761905,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8615384615384616,
+        "event_score": 1.0,
+        "combined_score": 0.916923076923077
+      },
+      "bar_075": {
+        "entity_score": 0.8404761904761905,
+        "event_score": 1.0,
+        "combined_score": 0.9042857142857142
+      },
+      "bar_070": {
+        "entity_score": 0.8404761904761905,
+        "event_score": 1.0,
+        "combined_score": 0.9042857142857142
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "after_chronological_reference:2061",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "MotoGP race for the 2019 MotoGP World Championship",
+      "Australia"
+    ],
+    "gold": "England",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0011",
+    "original_event": "Austria",
+    "main": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.916923076923077,
+      "entity_score": 0.8615384615384616,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9042857142857142,
+      "entity_score": 0.8404761904761905,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Bahrain",
+      "row": 2014,
+      "score": 0.9042857142857142,
+      "entity_score": 0.8404761904761905,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 2016,
+      "question": "Which country did the Formula One race for the 2019 F1 World Championship happen in soon after Australia?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Australia",
+      "answer": "Bahrain"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8615384615384616,
+        "event_score": 1.0,
+        "combined_score": 0.916923076923077
+      },
+      "bar_075": {
+        "entity_score": 0.8404761904761905,
+        "event_score": 1.0,
+        "combined_score": 0.9042857142857142
+      },
+      "bar_070": {
+        "entity_score": 0.8404761904761905,
+        "event_score": 1.0,
+        "combined_score": 0.9042857142857142
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "before_chronological_reference:3013",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "head of Chicago",
+      "Richard M. Daley"
+    ],
+    "gold": "Martin H. Kennelly",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0012",
+    "original_event": "Richard J. Daley",
+    "main": {
+      "answer": "Eugene Sawyer",
+      "row": 3014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Eugene Sawyer",
+      "row": 3014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Eugene Sawyer",
+      "row": 3014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 3016,
+      "question": "Who was the head of Chicago right before Richard M. Daley?",
+      "entity": "head of Chicago",
+      "event": "Richard M. Daley",
+      "answer": "Eugene Sawyer"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:3016",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "head of Chicago",
+      "Richard J. Daley"
+    ],
+    "gold": "Eugene Sawyer",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0012",
+    "original_event": "Richard M. Daley",
+    "main": {
+      "answer": "Martin H. Kennelly",
+      "row": 3011,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Martin H. Kennelly",
+      "row": 3011,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Martin H. Kennelly",
+      "row": 3011,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 3013,
+      "question": "Who was the head of Chicago right before Richard J. Daley?",
+      "entity": "head of Chicago",
+      "event": "Richard J. Daley",
+      "answer": "Martin H. Kennelly"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:4929",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "head of Chicago",
+      "Richard M. Daley"
+    ],
+    "gold": "Martin H. Kennelly",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0012",
+    "original_event": "Richard J. Daley",
+    "main": {
+      "answer": "Eugene Sawyer",
+      "row": 3014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Eugene Sawyer",
+      "row": 3014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Eugene Sawyer",
+      "row": 3014,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 3016,
+      "question": "Who was the head of Chicago right before Richard M. Daley?",
+      "entity": "head of Chicago",
+      "event": "Richard M. Daley",
+      "answer": "Eugene Sawyer"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:3008",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "head of Chicago",
+      "Richard M. Daley"
+    ],
+    "gold": "Michael Anthony Bilandic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0012",
+    "original_event": "Richard J. Daley",
+    "main": {
+      "answer": "Michael Anthony Bilandic",
+      "row": 3006,
+      "score": 0.8789743589743589,
+      "entity_score": 1.0,
+      "event_score": 0.6974358974358974
+    },
+    "main_gold": true,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 3008,
+      "question": "Who was the head of Chicago right after Richard J. Daley?",
+      "entity": "head of Chicago",
+      "event": "Richard J. Daley",
+      "answer": "Michael Anthony Bilandic"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6974358974358974,
+        "combined_score": 0.8789743589743589
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.6974358974358974,
+        "combined_score": 0.8789743589743589
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.6974358974358974,
+        "combined_score": 0.8789743589743589
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "j"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:4992",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "head of Chicago",
+      "Richard M. Daley"
+    ],
+    "gold": "Michael Anthony Bilandic",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0012",
+    "original_event": "Richard J. Daley",
+    "main": {
+      "answer": "Michael Anthony Bilandic",
+      "row": 3006,
+      "score": 0.8789743589743589,
+      "entity_score": 1.0,
+      "event_score": 0.6974358974358974
+    },
+    "main_gold": true,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 3008,
+      "question": "Who was the head of Chicago right after Richard J. Daley?",
+      "entity": "head of Chicago",
+      "event": "Richard J. Daley",
+      "answer": "Michael Anthony Bilandic"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6974358974358974,
+        "combined_score": 0.8789743589743589
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.6974358974358974,
+        "combined_score": 0.8789743589743589
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.6974358974358974,
+        "combined_score": 0.8789743589743589
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "j"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:4729",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Eduardo Hernández-Sonseca",
+      "Real Madrid Baloncesto B"
+    ],
+    "gold": "Real Madrid Baloncesto B",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0013",
+    "original_event": "Real Madrid Baloncesto",
+    "main": {
+      "answer": "Real Madrid Baloncesto B",
+      "row": 4727,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Real Madrid Baloncesto B",
+      "row": 4727,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Real Madrid Baloncesto B",
+      "row": 4727,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "main_winner": {
+      "csv_line": 4729,
+      "question": "Which team did Eduardo Hernández-Sonseca play for right before Real Madrid Baloncesto?",
+      "entity": "Eduardo Hernández-Sonseca",
+      "event": "Real Madrid Baloncesto",
+      "answer": "Real Madrid Baloncesto B"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:5111",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Eduardo Hernández-Sonseca",
+      "Real Madrid Baloncesto B"
+    ],
+    "gold": "Real Madrid Baloncesto B",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0013",
+    "original_event": "Real Madrid Baloncesto",
+    "main": {
+      "answer": "Real Madrid Baloncesto B",
+      "row": 4727,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Real Madrid Baloncesto B",
+      "row": 4727,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Real Madrid Baloncesto B",
+      "row": 4727,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "main_winner": {
+      "csv_line": 4729,
+      "question": "Which team did Eduardo Hernández-Sonseca play for right before Real Madrid Baloncesto?",
+      "entity": "Eduardo Hernández-Sonseca",
+      "event": "Real Madrid Baloncesto",
+      "answer": "Real Madrid Baloncesto B"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:4732",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Eduardo Hernández-Sonseca",
+      "Real Madrid Baloncesto"
+    ],
+    "gold": "Real Madrid Baloncesto",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0013",
+    "original_event": "Real Madrid Baloncesto B",
+    "main": {
+      "answer": "Club Joventut Badalona",
+      "row": 4731,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Club Joventut Badalona",
+      "row": 4731,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Club Joventut Badalona",
+      "row": 4731,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 4733,
+      "question": "Which team did Eduardo Hernández-Sonseca play for right after Real Madrid Baloncesto?",
+      "entity": "Eduardo Hernández-Sonseca",
+      "event": "Real Madrid Baloncesto",
+      "answer": "Club Joventut Badalona"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:4733",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Eduardo Hernández-Sonseca",
+      "Real Madrid Baloncesto B"
+    ],
+    "gold": "Club Joventut Badalona",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0013",
+    "original_event": "Real Madrid Baloncesto",
+    "main": {
+      "answer": "Real Madrid Baloncesto",
+      "row": 4730,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Real Madrid Baloncesto",
+      "row": 4730,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Real Madrid Baloncesto",
+      "row": 4730,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 4732,
+      "question": "Which team did Eduardo Hernández-Sonseca play for right after Real Madrid Baloncesto B?",
+      "entity": "Eduardo Hernández-Sonseca",
+      "event": "Real Madrid Baloncesto B",
+      "answer": "Real Madrid Baloncesto"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:4761",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "head of Ziduri",
+      "Nicolae Nedelcu"
+    ],
+    "gold": "Nicolae Nedelcu",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0014",
+    "original_event": "Nicolaie Nedelcu",
+    "main": {
+      "answer": "Nicolae Nedelcu",
+      "row": 4759,
+      "score": 0.8342857142857143,
+      "entity_score": 1.0,
+      "event_score": 0.5857142857142856
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Nicolae Nedelcu",
+      "row": 4759,
+      "score": 0.9742857142857143,
+      "entity_score": 1.0,
+      "event_score": 0.9357142857142857
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Nicolae Nedelcu",
+      "row": 4759,
+      "score": 0.9742857142857143,
+      "entity_score": 1.0,
+      "event_score": 0.9357142857142857
+    },
+    "bar_070_gold": true,
+    "main_winner": {
+      "csv_line": 4761,
+      "question": "Who was the head of Ziduri right before Nicolaie Nedelcu?",
+      "entity": "head of Ziduri",
+      "event": "Nicolaie Nedelcu",
+      "answer": "Nicolae Nedelcu"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.5857142857142856,
+        "combined_score": 0.8342857142857143
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.9357142857142857,
+        "combined_score": 0.9742857142857143
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.9357142857142857,
+        "combined_score": 0.9742857142857143
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "nicolaie"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:4767",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "head of Ziduri",
+      "Nicolaie Nedelcu"
+    ],
+    "gold": "Nicolaie Nedelcu",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0014",
+    "original_event": "Nicolae Nedelcu",
+    "main": {
+      "answer": "Viorel Buzea",
+      "row": 4766,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Viorel Buzea",
+      "row": 4766,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Viorel Buzea",
+      "row": 4766,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 4768,
+      "question": "Who was the head of Ziduri right after Nicolaie Nedelcu?",
+      "entity": "head of Ziduri",
+      "event": "Nicolaie Nedelcu",
+      "answer": "Viorel Buzea"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:4768",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "head of Ziduri",
+      "Nicolae Nedelcu"
+    ],
+    "gold": "Viorel Buzea",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0014",
+    "original_event": "Nicolaie Nedelcu",
+    "main": {
+      "answer": "Nicolaie Nedelcu",
+      "row": 4765,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Nicolaie Nedelcu",
+      "row": 4765,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Nicolaie Nedelcu",
+      "row": 4765,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 4767,
+      "question": "Who was the head of Ziduri right after Nicolae Nedelcu?",
+      "entity": "head of Ziduri",
+      "event": "Nicolae Nedelcu",
+      "answer": "Nicolaie Nedelcu"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "after_chronological_reference:5161",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "head of Ziduri",
+      "Nicolaie Nedelcu"
+    ],
+    "gold": "Nicolaie Nedelcu",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0014",
+    "original_event": "Nicolae Nedelcu",
+    "main": {
+      "answer": "Viorel Buzea",
+      "row": 4766,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Viorel Buzea",
+      "row": 4766,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Viorel Buzea",
+      "row": 4766,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 4768,
+      "question": "Who was the head of Ziduri right after Nicolaie Nedelcu?",
+      "entity": "head of Ziduri",
+      "event": "Nicolaie Nedelcu",
+      "answer": "Viorel Buzea"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:1244",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "shared its sovereignty with the federal government of the United States",
+      "North Carolina"
+    ],
+    "gold": "Maryland",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0016",
+    "original_event": "South Carolina",
+    "main": {
+      "answer": "Maryland",
+      "row": 1242,
+      "score": 0.83,
+      "entity_score": 1.0,
+      "event_score": 0.575
+    },
+    "main_gold": true,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 1244,
+      "question": "Which state in the United States of America joined the Union immediately before South Carolina?",
+      "entity": "shared its sovereignty with the federal government of the United States | admission to the Union of the United States of America | joined the Union | took admission to the Union",
+      "event": "South Carolina",
+      "answer": "Maryland"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.575,
+        "combined_score": 0.83
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.575,
+        "combined_score": 0.83
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.575,
+        "combined_score": 0.83
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "south"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:1245",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "shared its sovereignty with the federal government of the United States",
+      "North Carolina"
+    ],
+    "gold": "Maryland",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0016",
+    "original_event": "South Carolina",
+    "main": {
+      "answer": "Maryland",
+      "row": 1242,
+      "score": 0.83,
+      "entity_score": 1.0,
+      "event_score": 0.575
+    },
+    "main_gold": true,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false,
+    "main_winner": {
+      "csv_line": 1244,
+      "question": "Which state in the United States of America joined the Union immediately before South Carolina?",
+      "entity": "shared its sovereignty with the federal government of the United States | admission to the Union of the United States of America | joined the Union | took admission to the Union",
+      "event": "South Carolina",
+      "answer": "Maryland"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.575,
+        "combined_score": 0.83
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.575,
+        "combined_score": 0.83
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.575,
+        "combined_score": 0.83
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "south"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "before_chronological_reference:374",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Turkey",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:380",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Turkey",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:403",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Turkey",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:404",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Turkey",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1573",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1578",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1585",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1586",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1589",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1592",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1593",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1606",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1607",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1916",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "FIFA U-17 World Cup",
+      "China"
+    ],
+    "gold": "United Arab Emirates",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "Chile",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1994",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Chile"
+    ],
+    "gold": "Bahrain",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:1995",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Chile"
+    ],
+    "gold": "Bahrain",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:5443",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Turkey",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:5447",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Turkey",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:5455",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:5464",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "before_chronological_reference:5465",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "USA",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:356",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:362",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:379",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:380",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "G20 summit",
+      "Chile"
+    ],
+    "gold": "Germany",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:1548",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:1549",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:1556",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:1559",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:1562",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:1563",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:1571",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ICML Conference",
+      "Chile"
+    ],
+    "gold": "France",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:1924",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "FIFA U-17 World Cup",
+      "Chile"
+    ],
+    "gold": "Canada",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:2012",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Chile"
+    ],
+    "gold": "Azerbaijan",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:2013",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Chile"
+    ],
+    "gold": "Azerbaijan",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:2036",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Chile"
+    ],
+    "gold": "Azerbaijan",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  },
+  {
+    "id": "after_chronological_reference:2037",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Formula One race for the 2019 F1 World Championship",
+      "Chile"
+    ],
+    "gold": "Azerbaijan",
+    "kind": "source-reviewed distinct event",
+    "source_candidate": "C0017",
+    "original_event": "China",
+    "main": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false
+  }
+]
