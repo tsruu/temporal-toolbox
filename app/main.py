@@ -66,7 +66,7 @@ def before_absolute_reference(
 @mcp.tool()
 def before_chronological_reference(
     entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
-    event: Annotated[str, Field(description='The named item the question is anchored on.')],
+    event: Annotated[str, Field(description='The named event or item the question refers to, as written in the question.')],
 ) -> str:
     """
     Answers questions asking what came immediately before a named reference item in an entity's history.
@@ -103,7 +103,7 @@ def after_absolute_reference(
 @mcp.tool()
 def after_chronological_reference(
     entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
-    event: Annotated[str, Field(description='The named item the question is anchored on.')],
+    event: Annotated[str, Field(description='The named event or item the question refers to, as written in the question.')],
 ) -> str:
     """
     Answers questions asking what came immediately after a named reference item in an entity's history.
@@ -299,7 +299,7 @@ async def list_tools():
                 "type": "object",
                 "properties": {
                     "entity": {"type": "string", "description": "The series or subject whose history is asked about, as written in the question."},
-                    "event": {"type": "string", "description": "The named item the question is anchored on."}
+                    "event": {"type": "string", "description": "The named event or item the question refers to, as written in the question."}
                 },
                 "required": ["entity", "event"]
             }
@@ -325,7 +325,7 @@ async def list_tools():
                 "type": "object",
                 "properties": {
                     "entity": {"type": "string", "description": "The series or subject whose history is asked about, as written in the question."},
-                    "event": {"type": "string", "description": "The named item the question is anchored on."}
+                    "event": {"type": "string", "description": "The named event or item the question refers to, as written in the question."}
                 },
                 "required": ["entity", "event"]
             }
