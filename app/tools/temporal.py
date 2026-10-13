@@ -160,23 +160,26 @@ def row_entity_similarity(query_norm: str, entity_cell: str) -> float:
     )
 
 
-def lexical_match_rank(query_norm: str, cell: str) -> tuple:
-    """Exact alternative, existing score, then symmetric token completeness."""
+def event_match_rank(query_norm: str, cell: str) -> tuple:
+    """Rank one normalized event cell using the original event score."""
+    key = normalize_entity(cell)
     query_tokens = set(query_norm.split())
-    ranks = []
-    for alternative in cell.split("|"):
-        key = normalize_entity(alternative)
-        key_tokens = set(key.split())
-        total = len(query_tokens) + len(key_tokens)
-        completeness = 2 * len(query_tokens & key_tokens) / total if total else 0.0
-        ranks.append((bool(query_norm) and query_norm == key,
-                      entity_similarity(query_norm, key), completeness))
-    return max(ranks)
+    key_tokens = set(key.split())
+    total = len(query_tokens) + len(key_tokens)
+    completeness = 2 * len(query_tokens & key_tokens) / total if total else 0.0
+    return (bool(query_norm) and query_norm == key,
+            entity_similarity(query_norm, key), completeness)
+
+
+def lexical_match_rank(query_norm: str, cell: str) -> tuple:
+    """Exact entity alternative, existing score, then token completeness."""
+    return max(event_match_rank(query_norm, alternative)
+               for alternative in cell.split("|"))
 
 
 def chronological_match_rank(q_entity: str, q_event: str, row: dict) -> tuple:
     entity = lexical_match_rank(q_entity, row["entity"])
-    event = lexical_match_rank(q_event, row["event"])
+    event = event_match_rank(q_event, row["event"])
     return (entity[0] and event[0], 0.6 * entity[1] + 0.4 * event[1],
             0.6 * entity[2] + 0.4 * event[2])
 
@@ -327,7 +330,7 @@ def event_time(
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            rank = lexical_match_rank(q_event, row["event"])
+            rank = event_match_rank(q_event, row["event"])
 
             if rank[1] >= 0.75 and rank > best_rank:
                 best_rank = rank

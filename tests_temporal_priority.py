@@ -19,7 +19,7 @@ class MatchPriorityTests(unittest.TestCase):
     def test_chronological_full_match_and_alternatives(self):
         rows = [
             dict(entity='Band', event='Dhoom', answer='short'),
-            dict(entity='Euphoria | Band', event='Other | Phir Dhoom', answer='full'),
+            dict(entity='Euphoria | Band', event='Phir Dhoom', answer='full'),
             dict(entity='Band', event='Phir Dhoom', answer='later'),
         ]
         for name in ('before_chronological_reference', 'after_chronological_reference'):
