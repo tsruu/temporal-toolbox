@@ -86,7 +86,7 @@ class ShortEntityTests(unittest.TestCase):
                 ('before_absolute_reference', 'November 2018', 'Johnston Press'),
                 ('before_absolute_reference', 'November 2019', 'JPIMedia')]:
             with self.subTest(tool=tool, date=date):
-                self.assertEqual(getattr(temporal, tool)('i', date), answer)
+                self.assertEqual(getattr(temporal, tool)('owner of i', date), answer)
 
 
 

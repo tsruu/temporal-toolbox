@@ -47,7 +47,7 @@ logger.info(
 
 @mcp.tool()
 def before_absolute_reference(
-    entity: Annotated[str, Field(description='The subject asked about.')],
+    entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
 ) -> str:
     """
@@ -65,7 +65,7 @@ def before_absolute_reference(
 
 @mcp.tool()
 def before_chronological_reference(
-    entity: Annotated[str, Field(description='The series or subject whose history is asked about.')],
+    entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     event: Annotated[str, Field(description='The named item the question is anchored on.')],
 ) -> str:
     """
@@ -84,7 +84,7 @@ def before_chronological_reference(
 
 @mcp.tool()
 def after_absolute_reference(
-    entity: Annotated[str, Field(description='The subject asked about.')],
+    entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
 ) -> str:
     """
@@ -102,7 +102,7 @@ def after_absolute_reference(
 
 @mcp.tool()
 def after_chronological_reference(
-    entity: Annotated[str, Field(description='The series or subject whose history is asked about.')],
+    entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     event: Annotated[str, Field(description='The named item the question is anchored on.')],
 ) -> str:
     """
@@ -137,7 +137,7 @@ def event_time(event: Annotated[str, Field(description="The event's name or a sh
 
 @mcp.tool()
 def entity_time_event(
-    entity: Annotated[str, Field(description='The subject asked about.')],
+    entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
 ) -> str:
     """
