@@ -72,11 +72,15 @@ class SeparateBarsTests(unittest.TestCase):
                 self.assertEqual(t.containment_score(query, key), 0.0)
                 self.assertEqual(t.containment_score(key, key), 1.0)
 
-    def test_numeric_mismatch_is_rejected(self):
+    def test_numeric_mismatch_uses_ordinary_score_and_component_bar(self):
         row = dict(entity='Pelpuo', event='Member of the 14th Parliament', answer='wrong')
-        with self.assertRaises(LookupError):
-            self.lookup('before_chronological_reference', row, 'Pelpuo',
-                        'Member of the 15th Parliament')
+        query = 'Member of the 15th Parliament'
+        score = t.event_match_rank(t.normalize_entity(query), row['event'])[1]
+        self.assertGreater(score, 0)
+        with patch.object(t, 'COMPONENT_BAR', score + .01), self.assertRaises(LookupError):
+            self.lookup('before_chronological_reference', row, 'Pelpuo', query)
+        with patch.object(t, 'COMPONENT_BAR', score - .01):
+            self.assertEqual(self.lookup('before_chronological_reference', row, 'Pelpuo', query), 'wrong')
 
     def test_trigrams_and_completeness_use_exact_characters_and_words(self):
         query, key = 'john grishm', 'john grisham'

@@ -42,11 +42,11 @@ class EntityAlternativeTests(unittest.TestCase):
             normalized = temporal.normalize_entity(query)
             for key in cells:
                 self.assertEqual(temporal.row_entity_similarity(normalized, key),
-                    temporal.entity_similarity(normalized, temporal.normalize_entity(key)))
+                    temporal.entity_similarity(normalized, temporal.normalize_entity(key), temporal.stored_plural_words(key)))
                 self.assertEqual(temporal.lexical_match_rank(normalized, key)[1],
-                    temporal.entity_similarity(normalized, temporal.normalize_entity(key)))
+                    temporal.entity_similarity(normalized, temporal.normalize_entity(key), temporal.stored_plural_words(key)))
                 self.assertEqual(temporal.event_match_rank(normalized, key)[1],
-                    temporal.entity_similarity(normalized, temporal.normalize_entity(key)))
+                    temporal.entity_similarity(normalized, temporal.normalize_entity(key), temporal.stored_plural_words(key)))
 
     def test_chronological_alternatives_and_event_ties(self):
         path = self.table([
@@ -78,8 +78,7 @@ class EntityAlternativeTests(unittest.TestCase):
         path = self.table([dict(event='one | two', answer='year')])
         for event in ('one', 'two'):
             self.assertEqual(temporal.event_time(event, path), 'year')
-        with self.assertRaises(LookupError):
-            temporal.event_time('one two', path)  # different numeric tokens in each alternative
+        self.assertEqual(temporal.event_time('one two', path), 'year')
 
     def test_chronological_event_alternatives_are_scored_individually(self):
         path = self.table([dict(entity='Owner', event='one | supercalifragilistic',
@@ -98,7 +97,7 @@ class EntityAlternativeTests(unittest.TestCase):
         for cell in cells:
             for query in queries:
                 normalized = temporal.normalize_entity(query)
-                score = max(temporal.entity_similarity(normalized, temporal.normalize_entity(alt))
+                score = max(temporal.entity_similarity(normalized, temporal.normalize_entity(alt), temporal.stored_plural_words(alt))
                             for alt in cell.split('|'))
                 self.assertEqual(temporal.event_match_rank(normalized, cell)[1], score)
                 probes = [('event_time', dict(event=cell, answer='year'), (query,), score)]

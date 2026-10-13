@@ -26,7 +26,7 @@ COMPONENT_BAR = 0.75
 # =========================
 
 def _singular_surface(word: str) -> str:
-    """Only regular trailing s/es; preserve numeric tokens and short acronyms."""
+    """Pairwise regular plural comparison, never global name normalization."""
     folded = _fold(word)
     if (not word.isalpha() or len(word) < 3 or is_number_word(folded)
             or (word.isupper() and len(word) <= 4)
@@ -47,8 +47,8 @@ def _singular_surface(word: str) -> str:
 
 
 @lru_cache(maxsize=50000)
-def normalize_entity(text: str) -> str:
-    """Apply the same conservative surface rules to queries and alternatives."""
+def _surface_words(text: str) -> tuple:
+    """Retain stored casing until plural eligibility has been established."""
     text = unicodedata.normalize("NFKC", text)
     text = text.translate(str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"'}))
     text = re.sub(r"(?<=\w)'s\b|(?<=s)'(?=\W|$)", "", text, flags=re.I)
@@ -56,8 +56,21 @@ def normalize_entity(text: str) -> str:
     text = text.replace("&", " and ")
     # Existing dot removal already makes F.C./U.S. equal FC/US.
     text = re.sub(r"[^\w\s]|_", "", text)
-    words = (_singular_surface(word) for word in text.split())
-    return " ".join(word for word in words if word not in {"the", "a", "an"})
+    return tuple(word for word in text.split() if _fold(word) not in {"the", "a", "an"})
+
+
+@lru_cache(maxsize=50000)
+def normalize_entity(text: str) -> str:
+    """Case-independent surface cleanup; preserve names and plural endings."""
+    return " ".join(_fold(word) for word in _surface_words(text))
+
+
+@lru_cache(maxsize=50000)
+def stored_plural_words(text: str) -> frozenset:
+    """Only words written entirely lowercase in this stored alternative qualify."""
+    return frozenset(_fold(word) for word in _surface_words(text)
+                     if word.isalpha() and word.islower() and len(word) >= 3
+                     and not is_number_word(_fold(word)))
 
 
 # =========================
@@ -174,16 +187,22 @@ def one_edit_apart(a: str, b: str) -> bool:
     return a[i:] == b[i + 1:]
 
 
-def word_present(key_word: str, query_words: set) -> bool:
+def word_present(key_word: str, query_words: set, plural_allowed: bool = False) -> bool:
     """A stored word of at least five letters may contain one spelling edit."""
     if key_word in query_words:
         return True
+    if plural_allowed and any(
+            word.isalpha() and len(word) >= 3 and not is_number_word(word)
+            and _singular_surface(key_word) == _singular_surface(word)
+            for word in query_words):
+        return True
+    # Compare original words only: no spelling edit after a plural change.
     return (len(key_word) >= 5 and not is_number_word(key_word)
             and any(not is_number_word(word) and one_edit_apart(key_word, word)
                     for word in query_words))
 
 
-def containment_score(query: str, key: str) -> float:
+def containment_score(query: str, key: str, plural_words: frozenset = frozenset()) -> float:
     """
     Directional token containment:
     How much of the canonical key appears in the query
@@ -192,7 +211,7 @@ def containment_score(query: str, key: str) -> float:
     K = set(key.split())
     if not K:
         return 0.0
-    return sum(word_present(word, Q) for word in K) / len(K)
+    return sum(word_present(word, Q, word in plural_words) for word in K) / len(K)
 
 
 def char_ngrams(s: str, n: int = 3) -> set:
@@ -210,26 +229,20 @@ def char_ngram_similarity(a: str, b: str) -> float:
     return len(A & B) / len(B)
 
 
-def entity_similarity(query_norm: str, key_norm: str) -> float:
+def entity_similarity(query_norm: str, key_norm: str,
+                      plural_words: frozenset = frozenset()) -> float:
     """
     Combined lexical similarity score
     """
     if query_norm and query_norm == key_norm:
         return 1.0
-    # Surface tolerance must never substitute or omit a table's number/ordinal.
-    if {w for w in query_norm.split() if is_number_word(w)} != {
-            w for w in key_norm.split() if is_number_word(w)}:
-        return 0.0
-    c1 = containment_score(query_norm, key_norm)
+    c1 = containment_score(query_norm, key_norm, plural_words)
     c2 = char_ngram_similarity(query_norm, key_norm)
     return 0.7 * c1 + 0.3 * c2
 
 def row_entity_similarity(query_norm: str, entity_cell: str) -> float:
     """Score the best alternative, splitting before punctuation normalization."""
-    return max(
-        entity_similarity(query_norm, normalize_entity(alternative))
-        for alternative in entity_cell.split("|")
-    )
+    return lexical_match_rank(query_norm, entity_cell)[1]
 
 
 def event_match_rank(query_norm: str, cell: str) -> tuple:
@@ -244,7 +257,7 @@ def _surface_match_rank(query_norm: str, cell: str) -> tuple:
     total = len(query_tokens) + len(key_tokens)
     completeness = 2 * len(query_tokens & key_tokens) / total if total else 0.0
     return (bool(query_norm) and query_norm == key,
-            entity_similarity(query_norm, key), completeness)
+            entity_similarity(query_norm, key, stored_plural_words(cell)), completeness)
 
 
 def lexical_match_rank(query_norm: str, cell: str) -> tuple:
