@@ -158,12 +158,17 @@ NUMBER_WORDS = set((
     "twelfth thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth "
     "nineteenth twentieth thirtieth fortieth fiftieth hundredth"
 ).split())
+ORDINAL_WORDS = NUMBER_WORDS - set((
+    "zero one two three four five six seven eight nine ten eleven twelve "
+    "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty "
+    "thirty forty fifty sixty seventy eighty ninety hundred thousand million"
+).split())
 ROMAN_NUMBER_RE = re.compile(r"m{0,3}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3})")
 
 
 def is_number_word(word: str) -> bool:
-    """Numeric and ordinal tokens are never eligible for spelling tolerance."""
-    return (any(c.isdigit() for c in word) or word in NUMBER_WORDS
+    """Digits, ordinals and Roman numerals receive no spelling tolerance."""
+    return (any(c.isdigit() for c in word) or word in ORDINAL_WORDS
             or bool(word) and ROMAN_NUMBER_RE.fullmatch(word) is not None)
 
 

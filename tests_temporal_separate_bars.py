@@ -67,10 +67,12 @@ class SeparateBarsTests(unittest.TestCase):
 
     def test_numbers_and_ordinals_receive_no_spelling_tolerance(self):
         for key, query in [('14th', '15th'), ('12345', '12346'), ('xviii', 'xvii'),
-                           ('fourteen', 'fourtee'), ('fourteenth', 'fourteent')]:
+                           ('fourteenth', 'fourteent')]:
             with self.subTest(key=key, query=query):
                 self.assertEqual(t.containment_score(query, key), 0.0)
                 self.assertEqual(t.containment_score(key, key), 1.0)
+        self.assertEqual(t.containment_score('fourtee', 'fourteen'), 1.0)
+        self.assertEqual(t.containment_score('thouxand', 'thousand'), 1.0)
 
     def test_numeric_mismatch_uses_ordinary_score_and_component_bar(self):
         row = dict(entity='Pelpuo', event='Member of the 14th Parliament', answer='wrong')
