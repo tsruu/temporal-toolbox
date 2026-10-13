@@ -1,4 +1,4 @@
-"""Alternative entity matching without changing event, time, or tie behavior."""
+"""Entity alternatives with unchanged event scoring and date filtering."""
 import csv
 import random
 import io
@@ -43,6 +43,10 @@ class EntityAlternativeTests(unittest.TestCase):
             for key in cells:
                 self.assertEqual(temporal.row_entity_similarity(normalized, key),
                     temporal.entity_similarity(normalized, temporal.normalize_entity(key)))
+                self.assertEqual(temporal.lexical_match_rank(normalized, key)[1],
+                    temporal.entity_similarity(normalized, temporal.normalize_entity(key)))
+                self.assertEqual(temporal.event_match_rank(normalized, key)[1],
+                    temporal.entity_similarity(normalized, temporal.normalize_entity(key)))
 
     def test_chronological_alternatives_and_event_ties(self):
         path = self.table([
@@ -72,10 +76,44 @@ class EntityAlternativeTests(unittest.TestCase):
 
     def test_event_cells_keep_original_scoring(self):
         path = self.table([dict(event='one | two', answer='year')])
-        # Event matching still normalizes punctuation as one ordinary event key.
-        with self.assertRaises(LookupError):
-            temporal.event_time('one', path)
+        for event in ('one', 'two'):
+            with self.assertRaises(LookupError):
+                temporal.event_time(event, path)
         self.assertEqual(temporal.event_time('one two', path), 'year')
+
+    def test_chronological_event_cells_keep_original_eligibility(self):
+        path = self.table([dict(entity='Owner', event='one | supercalifragilistic',
+                                answer='year')])
+        for name in ('before_chronological_reference', 'after_chronological_reference'):
+            with self.subTest(tool=name):
+                with self.assertRaises(LookupError):
+                    getattr(temporal, name)('Owner', 'one', path)
+                self.assertEqual(getattr(temporal, name)(
+                    'Owner', 'one supercalifragilistic', path), 'year')
+
+    def test_event_punctuation_has_original_score_and_eligibility(self):
+        cells = ('one | two', 'one | supercalifragilistic',
+                 'Member of the 5th | Parliament', '', 'a', 'Phir Dhoom')
+        queries = ('one', 'two', 'one two', 'one supercalifragilistic',
+                   'Member of the 6th Parliament', '', 'a', 'Phir Dhoom')
+        for cell in cells:
+            for query in queries:
+                normalized = temporal.normalize_entity(query)
+                score = temporal.entity_similarity(normalized, temporal.normalize_entity(cell))
+                self.assertEqual(temporal.event_match_rank(normalized, cell)[1], score)
+                probes = [('event_time', dict(event=cell, answer='year'), (query,), score)]
+                probes += [(name, dict(entity='Owner | Proprietor', event=cell, answer='year'),
+                            ('Owner', query), .6 + .4 * score)
+                           for name in ('before_chronological_reference',
+                                        'after_chronological_reference')]
+                for name, row, args, expected_score in probes:
+                    with self.subTest(tool=name, cell=cell, query=query):
+                        path = self.table([row])
+                        if expected_score >= .75:
+                            self.assertEqual(getattr(temporal, name)(*args, path), 'year')
+                        else:
+                            with self.assertRaises(LookupError):
+                                getattr(temporal, name)(*args, path)
 
     def test_absolute_dates_distinguish_same_month_transitions(self):
         path = self.table([

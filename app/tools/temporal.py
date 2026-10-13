@@ -159,6 +159,30 @@ def row_entity_similarity(query_norm: str, entity_cell: str) -> float:
         for alternative in entity_cell.split("|")
     )
 
+
+def event_match_rank(query_norm: str, cell: str) -> tuple:
+    """Rank one normalized event cell using the original event score."""
+    key = normalize_entity(cell)
+    query_tokens = set(query_norm.split())
+    key_tokens = set(key.split())
+    total = len(query_tokens) + len(key_tokens)
+    completeness = 2 * len(query_tokens & key_tokens) / total if total else 0.0
+    return (bool(query_norm) and query_norm == key,
+            entity_similarity(query_norm, key), completeness)
+
+
+def lexical_match_rank(query_norm: str, cell: str) -> tuple:
+    """Exact entity alternative, existing score, then token completeness."""
+    return max(event_match_rank(query_norm, alternative)
+               for alternative in cell.split("|"))
+
+
+def chronological_match_rank(q_entity: str, q_event: str, row: dict) -> tuple:
+    entity = lexical_match_rank(q_entity, row["entity"])
+    event = event_match_rank(q_event, row["event"])
+    return (entity[0] and event[0], 0.6 * entity[1] + 0.4 * event[1],
+            0.6 * entity[2] + 0.4 * event[2])
+
 def normalize_time_key(t: str) -> Tuple[int, Optional[int], Optional[int]]:
     """Preserve an explicit day while retaining normalize_time's public API."""
     year, month = normalize_time(t)
@@ -191,7 +215,7 @@ def before_absolute_reference(
     q_time = normalize_time_key(time)
 
     best_answer = None
-    best_score = 0.0
+    best_rank = (False, 0.0, 0.0)
 
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -202,13 +226,13 @@ def before_absolute_reference(
             if not time_keys_match(q_time, r_time):
                 continue
 
-            score = row_entity_similarity(q_entity, row["entity"])
+            rank = lexical_match_rank(q_entity, row["entity"])
 
-            if score > best_score:
-                best_score = score
+            if rank[1] >= 0.75 and rank > best_rank:
+                best_rank = rank
                 best_answer = row["answer"]
 
-    if best_answer is None or best_score < 0.75:
+    if best_answer is None:
         raise LookupError("No matching before-absolute reference found")
 
     return best_answer
@@ -222,21 +246,18 @@ def before_chronological_reference(
     q_event = normalize_entity(event)
 
     best_answer = None
-    best_score = 0.0
+    best_rank = (False, 0.0, 0.0)
 
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            score = (
-                0.6 * row_entity_similarity(q_entity, row["entity"]) +
-                0.4 * entity_similarity(q_event, normalize_entity(row["event"]))
-            )
+            rank = chronological_match_rank(q_entity, q_event, row)
 
-            if score > best_score:
-                best_score = score
+            if rank[1] >= 0.75 and rank > best_rank:
+                best_rank = rank
                 best_answer = row["answer"]
 
-    if best_answer is None or best_score < 0.75:
+    if best_answer is None:
         raise LookupError("No matching before-chronological reference found")
 
     return best_answer
@@ -250,7 +271,7 @@ def after_absolute_reference(
     q_time = normalize_time_key(time)
 
     best_answer = None
-    best_score = 0.0
+    best_rank = (False, 0.0, 0.0)
 
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -261,13 +282,13 @@ def after_absolute_reference(
             if not time_keys_match(q_time, r_time):
                 continue
 
-            score = row_entity_similarity(q_entity, row["entity"])
+            rank = lexical_match_rank(q_entity, row["entity"])
 
-            if score > best_score:
-                best_score = score
+            if rank[1] >= 0.75 and rank > best_rank:
+                best_rank = rank
                 best_answer = row["answer"]
 
-    if best_answer is None or best_score < 0.75:
+    if best_answer is None:
         raise LookupError("No matching after-absolute reference found")
 
     return best_answer
@@ -281,21 +302,18 @@ def after_chronological_reference(
     q_event = normalize_entity(event)
 
     best_answer = None
-    best_score = 0.0
+    best_rank = (False, 0.0, 0.0)
 
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            score = (
-                0.6 * row_entity_similarity(q_entity, row["entity"]) +
-                0.4 * entity_similarity(q_event, normalize_entity(row["event"]))
-            )
+            rank = chronological_match_rank(q_entity, q_event, row)
 
-            if score > best_score:
-                best_score = score
+            if rank[1] >= 0.75 and rank > best_rank:
+                best_rank = rank
                 best_answer = row["answer"]
 
-    if best_answer is None or best_score < 0.75:
+    if best_answer is None:
         raise LookupError("No matching after-chronological reference found")
 
     return best_answer
@@ -307,21 +325,18 @@ def event_time(
     q_event = normalize_entity(event)
 
     best_time = None
-    best_score = 0.0
+    best_rank = (False, 0.0, 0.0)
 
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            score = entity_similarity(
-                q_event,
-                normalize_entity(row["event"])
-            )
+            rank = event_match_rank(q_event, row["event"])
 
-            if score > best_score:
-                best_score = score
+            if rank[1] >= 0.75 and rank > best_rank:
+                best_rank = rank
                 best_time = row["answer"]
 
-    if best_time is None or best_score < 0.75:
+    if best_time is None:
         raise LookupError("No matching event time found")
 
     return best_time
@@ -336,7 +351,7 @@ def entity_time_event(entity: str, time: str, csv_path: str = ENTITY_TIME_EVENT_
     q_year, q_month = normalize_time(time)
 
     best_event = None
-    best_score = 0.0
+    best_rank = (False, 0.0, 0.0)
 
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -350,13 +365,13 @@ def entity_time_event(entity: str, time: str, csv_path: str = ENTITY_TIME_EVENT_
                 if q_month != r_month:
                     continue
 
-            score = row_entity_similarity(q_entity, row["entity"])
+            rank = lexical_match_rank(q_entity, row["entity"])
 
-            if score > best_score:
-                best_score = score
+            if rank[1] >= 0.75 and rank > best_rank:
+                best_rank = rank
                 best_event = row["answer"]
 
-    if best_event is None or best_score < 0.75:
+    if best_event is None:
         raise LookupError("No matching entity-time event found")
 
     return best_event
