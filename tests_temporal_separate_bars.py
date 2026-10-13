@@ -72,11 +72,7 @@ class SeparateBarsTests(unittest.TestCase):
                 self.assertEqual(t.containment_score(query, key), 0.0)
                 self.assertEqual(t.containment_score(key, key), 1.0)
 
-    @unittest.expectedFailure
-    def test_plan_numeric_mismatch_requires_an_additional_rule(self):
-        # The plan also preserves the formula. Exact numeric containment alone
-        # cannot enforce its "never matches" requirement: the other words and
-        # unchanged trigrams still score above 0.75. Keep this conflict visible.
+    def test_numeric_mismatch_is_rejected(self):
         row = dict(entity='Pelpuo', event='Member of the 14th Parliament', answer='wrong')
         with self.assertRaises(LookupError):
             self.lookup('before_chronological_reference', row, 'Pelpuo',

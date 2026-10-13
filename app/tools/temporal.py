@@ -7,6 +7,7 @@ import unicodedata
 from datetime import datetime
 from typing import Tuple, Optional
 import os
+from functools import lru_cache
 
 BASE_DIR = os.path.dirname(__file__)
 
@@ -18,24 +19,45 @@ AFTER_CHRONOLOGICAL_CSV = os.path.join(BASE_DIR, "after_chronological_reference.
 
 ENTITY_TIME_EVENT_CSV = os.path.join(BASE_DIR, "entity_time_event.csv")
 EVENT_TIME_CSV = os.path.join(BASE_DIR, "event_time.csv")
+COMPONENT_BAR = 0.75
 
 # =========================
 # Entity normalization
 # =========================
 
+def _singular_surface(word: str) -> str:
+    """Only regular trailing s/es; preserve numeric tokens and short acronyms."""
+    folded = _fold(word)
+    if (not word.isalpha() or len(word) < 3 or is_number_word(folded)
+            or (word.isupper() and len(word) <= 4)
+            or folded == "series" or folded.endswith(("ss", "us", "is"))):
+        return folded
+    # An acronym with an explicitly appended lowercase suffix stays distinct.
+    if any(word.endswith(suffix) and word[:-len(suffix)].isupper()
+           and len(word[:-len(suffix)]) <= 4 for suffix in ("s", "es")):
+        return folded
+    if any(folded.endswith(suffix) and is_number_word(folded[:-len(suffix)])
+           for suffix in ("s", "es")):
+        return folded
+    if folded.endswith(("ches", "shes", "xes", "zes", "sses", "oes")) and len(folded[:-2]) >= 3:
+        return folded[:-2]
+    if folded.endswith("s") and len(folded[:-1]) >= 3:
+        return folded[:-1]
+    return folded
+
+
+@lru_cache(maxsize=50000)
 def normalize_entity(text: str) -> str:
-    """
-    Safe normalization:
-    - lowercase, strip accents (Bouaïcha -> bouaicha)
-    - remove possessive 's
-    - remove punctuation, including Unicode (’ –)
-    - collapse whitespace
-    """
-    text = _fold(text)
-    text = text.replace("'s", "").replace("’s", "")
+    """Apply the same conservative surface rules to queries and alternatives."""
+    text = unicodedata.normalize("NFKC", text)
+    text = text.translate(str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"'}))
+    text = re.sub(r"(?<=\w)'s\b|(?<=s)'(?=\W|$)", "", text, flags=re.I)
+    text = re.sub(r"[-‐‑‒–—−]", " ", text)
+    text = text.replace("&", " and ")
+    # Existing dot removal already makes F.C./U.S. equal FC/US.
     text = re.sub(r"[^\w\s]|_", "", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+    words = (_singular_surface(word) for word in text.split())
+    return " ".join(word for word in words if word not in {"the", "a", "an"})
 
 
 # =========================
@@ -194,6 +216,10 @@ def entity_similarity(query_norm: str, key_norm: str) -> float:
     """
     if query_norm and query_norm == key_norm:
         return 1.0
+    # Surface tolerance must never substitute or omit a table's number/ordinal.
+    if {w for w in query_norm.split() if is_number_word(w)} != {
+            w for w in key_norm.split() if is_number_word(w)}:
+        return 0.0
     c1 = containment_score(query_norm, key_norm)
     c2 = char_ngram_similarity(query_norm, key_norm)
     return 0.7 * c1 + 0.3 * c2
@@ -207,7 +233,11 @@ def row_entity_similarity(query_norm: str, entity_cell: str) -> float:
 
 
 def event_match_rank(query_norm: str, cell: str) -> tuple:
-    """Rank one normalized event cell using the original event score."""
+    """Rank the best event alternative before normalization removes pipes."""
+    return max(_surface_match_rank(query_norm, alternative) for alternative in cell.split("|"))
+
+
+def _surface_match_rank(query_norm: str, cell: str) -> tuple:
     key = normalize_entity(cell)
     query_tokens = set(query_norm.split())
     key_tokens = set(key.split())
@@ -233,7 +263,7 @@ def _chronological_candidate(q_entity: str, q_event: str, row: dict) -> tuple:
     event = event_match_rank(q_event, row["event"])
     rank = (entity[0] and event[0], 0.6 * entity[1] + 0.4 * event[1],
             0.6 * entity[2] + 0.4 * event[2])
-    return rank, entity[1] >= 0.75 and event[1] >= 0.75
+    return rank, entity[1] >= COMPONENT_BAR and event[1] >= COMPONENT_BAR
 
 def normalize_time_key(t: str) -> Tuple[int, Optional[int], Optional[int]]:
     """Preserve an explicit day while retaining normalize_time's public API."""
@@ -280,7 +310,7 @@ def before_absolute_reference(
 
             rank = lexical_match_rank(q_entity, row["entity"])
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if rank[1] >= COMPONENT_BAR and rank > best_rank:
                 best_rank = rank
                 best_answer = row["answer"]
 
@@ -336,7 +366,7 @@ def after_absolute_reference(
 
             rank = lexical_match_rank(q_entity, row["entity"])
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if rank[1] >= COMPONENT_BAR and rank > best_rank:
                 best_rank = rank
                 best_answer = row["answer"]
 
@@ -384,7 +414,7 @@ def event_time(
         for row in reader:
             rank = event_match_rank(q_event, row["event"])
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if rank[1] >= COMPONENT_BAR and rank > best_rank:
                 best_rank = rank
                 best_time = row["answer"]
 
@@ -419,7 +449,7 @@ def entity_time_event(entity: str, time: str, csv_path: str = ENTITY_TIME_EVENT_
 
             rank = lexical_match_rank(q_entity, row["entity"])
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if rank[1] >= COMPONENT_BAR and rank > best_rank:
                 best_rank = rank
                 best_event = row["answer"]
 

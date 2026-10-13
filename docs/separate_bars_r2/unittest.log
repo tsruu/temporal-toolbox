@@ -1,0 +1,244 @@
+DEBUG:mcp.server.lowlevel.server:Initializing server 'toolbox'
+DEBUG:mcp.server.lowlevel.server:Registering handler for ListToolsRequest
+DEBUG:mcp.server.lowlevel.server:Registering handler for ListResourcesRequest
+DEBUG:mcp.server.lowlevel.server:Registering handler for PromptListRequest
+DEBUG:mcp.server.lowlevel.server:Registering handler for CallToolRequest
+INFO:toolbox:MCP SERVER STARTUP: transport=sse replica_id=local pid=14780
+test_request_exception_stops_without_secondary_exception (tests_apply_x.AzureExceptionTests.test_request_exception_stops_without_secondary_exception) ... WARNING:root:Returned error: ConnectionError
+WARNING:root:Returned error: Timeout
+WARNING:root:Returned error: ConnectionError
+ok
+test_current_interpreter_and_success (tests_apply_x.ExecutionTests.test_current_interpreter_and_success) ... skipped 'code_executor runs only under the Linux kernel sandbox'
+test_real_failure_empty_and_timeout_surface_as_errors (tests_apply_x.ExecutionTests.test_real_failure_empty_and_timeout_surface_as_errors) ... skipped 'code_executor runs only under the Linux kernel sandbox'
+test_rest_and_mcp_failure_contract (tests_apply_x.ExecutionTests.test_rest_and_mcp_failure_contract) ... skipped 'code_executor runs only under the Linux kernel sandbox'
+test_actual_i_rows (tests_apply_x.ShortEntityTests.test_actual_i_rows) ... ok
+test_normalized_short_exact_matches_and_only_exact_scores_change (tests_apply_x.ShortEntityTests.test_normalized_short_exact_matches_and_only_exact_scores_change) ... ok
+test_cache_normalization_and_frozen (tests_batch1.TranslationTests.test_cache_normalization_and_frozen) ... ok
+test_detection_failure_and_empty_text (tests_batch1.TranslationTests.test_detection_failure_and_empty_text) ... ok
+test_lookup_smoke (tests_batch1.TranslationTests.test_lookup_smoke) ... ok
+test_mcp_failure_is_error_string (tests_batch1.TranslationTests.test_mcp_failure_is_error_string) ... INFO:mcp.server.lowlevel.server:Processing request of type CallToolRequest
+DEBUG:mcp.server.lowlevel.server:Dispatching request of type CallToolRequest
+DEBUG:mcp.server.lowlevel.server:Tool cache miss for translation, refreshing cache
+DEBUG:mcp.server.lowlevel.server:Response sent
+INFO:mcp.server.lowlevel.server:Processing request of type ListToolsRequest
+DEBUG:mcp.server.lowlevel.server:Dispatching request of type ListToolsRequest
+DEBUG:mcp.server.lowlevel.server:Response sent
+ok
+test_missing_env_and_unsupported_language (tests_batch1.TranslationTests.test_missing_env_and_unsupported_language) ... ok
+test_rest_failure_is_error_string (tests_batch1.TranslationTests.test_rest_failure_is_error_string) ... INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"uncached test string -- batch 1","source_language":"French","target_language":"English"}}
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+ok
+test_same_language_shortcut_skips_cache_and_network (tests_batch1.TranslationTests.test_same_language_shortcut_skips_cache_and_network) ... ok
+test_timeout_http_error_bad_key_and_empty_response (tests_batch1.TranslationTests.test_timeout_http_error_bad_key_and_empty_response) ... ok
+test_uncached_success_does_not_write_cache (tests_batch1.TranslationTests.test_uncached_success_does_not_write_cache) ... ok
+test_wall_time_bound (tests_batch1.TranslationTests.test_wall_time_bound) ... ok
+test_request_and_response_match_library (tests_batch1_r2.BoundedAzureTests.test_request_and_response_match_library) ... ok
+test_stalled_http_releases_all_slots_after_twenty_calls (tests_batch1_r2.BoundedAzureTests.test_stalled_http_releases_all_slots_after_twenty_calls) ... INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 0.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 1.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 2.","source_language":"fr","target_language":"en"}}
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+WARNING:root:Returned error: ReadTimeout
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 3.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 4.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 5.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 6.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 7.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 8.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 9.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 10.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 11.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 12.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 13.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 14.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 15.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 16.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 17.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 18.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+INFO:toolbox:REQUEST: POST http://testserver/tool | body: {"tool_name":"translation","arguments":{"text":"Texte de régression absent du cache, requête 19.","source_language":"fr","target_language":"en"}}
+WARNING:root:Returned error: ReadTimeout
+INFO:toolbox:RESPONSE: 200 for POST http://testserver/tool
+INFO:httpx:HTTP Request: POST http://testserver/tool "HTTP/1.1 200 OK"
+ok
+test_dispatch_rest_and_mcp (tests_code_exec.ContractTests.test_dispatch_rest_and_mcp) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_bounded_fork_bomb_probe (tests_code_exec.SandboxTests.test_bounded_fork_bomb_probe) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_environment_isolated_stdin_and_temp_cleanup (tests_code_exec.SandboxTests.test_environment_isolated_stdin_and_temp_cleanup) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_exception_and_empty_input (tests_code_exec.SandboxTests.test_exception_and_empty_input) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_exec_is_denied_after_startup (tests_code_exec.SandboxTests.test_exec_is_denied_after_startup) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_file_size_and_open_file_limits (tests_code_exec.SandboxTests.test_file_size_and_open_file_limits) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_infinite_loop_default_wall_limit (tests_code_exec.SandboxTests.test_infinite_loop_default_wall_limit) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_input_and_timeout_limits (tests_code_exec.SandboxTests.test_input_and_timeout_limits) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_network_group_escape_and_filesystem_confinement (tests_code_exec.SandboxTests.test_network_group_escape_and_filesystem_confinement) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_normal_indented_code_and_unicode (tests_code_exec.SandboxTests.test_normal_indented_code_and_unicode) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_output_floods_and_invalid_utf8_are_bounded (tests_code_exec.SandboxTests.test_output_floods_and_invalid_utf8_are_bounded) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_parallel_work_queues_and_slots_recover (tests_code_exec.SandboxTests.test_parallel_work_queues_and_slots_recover) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_resource_limits_and_memory_hog (tests_code_exec.SandboxTests.test_resource_limits_and_memory_hog) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_setup_failure_releases_slot (tests_code_exec.SandboxTests.test_setup_failure_releases_slot) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_sleep_timeout_and_closed_streams (tests_code_exec.SandboxTests.test_sleep_timeout_and_closed_streams) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_threads_and_optional_libraries (tests_code_exec.SandboxTests.test_threads_and_optional_libraries) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_math_date_stdlib_and_threads (tests_code_exec_audit.AuditIntegrationTests.test_math_date_stdlib_and_threads) ... ok
+test_network_process_and_ctypes_operations_have_clear_denials (tests_code_exec_audit.AuditIntegrationTests.test_network_process_and_ctypes_operations_have_clear_denials) ... ok
+test_requests_if_installed (tests_code_exec_audit.AuditIntegrationTests.test_requests_if_installed) ... ok
+test_committed_replay_fixture (tests_code_exec_tools_unit.ReplayTests.test_committed_replay_fixture) ... ok
+test_extraction_pairs_distinct_code_all_statuses_and_provenance (tests_code_exec_tools_unit.ReplayTests.test_extraction_pairs_distinct_code_all_statuses_and_provenance) ... ok
+test_non_linux_replay_and_selftest_never_run_code (tests_code_exec_tools_unit.ReplayTests.test_non_linux_replay_and_selftest_never_run_code) ... ok
+test_recorded_json_python_and_error_prefix (tests_code_exec_tools_unit.ReplayTests.test_recorded_json_python_and_error_prefix) ... ok
+test_replay_parity_excludes_metadata_but_includes_stderr_and_status (tests_code_exec_tools_unit.ReplayTests.test_replay_parity_excludes_metadata_but_includes_stderr_and_status) ... ok
+test_matrix_collects_failures_protections_and_restores_state (tests_code_exec_tools_unit.SelftestTests.test_matrix_collects_failures_protections_and_restores_state) ... ok
+test_closed_pipes_timeout (tests_code_exec_unit.CaptureTests.test_closed_pipes_timeout) ... ok
+test_output_utf8_caps (tests_code_exec_unit.CaptureTests.test_output_utf8_caps) ... ok
+test_signal_failure (tests_code_exec_unit.CaptureTests.test_signal_failure) ... ok
+test_success_exception (tests_code_exec_unit.CaptureTests.test_success_exception) ... ok
+test_audit_policy_event_families (tests_code_exec_unit.PolicyTests.test_audit_policy_event_families) ... ok
+test_dispatch_propagates_protections_for_success_and_failure (tests_code_exec_unit.PolicyTests.test_dispatch_propagates_protections_for_success_and_failure) ... ok
+test_environment_allowlist (tests_code_exec_unit.PolicyTests.test_environment_allowlist) ... ok
+test_landlock_abi_masks (tests_code_exec_unit.PolicyTests.test_landlock_abi_masks) ... /Users/TRISHAN/Desktop/Desktop - Mac/projects/Temporal/toolbox/app/tools/_code_runner.py:52: DeprecationWarning: Due to '_pack_', the 'PathBeneath' Structure will use memory layout compatible with MSVC (Windows). If this is intended, set _layout_ to 'ms'. The implicit default is deprecated and slated to become an error in Python 3.19.
+  class PathBeneath(ctypes.Structure):
+ok
+test_launcher_order (tests_code_exec_unit.PolicyTests.test_launcher_order) ... ok
+test_limit_respects_hard_cap (tests_code_exec_unit.PolicyTests.test_limit_respects_hard_cap) ... ok
+test_metadata_pipe_is_closed_when_launch_fails (tests_code_exec_unit.PolicyTests.test_metadata_pipe_is_closed_when_launch_fails) ... INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock launch failure
+ok
+test_no_new_privs_failure_prevents_policies (tests_code_exec_unit.PolicyTests.test_no_new_privs_failure_prevents_policies) ... ok
+test_non_linux_fails_closed (tests_code_exec_unit.PolicyTests.test_non_linux_fails_closed) ... INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: Code execution requires the Linux kernel sandbox
+ok
+test_parent_reports_trusted_metadata_and_closes_descriptors (tests_code_exec_unit.PolicyTests.test_parent_reports_trusted_metadata_and_closes_descriptors) ... INFO:app.tools.code:code_executor protections={'landlock_abi': 2, 'landlock_policy_abi': 2, 'seccomp': True} status=success
+ok
+test_policy_failure_prevents_execution_and_reports (tests_code_exec_unit.PolicyTests.test_policy_failure_prevents_execution_and_reports) ... ok
+test_policy_fallbacks_and_fail_closed (tests_code_exec_unit.PolicyTests.test_policy_fallbacks_and_fail_closed) ... ok
+test_root_requires_separate_identity (tests_code_exec_unit.PolicyTests.test_root_requires_separate_identity) ... ok
+test_rootless_opt_in (tests_code_exec_unit.PolicyTests.test_rootless_opt_in) ... ok
+test_saturation_wait_timeout_without_launch (tests_code_exec_unit.PolicyTests.test_saturation_wait_timeout_without_launch) ... INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=executor busy
+ok
+test_seccomp_decisions_for_both_architectures (tests_code_exec_unit.PolicyTests.test_seccomp_decisions_for_both_architectures) ... ok
+test_setup_failure_releases_slot (tests_code_exec_unit.PolicyTests.test_setup_failure_releases_slot) ... INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: test-only
+ok
+test_slot_default_and_override (tests_code_exec_unit.PolicyTests.test_slot_default_and_override) ... ok
+test_twenty_calls_queue_and_release_host_safe (tests_code_exec_unit.PolicyTests.test_twenty_calls_queue_and_release_host_safe) ... INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Execution setup failed: mock setup: never launches code
+ok
+test_validation_without_launch (tests_code_exec_unit.PolicyTests.test_validation_without_launch) ... INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Empty code input
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Empty code input
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Empty code input
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Empty code input
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Code input limit exceeded
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Timeout must be positive and at most 5 seconds
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Timeout must be positive and at most 5 seconds
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Timeout must be positive and at most 5 seconds
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Timeout must be positive and at most 5 seconds
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Timeout must be positive and at most 5 seconds
+INFO:app.tools.code:code_executor protections={'landlock_abi': 0, 'seccomp': False} status=error reason=Timeout must be positive and at most 5 seconds
+ok
+test_absolute_and_entity_time_filtering_and_ties (tests_temporal_alternatives.EntityAlternativeTests.test_absolute_and_entity_time_filtering_and_ties) ... ok
+test_absolute_dates_distinguish_same_month_transitions (tests_temporal_alternatives.EntityAlternativeTests.test_absolute_dates_distinguish_same_month_transitions) ... ok
+test_any_alternative_scores_before_normalization (tests_temporal_alternatives.EntityAlternativeTests.test_any_alternative_scores_before_normalization) ... ok
+test_chronological_alternatives_and_event_ties (tests_temporal_alternatives.EntityAlternativeTests.test_chronological_alternatives_and_event_ties) ... ok
+test_chronological_event_alternatives_are_scored_individually (tests_temporal_alternatives.EntityAlternativeTests.test_chronological_event_alternatives_are_scored_individually) ... ok
+test_event_alternatives_are_scored_individually (tests_temporal_alternatives.EntityAlternativeTests.test_event_alternatives_are_scored_individually) ... ok
+test_event_punctuation_score_and_separate_eligibility (tests_temporal_alternatives.EntityAlternativeTests.test_event_punctuation_score_and_separate_eligibility) ... ok
+test_single_cells_have_exactly_the_original_score (tests_temporal_alternatives.EntityAlternativeTests.test_single_cells_have_exactly_the_original_score) ... ok
+test_threshold_and_no_match_are_unchanged (tests_temporal_alternatives.EntityAlternativeTests.test_threshold_and_no_match_are_unchanged) ... ok
+test_acronyms_and_numbers_do_not_pluralize (tests_temporal_normalization.NormalizationTests.test_acronyms_and_numbers_do_not_pluralize) ... ok
+test_articles_only_at_word_boundaries (tests_temporal_normalization.NormalizationTests.test_articles_only_at_word_boundaries) ... ok
+test_no_synonyms_or_additional_stemming (tests_temporal_normalization.NormalizationTests.test_no_synonyms_or_additional_stemming) ... ok
+test_numeric_guard_includes_ordinals_and_roman_numerals (tests_temporal_normalization.NormalizationTests.test_numeric_guard_includes_ordinals_and_roman_numerals) ... ok
+test_possessives (tests_temporal_normalization.NormalizationTests.test_possessives) ... ok
+test_regular_plural_s_and_es (tests_temporal_normalization.NormalizationTests.test_regular_plural_s_and_es) ... ok
+test_shared_rules_and_threshold_in_all_tools (tests_temporal_normalization.NormalizationTests.test_shared_rules_and_threshold_in_all_tools) ... ok
+test_unicode_and_punctuation (tests_temporal_normalization.NormalizationTests.test_unicode_and_punctuation) ... ok
+test_chronological_full_match_and_alternatives (tests_temporal_priority.MatchPriorityTests.test_chronological_full_match_and_alternatives) ... ok
+test_event_time_prefers_full_event_and_stable_ties (tests_temporal_priority.MatchPriorityTests.test_event_time_prefers_full_event_and_stable_ties) ... ok
+test_full_entity_and_event_are_both_required_for_exact_priority (tests_temporal_priority.MatchPriorityTests.test_full_entity_and_event_are_both_required_for_exact_priority) ... ok
+test_partial_ties_prefer_complete_numeric_anchor (tests_temporal_priority.MatchPriorityTests.test_partial_ties_prefer_complete_numeric_anchor) ... ok
+test_prc_held_exact_duplicates_keep_first_answer (tests_temporal_priority.MatchPriorityTests.test_prc_held_exact_duplicates_keep_first_answer) ... ok
+test_real_reported_failures (tests_temporal_priority.MatchPriorityTests.test_real_reported_failures) ... ok
+test_score_precedes_completeness_and_threshold_is_preserved (tests_temporal_priority.MatchPriorityTests.test_score_precedes_completeness_and_threshold_is_preserved) ... ok
+test_time_filtered_tools_prefer_full_entity_then_row_order (tests_temporal_priority.MatchPriorityTests.test_time_filtered_tools_prefer_full_entity_then_row_order) ... ok
+test_all_lookup_families_share_spelling_score (tests_temporal_separate_bars.SeparateBarsTests.test_all_lookup_families_share_spelling_score) ... ok
+test_alternatives_preserve_exact_priority (tests_temporal_separate_bars.SeparateBarsTests.test_alternatives_preserve_exact_priority) ... ok
+test_each_chronological_argument_must_qualify (tests_temporal_separate_bars.SeparateBarsTests.test_each_chronological_argument_must_qualify) ... ok
+test_exactly_one_edit_and_stored_word_length (tests_temporal_separate_bars.SeparateBarsTests.test_exactly_one_edit_and_stored_word_length) ... ok
+test_missing_head_coach_role_does_not_qualify (tests_temporal_separate_bars.SeparateBarsTests.test_missing_head_coach_role_does_not_qualify) ... ok
+test_numbers_and_ordinals_receive_no_spelling_tolerance (tests_temporal_separate_bars.SeparateBarsTests.test_numbers_and_ordinals_receive_no_spelling_tolerance) ... ok
+test_numeric_mismatch_is_rejected (tests_temporal_separate_bars.SeparateBarsTests.test_numeric_mismatch_is_rejected) ... ok
+test_requested_typos_reach_gold (tests_temporal_separate_bars.SeparateBarsTests.test_requested_typos_reach_gold) ... ok
+test_trigrams_and_completeness_use_exact_characters_and_words (tests_temporal_separate_bars.SeparateBarsTests.test_trigrams_and_completeness_use_exact_characters_and_words) ... ok
+
+----------------------------------------------------------------------
+Ran 101 tests in 64.279s
+
+OK (skipped=19)
+Stalled HTTP: 20 errors; min/median/max seconds: 3.0032565420260653 3.0048365209950134 3.01064820800093 ; all 16 slots released; 21st call succeeded

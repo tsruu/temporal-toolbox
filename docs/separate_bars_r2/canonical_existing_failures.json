@@ -1,0 +1,168 @@
+[
+  {
+    "id": "val:16176_Q2",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Who was the head of People's Republic of China right after March 2003?",
+    "gold": "Wen Jiabao",
+    "tool": "after_absolute_reference",
+    "arguments": [
+      "People's Republic of China",
+      "2003-03"
+    ],
+    "binding": {
+      "table": "after_absolute_reference",
+      "csv_line": 842,
+      "entity": "People's Republic of China",
+      "event": null,
+      "time": "2003-03"
+    },
+    "main": {
+      "answer": "Hu Jintao",
+      "row": 349,
+      "score": 1.0,
+      "entity_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Hu Jintao",
+      "row": 349,
+      "score": 1.0,
+      "entity_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Hu Jintao",
+      "row": 349,
+      "score": 1.0,
+      "entity_score": 1.0
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Hu Jintao",
+      "row": 349,
+      "score": 1.0,
+      "entity_score": 1.0
+    },
+    "bar_065_gold": false,
+    "main_winner": {
+      "csv_line": 351,
+      "question": "Who was the head of state of People's Republic of China right after March 2003?",
+      "entity": "People's Republic of China",
+      "time": "2003-03",
+      "answer": "Hu Jintao"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:16177_Q2",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Who was the head of People's Republic of China right before March 2013?",
+    "gold": "Wen Jiabao",
+    "tool": "before_absolute_reference",
+    "arguments": [
+      "People's Republic of China",
+      "2013-03"
+    ],
+    "binding": {
+      "table": "before_absolute_reference",
+      "csv_line": 825,
+      "entity": "People's Republic of China",
+      "event": null,
+      "time": "2013-03"
+    },
+    "main": {
+      "answer": "Hu Jintao",
+      "row": 356,
+      "score": 1.0,
+      "entity_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Hu Jintao",
+      "row": 356,
+      "score": 1.0,
+      "entity_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Hu Jintao",
+      "row": 356,
+      "score": 1.0,
+      "entity_score": 1.0
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Hu Jintao",
+      "row": 356,
+      "score": 1.0,
+      "entity_score": 1.0
+    },
+    "bar_065_gold": false,
+    "main_winner": {
+      "csv_line": 358,
+      "question": "Who was the head of state of People's Republic of China right before March 2013?",
+      "entity": "People's Republic of China",
+      "time": "2013-03",
+      "answer": "Hu Jintao"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "table": "before_chronological_reference",
+    "field": "question",
+    "distinct_cells": 4840,
+    "new_collisions": 407
+  },
+  {
+    "table": "before_chronological_reference",
+    "field": "entity",
+    "distinct_cells": 1183,
+    "new_collisions": 16
+  },
+  {
+    "table": "before_chronological_reference",
+    "field": "event",
+    "distinct_cells": 2593,
+    "new_collisions": 62
+  },
+  {
+    "table": "before_chronological_reference",
+    "field": "answer",
+    "distinct_cells": 2295,
+    "new_collisions": 30
+  },
+  {
+    "table": "after_chronological_reference",
+    "field": "question",
+    "distinct_cells": 4829,
+    "new_collisions": 399
+  },
+  {
+    "table": "after_chronological_reference",
+    "field": "entity",
+    "distinct_cells": 1177,
+    "new_collisions": 13
+  },
+  {
+    "table": "after_chronological_reference",
+    "field": "event",
+    "distinct_cells": 2584,
+    "new_collisions": 53
+  },
+  {
+    "table": "after_chronological_reference",
+    "field": "answer",
+    "distinct_cells": 2325,
+    "new_collisions": 37
+  },
+  {
+    "table": "before_absolute_reference",
+    "field": "question",
+    "distinct_cells": 2200,
+    "new_collisions": 21
+  },
+  {
+    "table": "before_absolute_reference",
+    "field": "entity",
+    "distinct_cells": 902,
+    "new_collisions": 5
+  },
+  {
+    "table": "before_absolute_reference",
+    "field": "time",
+    "distinct_cells": 668,
+    "new_collisions": 0
+  },
+  {
+    "table": "before_absolute_reference",
+    "field": "answer",
+    "distinct_cells": 1801,
+    "new_collisions": 12
+  },
+  {
+    "table": "after_absolute_reference",
+    "field": "question",
+    "distinct_cells": 2226,
+    "new_collisions": 9
+  },
+  {
+    "table": "after_absolute_reference",
+    "field": "entity",
+    "distinct_cells": 900,
+    "new_collisions": 2
+  },
+  {
+    "table": "after_absolute_reference",
+    "field": "time",
+    "distinct_cells": 668,
+    "new_collisions": 0
+  },
+  {
+    "table": "after_absolute_reference",
+    "field": "answer",
+    "distinct_cells": 1830,
+    "new_collisions": 15
+  },
+  {
+    "table": "entity_time_event",
+    "field": "entity",
+    "distinct_cells": 678,
+    "new_collisions": 1
+  },
+  {
+    "table": "entity_time_event",
+    "field": "time",
+    "distinct_cells": 1174,
+    "new_collisions": 4
+  },
+  {
+    "table": "entity_time_event",
+    "field": "answer",
+    "distinct_cells": 1045,
+    "new_collisions": 3
+  },
+  {
+    "table": "event_time",
+    "field": "answer",
+    "distinct_cells": 100,
+    "new_collisions": 0
+  },
+  {
+    "table": "event_time",
+    "field": "event",
+    "distinct_cells": 100,
+    "new_collisions": 0
+  }
+]

@@ -74,20 +74,19 @@ class EntityAlternativeTests(unittest.TestCase):
                     with self.assertRaises(LookupError):
                         getattr(temporal, name)(query, '2001', path)
 
-    def test_event_cells_keep_original_scoring(self):
+    def test_event_alternatives_are_scored_individually(self):
         path = self.table([dict(event='one | two', answer='year')])
         for event in ('one', 'two'):
-            with self.assertRaises(LookupError):
-                temporal.event_time(event, path)
-        self.assertEqual(temporal.event_time('one two', path), 'year')
+            self.assertEqual(temporal.event_time(event, path), 'year')
+        with self.assertRaises(LookupError):
+            temporal.event_time('one two', path)  # different numeric tokens in each alternative
 
-    def test_chronological_event_cells_keep_original_eligibility(self):
+    def test_chronological_event_alternatives_are_scored_individually(self):
         path = self.table([dict(entity='Owner', event='one | supercalifragilistic',
                                 answer='year')])
         for name in ('before_chronological_reference', 'after_chronological_reference'):
             with self.subTest(tool=name):
-                with self.assertRaises(LookupError):
-                    getattr(temporal, name)('Owner', 'one', path)
+                self.assertEqual(getattr(temporal, name)('Owner', 'one', path), 'year')
                 self.assertEqual(getattr(temporal, name)(
                     'Owner', 'one supercalifragilistic', path), 'year')
 
@@ -99,7 +98,8 @@ class EntityAlternativeTests(unittest.TestCase):
         for cell in cells:
             for query in queries:
                 normalized = temporal.normalize_entity(query)
-                score = temporal.entity_similarity(normalized, temporal.normalize_entity(cell))
+                score = max(temporal.entity_similarity(normalized, temporal.normalize_entity(alt))
+                            for alt in cell.split('|'))
                 self.assertEqual(temporal.event_match_rank(normalized, cell)[1], score)
                 probes = [('event_time', dict(event=cell, answer='year'), (query,), score)]
                 probes += [(name, dict(entity='Owner | Proprietor', event=cell, answer='year'),

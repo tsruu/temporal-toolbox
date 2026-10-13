@@ -1,0 +1,23 @@
+Collision before_chronological_reference question 4840 407
+Collision before_chronological_reference entity 1183 16
+Collision before_chronological_reference event 2593 62
+Collision before_chronological_reference answer 2295 30
+Collision after_chronological_reference question 4829 399
+Collision after_chronological_reference entity 1177 13
+Collision after_chronological_reference event 2584 53
+Collision after_chronological_reference answer 2325 37
+Collision before_absolute_reference question 2200 21
+Collision before_absolute_reference entity 902 5
+Collision before_absolute_reference time 668 0
+Collision before_absolute_reference answer 1801 12
+Collision after_absolute_reference question 2226 9
+Collision after_absolute_reference entity 900 2
+Collision after_absolute_reference time 668 0
+Collision after_absolute_reference answer 1830 15
+Collision entity_time_event entity 678 1
+Collision entity_time_event time 1174 4
+Collision entity_time_event answer 1045 3
+Collision event_time answer 100 0
+Collision event_time event 100 0
+Direct score validations: 4032
+COMPLETE 1089

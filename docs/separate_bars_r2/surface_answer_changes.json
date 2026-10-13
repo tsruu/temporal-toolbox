@@ -1,0 +1,6488 @@
+[
+  {
+    "id": "val:6693_Q1",
+    "dt": "tempreason",
+    "level": "l3",
+    "question": "Din care partid politic făcea parte Pier Luigi Bersani înainte de Partidul Democrat al Stângii?",
+    "gold": "Italian Communist Party",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Pier Luigi Bersani",
+      "Democratic Party of Left"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 5275,
+      "entity": "Pier Luigi Bersani",
+      "event": "Democratic Party of the Left",
+      "time": null
+    },
+    "main": {
+      "answer": "Democrats of the Left",
+      "row": 3884,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "drop the",
+    "main_winner": {
+      "csv_line": 3886,
+      "question": "Which political party did Pier Luigi Bersani belong to right before Democratic Party?",
+      "entity": "Pier Luigi Bersani",
+      "event": "Democratic Party",
+      "answer": "Democrats of the Left"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "val:6693_Q2",
+    "dt": "tempreason",
+    "level": "l3",
+    "question": "Which political party did Pier Luigi Bersani belong to before Democratic Party of the Left?",
+    "gold": "Italian Communist Party",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Pier Luigi Bersani",
+      "Democratic Party of Left"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 5275,
+      "entity": "Pier Luigi Bersani",
+      "event": "Democratic Party of the Left",
+      "time": null
+    },
+    "main": {
+      "answer": "Democrats of the Left",
+      "row": 3884,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "drop the",
+    "main_winner": {
+      "csv_line": 3886,
+      "question": "Which political party did Pier Luigi Bersani belong to right before Democratic Party?",
+      "entity": "Pier Luigi Bersani",
+      "event": "Democratic Party",
+      "answer": "Democrats of the Left"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:15123_Q1",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Which position did Ove Ljung hold right after Chief of the Army Staff?",
+    "gold": "Commander East Military Area",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Ove Ljung",
+      "Chief of Army Staff"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 2929,
+      "entity": "Ove Ljung",
+      "event": "Chief of the Army Staff",
+      "time": null
+    },
+    "main": {
+      "answer": "regiment commander",
+      "row": 2926,
+      "score": 0.99,
+      "entity_score": 1.0,
+      "event_score": 0.9749999999999999
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Commander East Military Area",
+      "row": 2927,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Commander East Military Area",
+      "row": 2927,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Commander East Military Area",
+      "row": 2927,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "drop the",
+    "main_winner": {
+      "csv_line": 2928,
+      "question": "Which position did Ove Ljung hold right after chief of staff?",
+      "entity": "Ove Ljung",
+      "event": "chief of staff",
+      "answer": "regiment commander"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.9749999999999999,
+        "combined_score": 0.99
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.9749999999999999,
+        "combined_score": 0.99
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.9749999999999999,
+        "combined_score": 0.99
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.9749999999999999,
+        "combined_score": 0.99
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:17010_Q1",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Which political party did Pier Luigi Bersani belong to right before Democratic Party of the Left?",
+    "gold": "Italian Communist Party",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Pier Luigi Bersani",
+      "Democratic Party of Left"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 3884,
+      "entity": "Pier Luigi Bersani",
+      "event": "Democratic Party of the Left",
+      "time": null
+    },
+    "main": {
+      "answer": "Democrats of the Left",
+      "row": 3884,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Italian Communist Party",
+      "row": 3882,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "drop the",
+    "main_winner": {
+      "csv_line": 3886,
+      "question": "Which political party did Pier Luigi Bersani belong to right before Democratic Party?",
+      "entity": "Pier Luigi Bersani",
+      "event": "Democratic Party",
+      "answer": "Democrats of the Left"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:16183_Q1",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Which position did Stavros Kostopoulos hold right before Minister of the National Economy of Greece?",
+    "gold": "Member of the Hellenic Parliament",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Stavros Kostopoulos",
+      "Minister of National Economy of Greece"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 3466,
+      "entity": "Stavros Kostopoulos",
+      "event": "Minister of the National Economy of Greece",
+      "time": null
+    },
+    "main": {
+      "answer": "Minister without portfolio of Greece",
+      "row": 3466,
+      "score": 0.9952,
+      "entity_score": 1.0,
+      "event_score": 0.988
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Member of the Hellenic Parliament",
+      "row": 3464,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Member of the Hellenic Parliament",
+      "row": 3464,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Member of the Hellenic Parliament",
+      "row": 3464,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "drop the",
+    "main_winner": {
+      "csv_line": 3468,
+      "question": "Which position did Stavros Kostopoulos hold right before Minister of Economy of Greece?",
+      "entity": "Stavros Kostopoulos",
+      "event": "Minister of Economy of Greece",
+      "answer": "Minister without portfolio of Greece"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.988,
+        "combined_score": 0.9952
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.988,
+        "combined_score": 0.9952
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.988,
+        "combined_score": 0.9952
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.988,
+        "combined_score": 0.9952
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "val:14750_Q1",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Which political party did Kōichirō Genba belong to right after Liberal Democratic Party?",
+    "gold": "independent politician",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "the Kōichirō Genba",
+      "the Liberal Democratic Party"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 2745,
+      "entity": "Kōichirō Genba",
+      "event": "Liberal Democratic Party",
+      "time": null
+    },
+    "main": {
+      "answer": "Group of Independents",
+      "row": 2746,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "independent politician",
+      "row": 2743,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "independent politician",
+      "row": 2743,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "independent politician",
+      "row": 2743,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "add the",
+    "main_winner": {
+      "csv_line": 2748,
+      "question": "Which political party did Kōichirō Genba belong to right after Democratic Party?",
+      "entity": "Kōichirō Genba",
+      "event": "Democratic Party",
+      "answer": "Group of Independents"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "val:18091_Q1",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Which political party did Yasuko Komiyama belong to right after Liberal Democratic Party?",
+    "gold": "Democratic Party of Japan",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "the Yasuko Komiyama",
+      "the Liberal Democratic Party"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 4433,
+      "entity": "Yasuko Komiyama",
+      "event": "Liberal Democratic Party",
+      "time": null
+    },
+    "main": {
+      "answer": "Party of Hope",
+      "row": 4433,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Democratic Party of Japan",
+      "row": 4431,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Democratic Party of Japan",
+      "row": 4431,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Democratic Party of Japan",
+      "row": 4431,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "add the",
+    "main_winner": {
+      "csv_line": 4435,
+      "question": "Which political party did Yasuko Komiyama belong to right after Democratic Party?",
+      "entity": "Yasuko Komiyama",
+      "event": "Democratic Party",
+      "answer": "Party of Hope"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:14622_Q1",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Which employer did Moxie Marlinspike work for right after Open Whisper Systems?",
+    "gold": "Signal Messenger",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "the Moxie Marlinspike",
+      "the Open Whisper Systems"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 2680,
+      "entity": "Moxie Marlinspike",
+      "event": "Open Whisper Systems",
+      "time": null
+    },
+    "main": {
+      "answer": "Twitter, Inc.",
+      "row": 2676,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Signal Messenger",
+      "row": 2678,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Signal Messenger",
+      "row": 2678,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Signal Messenger",
+      "row": 2678,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "add the",
+    "main_winner": {
+      "csv_line": 2678,
+      "question": "Which employer did Moxie Marlinspike work for right after Whisper Systems?",
+      "entity": "Moxie Marlinspike",
+      "event": "Whisper Systems",
+      "answer": "Twitter, Inc."
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:5446_Q1",
+    "dt": "tempreason",
+    "level": "l3",
+    "question": "Ce poziţie a deţinut Christian Zetlitz Bretteville după deputatul membru al Parlamentului Norvegiei?",
+    "gold": "member of the Parliament of Norway",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "the Christian Zetlitz Bretteville",
+      "the deputy member of the Parliament of Norway"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 5073,
+      "entity": "Christian Zetlitz Bretteville",
+      "event": "deputy member of the Parliament of Norway",
+      "time": null
+    },
+    "main": {
+      "answer": "Minister of Finance of Norway",
+      "row": 3838,
+      "score": 0.9999999999999999,
+      "entity_score": 0.9999999999999998,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "add the",
+    "main_winner": {
+      "csv_line": 3840,
+      "question": "Which position did Christian Zetlitz Bretteville hold right after member of the Parliament of Norway?",
+      "entity": "Christian Zetlitz Bretteville",
+      "event": "member of the Parliament of Norway",
+      "answer": "Minister of Finance of Norway"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:5446_Q2",
+    "dt": "tempreason",
+    "level": "l3",
+    "question": "Welche Position hat Christian Zetlitz Bretteville nach dem Abgeordneten Mitglied des norwegischen Parlaments inne?",
+    "gold": "member of the Parliament of Norway",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "the Christian Zetlitz Bretteville",
+      "the deputy member of the Parliament of Norway"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 5073,
+      "entity": "Christian Zetlitz Bretteville",
+      "event": "deputy member of the Parliament of Norway",
+      "time": null
+    },
+    "main": {
+      "answer": "Minister of Finance of Norway",
+      "row": 3838,
+      "score": 0.9999999999999999,
+      "entity_score": 0.9999999999999998,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "add the",
+    "main_winner": {
+      "csv_line": 3840,
+      "question": "Which position did Christian Zetlitz Bretteville hold right after member of the Parliament of Norway?",
+      "entity": "Christian Zetlitz Bretteville",
+      "event": "member of the Parliament of Norway",
+      "answer": "Minister of Finance of Norway"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:16927_Q1",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Which position did Christian Zetlitz Bretteville hold right after deputy member of the Parliament of Norway?",
+    "gold": "member of the Parliament of Norway",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "the Christian Zetlitz Bretteville",
+      "the deputy member of the Parliament of Norway"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 3839,
+      "entity": "Christian Zetlitz Bretteville",
+      "event": "deputy member of the Parliament of Norway",
+      "time": null
+    },
+    "main": {
+      "answer": "Minister of Finance of Norway",
+      "row": 3838,
+      "score": 0.9999999999999999,
+      "entity_score": 0.9999999999999998,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3837,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "add the",
+    "main_winner": {
+      "csv_line": 3840,
+      "question": "Which position did Christian Zetlitz Bretteville hold right after member of the Parliament of Norway?",
+      "entity": "Christian Zetlitz Bretteville",
+      "event": "member of the Parliament of Norway",
+      "answer": "Minister of Finance of Norway"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:17165_Q1",
+    "dt": "temprecon",
+    "level": null,
+    "question": "Which position did Johannes Hougen hold right after deputy member of the Parliament of Norway?",
+    "gold": "member of the Parliament of Norway",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "the Johannes Hougen",
+      "the deputy member of the Parliament of Norway"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 3957,
+      "entity": "Johannes Hougen",
+      "event": "deputy member of the Parliament of Norway",
+      "time": null
+    },
+    "main": {
+      "answer": "Minister of Education and Church Affairs",
+      "row": 3956,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3955,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3955,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "member of the Parliament of Norway",
+      "row": 3955,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "add the",
+    "main_winner": {
+      "csv_line": 3958,
+      "question": "Which position did Johannes Hougen hold right after member of the Parliament of Norway?",
+      "entity": "Johannes Hougen",
+      "event": "member of the Parliament of Norway",
+      "answer": "Minister of Education and Church Affairs"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "val:13952_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which country hosted the MotoGP Grand Prix for the 2019 season right after Germany?",
+    "gold": "Czech Republic",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix for the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 2042,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "Hungary",
+      "row": 2020,
+      "score": 0.9283870967741935,
+      "entity_score": 0.8806451612903224,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Czech Republic",
+      "row": 2040,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Czech Republic",
+      "row": 2040,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Czech Republic",
+      "row": 2040,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2022,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 Formula One World Championship right after Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "Hungary"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8806451612903226,
+        "event_score": 1.0,
+        "combined_score": 0.9283870967741935
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13938_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which country hosted the MotoGP Grand Prix for the 2019 season right before Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix for the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2056,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9283870967741935,
+      "entity_score": 0.8806451612903224,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8806451612903226,
+        "event_score": 1.0,
+        "combined_score": 0.9283870967741935
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13928_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which country hosted the MotoGP Grand Prix for the 2019 season right before Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix for the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2056,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9283870967741935,
+      "entity_score": 0.8806451612903224,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8806451612903226,
+        "event_score": 1.0,
+        "combined_score": 0.9283870967741935
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13928_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen succeeded by Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2057,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13942_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen immediately before Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2038,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13942_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which country hosted the MotoGP Grand Prix for the 2019 season right before Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix for the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2056,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9283870967741935,
+      "entity_score": 0.8806451612903224,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8806451612903226,
+        "event_score": 1.0,
+        "combined_score": 0.9283870967741935
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13931_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen succeeded by Austria?",
+    "gold": "Czech Republic",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Austria"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2055,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Austria",
+      "time": null
+    },
+    "main": {
+      "answer": "France",
+      "row": 1990,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 1992,
+      "question": "Which country hosted the F1 race for the 2019 Formula One World Championship immediately prior to Austria?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Austria",
+      "answer": "France"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13926_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which country hosted the MotoGP Grand Prix for the 2019 season right after Germany?",
+    "gold": "Czech Republic",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix for the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 2042,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "Hungary",
+      "row": 2020,
+      "score": 0.9283870967741935,
+      "entity_score": 0.8806451612903224,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Czech Republic",
+      "row": 2040,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Czech Republic",
+      "row": 2040,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Czech Republic",
+      "row": 2040,
+      "score": 0.9825806451612903,
+      "entity_score": 0.9709677419354837,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2022,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 Formula One World Championship right after Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "Hungary"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8806451612903226,
+        "event_score": 1.0,
+        "combined_score": 0.9283870967741935
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13944_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen succeeded by Austria?",
+    "gold": "Czech Republic",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Austria"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2055,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Austria",
+      "time": null
+    },
+    "main": {
+      "answer": "France",
+      "row": 1990,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 1992,
+      "question": "Which country hosted the F1 race for the 2019 Formula One World Championship immediately prior to Austria?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Austria",
+      "answer": "France"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13917_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen immediately before Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2038,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13925_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen immediately before Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2038,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13927_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen succeeded by Austria?",
+    "gold": "Czech Republic",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Austria"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2055,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Austria",
+      "time": null
+    },
+    "main": {
+      "answer": "France",
+      "row": 1990,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Czech Republic",
+      "row": 2034,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 1992,
+      "question": "Which country hosted the F1 race for the 2019 Formula One World Championship immediately prior to Austria?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Austria",
+      "answer": "France"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13929_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen immediately before Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2038,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13929_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Where did the MotoGP Grand Prix of the 2019 season happen succeeded by Germany?",
+    "gold": "Netherlands",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "MotxGP Grand Prix of the 2019 season",
+      "Germany"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 2057,
+      "entity": "MotoGP race for the 2019 MotoGP World Championship | MotoGP Grand Prix of the 2019 season | MotoGP Grand Prix for the 2019 season | MotoGP Grand Prix for the 2019 MotoGP World Championship | MotoGP race for the 2019 season | MotoGP race of the 2019 season",
+      "event": "Germany",
+      "time": null
+    },
+    "main": {
+      "answer": "England",
+      "row": 2016,
+      "score": 0.9279999999999999,
+      "entity_score": 0.8799999999999999,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Netherlands",
+      "row": 2036,
+      "score": 0.9819999999999999,
+      "entity_score": 0.9699999999999998,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "one character typo",
+    "main_winner": {
+      "csv_line": 2018,
+      "question": "Which country hosted the F1 Grand Prix for the 2019 season right before Germany?",
+      "entity": "Formula One race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 season | F1 Grand Prix of the 2019 season | F1 race of the 2019 season | F1 race for the 2019 Formula One World Championship | F1 race for the 2019 F1 World Championship | F1 Grand Prix for the 2019 Formula One World Championship | Formula One race for the 2019 season | Formula One Grand Prix for the 2019 F1 World Championship | Formula One Grand Prix for the 2019 season | F1 Grand Prix for the 2019 F1 World Championship",
+      "event": "Germany",
+      "answer": "England"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 0.8799999999999999,
+        "event_score": 1.0,
+        "combined_score": 0.9279999999999999
+      },
+      "bar_075": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_070": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      },
+      "bar_065": {
+        "entity_score": 0.0,
+        "event_score": 1.0,
+        "combined_score": 0.4
+      }
+    },
+    "missing_exact_words": {
+      "entity": [
+        "f1"
+      ],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "entity below 0.75",
+      "bar_070": "entity below 0.70",
+      "bar_065": "entity below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "entity below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:12311_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO just before Rohini RS-D2?",
+    "gold": "INSAT-1A",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D2"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 448,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D2",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 432,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 434,
+      "question": "What did the Indian space research organization launch immediately before Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:12311_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was put into orbit by ISRO immediately previous to Rohini RS-D2?",
+    "gold": "INSAT-1A",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D2"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 449,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D2",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 432,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 434,
+      "question": "What did the Indian space research organization launch immediately before Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13259_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which version did Apple company release preceded by 10.6 Snow Leopard?",
+    "gold": "10.7 Lion",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Apple",
+      "10.6-Snow Leopard"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1379,
+      "entity": "Apple | Apple corporation | Apple company",
+      "event": "10.6 Snow Leopard",
+      "time": null
+    },
+    "main": {
+      "answer": "10.6 Snow Leopard",
+      "row": 1373,
+      "score": 0.82,
+      "entity_score": 1.0,
+      "event_score": 0.5499999999999999
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "10.7 Lion",
+      "row": 1377,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "10.7 Lion",
+      "row": 1377,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "10.7 Lion",
+      "row": 1377,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1375,
+      "question": "Which version did Apple company release preceded by 10.5 Leopard?",
+      "entity": "Apple | Apple corporation | Apple company",
+      "event": "10.5 Leopard",
+      "answer": "10.6 Snow Leopard"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.5499999999999999,
+        "combined_score": 0.82
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "105"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:12284_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "What did ISRO launch right before Rohini RS-D2?",
+    "gold": "INSAT-1A",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D2"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 424,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D2",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 432,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 434,
+      "question": "What did the Indian space research organization launch immediately before Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:12284_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO, India just before Rohini RS-D2?",
+    "gold": "INSAT-1A",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D2"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 425,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D2",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 432,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "INSAT-1A",
+      "row": 422,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 434,
+      "question": "What did the Indian space research organization launch immediately before Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13573_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by Roscosmos, India shortly after Korabl-Sputnik 2?",
+    "gold": "Venera 1",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 2"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1687,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 2",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 3",
+      "row": 1675,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1677,
+      "question": "Which satellite was launched by Roscosmos, India shortly after Sputnik 2?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 2",
+      "answer": "Sputnik 3"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "val:13573_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did Roscosmos launch immediately after Korabl-Sputnik 2?",
+    "gold": "Venera 1",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 2"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1688,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 2",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 3",
+      "row": 1675,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1677,
+      "question": "Which satellite was launched by Roscosmos, India shortly after Sputnik 2?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 2",
+      "answer": "Sputnik 3"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "val:12310_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was put into orbit by ISRO immediately subsequent to Rohini RS-D1?",
+    "gold": "APPLE",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 401,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D1",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini RS-D1",
+      "row": 396,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 398,
+      "question": "What did the Indian space research organization launch immediately after Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini RS-D1"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:12301_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO, India just before Bhaskara-II?",
+    "gold": "APPLE",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 414,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Aryabhata",
+      "row": 430,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 432,
+      "question": "Which satellite was launched by ISRO just before Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Aryabhata"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13571_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which spacecraft was launched by Roscosmos followed by Korabl-Sputnik 1?",
+    "gold": "Luna 3",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 1699,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1703,
+      "score": 0.8428571428571429,
+      "entity_score": 1.0,
+      "event_score": 0.6071428571428571
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1705,
+      "question": "Which satellite was launched by Roscosmos, India just before Sputnik 3?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 3",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6071428571428571,
+        "combined_score": 0.8428571428571429
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "3"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "val:13571_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "What did Roscosmos launch followed by Korabl-Sputnik 1?",
+    "gold": "Luna 3",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 1700,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1703,
+      "score": 0.8428571428571429,
+      "entity_score": 1.0,
+      "event_score": 0.6071428571428571
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1705,
+      "question": "Which satellite was launched by Roscosmos, India just before Sputnik 3?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 3",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6071428571428571,
+        "combined_score": 0.8428571428571429
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "3"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12273_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO just after Rohini RS-D1?",
+    "gold": "APPLE",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 396,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D1",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini RS-D1",
+      "row": 396,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 398,
+      "question": "What did the Indian space research organization launch immediately after Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini RS-D1"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12273_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "What did ISRO launch shortly after Rohini RS-D1?",
+    "gold": "APPLE",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 397,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D1",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini RS-D1",
+      "row": 396,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 398,
+      "question": "What did the Indian space research organization launch immediately after Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini RS-D1"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12307_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did ISRO launch immediately after Bhaskara-II?",
+    "gold": "INSAT-1A",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 428,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 402,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "INSAT-1A",
+      "row": 410,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "INSAT-1A",
+      "row": 410,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "INSAT-1A",
+      "row": 410,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 404,
+      "question": "Which satellite was launched by the Indian space research organization preceded by Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12279_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO, India just before Bhaskara-II?",
+    "gold": "APPLE",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 414,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Aryabhata",
+      "row": 430,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 432,
+      "question": "Which satellite was launched by ISRO just before Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Aryabhata"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12279_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did ISRO launch immediately before Bhaskara-II?",
+    "gold": "APPLE",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 415,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Aryabhata",
+      "row": 430,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 432,
+      "question": "Which satellite was launched by ISRO just before Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Aryabhata"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12277_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was put into orbit by ISRO immediately subsequent to Rohini RS-D1?",
+    "gold": "APPLE",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 401,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D1",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini RS-D1",
+      "row": 396,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 394,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 398,
+      "question": "What did the Indian space research organization launch immediately after Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini RS-D1"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12288_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO, India just before Rohini RS-D1?",
+    "gold": "Rohini RS-1",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 411,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D1",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 432,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 434,
+      "question": "What did the Indian space research organization launch immediately before Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12288_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did ISRO launch immediately before Rohini RS-D1?",
+    "gold": "Rohini RS-1",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 429,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D1",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 432,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 434,
+      "question": "What did the Indian space research organization launch immediately before Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13576_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which spacecraft was launched by Roscosmos just after Korabl-Sputnik 1?",
+    "gold": "Korabl-Sputnik 2",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1685,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1677,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1679,
+      "question": "What did the Roscosmos launch immediately after Sputnik 1?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 1",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:13576_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "What did Roscosmos launch shortly after Korabl-Sputnik 1?",
+    "gold": "Korabl-Sputnik 2",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1692,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1677,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1679,
+      "question": "What did the Roscosmos launch immediately after Sputnik 1?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 1",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:12280_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO just before Bhaskara-II?",
+    "gold": "APPLE",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 416,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Aryabhata",
+      "row": 430,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 432,
+      "question": "Which satellite was launched by ISRO just before Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Aryabhata"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12280_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was put into orbit by ISRO immediately previous to Bhaskara-II?",
+    "gold": "APPLE",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 417,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Aryabhata",
+      "row": 430,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 432,
+      "question": "Which satellite was launched by ISRO just before Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Aryabhata"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13569_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which spacecraft was launched by Roscosmos just after Korabl-Sputnik 1?",
+    "gold": "Korabl-Sputnik 2",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1685,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1677,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1679,
+      "question": "What did the Roscosmos launch immediately after Sputnik 1?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 1",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:13569_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which spacecraft was launched by the Roscosmos preceded by Korabl-Sputnik 1?",
+    "gold": "Korabl-Sputnik 2",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1668,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1677,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1679,
+      "question": "What did the Roscosmos launch immediately after Sputnik 1?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 1",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:13585_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by Roscosmos, India just before Korabl-Sputnik 1?",
+    "gold": "Luna 3",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 1715,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1703,
+      "score": 0.8428571428571429,
+      "entity_score": 1.0,
+      "event_score": 0.6071428571428571
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1705,
+      "question": "Which satellite was launched by Roscosmos, India just before Sputnik 3?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 3",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6071428571428571,
+        "combined_score": 0.8428571428571429
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "3"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13585_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did Roscosmos launch immediately before Korabl-Sputnik 1?",
+    "gold": "Luna 3",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 1716,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1703,
+      "score": 0.8428571428571429,
+      "entity_score": 1.0,
+      "event_score": 0.6071428571428571
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1705,
+      "question": "Which satellite was launched by Roscosmos, India just before Sputnik 3?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 3",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6071428571428571,
+        "combined_score": 0.8428571428571429
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "3"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13555_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which spacecraft was launched by the Roscosmos preceded by Korabl-Sputnik 1?",
+    "gold": "Korabl-Sputnik 2",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1668,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1677,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1679,
+      "question": "What did the Roscosmos launch immediately after Sputnik 1?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 1",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:13555_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did Roscosmos launch immediately after Korabl-Sputnik 1?",
+    "gold": "Korabl-Sputnik 2",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1667,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1677,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1679,
+      "question": "What did the Roscosmos launch immediately after Sputnik 1?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 1",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:12276_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "What did ISRO launch right before Rohini RS-D1?",
+    "gold": "Rohini RS-1",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 410,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D1",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 432,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 434,
+      "question": "What did the Indian space research organization launch immediately before Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12276_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO, India just before Rohini RS-D1?",
+    "gold": "Rohini RS-1",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Rohini RS D1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 411,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-D1",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 432,
+      "score": 0.845,
+      "entity_score": 1.0,
+      "event_score": 0.6125
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Rohini RS-1",
+      "row": 406,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 434,
+      "question": "What did the Indian space research organization launch immediately before Rohini RS-1?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Rohini RS-1",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6125,
+        "combined_score": 0.845
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "rs1"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12295_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite was launched by ISRO, India shortly after Bhaskara-II?",
+    "gold": "INSAT-1A",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 412,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Rohini Technology Payload",
+      "row": 402,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "INSAT-1A",
+      "row": 410,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "INSAT-1A",
+      "row": 410,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "INSAT-1A",
+      "row": 410,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 404,
+      "question": "Which satellite was launched by the Indian space research organization preceded by Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Rohini Technology Payload"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12296_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "What did ISRO launch right before Bhaskara-II?",
+    "gold": "APPLE",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 436,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Aryabhata",
+      "row": 430,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 432,
+      "question": "Which satellite was launched by ISRO just before Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Aryabhata"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:12296_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did ISRO launch immediately before Bhaskara-II?",
+    "gold": "APPLE",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "ISRO",
+      "Bhaskara II"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 415,
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara-II",
+      "time": null
+    },
+    "main": {
+      "answer": "Aryabhata",
+      "row": 430,
+      "score": 0.81,
+      "entity_score": 1.0,
+      "event_score": 0.525
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "APPLE",
+      "row": 412,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 432,
+      "question": "Which satellite was launched by ISRO just before Bhaskara Sega-I?",
+      "entity": "ISRO | Indian space research organization | ISRO, India",
+      "event": "Bhaskara Sega-I",
+      "answer": "Aryabhata"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.525,
+        "combined_score": 0.81
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "segai"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13587_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did Roscosmos launch immediately after Korabl-Sputnik 1?",
+    "gold": "Korabl-Sputnik 2",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1667,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1677,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1679,
+      "question": "What did the Roscosmos launch immediately after Sputnik 1?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 1",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:13587_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which spacecraft did Roscosmos launch immediately after Korabl-Sputnik 1?",
+    "gold": "Korabl-Sputnik 2",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1702,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1677,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Korabl-Sputnik 2",
+      "row": 1665,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1679,
+      "question": "What did the Roscosmos launch immediately after Sputnik 1?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 1",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:13589_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which satellite did Roscosmos launch immediately after Korabl-Sputnik 2?",
+    "gold": "Venera 1",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 2"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1688,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 2",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 3",
+      "row": 1675,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1677,
+      "question": "Which satellite was launched by Roscosmos, India shortly after Sputnik 2?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 2",
+      "answer": "Sputnik 3"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:13589_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which spacecraft did Roscosmos launch immediately after Korabl-Sputnik 2?",
+    "gold": "Venera 1",
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 2"
+    ],
+    "binding": {
+      "table": "after_chronological_reference",
+      "csv_line": 1706,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 2",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 3",
+      "row": 1675,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Venera 1",
+      "row": 1685,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1677,
+      "question": "Which satellite was launched by Roscosmos, India shortly after Sputnik 2?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 2",
+      "answer": "Sputnik 3"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "id": "train:13572_Q1",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "What did the Roscosmos launch immediately before Korabl-Sputnik 1?",
+    "gold": "Luna 3",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 1701,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1703,
+      "score": 0.8428571428571429,
+      "entity_score": 1.0,
+      "event_score": 0.6071428571428571
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1705,
+      "question": "Which satellite was launched by Roscosmos, India just before Sputnik 3?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 3",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6071428571428571,
+        "combined_score": 0.8428571428571429
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "3"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "id": "train:13572_Q2",
+    "dt": "temp-cofac",
+    "level": null,
+    "question": "Which spacecraft was put into orbit by Roscosmos immediately previous to Korabl-Sputnik 1?",
+    "gold": "Luna 3",
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Roscosmos",
+      "Korabl Sputnik 1"
+    ],
+    "binding": {
+      "table": "before_chronological_reference",
+      "csv_line": 1702,
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Korabl-Sputnik 1",
+      "time": null
+    },
+    "main": {
+      "answer": "Sputnik 2",
+      "row": 1703,
+      "score": 0.8428571428571429,
+      "entity_score": 1.0,
+      "event_score": 0.6071428571428571
+    },
+    "main_gold": false,
+    "bar_075": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": true,
+    "bar_070": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": true,
+    "bar_065": {
+      "answer": "Luna 3",
+      "row": 1697,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": true,
+    "kind": "hyphen",
+    "main_winner": {
+      "csv_line": 1705,
+      "question": "Which satellite was launched by Roscosmos, India just before Sputnik 3?",
+      "entity": "Roscosmos | Roscosmos, India",
+      "event": "Sputnik 3",
+      "answer": "Sputnik 2"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.6071428571428571,
+        "combined_score": 0.8428571428571429
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "3"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  }
+]

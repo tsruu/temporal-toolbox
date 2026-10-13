@@ -1,0 +1,641 @@
+[
+  {
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Richard Ryder",
+      "Member of the 18th Parliament of the United Kingdom"
+    ],
+    "gold": "Member of the 17th Parliament of Great Britain",
+    "group_id": 5178,
+    "variant": "Q2",
+    "cohort": "current",
+    "count": 11,
+    "evidence": {
+      "file": "rollouts/current/trained/consistency_grpo_400ckpt.jsonl",
+      "line": 2028
+    },
+    "main": {
+      "answer": "Member of the 7th Parliament of the United Kingdom",
+      "row": 4054,
+      "score": 0.9542857142857142,
+      "entity_score": 1.0,
+      "event_score": 0.8857142857142856
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Member of the 17th Parliament of Great Britain",
+      "row": 4048,
+      "score": 0.8656140350877193,
+      "entity_score": 1.0,
+      "event_score": 0.6640350877192982
+    },
+    "bar_065_gold": true,
+    "main_winner": {
+      "csv_line": 4056,
+      "question": "Which position did Richard Ryder hold right before Member of the 8th Parliament of the United Kingdom?",
+      "entity": "Richard Ryder",
+      "event": "Member of the 8th Parliament of the United Kingdom",
+      "answer": "Member of the 7th Parliament of the United Kingdom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.8857142857142857,
+        "combined_score": 0.9542857142857143
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "8th"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "tool": "after_chronological_reference",
+    "arguments": [
+      "William Plumer",
+      "Member of the 15th Parliament of the United Kingdom"
+    ],
+    "gold": "Member of the 16th Parliament of Great Britain",
+    "group_id": 7357,
+    "variant": "Q2",
+    "cohort": "current",
+    "count": 7,
+    "evidence": {
+      "file": "rollouts/current/trained/consistency_grpo_600ckpt.jsonl",
+      "line": 8322
+    },
+    "main": {
+      "answer": "Member of the 7th Parliament of the United Kingdom",
+      "row": 3592,
+      "score": 0.9514285714285714,
+      "entity_score": 1.0,
+      "event_score": 0.8785714285714284
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching after-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Member of the 16th Parliament of Great Britain",
+      "row": 3587,
+      "score": 0.8656140350877193,
+      "entity_score": 1.0,
+      "event_score": 0.6640350877192982
+    },
+    "bar_065_gold": true,
+    "main_winner": {
+      "csv_line": 3594,
+      "question": "Which position did William Plumer hold right after Member of the 6th Parliament of the United Kingdom?",
+      "entity": "William Plumer",
+      "event": "Member of the 6th Parliament of the United Kingdom",
+      "answer": "Member of the 7th Parliament of the United Kingdom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.8785714285714286,
+        "combined_score": 0.9514285714285714
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "6th"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "R.N. Upadhyaya",
+      "joining the Communist Party of India (Marxist-Leninist)"
+    ],
+    "gold": "Communist Party of India (Marxist)",
+    "group_id": 18454,
+    "variant": "Q1",
+    "cohort": "current",
+    "count": 3,
+    "evidence": {
+      "file": "rollouts/current/trained/consistency_grpo_600ckpt.jsonl",
+      "line": 9099
+    },
+    "main": {
+      "answer": "Communist Party of India (Marxist)",
+      "row": 4603,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": false,
+    "main_winner": {
+      "csv_line": 4605,
+      "question": "Which political party did R.N. Upadhyaya belong to right before Communist Party of India (Marxist-Leninist)?",
+      "entity": "R.N. Upadhyaya",
+      "event": "Communist Party of India (Marxist-Leninist)",
+      "answer": "Communist Party of India (Marxist)"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "R.N. Upadhyaya",
+      "formation of Communist Party of India (Marxist-Leninist)"
+    ],
+    "gold": "Communist Party of India (Marxist)",
+    "group_id": 18454,
+    "variant": "Q1",
+    "cohort": "current",
+    "count": 1,
+    "evidence": {
+      "file": "rollouts/current/trained/consistencyv2.jsonl",
+      "line": 9099
+    },
+    "main": {
+      "answer": "Communist Party of India (Marxist)",
+      "row": 4603,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": false,
+    "main_winner": {
+      "csv_line": 4605,
+      "question": "Which political party did R.N. Upadhyaya belong to right before Communist Party of India (Marxist-Leninist)?",
+      "entity": "R.N. Upadhyaya",
+      "event": "Communist Party of India (Marxist-Leninist)",
+      "answer": "Communist Party of India (Marxist)"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "R.N. Upadhyaya",
+      "Communist Party of India (Marxist-Leninist) formation"
+    ],
+    "gold": "Communist Party of India (Marxist)",
+    "group_id": 18454,
+    "variant": "Q1",
+    "cohort": "current",
+    "count": 1,
+    "evidence": {
+      "file": "rollouts/current/trained/consistencyv8.jsonl",
+      "line": 9099
+    },
+    "main": {
+      "answer": "Communist Party of India (Marxist)",
+      "row": 4603,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": false,
+    "main_winner": {
+      "csv_line": 4605,
+      "question": "Which political party did R.N. Upadhyaya belong to right before Communist Party of India (Marxist-Leninist)?",
+      "entity": "R.N. Upadhyaya",
+      "event": "Communist Party of India (Marxist-Leninist)",
+      "answer": "Communist Party of India (Marxist)"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  },
+  {
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "Richard Ryder",
+      "Member of the 18th Parliament of the United Kingdom"
+    ],
+    "gold": "Member of the 17th Parliament of Great Britain",
+    "group_id": 5178,
+    "variant": "Q2",
+    "cohort": "other",
+    "count": 1,
+    "evidence": {
+      "file": "rollouts/deprecated/plain_grpo_think_ok_400ckpt.jsonl",
+      "line": 2028
+    },
+    "main": {
+      "answer": "Member of the 7th Parliament of the United Kingdom",
+      "row": 4054,
+      "score": 0.9542857142857142,
+      "entity_score": 1.0,
+      "event_score": 0.8857142857142856
+    },
+    "main_gold": false,
+    "bar_075": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "error": "No matching before-chronological reference found",
+      "reason": "score or time constraint"
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Member of the 17th Parliament of Great Britain",
+      "row": 4048,
+      "score": 0.8656140350877193,
+      "entity_score": 1.0,
+      "event_score": 0.6640350877192982
+    },
+    "bar_065_gold": true,
+    "main_winner": {
+      "csv_line": 4056,
+      "question": "Which position did Richard Ryder hold right before Member of the 8th Parliament of the United Kingdom?",
+      "entity": "Richard Ryder",
+      "event": "Member of the 8th Parliament of the United Kingdom",
+      "answer": "Member of the 7th Parliament of the United Kingdom"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 0.8857142857142857,
+        "combined_score": 0.9542857142857143
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 0.0,
+        "combined_score": 0.6
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": [
+        "8th"
+      ]
+    },
+    "causes_by_mode": {
+      "bar_075": "event below 0.75",
+      "bar_070": "event below 0.70",
+      "bar_065": "event below 0.65"
+    },
+    "details_by_mode": {
+      "bar_075": "numeric/ordinal difference",
+      "bar_070": "numeric/ordinal difference",
+      "bar_065": "numeric/ordinal difference"
+    },
+    "cause": "event below 0.75",
+    "detail": "numeric/ordinal difference"
+  },
+  {
+    "tool": "before_chronological_reference",
+    "arguments": [
+      "R.N. Upadhyaya",
+      "Communist Party of India (Marxist-Leninist) formation"
+    ],
+    "gold": "Communist Party of India (Marxist)",
+    "group_id": 18454,
+    "variant": "Q1",
+    "cohort": "other",
+    "count": 1,
+    "evidence": {
+      "file": "rollouts/deprecated/plain_grpo_think_ok_400ckpt.jsonl",
+      "line": 9099
+    },
+    "main": {
+      "answer": "Communist Party of India (Marxist)",
+      "row": 4603,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "main_gold": true,
+    "bar_075": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_075_gold": false,
+    "bar_070": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_070_gold": false,
+    "bar_065": {
+      "answer": "Communist Party of India",
+      "row": 4602,
+      "score": 1.0,
+      "entity_score": 1.0,
+      "event_score": 1.0
+    },
+    "bar_065_gold": false,
+    "main_winner": {
+      "csv_line": 4605,
+      "question": "Which political party did R.N. Upadhyaya belong to right before Communist Party of India (Marxist-Leninist)?",
+      "entity": "R.N. Upadhyaya",
+      "event": "Communist Party of India (Marxist-Leninist)",
+      "answer": "Communist Party of India (Marxist)"
+    },
+    "scores_against_main_winner": {
+      "main": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_075": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_070": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      },
+      "bar_065": {
+        "entity_score": 1.0,
+        "event_score": 1.0,
+        "combined_score": 1.0
+      }
+    },
+    "missing_exact_words": {
+      "entity": [],
+      "event": []
+    },
+    "causes_by_mode": {
+      "bar_075": "different ranking winner",
+      "bar_070": "different ranking winner",
+      "bar_065": "different ranking winner"
+    },
+    "details_by_mode": {
+      "bar_075": "lexical extraction difference",
+      "bar_070": "lexical extraction difference",
+      "bar_065": "lexical extraction difference"
+    },
+    "cause": "different ranking winner",
+    "detail": "lexical extraction difference"
+  }
+]

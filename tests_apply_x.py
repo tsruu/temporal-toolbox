@@ -72,9 +72,10 @@ class AzureExceptionTests(unittest.TestCase):
 
 class ShortEntityTests(unittest.TestCase):
     def test_normalized_short_exact_matches_and_only_exact_scores_change(self):
-        for q, k in [('I', 'i'), ('Î', 'i'), (' A! ', 'a'), ('AI', 'ai')]:
+        for q, k in [('I', 'i'), ('Î', 'i'), ('AI', 'ai')]:
             self.assertEqual(temporal.entity_similarity(temporal.normalize_entity(q),
                                                        temporal.normalize_entity(k)), 1.0)
+        self.assertEqual(temporal.normalize_entity(' A! '), '')
         for q, k in [('', ''), ('i', 'a'), ('i word', 'i'), ('words', 'word'), ('foo', 'foo')]:
             original = .7 * temporal.containment_score(q, k) + .3 * temporal.char_ngram_similarity(q, k)
             self.assertEqual(temporal.entity_similarity(q, k), original)
