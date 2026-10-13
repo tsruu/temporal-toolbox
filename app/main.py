@@ -285,7 +285,7 @@ async def list_tools():
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string", "description": "The subject asked about."},
+                    "entity": {"type": "string", "description": "The series or subject whose history is asked about, as written in the question."},
                     "time": {"type": "string", "description": "The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY."}
                 },
                 "required": ["entity", "time"]
@@ -298,7 +298,7 @@ async def list_tools():
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string", "description": "The series or subject whose history is asked about."},
+                    "entity": {"type": "string", "description": "The series or subject whose history is asked about, as written in the question."},
                     "event": {"type": "string", "description": "The named item the question is anchored on."}
                 },
                 "required": ["entity", "event"]
@@ -311,7 +311,7 @@ async def list_tools():
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string", "description": "The subject asked about."},
+                    "entity": {"type": "string", "description": "The series or subject whose history is asked about, as written in the question."},
                     "time": {"type": "string", "description": "The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY."}
                 },
                 "required": ["entity", "time"]
@@ -324,7 +324,7 @@ async def list_tools():
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string", "description": "The series or subject whose history is asked about."},
+                    "entity": {"type": "string", "description": "The series or subject whose history is asked about, as written in the question."},
                     "event": {"type": "string", "description": "The named item the question is anchored on."}
                 },
                 "required": ["entity", "event"]
@@ -349,7 +349,7 @@ async def list_tools():
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "entity": {"type": "string", "description": "The subject asked about."},
+                    "entity": {"type": "string", "description": "The series or subject whose history is asked about, as written in the question."},
                     "time": {"type": "string", "description": "The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY."}
                 },
                 "required": ["entity", "time"]
