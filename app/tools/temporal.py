@@ -115,6 +115,52 @@ def normalize_time(t: str) -> Tuple[int, Optional[int]]:
 # Lexical similarity
 # =========================
 
+NUMBER_WORDS = set((
+    "zero one two three four five six seven eight nine ten eleven twelve "
+    "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty "
+    "thirty forty fifty sixty seventy eighty ninety hundred thousand million "
+    "first second third fourth fifth sixth seventh eighth ninth tenth eleventh "
+    "twelfth thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth "
+    "nineteenth twentieth thirtieth fortieth fiftieth hundredth"
+).split())
+ROMAN_NUMBER_RE = re.compile(r"m{0,3}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3})")
+
+
+def is_number_word(word: str) -> bool:
+    """Numeric and ordinal tokens are never eligible for spelling tolerance."""
+    return (any(c.isdigit() for c in word) or word in NUMBER_WORDS
+            or bool(word) and ROMAN_NUMBER_RE.fullmatch(word) is not None)
+
+
+def one_edit_apart(a: str, b: str) -> bool:
+    """Exactly one insertion, deletion, substitution or adjacent swap."""
+    if abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        differences = [i for i, (x, y) in enumerate(zip(a, b)) if x != y]
+        if len(differences) == 1:
+            return True
+        if len(differences) == 2:
+            i, j = differences
+            return j == i + 1 and a[i] == b[j] and a[j] == b[i]
+        return False
+    if len(a) > len(b):
+        a, b = b, a
+    i = 0
+    while i < len(a) and a[i] == b[i]:
+        i += 1
+    return a[i:] == b[i + 1:]
+
+
+def word_present(key_word: str, query_words: set) -> bool:
+    """A stored word of at least five letters may contain one spelling edit."""
+    if key_word in query_words:
+        return True
+    return (len(key_word) >= 5 and not is_number_word(key_word)
+            and any(not is_number_word(word) and one_edit_apart(key_word, word)
+                    for word in query_words))
+
+
 def containment_score(query: str, key: str) -> float:
     """
     Directional token containment:
@@ -124,7 +170,7 @@ def containment_score(query: str, key: str) -> float:
     K = set(key.split())
     if not K:
         return 0.0
-    return len(Q & K) / len(K)
+    return sum(word_present(word, Q) for word in K) / len(K)
 
 
 def char_ngrams(s: str, n: int = 3) -> set:
@@ -178,10 +224,16 @@ def lexical_match_rank(query_norm: str, cell: str) -> tuple:
 
 
 def chronological_match_rank(q_entity: str, q_event: str, row: dict) -> tuple:
+    return _chronological_candidate(q_entity, q_event, row)[0]
+
+
+def _chronological_candidate(q_entity: str, q_event: str, row: dict) -> tuple:
+    """Each score must qualify; the weighted score only ranks qualifying rows."""
     entity = lexical_match_rank(q_entity, row["entity"])
     event = event_match_rank(q_event, row["event"])
-    return (entity[0] and event[0], 0.6 * entity[1] + 0.4 * event[1],
+    rank = (entity[0] and event[0], 0.6 * entity[1] + 0.4 * event[1],
             0.6 * entity[2] + 0.4 * event[2])
+    return rank, entity[1] >= 0.75 and event[1] >= 0.75
 
 def normalize_time_key(t: str) -> Tuple[int, Optional[int], Optional[int]]:
     """Preserve an explicit day while retaining normalize_time's public API."""
@@ -251,9 +303,9 @@ def before_chronological_reference(
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            rank = chronological_match_rank(q_entity, q_event, row)
+            rank, qualifies = _chronological_candidate(q_entity, q_event, row)
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if qualifies and rank > best_rank:
                 best_rank = rank
                 best_answer = row["answer"]
 
@@ -307,9 +359,9 @@ def after_chronological_reference(
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            rank = chronological_match_rank(q_entity, q_event, row)
+            rank, qualifies = _chronological_candidate(q_entity, q_event, row)
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if qualifies and rank > best_rank:
                 best_rank = rank
                 best_answer = row["answer"]
 

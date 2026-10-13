@@ -91,7 +91,7 @@ class EntityAlternativeTests(unittest.TestCase):
                 self.assertEqual(getattr(temporal, name)(
                     'Owner', 'one supercalifragilistic', path), 'year')
 
-    def test_event_punctuation_has_original_score_and_eligibility(self):
+    def test_event_punctuation_score_and_separate_eligibility(self):
         cells = ('one | two', 'one | supercalifragilistic',
                  'Member of the 5th | Parliament', '', 'a', 'Phir Dhoom')
         queries = ('one', 'two', 'one two', 'one supercalifragilistic',
@@ -103,7 +103,7 @@ class EntityAlternativeTests(unittest.TestCase):
                 self.assertEqual(temporal.event_match_rank(normalized, cell)[1], score)
                 probes = [('event_time', dict(event=cell, answer='year'), (query,), score)]
                 probes += [(name, dict(entity='Owner | Proprietor', event=cell, answer='year'),
-                            ('Owner', query), .6 + .4 * score)
+                            ('Owner', query), score)
                            for name in ('before_chronological_reference',
                                         'after_chronological_reference')]
                 for name, row, args, expected_score in probes:

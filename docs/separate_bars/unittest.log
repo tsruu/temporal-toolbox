@@ -1,0 +1,127 @@
+tests_apply_x (unittest.loader._FailedTest.tests_apply_x) ... ERROR
+tests_batch1 (unittest.loader._FailedTest.tests_batch1) ... ERROR
+tests_batch1_r2 (unittest.loader._FailedTest.tests_batch1_r2) ... ERROR
+test_dispatch_rest_and_mcp (tests_code_exec.ContractTests.test_dispatch_rest_and_mcp) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_bounded_fork_bomb_probe (tests_code_exec.SandboxTests.test_bounded_fork_bomb_probe) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_environment_isolated_stdin_and_temp_cleanup (tests_code_exec.SandboxTests.test_environment_isolated_stdin_and_temp_cleanup) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_exception_and_empty_input (tests_code_exec.SandboxTests.test_exception_and_empty_input) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_exec_is_denied_after_startup (tests_code_exec.SandboxTests.test_exec_is_denied_after_startup) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_file_size_and_open_file_limits (tests_code_exec.SandboxTests.test_file_size_and_open_file_limits) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_infinite_loop_default_wall_limit (tests_code_exec.SandboxTests.test_infinite_loop_default_wall_limit) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_input_and_timeout_limits (tests_code_exec.SandboxTests.test_input_and_timeout_limits) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_network_group_escape_and_filesystem_confinement (tests_code_exec.SandboxTests.test_network_group_escape_and_filesystem_confinement) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_normal_indented_code_and_unicode (tests_code_exec.SandboxTests.test_normal_indented_code_and_unicode) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_output_floods_and_invalid_utf8_are_bounded (tests_code_exec.SandboxTests.test_output_floods_and_invalid_utf8_are_bounded) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_parallel_work_queues_and_slots_recover (tests_code_exec.SandboxTests.test_parallel_work_queues_and_slots_recover) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_resource_limits_and_memory_hog (tests_code_exec.SandboxTests.test_resource_limits_and_memory_hog) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_setup_failure_releases_slot (tests_code_exec.SandboxTests.test_setup_failure_releases_slot) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_sleep_timeout_and_closed_streams (tests_code_exec.SandboxTests.test_sleep_timeout_and_closed_streams) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_threads_and_optional_libraries (tests_code_exec.SandboxTests.test_threads_and_optional_libraries) ... skipped 'Submitted code requires the Linux kernel sandbox'
+test_math_date_stdlib_and_threads (tests_code_exec_audit.AuditIntegrationTests.test_math_date_stdlib_and_threads) ... ok
+test_network_process_and_ctypes_operations_have_clear_denials (tests_code_exec_audit.AuditIntegrationTests.test_network_process_and_ctypes_operations_have_clear_denials) ... ok
+test_requests_if_installed (tests_code_exec_audit.AuditIntegrationTests.test_requests_if_installed) ... ok
+test_committed_replay_fixture (tests_code_exec_tools_unit.ReplayTests.test_committed_replay_fixture) ... ok
+test_extraction_pairs_distinct_code_all_statuses_and_provenance (tests_code_exec_tools_unit.ReplayTests.test_extraction_pairs_distinct_code_all_statuses_and_provenance) ... ok
+test_non_linux_replay_and_selftest_never_run_code (tests_code_exec_tools_unit.ReplayTests.test_non_linux_replay_and_selftest_never_run_code) ... ok
+test_recorded_json_python_and_error_prefix (tests_code_exec_tools_unit.ReplayTests.test_recorded_json_python_and_error_prefix) ... ok
+test_replay_parity_excludes_metadata_but_includes_stderr_and_status (tests_code_exec_tools_unit.ReplayTests.test_replay_parity_excludes_metadata_but_includes_stderr_and_status) ... ok
+test_matrix_collects_failures_protections_and_restores_state (tests_code_exec_tools_unit.SelftestTests.test_matrix_collects_failures_protections_and_restores_state) ... ok
+test_closed_pipes_timeout (tests_code_exec_unit.CaptureTests.test_closed_pipes_timeout) ... ok
+test_output_utf8_caps (tests_code_exec_unit.CaptureTests.test_output_utf8_caps) ... ok
+test_signal_failure (tests_code_exec_unit.CaptureTests.test_signal_failure) ... ok
+test_success_exception (tests_code_exec_unit.CaptureTests.test_success_exception) ... ok
+test_audit_policy_event_families (tests_code_exec_unit.PolicyTests.test_audit_policy_event_families) ... ok
+test_dispatch_propagates_protections_for_success_and_failure (tests_code_exec_unit.PolicyTests.test_dispatch_propagates_protections_for_success_and_failure) ... ok
+test_environment_allowlist (tests_code_exec_unit.PolicyTests.test_environment_allowlist) ... ok
+test_landlock_abi_masks (tests_code_exec_unit.PolicyTests.test_landlock_abi_masks) ... ok
+test_launcher_order (tests_code_exec_unit.PolicyTests.test_launcher_order) ... ok
+test_limit_respects_hard_cap (tests_code_exec_unit.PolicyTests.test_limit_respects_hard_cap) ... ok
+test_metadata_pipe_is_closed_when_launch_fails (tests_code_exec_unit.PolicyTests.test_metadata_pipe_is_closed_when_launch_fails) ... ok
+test_no_new_privs_failure_prevents_policies (tests_code_exec_unit.PolicyTests.test_no_new_privs_failure_prevents_policies) ... ok
+test_non_linux_fails_closed (tests_code_exec_unit.PolicyTests.test_non_linux_fails_closed) ... ok
+test_parent_reports_trusted_metadata_and_closes_descriptors (tests_code_exec_unit.PolicyTests.test_parent_reports_trusted_metadata_and_closes_descriptors) ... ok
+test_policy_failure_prevents_execution_and_reports (tests_code_exec_unit.PolicyTests.test_policy_failure_prevents_execution_and_reports) ... ok
+test_policy_fallbacks_and_fail_closed (tests_code_exec_unit.PolicyTests.test_policy_fallbacks_and_fail_closed) ... ok
+test_root_requires_separate_identity (tests_code_exec_unit.PolicyTests.test_root_requires_separate_identity) ... ok
+test_rootless_opt_in (tests_code_exec_unit.PolicyTests.test_rootless_opt_in) ... ok
+test_saturation_wait_timeout_without_launch (tests_code_exec_unit.PolicyTests.test_saturation_wait_timeout_without_launch) ... ok
+test_seccomp_decisions_for_both_architectures (tests_code_exec_unit.PolicyTests.test_seccomp_decisions_for_both_architectures) ... ok
+test_setup_failure_releases_slot (tests_code_exec_unit.PolicyTests.test_setup_failure_releases_slot) ... ok
+test_slot_default_and_override (tests_code_exec_unit.PolicyTests.test_slot_default_and_override) ... ok
+test_twenty_calls_queue_and_release_host_safe (tests_code_exec_unit.PolicyTests.test_twenty_calls_queue_and_release_host_safe) ... ok
+test_validation_without_launch (tests_code_exec_unit.PolicyTests.test_validation_without_launch) ... ok
+test_absolute_and_entity_time_filtering_and_ties (tests_temporal_alternatives.EntityAlternativeTests.test_absolute_and_entity_time_filtering_and_ties) ... ok
+test_absolute_dates_distinguish_same_month_transitions (tests_temporal_alternatives.EntityAlternativeTests.test_absolute_dates_distinguish_same_month_transitions) ... ok
+test_any_alternative_scores_before_normalization (tests_temporal_alternatives.EntityAlternativeTests.test_any_alternative_scores_before_normalization) ... ok
+test_chronological_alternatives_and_event_ties (tests_temporal_alternatives.EntityAlternativeTests.test_chronological_alternatives_and_event_ties) ... ok
+test_chronological_event_cells_keep_original_eligibility (tests_temporal_alternatives.EntityAlternativeTests.test_chronological_event_cells_keep_original_eligibility) ... ok
+test_event_cells_keep_original_scoring (tests_temporal_alternatives.EntityAlternativeTests.test_event_cells_keep_original_scoring) ... ok
+test_event_punctuation_score_and_separate_eligibility (tests_temporal_alternatives.EntityAlternativeTests.test_event_punctuation_score_and_separate_eligibility) ... ok
+test_single_cells_have_exactly_the_original_score (tests_temporal_alternatives.EntityAlternativeTests.test_single_cells_have_exactly_the_original_score) ... ok
+test_threshold_and_no_match_are_unchanged (tests_temporal_alternatives.EntityAlternativeTests.test_threshold_and_no_match_are_unchanged) ... ok
+test_chronological_full_match_and_alternatives (tests_temporal_priority.MatchPriorityTests.test_chronological_full_match_and_alternatives) ... ok
+test_event_time_prefers_full_event_and_stable_ties (tests_temporal_priority.MatchPriorityTests.test_event_time_prefers_full_event_and_stable_ties) ... ok
+test_full_entity_and_event_are_both_required_for_exact_priority (tests_temporal_priority.MatchPriorityTests.test_full_entity_and_event_are_both_required_for_exact_priority) ... ok
+test_partial_ties_prefer_complete_numeric_anchor (tests_temporal_priority.MatchPriorityTests.test_partial_ties_prefer_complete_numeric_anchor) ... ok
+test_prc_held_exact_duplicates_keep_first_answer (tests_temporal_priority.MatchPriorityTests.test_prc_held_exact_duplicates_keep_first_answer) ... ok
+test_real_reported_failures (tests_temporal_priority.MatchPriorityTests.test_real_reported_failures) ... ok
+test_score_precedes_completeness_and_threshold_is_preserved (tests_temporal_priority.MatchPriorityTests.test_score_precedes_completeness_and_threshold_is_preserved) ... ok
+test_time_filtered_tools_prefer_full_entity_then_row_order (tests_temporal_priority.MatchPriorityTests.test_time_filtered_tools_prefer_full_entity_then_row_order) ... ok
+test_all_lookup_families_share_spelling_score (tests_temporal_separate_bars.SeparateBarsTests.test_all_lookup_families_share_spelling_score) ... ok
+test_alternatives_preserve_exact_priority (tests_temporal_separate_bars.SeparateBarsTests.test_alternatives_preserve_exact_priority) ... ok
+test_each_chronological_argument_must_qualify (tests_temporal_separate_bars.SeparateBarsTests.test_each_chronological_argument_must_qualify) ... ok
+test_exactly_one_edit_and_stored_word_length (tests_temporal_separate_bars.SeparateBarsTests.test_exactly_one_edit_and_stored_word_length) ... ok
+test_missing_head_coach_role_does_not_qualify (tests_temporal_separate_bars.SeparateBarsTests.test_missing_head_coach_role_does_not_qualify) ... ok
+test_numbers_and_ordinals_receive_no_spelling_tolerance (tests_temporal_separate_bars.SeparateBarsTests.test_numbers_and_ordinals_receive_no_spelling_tolerance) ... ok
+test_requested_typos_reach_gold (tests_temporal_separate_bars.SeparateBarsTests.test_requested_typos_reach_gold) ... ok
+test_trigrams_and_completeness_use_exact_characters_and_words (tests_temporal_separate_bars.SeparateBarsTests.test_trigrams_and_completeness_use_exact_characters_and_words) ... ok
+
+======================================================================
+ERROR: tests_apply_x (unittest.loader._FailedTest.tests_apply_x)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_apply_x
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.13/3.13.12_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.12_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/Users/TRISHAN/Desktop/Desktop - Mac/projects/Temporal/toolbox/tests_apply_x.py", line 8, in <module>
+    from fastapi.testclient import TestClient
+ModuleNotFoundError: No module named 'fastapi'
+
+
+======================================================================
+ERROR: tests_batch1 (unittest.loader._FailedTest.tests_batch1)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_batch1
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.13/3.13.12_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.12_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/Users/TRISHAN/Desktop/Desktop - Mac/projects/Temporal/toolbox/tests_batch1.py", line 9, in <module>
+    from fastapi.testclient import TestClient
+ModuleNotFoundError: No module named 'fastapi'
+
+
+======================================================================
+ERROR: tests_batch1_r2 (unittest.loader._FailedTest.tests_batch1_r2)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests_batch1_r2
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.13/3.13.12_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.12_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/Users/TRISHAN/Desktop/Desktop - Mac/projects/Temporal/toolbox/tests_batch1_r2.py", line 9, in <module>
+    from deep_translator.constants import BASE_URLS
+ModuleNotFoundError: No module named 'deep_translator'
+
+
+----------------------------------------------------------------------
+Ran 77 tests in 4.283s
+
+FAILED (errors=3, skipped=16)
