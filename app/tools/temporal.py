@@ -7,6 +7,7 @@ import unicodedata
 from datetime import datetime
 from typing import Tuple, Optional
 import os
+from functools import lru_cache
 
 BASE_DIR = os.path.dirname(__file__)
 
@@ -18,24 +19,58 @@ AFTER_CHRONOLOGICAL_CSV = os.path.join(BASE_DIR, "after_chronological_reference.
 
 ENTITY_TIME_EVENT_CSV = os.path.join(BASE_DIR, "entity_time_event.csv")
 EVENT_TIME_CSV = os.path.join(BASE_DIR, "event_time.csv")
+COMPONENT_BAR = 0.75
 
 # =========================
 # Entity normalization
 # =========================
 
-def normalize_entity(text: str) -> str:
-    """
-    Safe normalization:
-    - lowercase, strip accents (Bouaïcha -> bouaicha)
-    - remove possessive 's
-    - remove punctuation, including Unicode (’ –)
-    - collapse whitespace
-    """
-    text = _fold(text)
-    text = text.replace("'s", "").replace("’s", "")
+def _singular_surface(word: str) -> str:
+    """Pairwise regular plural comparison, never global name normalization."""
+    folded = _fold(word)
+    if (not word.isalpha() or len(word) < 3 or is_number_word(folded)
+            or (word.isupper() and len(word) <= 4)
+            or folded == "series" or folded.endswith(("ss", "us", "is"))):
+        return folded
+    # An acronym with an explicitly appended lowercase suffix stays distinct.
+    if any(word.endswith(suffix) and word[:-len(suffix)].isupper()
+           and len(word[:-len(suffix)]) <= 4 for suffix in ("s", "es")):
+        return folded
+    if any(folded.endswith(suffix) and is_number_word(folded[:-len(suffix)])
+           for suffix in ("s", "es")):
+        return folded
+    if folded.endswith(("ches", "shes", "xes", "zes", "sses", "oes")) and len(folded[:-2]) >= 3:
+        return folded[:-2]
+    if folded.endswith("s") and len(folded[:-1]) >= 3:
+        return folded[:-1]
+    return folded
+
+
+@lru_cache(maxsize=50000)
+def _surface_words(text: str) -> tuple:
+    """Retain stored casing until plural eligibility has been established."""
+    text = unicodedata.normalize("NFKC", text)
+    text = text.translate(str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"'}))
+    text = re.sub(r"(?<=\w)'s\b|(?<=s)'(?=\W|$)", "", text, flags=re.I)
+    text = re.sub(r"[-‐‑‒–—−]", " ", text)
+    text = text.replace("&", " and ")
+    # Existing dot removal already makes F.C./U.S. equal FC/US.
     text = re.sub(r"[^\w\s]|_", "", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+    return tuple(word for word in text.split() if _fold(word) not in {"the", "a", "an"})
+
+
+@lru_cache(maxsize=50000)
+def normalize_entity(text: str) -> str:
+    """Case-independent surface cleanup; preserve names and plural endings."""
+    return " ".join(_fold(word) for word in _surface_words(text))
+
+
+@lru_cache(maxsize=50000)
+def stored_plural_words(text: str) -> frozenset:
+    """Only words written entirely lowercase in this stored alternative qualify."""
+    return frozenset(_fold(word) for word in _surface_words(text)
+                     if word.isalpha() and word.islower() and len(word) >= 3
+                     and not is_number_word(_fold(word)))
 
 
 # =========================
@@ -115,7 +150,64 @@ def normalize_time(t: str) -> Tuple[int, Optional[int]]:
 # Lexical similarity
 # =========================
 
-def containment_score(query: str, key: str) -> float:
+NUMBER_WORDS = set((
+    "zero one two three four five six seven eight nine ten eleven twelve "
+    "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty "
+    "thirty forty fifty sixty seventy eighty ninety hundred thousand million "
+    "first second third fourth fifth sixth seventh eighth ninth tenth eleventh "
+    "twelfth thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth "
+    "nineteenth twentieth thirtieth fortieth fiftieth hundredth"
+).split())
+ORDINAL_WORDS = NUMBER_WORDS - set((
+    "zero one two three four five six seven eight nine ten eleven twelve "
+    "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty "
+    "thirty forty fifty sixty seventy eighty ninety hundred thousand million"
+).split())
+ROMAN_NUMBER_RE = re.compile(r"m{0,3}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3})")
+
+
+def is_number_word(word: str) -> bool:
+    """Digits, ordinals and Roman numerals receive no spelling tolerance."""
+    return (any(c.isdigit() for c in word) or word in ORDINAL_WORDS
+            or bool(word) and ROMAN_NUMBER_RE.fullmatch(word) is not None)
+
+
+def one_edit_apart(a: str, b: str) -> bool:
+    """Exactly one insertion, deletion, substitution or adjacent swap."""
+    if abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        differences = [i for i, (x, y) in enumerate(zip(a, b)) if x != y]
+        if len(differences) == 1:
+            return True
+        if len(differences) == 2:
+            i, j = differences
+            return j == i + 1 and a[i] == b[j] and a[j] == b[i]
+        return False
+    if len(a) > len(b):
+        a, b = b, a
+    i = 0
+    while i < len(a) and a[i] == b[i]:
+        i += 1
+    return a[i:] == b[i + 1:]
+
+
+def word_present(key_word: str, query_words: set, plural_allowed: bool = False) -> bool:
+    """A stored word of at least five letters may contain one spelling edit."""
+    if key_word in query_words:
+        return True
+    if plural_allowed and any(
+            word.isalpha() and len(word) >= 3 and not is_number_word(word)
+            and _singular_surface(key_word) == _singular_surface(word)
+            for word in query_words):
+        return True
+    # Compare original words only: no spelling edit after a plural change.
+    return (len(key_word) >= 5 and not is_number_word(key_word)
+            and any(not is_number_word(word) and one_edit_apart(key_word, word)
+                    for word in query_words))
+
+
+def containment_score(query: str, key: str, plural_words: frozenset = frozenset()) -> float:
     """
     Directional token containment:
     How much of the canonical key appears in the query
@@ -124,7 +216,7 @@ def containment_score(query: str, key: str) -> float:
     K = set(key.split())
     if not K:
         return 0.0
-    return len(Q & K) / len(K)
+    return sum(word_present(word, Q, word in plural_words) for word in K) / len(K)
 
 
 def char_ngrams(s: str, n: int = 3) -> set:
@@ -142,33 +234,35 @@ def char_ngram_similarity(a: str, b: str) -> float:
     return len(A & B) / len(B)
 
 
-def entity_similarity(query_norm: str, key_norm: str) -> float:
+def entity_similarity(query_norm: str, key_norm: str,
+                      plural_words: frozenset = frozenset()) -> float:
     """
     Combined lexical similarity score
     """
     if query_norm and query_norm == key_norm:
         return 1.0
-    c1 = containment_score(query_norm, key_norm)
+    c1 = containment_score(query_norm, key_norm, plural_words)
     c2 = char_ngram_similarity(query_norm, key_norm)
     return 0.7 * c1 + 0.3 * c2
 
 def row_entity_similarity(query_norm: str, entity_cell: str) -> float:
     """Score the best alternative, splitting before punctuation normalization."""
-    return max(
-        entity_similarity(query_norm, normalize_entity(alternative))
-        for alternative in entity_cell.split("|")
-    )
+    return lexical_match_rank(query_norm, entity_cell)[1]
 
 
 def event_match_rank(query_norm: str, cell: str) -> tuple:
-    """Rank one normalized event cell using the original event score."""
+    """Rank the best event alternative before normalization removes pipes."""
+    return max(_surface_match_rank(query_norm, alternative) for alternative in cell.split("|"))
+
+
+def _surface_match_rank(query_norm: str, cell: str) -> tuple:
     key = normalize_entity(cell)
     query_tokens = set(query_norm.split())
     key_tokens = set(key.split())
     total = len(query_tokens) + len(key_tokens)
     completeness = 2 * len(query_tokens & key_tokens) / total if total else 0.0
     return (bool(query_norm) and query_norm == key,
-            entity_similarity(query_norm, key), completeness)
+            entity_similarity(query_norm, key, stored_plural_words(cell)), completeness)
 
 
 def lexical_match_rank(query_norm: str, cell: str) -> tuple:
@@ -178,10 +272,16 @@ def lexical_match_rank(query_norm: str, cell: str) -> tuple:
 
 
 def chronological_match_rank(q_entity: str, q_event: str, row: dict) -> tuple:
+    return _chronological_candidate(q_entity, q_event, row)[0]
+
+
+def _chronological_candidate(q_entity: str, q_event: str, row: dict) -> tuple:
+    """Each score must qualify; the weighted score only ranks qualifying rows."""
     entity = lexical_match_rank(q_entity, row["entity"])
     event = event_match_rank(q_event, row["event"])
-    return (entity[0] and event[0], 0.6 * entity[1] + 0.4 * event[1],
+    rank = (entity[0] and event[0], 0.6 * entity[1] + 0.4 * event[1],
             0.6 * entity[2] + 0.4 * event[2])
+    return rank, entity[1] >= COMPONENT_BAR and event[1] >= COMPONENT_BAR
 
 def normalize_time_key(t: str) -> Tuple[int, Optional[int], Optional[int]]:
     """Preserve an explicit day while retaining normalize_time's public API."""
@@ -228,7 +328,7 @@ def before_absolute_reference(
 
             rank = lexical_match_rank(q_entity, row["entity"])
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if rank[1] >= COMPONENT_BAR and rank > best_rank:
                 best_rank = rank
                 best_answer = row["answer"]
 
@@ -251,9 +351,9 @@ def before_chronological_reference(
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            rank = chronological_match_rank(q_entity, q_event, row)
+            rank, qualifies = _chronological_candidate(q_entity, q_event, row)
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if qualifies and rank > best_rank:
                 best_rank = rank
                 best_answer = row["answer"]
 
@@ -284,7 +384,7 @@ def after_absolute_reference(
 
             rank = lexical_match_rank(q_entity, row["entity"])
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if rank[1] >= COMPONENT_BAR and rank > best_rank:
                 best_rank = rank
                 best_answer = row["answer"]
 
@@ -307,9 +407,9 @@ def after_chronological_reference(
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            rank = chronological_match_rank(q_entity, q_event, row)
+            rank, qualifies = _chronological_candidate(q_entity, q_event, row)
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if qualifies and rank > best_rank:
                 best_rank = rank
                 best_answer = row["answer"]
 
@@ -332,7 +432,7 @@ def event_time(
         for row in reader:
             rank = event_match_rank(q_event, row["event"])
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if rank[1] >= COMPONENT_BAR and rank > best_rank:
                 best_rank = rank
                 best_time = row["answer"]
 
@@ -367,7 +467,7 @@ def entity_time_event(entity: str, time: str, csv_path: str = ENTITY_TIME_EVENT_
 
             rank = lexical_match_rank(q_entity, row["entity"])
 
-            if rank[1] >= 0.75 and rank > best_rank:
+            if rank[1] >= COMPONENT_BAR and rank > best_rank:
                 best_rank = rank
                 best_event = row["answer"]
 
