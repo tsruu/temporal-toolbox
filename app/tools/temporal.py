@@ -8,6 +8,8 @@ from datetime import datetime
 from typing import Tuple, Optional
 import os
 from functools import lru_cache
+from threading import Lock
+from typing import NamedTuple
 
 BASE_DIR = os.path.dirname(__file__)
 
@@ -25,6 +27,7 @@ COMPONENT_BAR = 0.75
 # Entity normalization
 # =========================
 
+@lru_cache(maxsize=200000)
 def _singular_surface(word: str) -> str:
     """Pairwise regular plural comparison, never global name normalization."""
     folded = _fold(word)
@@ -103,11 +106,13 @@ MONTH_YEAR_RE = re.compile(
 )
 
 
+@lru_cache(maxsize=200000)
 def _fold(text: str) -> str:
     text = unicodedata.normalize("NFKD", text)
     return "".join(c for c in text if not unicodedata.combining(c)).lower()
 
 
+@lru_cache(maxsize=50000)
 def normalize_time(t: str) -> Tuple[int, Optional[int]]:
     """
     Returns (year, month or None)
@@ -166,6 +171,7 @@ ORDINAL_WORDS = NUMBER_WORDS - set((
 ROMAN_NUMBER_RE = re.compile(r"m{0,3}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3})")
 
 
+@lru_cache(maxsize=200000)
 def is_number_word(word: str) -> bool:
     """Digits, ordinals and Roman numerals receive no spelling tolerance."""
     return (any(c.isdigit() for c in word) or word in ORDINAL_WORDS
@@ -196,15 +202,38 @@ def word_present(key_word: str, query_words: set, plural_allowed: bool = False) 
     """A stored word of at least five letters may contain one spelling edit."""
     if key_word in query_words:
         return True
-    if plural_allowed and any(
-            word.isalpha() and len(word) >= 3 and not is_number_word(word)
-            and _singular_surface(key_word) == _singular_surface(word)
-            for word in query_words):
+    singulars, lengths = _query_word_forms(frozenset(query_words))
+    return _prepared_word_present(key_word, query_words, singulars, lengths, plural_allowed)
+
+
+@lru_cache(maxsize=50000)
+def _query_word_forms(query_words: frozenset) -> tuple:
+    """Hoist the baseline's query-only predicates out of every key-word scan."""
+    singulars = frozenset(_singular_surface(word) for word in query_words
+                          if word.isalpha() and len(word) >= 3 and not is_number_word(word))
+    lengths = {}
+    for word in query_words:
+        if not is_number_word(word):
+            lengths.setdefault(len(word), []).append(word)
+    return singulars, {length: tuple(words) for length, words in lengths.items()}
+
+
+def _prepared_word_present(key_word, query_words, singulars, lengths, plural_allowed=False):
+    if key_word in query_words:
+        return True
+    if plural_allowed and _singular_surface(key_word) in singulars:
         return True
     # Compare original words only: no spelling edit after a plural change.
+    # All omitted lengths fail the first predicate in one_edit_apart.
     return (len(key_word) >= 5 and not is_number_word(key_word)
-            and any(not is_number_word(word) and one_edit_apart(key_word, word)
-                    for word in query_words))
+            and any(one_edit_apart(key_word, word)
+                    for length in (len(key_word) - 1, len(key_word), len(key_word) + 1)
+                    for word in lengths.get(length, ())))
+
+
+@lru_cache(maxsize=50000)
+def _word_set(text: str) -> frozenset:
+    return frozenset(text.split())
 
 
 def containment_score(query: str, key: str, plural_words: frozenset = frozenset()) -> float:
@@ -212,8 +241,8 @@ def containment_score(query: str, key: str, plural_words: frozenset = frozenset(
     Directional token containment:
     How much of the canonical key appears in the query
     """
-    Q = set(query.split())
-    K = set(key.split())
+    Q = _word_set(query)
+    K = _word_set(key)
     if not K:
         return 0.0
     return sum(word_present(word, Q, word in plural_words) for word in K) / len(K)
@@ -223,12 +252,17 @@ def char_ngrams(s: str, n: int = 3) -> set:
     return {s[i:i+n] for i in range(len(s) - n + 1)}
 
 
+@lru_cache(maxsize=50000)
+def _trigram_set(text: str) -> frozenset:
+    return frozenset(char_ngrams(text))
+
+
 def char_ngram_similarity(a: str, b: str) -> float:
     """
     Directional char n-gram similarity
     """
-    A = char_ngrams(a)
-    B = char_ngrams(b)
+    A = _trigram_set(a)
+    B = _trigram_set(b)
     if not B:
         return 0.0
     return len(A & B) / len(B)
@@ -257,8 +291,8 @@ def event_match_rank(query_norm: str, cell: str) -> tuple:
 
 def _surface_match_rank(query_norm: str, cell: str) -> tuple:
     key = normalize_entity(cell)
-    query_tokens = set(query_norm.split())
-    key_tokens = set(key.split())
+    query_tokens = _word_set(query_norm)
+    key_tokens = _word_set(key)
     total = len(query_tokens) + len(key_tokens)
     completeness = 2 * len(query_tokens & key_tokens) / total if total else 0.0
     return (bool(query_norm) and query_norm == key,
@@ -283,6 +317,122 @@ def _chronological_candidate(q_entity: str, q_event: str, row: dict) -> tuple:
             0.6 * entity[2] + 0.4 * event[2])
     return rank, entity[1] >= COMPONENT_BAR and event[1] >= COMPONENT_BAR
 
+
+class _AlternativeForms(NamedTuple):
+    key: str
+    words: frozenset
+    plural_words: frozenset
+    trigrams: frozenset
+
+
+def _alternative_forms(surface):
+    key = normalize_entity(surface)
+    return _AlternativeForms(key, _word_set(key), stored_plural_words(surface), _trigram_set(key))
+
+
+_CHRONOLOGICAL_TABLES = {}
+_CHRONOLOGICAL_TABLE_LOCK = Lock()
+
+
+def _chronological_rows(csv_path):
+    """Load immutable row forms once per path/version, preserving CSV order."""
+    path = os.path.abspath(csv_path)
+    with _CHRONOLOGICAL_TABLE_LOCK:
+        try:
+            stat = os.stat(path)
+        except OSError:
+            # File-like test fixtures can replace open without a real path.
+            # An unstatable source must be read afresh, as in the baseline.
+            version = None
+        else:
+            version = (stat.st_mtime_ns, stat.st_size)
+        cached = _CHRONOLOGICAL_TABLES.get(path)
+        if version is not None and cached is not None and cached[0] == version:
+            return cached[1]
+        alternatives, cells, rows = {}, {}, []
+
+        def cell_forms(cell):
+            if cell not in cells:
+                forms = []
+                for alternative in cell.split("|"):
+                    if alternative not in alternatives:
+                        alternatives[alternative] = _alternative_forms(alternative)
+                    forms.append(alternatives[alternative])
+                cells[cell] = tuple(forms)
+            return cells[cell]
+
+        with open(csv_path, newline="", encoding="utf-8") as stream:
+            for row in csv.DictReader(stream):
+                rows.append((cell_forms(row["entity"]), cell_forms(row["event"]), row))
+        rows = tuple(rows)
+        if version is not None:
+            _CHRONOLOGICAL_TABLES[path] = version, rows
+        return rows
+
+
+class _QueryScorer:
+    """Reuse pure word/alternative scores only within this query component."""
+    __slots__ = ("normalized", "words", "singulars", "lengths", "trigrams", "present", "ranks", "cells")
+
+    def __init__(self, normalized):
+        self.normalized = normalized
+        self.words = _word_set(normalized)
+        self.singulars, self.lengths = _query_word_forms(self.words)
+        self.trigrams = _trigram_set(normalized)
+        self.present = {}
+        self.ranks = {}
+        self.cells = {}
+
+    def surface_rank(self, forms):
+        cached = self.ranks.get(forms)
+        if cached is not None:
+            return cached
+        query_words, key_words = self.words, forms.words
+        total = len(query_words) + len(key_words)
+        completeness = 2 * len(query_words & key_words) / total if total else 0.0
+        exact = bool(self.normalized) and self.normalized == forms.key
+        if exact:
+            similarity = 1.0
+        else:
+            matched = 0
+            for word in key_words:
+                cache_key = word, word in forms.plural_words
+                present = self.present.get(cache_key)
+                if present is None:
+                    present = _prepared_word_present(word, query_words, self.singulars,
+                                                     self.lengths, cache_key[1])
+                    self.present[cache_key] = present
+                matched += present
+            c1 = matched / len(key_words) if key_words else 0.0
+            c2 = len(self.trigrams & forms.trigrams) / len(forms.trigrams) if forms.trigrams else 0.0
+            similarity = 0.7 * c1 + 0.3 * c2
+        rank = exact, similarity, completeness
+        self.ranks[forms] = rank
+        return rank
+
+    def cell_rank(self, alternatives):
+        cached = self.cells.get(alternatives)
+        if cached is None:
+            cached = max(self.surface_rank(forms) for forms in alternatives)
+            self.cells[alternatives] = cached
+        return cached
+
+
+def _chronological_answer(q_entity, q_event, csv_path):
+    entity_scorer, event_scorer = _QueryScorer(q_entity), _QueryScorer(q_event)
+    best_answer = None
+    best_rank = (False, 0.0, 0.0)
+    for entity_forms, event_forms, row in _chronological_rows(csv_path):
+        entity = entity_scorer.cell_rank(entity_forms)
+        event = event_scorer.cell_rank(event_forms)
+        rank = (entity[0] and event[0], 0.6 * entity[1] + 0.4 * event[1],
+                0.6 * entity[2] + 0.4 * event[2])
+        if entity[1] >= COMPONENT_BAR and event[1] >= COMPONENT_BAR and rank > best_rank:
+            best_rank = rank
+            best_answer = row["answer"]
+    return best_answer
+
+@lru_cache(maxsize=50000)
 def normalize_time_key(t: str) -> Tuple[int, Optional[int], Optional[int]]:
     """Preserve an explicit day while retaining normalize_time's public API."""
     year, month = normalize_time(t)
@@ -345,17 +495,7 @@ def before_chronological_reference(
     q_entity = normalize_entity(entity)
     q_event = normalize_entity(event)
 
-    best_answer = None
-    best_rank = (False, 0.0, 0.0)
-
-    with open(csv_path, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            rank, qualifies = _chronological_candidate(q_entity, q_event, row)
-
-            if qualifies and rank > best_rank:
-                best_rank = rank
-                best_answer = row["answer"]
+    best_answer = _chronological_answer(q_entity, q_event, csv_path)
 
     if best_answer is None:
         raise LookupError("No matching before-chronological reference found")
@@ -401,17 +541,7 @@ def after_chronological_reference(
     q_entity = normalize_entity(entity)
     q_event = normalize_entity(event)
 
-    best_answer = None
-    best_rank = (False, 0.0, 0.0)
-
-    with open(csv_path, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            rank, qualifies = _chronological_candidate(q_entity, q_event, row)
-
-            if qualifies and rank > best_rank:
-                best_rank = rank
-                best_answer = row["answer"]
+    best_answer = _chronological_answer(q_entity, q_event, csv_path)
 
     if best_answer is None:
         raise LookupError("No matching after-chronological reference found")
