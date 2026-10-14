@@ -5,7 +5,7 @@ import logging
 import os
 from pathlib import Path
 from queue import Empty, Queue
-from threading import BoundedSemaphore, Thread
+from threading import BoundedSemaphore, Lock, Thread
 from types import MappingProxyType
 import unicodedata
 
@@ -20,6 +20,7 @@ DetectorFactory.seed = 0
 PACKAGE_DIR = Path(__file__).resolve().parent
 TRANSLATION_TIMEOUT_SECONDS = 3.0
 _CALL_SLOTS = BoundedSemaphore(16)
+_DETECTION_LOCK = Lock()
 _LANGUAGES = json.loads((PACKAGE_DIR / "translation_languages.json").read_text(encoding="utf-8"))
 _LANGUAGE_CODES = frozenset(_LANGUAGES.values())
 _CODE_ALIASES = {
@@ -145,7 +146,10 @@ def detect_language(text: str) -> str:
     try:
         if not isinstance(text, str) or not text.strip():
             raise ValueError("empty text")
-        code = _normalize_language(detect(text))
+        # langdetect lazily publishes its shared factory before loading profiles.
+        # Serialize detection to prevent another thread using partial profiles.
+        with _DETECTION_LOCK:
+            code = _normalize_language(detect(text))
         language = pycountry.languages.get(alpha_2=code)
         if language and hasattr(language, "name"):
             return language.name

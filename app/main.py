@@ -10,13 +10,13 @@ from pydantic import Field
 from fastapi import FastAPI
 from fastmcp import FastMCP
 from starlette.requests import Request
-from starlette.concurrency import run_in_threadpool
 
 from app.schemas import ToolRequest, ToolResponse
-from app.dispatcher import dispatch_tool
+from app.async_dispatcher import dispatch_tool_async
 
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO,
+                    format="%(asctime)s %(levelname)s %(name)s %(message)s")
 logger = logging.getLogger("toolbox")
 logging.getLogger("mcp.server.lowlevel.server").setLevel(logging.DEBUG)
 
@@ -46,7 +46,7 @@ logger.info(
 
 
 @mcp.tool()
-def before_absolute_reference(
+async def before_absolute_reference(
     entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
 ) -> str:
@@ -54,7 +54,7 @@ def before_absolute_reference(
     Answers questions asking what an entity was associated with immediately before a given date.
     Arguments must be in English. The result is looked up from structured data, not inferred.
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "before_absolute_reference",
         {"entity": entity, "time": time},
     )
@@ -64,7 +64,7 @@ def before_absolute_reference(
 
 
 @mcp.tool()
-def before_chronological_reference(
+async def before_chronological_reference(
     entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     event: Annotated[str, Field(description='The named event or item the question refers to, as written in the question.')],
 ) -> str:
@@ -73,7 +73,7 @@ def before_chronological_reference(
     Use this when the reference point is a named item, not a date.
     Arguments must be in English. The answer is retrieved from structured records.
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "before_chronological_reference",
         {"entity": entity, "event": event},
     )
@@ -83,7 +83,7 @@ def before_chronological_reference(
 
 
 @mcp.tool()
-def after_absolute_reference(
+async def after_absolute_reference(
     entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
 ) -> str:
@@ -91,7 +91,7 @@ def after_absolute_reference(
     Answers questions asking what an entity was associated with immediately after a given date.
     Arguments must be in English. The result is looked up from structured data, not inferred.
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "after_absolute_reference",
         {"entity": entity, "time": time},
     )
@@ -101,7 +101,7 @@ def after_absolute_reference(
 
 
 @mcp.tool()
-def after_chronological_reference(
+async def after_chronological_reference(
     entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     event: Annotated[str, Field(description='The named event or item the question refers to, as written in the question.')],
 ) -> str:
@@ -110,7 +110,7 @@ def after_chronological_reference(
     Use this when the reference point is a named item, not a date.
     Arguments must be in English. The answer is retrieved from structured records.
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "after_chronological_reference",
         {"entity": entity, "event": event},
     )
@@ -120,13 +120,13 @@ def after_chronological_reference(
 
 
 @mcp.tool()
-def event_time(event: Annotated[str, Field(description="The event's name or a short description.")]) -> str:
+async def event_time(event: Annotated[str, Field(description="The event's name or a short description.")]) -> str:
     """
     Retrieves the exact date or time when a specified event occurred.
     Use this when a question requires knowing when an event happened, e.g. to order several events.
     The result is looked up from structured data, not inference. The argument must be in English.
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "event_time",
         {"event": event},
     )
@@ -136,7 +136,7 @@ def event_time(event: Annotated[str, Field(description="The event's name or a sh
 
 
 @mcp.tool()
-def entity_time_event(
+async def entity_time_event(
     entity: Annotated[str, Field(description='The series or subject whose history is asked about, as written in the question.')],
     time: Annotated[str, Field(description='The date: YYYY, YYYY-MM, YYYY-MM-DD or Month YYYY.')],
 ) -> str:
@@ -144,7 +144,7 @@ def entity_time_event(
     Answers questions asking what role, position, or affiliation an entity had at a specific time.
     Arguments must be in English. The answer is retrieved from structured data.
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "entity_time_event",
         {"entity": entity, "time": time},
     )
@@ -154,12 +154,12 @@ def entity_time_event(
 
 
 @mcp.tool()
-def language_detection(text: str) -> str:
+async def language_detection(text: str) -> str:
     """
     Detects the language of the provided text.
     Use this when the input language is unknown or needs to be identified before further processing.
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "language_detection",
         {"text": text},
     )
@@ -169,7 +169,7 @@ def language_detection(text: str) -> str:
 
 
 @mcp.tool()
-def translation(
+async def translation(
     text: str,
     source_language: Annotated[str, Field(description='A language name or ISO code.')],
     target_language: Annotated[str, Field(description='A language name or ISO code.')],
@@ -178,7 +178,7 @@ def translation(
     Translates the provided text from a source language into a target language.
     Use this to translate non-English names before using the lookup tools.
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "translation",
         {
             "text": text,
@@ -192,7 +192,7 @@ def translation(
 
 
 @mcp.tool()
-def code_executor(code: str) -> str:
+async def code_executor(code: str) -> str:
     """
     Executes raw Python code in an isolated subprocess and returns stdout/stderr.
     Use for exact calculations involving dates, times, arithmetic, or any computation that should not be approximated.
@@ -202,7 +202,7 @@ def code_executor(code: str) -> str:
     - Always use print() for output; bare expressions produce no output
     - Import everything you need; no libraries are pre-imported
     """
-    result = dispatch_tool(
+    result = await dispatch_tool_async(
         "code_executor",
         {"code": code},
     )
@@ -248,7 +248,7 @@ async def logging_middleware(request: Request, call_next):
 async def tool_endpoint(req: ToolRequest):
     # Execution and translation can block. Keep health/lookup requests and the
     # executor's queue responsive while those calls run.
-    result = await run_in_threadpool(dispatch_tool, req.tool_name, req.arguments)
+    result = await dispatch_tool_async(req.tool_name, req.arguments)
     if result.status != "ok":
         result.result_text = f"ERROR: {result.result_text}"
     return result
